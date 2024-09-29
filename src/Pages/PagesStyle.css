@@ -1,0 +1,25 @@
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: .3rem 1rem;
+    color: #212529;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .125);
+    font-size: 14px;
+}
+
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    /* background-color: #0d6efd;
+    border-color: #0d6efd; */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(11,33,209,1) 70%, rgba(0,212,255,1) 100%);
+    border-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(11,33,209,1) 70%, rgba(0,212,255,1) 100%);
+}
+
+.link {
+    text-decoration: none;
+    color: #0d0de9;
+}

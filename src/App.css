@@ -1,0 +1,71 @@
+body{
+  padding-top: 52px;
+  font-size: 14px !important;
+}
+
+.mainBody{
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 490px;
+  height: auto;
+}
+
+.pageHeader {
+  display: block;
+  background: #1b2557;
+  color: #09f2abfc;
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+
+.pageHeading {
+  font-family: monospace;
+  margin-bottom: 0;
+}
+
+h3 {
+  color: #cc0995;
+}
+
+h4 {
+  color: #067e7e;
+}
+
+h5{
+  color: #0e4371;
+}
+
+h6 {
+  color: #05720a;
+}
+
+/* .App {
+  text-align: center;
+} */
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.pinkBorder {
+  display: block;
+  position: relative;
+  background: #e9ecef;
+  width: 100%;
+  height: auto;
+  border-top: 2px dashed #cc0995;
+  border-bottom: 2px dashed #cc0995;
+  padding: 20px 0;
+}
