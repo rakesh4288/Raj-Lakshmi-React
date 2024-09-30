@@ -1,5 +1,5 @@
 body{
-  padding-top: 52px;
+  padding-top: 60px;
   font-size: 14px !important;
 }
 
@@ -29,7 +29,8 @@ h3 {
 }
 
 h4 {
-  color: #067e7e;
+  /* color: #067e7e; */
+  color: #7807f4;
 }
 
 h5{
