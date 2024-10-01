@@ -19,6 +19,7 @@ import UseContextInfo from './Components/UseContextInfo';
 import UseMemoInfo from './Components/UseMemoInfo';
 import UseReducerInfo from './Components/UseReducerInfo';
 import ReactRouterPage from './Pages/ReactRouterPage';
+import LearningNode from './Pages/LearningNode';
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
             </Route>
             <Route path='/react-http-tutorial' Component={ReactHttpPage} />
             <Route path="/react-router-tutorial" Component={ReactRouterPage} />
+            <Route path="/node-tutorial" Component={LearningNode} />
             <Route path="*" Component={PageNotFound}/>
           </Routes>
       </main>

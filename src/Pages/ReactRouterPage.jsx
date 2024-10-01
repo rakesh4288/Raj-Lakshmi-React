@@ -76,7 +76,7 @@ const ReactRouterPage = () => {
                 </div>
             </section>
 
-            <section className="pinkBorder">
+            <section className="grayBgWithPinkBorder">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">

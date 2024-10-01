@@ -6,6 +6,7 @@ const AppImages = {
     RouterAppImports: require('./router_app.png'),
     RouterAppConfigure: require('./router_app_configure.png'),
     ReactDataApproach: require('./react_data_approach.png'),
+    NodeJs: require('./node_js.png')
 }
 
 export default AppImages;

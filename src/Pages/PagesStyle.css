@@ -1,3 +1,17 @@
+.pageHeader {
+    display: block;
+    background: #1b2557;
+    color: #09f2abfc;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.pageHeading {
+    font-family: monospace;
+    margin-bottom: 0;
+    color: #0aecec;
+}
+
 .list-group-item {
     position: relative;
     display: block;

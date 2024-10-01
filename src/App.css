@@ -1,5 +1,5 @@
 body{
-  padding-top: 60px;
+  padding-top: 52px;
   font-size: 14px !important;
 }
 
@@ -9,19 +9,6 @@ body{
   width: 100%;
   min-height: 490px;
   height: auto;
-}
-
-.pageHeader {
-  display: block;
-  background: #1b2557;
-  color: #09f2abfc;
-  padding: 15px 0;
-  margin-bottom: 20px;
-}
-
-.pageHeading {
-  font-family: monospace;
-  margin-bottom: 0;
 }
 
 h3 {
@@ -60,7 +47,7 @@ h6 {
   color: #61dafb;
 }
 
-.pinkBorder {
+.grayBgWithPinkBorder {
   display: block;
   position: relative;
   background: #e9ecef;
