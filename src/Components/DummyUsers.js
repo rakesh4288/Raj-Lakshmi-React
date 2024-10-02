@@ -9,7 +9,7 @@ const DummyUsers = () => {
     useEffect(() => {
         const dummyUserInfo = async() => {
             const response = await fetchingDummyInfo();
-            console.log('dummyInfo 1 =', response);
+           //  console.log('dummyInfo 1 =', response);
             // const reposnseArray = [];
             // reposnseArray.push(response.users);
             // setDummyData(reposnseArray);
@@ -19,15 +19,15 @@ const DummyUsers = () => {
         dummyUserInfo();
     }, []);
 
-    console.log('userData =', userData);
+    // console.log('userData =', userData);
 
     const handleInputSearch = (e) => {
         const getSearch = e.target.value;
-        console.log('getSearch =', getSearch);
+        // console.log('getSearch =', getSearch);
         if(getSearch.length > 0) {
             let tempUserData = [];
             tempUserData = filterUserData.filter((item) => item.firstName.toLowerCase().includes(getSearch));
-            console.log('tempUserData =', tempUserData);
+            // console.log('tempUserData =', tempUserData);
             setUserData(tempUserData);
         } else {
             setUserData(filterUserData);
@@ -42,7 +42,7 @@ const DummyUsers = () => {
             setUserData(filterUserData);
         } else {
             tempUserData = filterUserData.filter((item) => item.gender === getGender);
-            console.log('handleGender tempUserData =', tempUserData);
+            // console.log('handleGender tempUserData =', tempUserData);
             setUserData(tempUserData)
         }
     }

@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import * as Icon from 'react-bootstrap-icons';
+import AppImages from "../Assets";
 import DummyUsers from '../Components/DummyUsers';
+import useFetch from "../Global/useFetch";
 
 const ReactHttpPage = () => {
+    const url = "https://dummyapi.online/api/pokemon";
+    const { apiData, isLoading, isServerError} = useFetch(url);
     return(
         <div id="react-http-page">
             <section className="pageHeader">
@@ -21,9 +25,67 @@ const ReactHttpPage = () => {
             <section>
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12">
+                        <div className="col-md-6">
                             <h4>Get Call API with filtered </h4>
                             <DummyUsers />
+                        </div>
+
+                        <div className="col-md-6">
+                            <img src={AppImages.ReactHttpRequest} alt="react-http-request" className="img-fluid" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section className="whiteBgWithVioletBorder">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <h4>Using Custom Hook: </h4>
+                            {isLoading && (
+                                <div className="d-flex justify-content-center">
+                                    <div className="spinner-border text-primary" role="status">
+                                        <span className="visually-hidden">Loading...</span>
+                                    </div>
+                                </div>
+                            )}
+
+                            {!isLoading && isServerError ? (
+                                <div className="d-flex justify-content-center">
+                                    <div className="spinner-border text-danger" role="status">
+                                        <span className="visually-hidden">Getting Erro while fetching the Data...</span>
+                                    </div>
+                                </div>
+                            ): (
+                                <table className="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Id</th>
+                                            <th>pokemon Name</th>
+                                            <th>Type</th>
+                                            <th>Location</th>
+                                            <th>Image</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {
+                                            apiData.map((item, index) =>{
+                                                return (
+                                                    <tr key={index}>
+                                                        <td>{item.id}</td>
+                                                        <td>{item.pokemon}</td>
+                                                        <td>{item.type}</td>
+                                                        <td>{item.location}</td>
+                                                        <td>
+                                                            <img src={item.image_url} alt="poster" className="img-fluid" />
+                                                        </td>
+                                                    </tr>
+                                                )
+                                            })
+                                        }
+                                    </tbody>
+                                </table>
+                            )}
                         </div>
                     </div>
                 </div>
