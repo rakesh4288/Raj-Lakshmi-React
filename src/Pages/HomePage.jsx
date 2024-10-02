@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './PagesStyle.css';
 import AppImages from "../Assets";
 import ChildTesting from "../Components/ChildTesting";
 
@@ -15,7 +16,17 @@ const HomePage = () => {
         setColor(data);
     }
     return(
-        <div id="home-page">
+        <div id="home-page" className="homePageStyle">
+            <section className="pageHeader">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <h4 className="pageHeading"> React Js  </h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">

@@ -20,6 +20,7 @@ import UseMemoInfo from './Components/UseMemoInfo';
 import UseReducerInfo from './Components/UseReducerInfo';
 import ReactRouterPage from './Pages/ReactRouterPage';
 import LearningNode from './Pages/LearningNode';
+import ReactBasicInfo from './Pages/ReactBasicInfo';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Routes>
             <Route index Component={HomePage} />
             <Route path="/home" exact Component={HomePage} />
+            <Route path="basic-info-of-react" exact Component={ReactBasicInfo}/>
             <Route path="/react-redux-tutorial" exact Component={ReactReduxPage} />
             <Route path="/react-hook-tutorial/" Component={ReactHookPage}> 
               <Route path="use-state-page" Component={UseStateInfo} />

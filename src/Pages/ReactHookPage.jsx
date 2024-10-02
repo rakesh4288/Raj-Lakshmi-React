@@ -20,10 +20,10 @@ const ReactHookPage = () => {
             <section id="hooks-main-body" className="hooksMainBody">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-9">
+                        <div className="col-md-10">
                             <Outlet/>
                             <div id="basic-hook-info">
-                                <h5>Hooks were added to React in version 16.8.</h5>
+                                <h5>React Hooks were added to React in version 16.8.</h5>
                                 <p>
                                     Hooks allow function components to have access to state and other React features. Because of this, class components are generally no longer needed.
                                 </p>
@@ -49,7 +49,7 @@ const ReactHookPage = () => {
                             </div>
                         </div>
 
-                        <div className="col-md-3">
+                        <div className="col-md-2">
                             <ul className="list-group">
                                 <li className="list-group-item active" aria-current="true">React Hooks List</li>
                                 <li className="list-group-item">

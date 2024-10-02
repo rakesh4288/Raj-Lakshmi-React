@@ -19,6 +19,11 @@ const SiteHeader = () => {
                         <li className="nav-item">
                             <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
                         </li>
+
+                        <li className="nav-item">
+                            <Link className="nav-link" aria-current="page" to="/basic-info-of-react">React Basic</Link>
+                        </li>
+                        
                         <li className="nav-item">
                             <Link className="nav-link" to="/react-redux-tutorial">React Redux</Link>
                         </li>
@@ -37,7 +42,7 @@ const SiteHeader = () => {
                             </Link>
                             <ul className="dropdown-menu">
                                 <li><Link className="dropdown-item" href="#">React Fragment</Link></li>
-                                <li><Link className="dropdown-item" href="#">Another action</Link></li>
+                                <li><Link className="dropdown-item" href="#">Higher Order Component</Link></li>
                                 <li><Link className="dropdown-item" href="#">Something else here</Link></li>
                             </ul>
                         </li>
