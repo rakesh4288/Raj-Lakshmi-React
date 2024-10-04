@@ -9,7 +9,10 @@ const AppImages = {
     NodeJs: require('./node_js.png'),
     CheckingPropTypesImg: require('./react_js_check_prop_types.png'),
     ReactUseMemoImg: require('./use_memo_syntax.png'),
-    ReactHttpRequest: require('./react-http-requests.png'),
+    ReactHttpRequest: require('./react_http_requests.png'),
+    ControlledUncontrolledImg: require('./Control_Uncontrolled_Components_Main.png'),
+    ControlledImg: require('./controlled_img.png'),
+    UncontrolledImg: require('./uncontrolled_img.png')
 }
 
 export default AppImages;
