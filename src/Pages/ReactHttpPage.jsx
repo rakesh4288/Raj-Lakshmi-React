@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import * as Icon from 'react-bootstrap-icons';
 import AppImages from "../Assets";
 import DummyUsers from '../Components/DummyUsers';
@@ -37,10 +37,13 @@ const ReactHttpPage = () => {
                 </div>
             </section>
             
-            <section className="whiteBgWithVioletBorder">
+            <section className="grayBgWithPinkBorder">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12">
+                        <div className="col-md-4">
+                            Form
+                        </div>
+                        <div className="col-md-8">
                             <h4>Using Custom Hook: </h4>
                             {isLoading && (
                                 <div className="d-flex justify-content-center">

@@ -21,6 +21,7 @@ import UseReducerInfo from './Components/UseReducerInfo';
 import ReactRouterPage from './Pages/ReactRouterPage';
 import LearningNode from './Pages/LearningNode';
 import ReactBasicInfo from './Pages/ReactBasicInfo';
+import ControlledUncontrolledMain from './Pages/ControlledUncontrolledMain';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
             <Route index Component={HomePage} />
             <Route path="/home" exact Component={HomePage} />
             <Route path="basic-info-of-react" exact Component={ReactBasicInfo}/>
+            <Route path="/react-controlled-uncontrolled-component" exact Component={ControlledUncontrolledMain}/>
             <Route path="/react-redux-tutorial" exact Component={ReactReduxPage} />
             <Route path="/react-hook-tutorial/" Component={ReactHookPage}> 
               <Route path="use-state-page" Component={UseStateInfo} />
