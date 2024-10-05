@@ -7,7 +7,6 @@ const UseReducerInfo = () => {
     }
 
     const reducer = (state, action) => {
-        console.log('action =', action);
         switch(action.type) {
             case 'increment' : {
                 return { 
@@ -39,16 +38,16 @@ const UseReducerInfo = () => {
         <div id="use-reducer-info">
             <h3> useReducer React Hook Page <Icon.BagPlusFill /> </h3>
             <ul>
-                <li>useReducer React is a very powerful hook that can simply the complex state management in your react application.</li>
-                <li>This hook is verfy helpfule handling the large amount of todo function using the switch case.</li>
+                <li>useReducer hook is a very powerful hook that can simply the complex state management in your react application.</li>
+                <li>This hook is verfy helpful for handling the large amount of todo function using the switch case.</li>
             </ul>
 
             <h6>When yo use the useReducer Hook ?</h6>
             <p>
-                Actually useState hook is already sufficient for handling the simple state management. <b>But when you wanted to handle the several todo function is one function and this is the place where you can apply the useReducer hook</b>
+                Actually <b>useState</b> hook is already sufficient for handling the simple state management. <b>But when you wanted to handle the several todo function is one module and this is the place where you can apply the useReducer hook</b>
             </p>
             <p>The useReducer Hook is similar to the useState Hook.</p>
-            <p> The useReducer Hook returns the current stateand a dispatchmethod. </p>
+            <p> The useReducer Hook returns the current state and a dispatch the method. </p>
             <p> The reducer function contains your custom state logic and the initialState can be a simple value but generally will contain an object. </p>
 
             <div className="alert alert-info">
@@ -58,7 +57,7 @@ const UseReducerInfo = () => {
                             <ul>
                                 <li>Firslty You need to import <b>useReducer</b> hook from react</li>
                                 <li>Since this is a function so you need to call the function and keep remember we need to pass the two parameters - one is reducer and another one is state</li>
-                                <li>Now we need to make two reducer function where we can perform the todos function and also we will assign the initial state for the seconf parameter.</li>
+                                <li>Now we need to make reducer function and inside that we can initialize the todos function and also we will assign the initial state for the second parameter.</li>
                                 <li>Next is that you need to destruct the useRecuder function into array format</li>
                                 <li>First will be the <b>State</b> and other one is <b>dispatch</b></li>
                             </ul>
@@ -68,7 +67,7 @@ const UseReducerInfo = () => {
                             <ul>
                                 <li>After above steps this is the time Where we need to make the <b>reducer function</b></li>
                                 <li> This function is accepting a two parameter one is <b>state</b> and another one is <b>action</b> </li>
-                                <li>action is responsible for manipulating or business logic</li>
+                                <li>action is responsible for finding the manipulating or business logic</li>
                                 <li>Now either you can make a <b>Switch Case statement</b> or <b>if conditoin</b></li>
                                 <li>Now each case you need to verify and make the operation and dispatch the latest value</li>
                             </ul>
