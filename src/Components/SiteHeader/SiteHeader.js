@@ -21,10 +21,6 @@ const SiteHeader = () => {
                             <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
                         </li>
 
-                        {/* <li className="nav-item">
-                            <Link className="nav-link" aria-current="page" to="/basic-info-of-react">React Basic</Link>
-                        </li> */}
-
                         <li className="nav-item dropdown">
                             <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             React Basic
@@ -51,8 +47,28 @@ const SiteHeader = () => {
                             <Link className="nav-link" to="react-hook-tutorial">Hooks Tutorial</Link>
                         </li>
 
-                        <li className="nav-item">
-                            <Link className="nav-link" to="react-http-tutorial">HTTP Tutorial</Link>
+                        <li className="nav-item dropdown">
+                            <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                HTTP Tutorial
+                            </Link>
+                            <ul className="dropdown-menu">
+                                <li>
+                                    <Link className="dropdown-item" to="/react-http-tutorial">
+                                        <Icon.ArrowRight /> React HTTP Tutorial Landing Page
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link className="dropdown-item" to="/http-react-get-call">
+                                        <Icon.ArrowRight /> HTTP Get Call
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link className="dropdown-item" to="/http-react-post-call">
+                                        <Icon.ArrowRight /> HTTP Post Call
+                                    </Link>
+                                </li>
+                            </ul>
                         </li>
 
                         <li className="nav-item dropdown">

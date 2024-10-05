@@ -9,6 +9,8 @@ import HomePage from './Pages/HomePage';
 import ReactReduxPage from './Pages/ReactReduxPage';
 import ReactHookPage from './Pages/ReactHookPage';
 import ReactHttpPage from './Pages/ReactHttpPage';
+import ReactHttpGetPage from './Pages/ReactHttpGetPage';
+import ReactHttpPostPage from './Pages/ReactHttpPostPage';
 import PageNotFound from './Pages/PageNotFound';
 // import Junior from './Components/Junior';
 // import Green from './Components/green';
@@ -47,6 +49,8 @@ function App() {
               <Route path="use-reducer-page" Component={UseReducerInfo}/>
             </Route>
             <Route path='/react-http-tutorial' Component={ReactHttpPage} />
+            <Route path='/http-react-get-call' Component={ReactHttpGetPage} />
+            <Route path='/http-react-post-call' Component={ReactHttpPostPage} />
             <Route path="/react-router-tutorial" Component={ReactRouterPage} />
             <Route path="/node-tutorial" Component={LearningNode} />
             <Route path="*" Component={PageNotFound}/>
