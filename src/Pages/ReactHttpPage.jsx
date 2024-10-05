@@ -1,5 +1,6 @@
 import React from "react";
 import * as Icon from 'react-bootstrap-icons';
+import AppImages from "../Assets";
 
 const ReactHttpPage = () => {
     return(
@@ -23,6 +24,10 @@ const ReactHttpPage = () => {
                         <div className="col-md-12">
                            <p>
                                 An API call in React is the process of sending a request to a web API from within React, which allows your application to interact and exchange information with other systems.
+                           </p>
+
+                           <p>
+                            <img src={AppImages.ReactHttpRequest} alt="http" className="img-fluid" />
                            </p>
                         </div>
                     </div>

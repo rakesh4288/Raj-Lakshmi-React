@@ -9,9 +9,7 @@ const ReactHookPage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h4 className="pageHeading">
-                                React Hook Dashboard !! 
-                            </h4>
+                            <h3 className="pageHeading"> React Hook Dashboard !! <Icon.Badge3dFill  /> </h3>
                         </div>
                     </div>
                 </div>

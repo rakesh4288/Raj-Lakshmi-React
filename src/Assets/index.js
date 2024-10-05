@@ -12,7 +12,11 @@ const AppImages = {
     ReactHttpRequest: require('./react_http_requests.png'),
     ControlledUncontrolledImg: require('./Control_Uncontrolled_Components_Main.png'),
     ControlledImg: require('./controlled_img.png'),
-    UncontrolledImg: require('./uncontrolled_img.png')
+    UncontrolledImg: require('./uncontrolled_img.png'),
+    useEffectImgOne: require('./use_effect_hook_1.png'),
+    useEffectImgTwo: require('./use_effect_hook_2.png'),
+    useEffectImgThree: require('./use_effect_hook_3.png'),
+    useEffectImgFour: require('./use_effect_hook_4.png')
 }
 
 export default AppImages;
