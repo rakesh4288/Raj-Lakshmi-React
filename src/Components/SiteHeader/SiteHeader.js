@@ -44,6 +44,10 @@ const SiteHeader = () => {
                         </li>
 
                         <li className="nav-item">
+                            <Link className="nav-link" to="/react-form-handling">Form Handling</Link>
+                        </li>
+
+                        <li className="nav-item">
                             <Link className="nav-link" to="react-hook-tutorial">Hooks Tutorial</Link>
                         </li>
 

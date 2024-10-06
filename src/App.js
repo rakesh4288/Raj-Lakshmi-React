@@ -7,6 +7,7 @@ import SiteHeader from './Components/SiteHeader/SiteHeader';
 import SiteFooter from './Components/SiteFooter/SiteFooter';
 import HomePage from './Pages/HomePage';
 import ReactReduxPage from './Pages/ReactReduxPage';
+import ReactFormPage from './Pages/ReactFormPage';
 import ReactHookPage from './Pages/ReactHookPage';
 import ReactHttpPage from './Pages/ReactHttpPage';
 import ReactHttpGetPage from './Pages/ReactHttpGetPage';
@@ -41,6 +42,7 @@ function App() {
             <Route path="basic-info-of-react" exact Component={ReactBasicInfo}/>
             <Route path="/react-controlled-uncontrolled-component" exact Component={ControlledUncontrolledMain}/>
             <Route path="/react-redux-tutorial" exact Component={ReactReduxPage} />
+            <Route path="/react-form-handling" exact Component={ReactFormPage} />
             <Route path="/react-hook-tutorial/" Component={ReactHookPage}> 
               <Route path="use-state-page" Component={UseStateInfo} />
               <Route path="use-effect-page" Component={UseEffectInfo} />
