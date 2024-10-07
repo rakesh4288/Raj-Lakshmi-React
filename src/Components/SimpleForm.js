@@ -26,7 +26,7 @@ const SimpleForm = () => {
     }
 
     useEffect(() => {
-        console.log('Form Errors =', formError);
+        // console.log('Form Errors =', formError);
         if(Object.keys(formError).length === 0 && isSubmit){
             console.log('Form data is ready =', formValues);
             console.log('Form SUbmitted Successfully !');
