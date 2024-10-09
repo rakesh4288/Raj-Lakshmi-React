@@ -80,9 +80,19 @@ const SiteHeader = () => {
                             Utility Pages
                             </Link>
                             <ul className="dropdown-menu">
-                                <li><Link className="dropdown-item" href="#">React Fragment</Link></li>
-                                <li><Link className="dropdown-item" href="#">Higher Order Component</Link></li>
-                                <li><Link className="dropdown-item" href="#">Something else here</Link></li>
+                                <li>
+                                    <Link className="dropdown-item" href="#">
+                                        <Icon.ArrowRight /> React Fragment
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link className="dropdown-item" to="/higher-order-component-in-react">
+                                        <Icon.ArrowRight /> Higher Order Component
+                                    </Link>
+                                    </li>
+                                <li>
+                                    <Link className="dropdown-item" href="#">Something else here</Link>
+                                </li>
                             </ul>
                         </li>
 

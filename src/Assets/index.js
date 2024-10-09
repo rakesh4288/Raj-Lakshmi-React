@@ -18,7 +18,9 @@ const AppImages = {
     useEffectImgThree: require('./use_effect_hook_3.png'),
     useEffectImgFour: require('./use_effect_hook_4.png'),
     FormHandlingOne: require('./react_form_handling.jpeg'),
-    FormHandlingTwo: require('./form_handling.png')
+    FormHandlingTwo: require('./form_handling.png'),
+    HOCBasicStructure: require('./HOC_basic_structure.png'),
+    HowtoCallHOC: require('./how_to_call_HOC.png')
 }
 
 export default AppImages;

@@ -25,6 +25,7 @@ import ReactRouterPage from './Pages/ReactRouterPage';
 import LearningNode from './Pages/LearningNode';
 import ReactBasicInfo from './Pages/ReactBasicInfo';
 import ControlledUncontrolledMain from './Pages/ControlledUncontrolledMain';
+import ReactHocPage from './Pages/ReactHocPage';
 
 
 function App() {
@@ -53,6 +54,7 @@ function App() {
             <Route path='/react-http-tutorial' Component={ReactHttpPage} />
             <Route path='/http-react-get-call' Component={ReactHttpGetPage} />
             <Route path='/http-react-post-call' Component={ReactHttpPostPage} />
+            <Route path="/higher-order-component-in-react" exact Component={ReactHocPage}/>
             <Route path="/react-router-tutorial" Component={ReactRouterPage} />
             <Route path="/node-tutorial" Component={LearningNode} />
             <Route path="*" Component={PageNotFound}/>
