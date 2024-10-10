@@ -8,11 +8,10 @@ const SearchByColumn = () => {
         fetch('https://dummyjson.com/users')
             .then((res) => res.json())
             .then((data) => {
-                console.log('data user =', data.users);
                 setUserData(data.users);
             })
             .catch((error) => {
-                console.log('API Error =', error);
+                return error
             })
     }, []);
 

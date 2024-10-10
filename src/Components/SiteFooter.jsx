@@ -1,5 +1,4 @@
 import React from 'react';
-import './SiteFooter.css';
 const SiteFooter = () => {
     const currentDate = new Date()
     const currentYear = currentDate.getFullYear();
