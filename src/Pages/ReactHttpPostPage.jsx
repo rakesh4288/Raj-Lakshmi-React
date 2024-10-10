@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import * as Icon from 'react-bootstrap-icons';
 // import AppImages from "../Assets";
 
@@ -11,6 +11,8 @@ const ReactHttpPostPage = () => {
         body: ''
     };
     const [formValues, setFormValues] = useState(initialFormValues);
+    const [formError, setFormError] = useState({});
+    const [isSubmit, setIsSubmit] = useState(false);
     const handleInput = (e) => {
         const {name,value} = e.target;
         setFormValues((prevState) => {
@@ -21,36 +23,56 @@ const ReactHttpPostPage = () => {
         });
     }
 
-    // console.log('formValues =', formValues);
-
     const handleSubmit = (e) => {
         e.preventDefault();
-        // const usersUrl = "https://jsonplaceholder.typicode.com/users";
-        const postUrl = "https://jsonplaceholder.typicode.com/posts";
-        setIsLoading(true);
-        fetch(postUrl,{
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({
-                title: formValues.title,
-                body: formValues.body,
-            }),
-        })
-        .then((res) => res.json())
-        .then((data) => {
-            console.log('Success:', data);
-            let responseArr = [];
-            responseArr.push(data);
-            console.log('responseArr:', responseArr);
-            setShowPost(responseArr);
-            setIsLoading(false);
-        })
-        .catch((error)=>{
-            console.log('Error while post call', error);
-            setIsServerError(error);
-        })
+        setFormError(formValidation(formValues));
+        setIsSubmit(true);
     }
-    console.log('showPost:', showPost);
+
+    const formValidation = (values) => {
+        const errors = { }
+        if(values.title === ''){
+            errors.title = 'This is required field';
+        }
+
+        if(values.body === ''){
+            errors.body = 'This is required field';
+        }
+        return errors;
+    }
+
+    useEffect(() => {
+        if(Object.keys(formError).length === 0 && isSubmit) {
+            const postUrl = "https://jsonplaceholder.typicode.com/posts";
+            setIsLoading(true);
+            fetch(postUrl,{
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({
+                    title: formValues.title,
+                    body: formValues.body,
+                }),
+            })
+            .then((res) => res.json())
+            .then((data) => {
+                console.log('Success:', data);
+                let responseArr = [];
+                responseArr.push(data);
+                console.log('responseArr:', responseArr);
+                setShowPost(responseArr);
+                setIsLoading(false);
+            })
+            .catch((error)=>{
+                console.log('Error while post call', error);
+                setIsServerError(error);
+            })
+            
+            setFormValues({
+                title: '',
+                body: ''
+            });
+        }
+    }, [formError, isSubmit]);
     return(
         <div id="react-http-get-page">
             <section className="pageHeader">
@@ -85,12 +107,14 @@ const ReactHttpPostPage = () => {
                                 <div className="mb-3">
                                     <label htmlFor="title" className="form-label">Title</label>
                                     <input type="text" id="title" name="title" value={formValues.title} className="form-control" onChange={handleInput} />
+                                    {formError && (<div className="text-danger"> {formError.title} </div>)}
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="body" className="form-label">Body</label>
                                     <input type="text" id="body" name="body" value={formValues.body} className="form-control" onChange={handleInput} />
+                                    {formError && (<div className="text-danger"> {formError.body} </div>)}
                                 </div>
-                                <button type="submit" className="btn btn-primary">Submit</button>
+                                <button type="submit" className="btn btn-primary btn-sm">Submit</button>
                             </form>
                         </div>
 
@@ -127,9 +151,9 @@ const ReactHttpPostPage = () => {
                                         showPost && showPost.map((item, index) => {
                                             return (
                                                 <tr key={index}>
-                                                    <td>Id: {item.id}</td>
-                                                    <td>Title: {item.title}</td>
-                                                    <td>Body: {item.body}</td>
+                                                    <td>{item.id}</td>
+                                                    <td>{item.title}</td>
+                                                    <td>{item.body}</td>
                                                 </tr>
                                             )
                                         })
