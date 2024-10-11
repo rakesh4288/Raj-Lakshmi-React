@@ -122,3 +122,14 @@ h6 {
   border-bottom: 2px dashed #7f09ee;
   padding: 20px 0;
 }
+
+.darkBlueBgWithPinkBorder {
+  display: block;
+  position: relative;
+  background: #062442;
+  width: 100%;
+  height: auto;
+  border-top: 2px dashed #cc0995;
+  border-bottom: 2px dashed #e65ec0;
+  padding: 20px 0;
+}
