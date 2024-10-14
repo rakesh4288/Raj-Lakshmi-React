@@ -29,11 +29,17 @@ const ReactHttpPage = () => {
                             <p>
                                 <img src={AppImages.ReactHttpRequest} alt="http" className="img-fluid" />
                             </p>
-
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/8GBSO6PYKc4?si=AkN-TQmmkziAC8wB" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                         </div>
 
                         <div className="col-md-6">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/8GBSO6PYKc4?si=AkN-TQmmkziAC8wB" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                        </div>
+                    </div>
+
+                    <hr className="bg-primary"/>
+
+                    <div className="row">
+                        <div className="col-md-12">
                             <SearchByColumn />
                         </div>
                     </div>
