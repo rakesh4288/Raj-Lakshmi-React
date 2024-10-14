@@ -37,3 +37,36 @@
     text-decoration: none;
     color: #0d0de9;
 }
+
+.searchContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.searchDropdown {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f0f7;
+}
+
+.searchDropdown:empty {
+    border: none;
+    display: none;
+}
+
+.searchaDropdownRow {
+    cursor: pointer;
+    text-align: start;
+    margin: 2px 0;
+    padding: 5px;
+}
+
+.searchaDropdownRow:hover {
+    background: #4e4f9a;
+    color: #ffffff;
+}
+
+.searchInner {
+    display: flex;
+}

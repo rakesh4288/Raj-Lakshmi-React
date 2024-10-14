@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import * as Icon from 'react-bootstrap-icons';
 import AppImages from "../Assets";
 import SimpleForm from "../Components/SimpleForm";
 import CheckboxRowSelection from '../Components/CheckboxRowSelection';
+import LiveSearch from "../Components/LiveSearch";
 
 const ReactFormPage = () => {
+    
     return (
         <div id="react-form-page">
             <section className="pageHeader">
@@ -23,7 +25,7 @@ const ReactFormPage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
-                            <CheckboxRowSelection/>
+                            <CheckboxRowSelection />
                         </div>
 
                         <div className="col-md-6">
@@ -52,6 +54,10 @@ const ReactFormPage = () => {
             </section>
 
             <hr className="bg-danger" />
+
+            <section id="live-search" className="whiteBgWithVioletBorder">
+                <LiveSearch />
+            </section>
         </div>
     )
 }
