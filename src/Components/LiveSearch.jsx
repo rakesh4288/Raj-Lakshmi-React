@@ -19,7 +19,6 @@ const LiveSearch = () => {
         const fetchingUsers = async () => {
             const res = await fetch(url);
             const data = await res.json();
-            console.log('fetchingUsers =', data.users);
             setUserData(data.users);
         }
 

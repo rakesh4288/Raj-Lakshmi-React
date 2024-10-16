@@ -26,7 +26,6 @@ const SimpleForm = () => {
     }
 
     useEffect(() => {
-        // console.log('Form Errors =', formError);
         if(Object.keys(formError).length === 0 && isSubmit){
             console.log('Form data is ready =', formValues);
             console.log('Form SUbmitted Successfully !');
@@ -40,8 +39,6 @@ const SimpleForm = () => {
 
     const formValidation = (values) => {
         const errors = {}
-        // const emailRegex = /^\S+@\S+\.\S+$/
-        // const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
         if(!values.username){
             errors.username = 'User Name is required field !';

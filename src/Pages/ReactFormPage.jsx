@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import * as Icon from 'react-bootstrap-icons';
 import AppImages from "../Assets";
 import SimpleForm from "../Components/SimpleForm";
 import CheckboxRowSelection from '../Components/CheckboxRowSelection';
 import LiveSearch from "../Components/LiveSearch";
+import StudentForm from '../Components/StudentForm';
 
 const ReactFormPage = () => {
     
+
     return (
         <div id="react-form-page">
             <section className="pageHeader">
@@ -57,6 +59,10 @@ const ReactFormPage = () => {
 
             <section id="live-search" className="whiteBgWithVioletBorder">
                 <LiveSearch />
+            </section>
+
+            <section className="grayBgWithPinkBorder">
+                <StudentForm />
             </section>
         </div>
     )

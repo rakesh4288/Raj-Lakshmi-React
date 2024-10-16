@@ -133,3 +133,7 @@ h6 {
   border-bottom: 2px dashed #e65ec0;
   padding: 20px 0;
 }
+
+.form-group{
+  margin-bottom: 15px;
+}
