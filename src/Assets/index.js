@@ -22,7 +22,8 @@ const AppImages = {
     HOCBasicStructure: require('./HOC_basic_structure.png'),
     HowtoCallHOC: require('./how_to_call_HOC.png'),
     StateVsProps: require('./state_vs_props.png'),
-    StatePropsCamparison: require('./state_vs_props_camparison_table.jpg')
+    StatePropsCamparison: require('./state_vs_props_camparison_table.jpg'),
+    UseStateHookImg: require('./use_state_hook_1.png')
 }
 
 export default AppImages;
