@@ -5,7 +5,7 @@ import * as Icon from 'react-bootstrap-icons';
 
 
 const ReactBasicInfo = () => {
-    return(
+    return (
         <div id="page-not-found">
             <section className="pageHeader">
                 <div className="container">
@@ -19,8 +19,68 @@ const ReactBasicInfo = () => {
                 </div>
             </section>
 
+            <section id="prop_vs_state">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <h4>Difference between props and state ?</h4>
+                            <p>When working with React components, it's important to understand the differences between state and props. Here, we'll take a look at some common conditions and compare the behavior of props and state.</p>
+                            <table className="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>State</th>
+                                        <th>Props</th>
+                                    </tr>
+                                </thead>
 
-            <hr className="bg-primary"/>
+                                <tbody>
+                                    <tr>
+                                        <td>State is managed within the component</td>
+                                        <td>Props gets passed to the component</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>State can be changed and its mutable</td>
+                                        <td>Where props are readonly its cannot be changed, its immutable</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>State can be accessed using the use state hooks in a functional components and in a class component we can use ny this.state</td>
+                                        <td>Similarly, Props can be accessed in functional component using props as a parameter And in a class based component we can accessed by this.props keyword</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>States are controlled by React component</td>
+                                        <td>Where as Props are controlled by whoever renders the components</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col-md-6">
+                            <h5>State vs Props in React: A Comparison Table</h5>
+                            <p>
+                                <img src={AppImages.StatePropsCamparison} alt="state props" className="img-fluid" />
+                            </p>
+
+                            <p>
+                            As we can see from the table, props and state have some similarities. They are both plain JavaScript objects that can contain default values, and they are both read-only when using the `this` keyword.
+                            </p>
+                        </div>
+
+                        <div className="col-md-6">
+                            <p>
+                                <img src={AppImages.StateVsProps} alt="state props" className="img-fluid" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <hr className="bg-primary" />
 
             <section id="check-prop-types">
                 <div className="container">
@@ -52,7 +112,7 @@ const ReactBasicInfo = () => {
                             </p>
 
                             <MyInfo myName="Rakesh Shah" age={36} />
-                            
+
                             <div className="alert alert-danger">
                                 <p>If your prop type is not correct then you will warning message in console But your application will be running fine</p>
                                 <p>
@@ -113,7 +173,7 @@ const ReactBasicInfo = () => {
                             </p>
 
                             <p>
-                                As your app grows, you can catch a lot of bugs with typechecking. For some applications, you can use JavaScript extensions like Flow or TypeScript to typecheck your whole application. 
+                                As your app grows, you can catch a lot of bugs with typechecking. For some applications, you can use JavaScript extensions like Flow or TypeScript to typecheck your whole application.
                             </p>
 
                             <p>
