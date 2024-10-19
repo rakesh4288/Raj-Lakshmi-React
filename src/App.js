@@ -1,5 +1,5 @@
 
-import { Routes, Route} from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
@@ -26,39 +26,50 @@ import LearningNode from './Pages/LearningNode';
 import ReactBasicInfo from './Pages/ReactBasicInfo';
 import ControlledUncontrolledMain from './Pages/ControlledUncontrolledMain';
 import ReactHocPage from './Pages/ReactHocPage';
+import EmployeeDashboard from './Pages/EmployeeDashboard';
+import EmployeeCreate from './Pages/EmployeeCreate';
+import EmployeeDetails from './Pages/EmployeeDetails';
+import EmployeeEdit from './Pages/EmployeeEdit';
+import EmployeeList from './Pages/EmployeeList';
 
 
 function App() {
   // const value = useSelector((data) => data.counter.value);
   // const userData = useSelector((data) => data.counter.userData);
- //  console.log('value =', value);
+  //  console.log('value =', value);
   // console.log('userData =', userData);
   return (
     <div className="App">
-      <SiteHeader/>
+      <SiteHeader />
       <main className='mainBody'>
-          <Routes>
-            <Route index Component={HomePage} />
-            <Route path="/home" exact Component={HomePage} />
-            <Route path="basic-info-of-react" exact Component={ReactBasicInfo}/>
-            <Route path="/react-controlled-uncontrolled-component" exact Component={ControlledUncontrolledMain}/>
-            <Route path="/react-redux-tutorial" exact Component={ReactReduxPage} />
-            <Route path="/react-form-handling" exact Component={ReactFormPage} />
-            <Route path="/react-hook-tutorial/" Component={ReactHookPage}> 
-              <Route path="use-state-page" Component={UseStateInfo} />
-              <Route path="use-effect-page" Component={UseEffectInfo} />
-              <Route path="use-context-page" Component={UseContextInfo} />
-              <Route path="use-memo-page" Component={UseMemoInfo} />
-              <Route path="use-reducer-page" Component={UseReducerInfo}/>
-            </Route>
-            <Route path='/react-http-tutorial' Component={ReactHttpPage} />
-            <Route path='/http-react-get-call' Component={ReactHttpGetPage} />
-            <Route path='/http-react-post-call' Component={ReactHttpPostPage} />
-            <Route path="/higher-order-component-in-react" exact Component={ReactHocPage}/>
-            <Route path="/react-router-tutorial" Component={ReactRouterPage} />
-            <Route path="/node-tutorial" Component={LearningNode} />
-            <Route path="*" Component={PageNotFound}/>
-          </Routes>
+        <Routes>
+          <Route index Component={HomePage} />
+          <Route path="/home" exact Component={HomePage} />
+          <Route path="basic-info-of-react" exact Component={ReactBasicInfo} />
+          <Route path="/react-controlled-uncontrolled-component" exact Component={ControlledUncontrolledMain} />
+          <Route path="/react-redux-tutorial" exact Component={ReactReduxPage} />
+          <Route path="/react-form-handling" exact Component={ReactFormPage} />
+          <Route path="/react-hook-tutorial/" Component={ReactHookPage}>
+            <Route path="use-state-page" Component={UseStateInfo} />
+            <Route path="use-effect-page" Component={UseEffectInfo} />
+            <Route path="use-context-page" Component={UseContextInfo} />
+            <Route path="use-memo-page" Component={UseMemoInfo} />
+            <Route path="use-reducer-page" Component={UseReducerInfo} />
+          </Route>
+          <Route path='/react-http-tutorial' Component={ReactHttpPage} />
+          <Route path='/http-react-get-call' Component={ReactHttpGetPage} />
+          <Route path='/http-react-post-call' Component={ReactHttpPostPage} />
+          <Route path="/higher-order-component-in-react" exact Component={ReactHocPage} />
+          <Route path="/react-router-tutorial" Component={ReactRouterPage} />
+          <Route path="/node-tutorial" Component={LearningNode} />
+          <Route path="/employees-dashboard" element={<EmployeeDashboard />}>
+            <Route path="create" element={<EmployeeCreate />} />
+            <Route path="list" element={<EmployeeList />} />
+            <Route path="details/:id" element={<EmployeeDetails />} />
+            <Route path="edit/:id" element={<EmployeeEdit />} />
+          </Route>
+          <Route path="*" Component={PageNotFound} />
+        </Routes>
       </main>
       <SiteFooter />
       {/* <header className="App-header">  

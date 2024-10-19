@@ -4,7 +4,7 @@ const SiteFooter = () => {
     const currentYear = currentDate.getFullYear();
     return(
         <div id='site-footer' className='siteFooter'>
-            <p className='text'>All Copyright reserved @ {currentYear} </p>
+            <p className='text'>All Copyright Reserved @ {currentYear} </p>
         </div>
     )
 }

@@ -23,7 +23,9 @@ const AppImages = {
     HowtoCallHOC: require('./how_to_call_HOC.png'),
     StateVsProps: require('./state_vs_props.png'),
     StatePropsCamparison: require('./state_vs_props_camparison_table.jpg'),
-    UseStateHookImg: require('./use_state_hook_1.png')
+    UseStateHookImg: require('./use_state_hook_1.png'),
+    DonaPaulaBeach: require('./dona-paula-beach.jpg'),
+    MeenakshiTemple: require('./Meenakshi_Temple.jpg')
 }
 
 export default AppImages;
