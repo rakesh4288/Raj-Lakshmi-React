@@ -87,22 +87,6 @@
       "location": "Delhi",
       "phone": "8010172281",
       "email": "amadi@gmail.com"
-    },
-    {
-      "empId": "010101",
-      "name": "Harish Singh",
-      "location": "Pune",
-      "phone": "345653",
-      "email": "harish@test.com",
-      "id": "bb89"
-    },
-    {
-      "id": "ad02",
-      "empId": "876544",
-      "name": "Raj Lakshmi",
-      "location": "Mumbai",
-      "phone": "345653",
-      "email": "rakesh@test.co"
     }
   ]
 }

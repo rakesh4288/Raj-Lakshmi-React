@@ -7,15 +7,20 @@ import 'react-toastify/dist/ReactToastify.css';
 const EmployeeList = () => {
     const navigate = useNavigate();
     const [empData, setEmpData] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
     const fetchingEmpData = async () => {
         const url = "http://localhost:8000/employees";
+        setIsLoading(true);
         try {
             const res = await fetch(url);
             const response = await res.json();
-            console.log("fetchingEmpData response =", response);
             setEmpData(response);
+            setIsLoading(false);
         } catch (error) {
-            console.log("fetchingEmpData Error Block =", error);
+            toast.error(error, {
+                closeButton: true
+            });
+            setIsLoading(false);
         }
     }
 
@@ -38,8 +43,10 @@ const EmployeeList = () => {
                         closeButton: true
                     });
                 }
-            }).catch((err) => {
-                console.log(err.message)
+            }).catch((error) => {
+                toast.error(error.message, {
+                    closeButton: true
+                });
             })
         }
     }
@@ -51,7 +58,13 @@ const EmployeeList = () => {
             <div className="row">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                     <h5>Employees List <Icon.List /></h5>
-
+                    {isLoading && (
+                        <div className="d-flex justify-content-center">
+                            <div className="spinner-border text-primary" role="status">
+                                <span className="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                    )}
                     <table className="table table-striped">
                         <thead>
                             <tr className="bg-dark text-white">
