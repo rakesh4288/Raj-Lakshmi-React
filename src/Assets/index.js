@@ -25,7 +25,8 @@ const AppImages = {
     StatePropsCamparison: require('./state_vs_props_camparison_table.jpg'),
     UseStateHookImg: require('./use_state_hook_1.png'),
     DonaPaulaBeach: require('./dona-paula-beach.jpg'),
-    MeenakshiTemple: require('./Meenakshi_Temple.jpg')
+    MeenakshiTemple: require('./Meenakshi_Temple.jpg'),
+    virtualDom_1: require('./virtual_dom_1.png'),
 }
 
 export default AppImages;

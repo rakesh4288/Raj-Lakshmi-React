@@ -31,6 +31,7 @@ import EmployeeCreate from './Pages/EmployeeCreate';
 import EmployeeDetails from './Pages/EmployeeDetails';
 import EmployeeEdit from './Pages/EmployeeEdit';
 import EmployeeList from './Pages/EmployeeList';
+import InterviewPart_1 from './Pages/InterviewPart_1';
 
 
 function App() {
@@ -68,6 +69,7 @@ function App() {
             <Route path="details/:id" element={<EmployeeDetails />} />
             <Route path="edit/:id" element={<EmployeeEdit />} />
           </Route>
+          <Route path="/interview-question-part-1" Component={InterviewPart_1} />
           <Route path="*" Component={PageNotFound} />
         </Routes>
       </main>
