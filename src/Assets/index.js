@@ -27,6 +27,8 @@ const AppImages = {
     DonaPaulaBeach: require('./dona-paula-beach.jpg'),
     MeenakshiTemple: require('./Meenakshi_Temple.jpg'),
     virtualDom_1: require('./virtual_dom_1.png'),
+    LifeCycleMethodImg: require('./life_cycle_methods.png'),
+    HooksLifeCycleMethod: require('./hooks_life_cycle.png')
 }
 
 export default AppImages;

@@ -25,6 +25,7 @@ import ReactRouterPage from './Pages/ReactRouterPage';
 import LearningNode from './Pages/LearningNode';
 import ReactBasicInfo from './Pages/ReactBasicInfo';
 import ControlledUncontrolledMain from './Pages/ControlledUncontrolledMain';
+import LifeCycleMethod from './Pages/LifeCycleMethod';
 import ReactHocPage from './Pages/ReactHocPage';
 import EmployeeDashboard from './Pages/EmployeeDashboard';
 import EmployeeCreate from './Pages/EmployeeCreate';
@@ -48,6 +49,7 @@ function App() {
           <Route path="/home" exact Component={HomePage} />
           <Route path="basic-info-of-react" exact Component={ReactBasicInfo} />
           <Route path="/react-controlled-uncontrolled-component" exact Component={ControlledUncontrolledMain} />
+          <Route path="/life-cycle-method-in-react" exact Component={LifeCycleMethod}/>
           <Route path="/react-redux-tutorial" exact Component={ReactReduxPage} />
           <Route path="/react-form-handling" exact Component={ReactFormPage} />
           <Route path="/react-hook-tutorial/" Component={ReactHookPage}>

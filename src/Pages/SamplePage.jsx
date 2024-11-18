@@ -12,6 +12,16 @@ const SamplePage = () => {
                     </div>
                 </div>
             </section>
+
+            <section>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <p>Sample Coding</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }

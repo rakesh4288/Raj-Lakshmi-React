@@ -25,16 +25,21 @@ const SiteHeader = () => {
                             React Basic
                             </Link>
                             <ul className="dropdown-menu">
-                            <li>
-                                <Link className="dropdown-item" to="/basic-info-of-react">
-                                    <Icon.ArrowRight /> React Basic Landing Page
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className="dropdown-item" to="/react-controlled-uncontrolled-component">
-                                    <Icon.ArrowRight /> Controlled and Uncontrolled Component
-                                </Link>
-                            </li>
+                                <li>
+                                    <Link className="dropdown-item" to="/basic-info-of-react">
+                                        <Icon.ArrowRight /> React Basic Landing Page
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link className="dropdown-item" to="/react-controlled-uncontrolled-component">
+                                        <Icon.ArrowRight /> Controlled and Uncontrolled Component
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link className="dropdown-item" to="/life-cycle-method-in-react">
+                                        <Icon.ArrowRight /> Life Cycle Method in React
+                                    </Link>
+                                </li>
                             </ul>
                         </li>
                         
