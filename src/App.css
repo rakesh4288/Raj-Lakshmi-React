@@ -103,6 +103,11 @@ h6 {
   color: #61dafb;
 }
 
+.noBorder{
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
 .grayBgWithPinkBorder {
   display: block;
   position: relative;

@@ -5,10 +5,9 @@ import SimpleForm from "../Components/SimpleForm";
 import CheckboxRowSelection from '../Components/CheckboxRowSelection';
 import LiveSearch from "../Components/LiveSearch";
 import StudentForm from '../Components/StudentForm';
+import BasicImageUpload from "../Components/BasicImageUpload";
 
 const ReactFormPage = () => {
-    
-
     return (
         <div id="react-form-page">
             <section className="pageHeader">
@@ -59,6 +58,10 @@ const ReactFormPage = () => {
 
             <section id="live-search" className="whiteBgWithVioletBorder">
                 <LiveSearch />
+            </section>
+
+            <section className="whiteBgWithVioletBorder noBorder">
+                <BasicImageUpload/>
             </section>
 
             <section className="grayBgWithPinkBorder">
