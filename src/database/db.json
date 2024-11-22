@@ -88,5 +88,61 @@
       "phone": "8010172281",
       "email": "amadi@gmail.com"
     }
+  ],
+  "computerProducts": [
+    {
+      "id": "1",
+      "name": "HP Laptop Intel Core i5 12th Gen",
+      "brand": "HP",
+      "category": "Laptops",
+      "price": 47000,
+      "description": "HP Intel Core i5 12th Gen 1235U - (16 GB/512 GB SSD/Windows 11 Home) 15s-fq5330TU|15-fd0111TU Thin and Light Laptop  (15.6 inch, Silver, 1.69 Kg, With MS Office)",
+      "imageFileName": "HP_Laptop.png"
+    },
+    {
+      "id": "2",
+      "name": "Epson EcoTank L4260 Printer",
+      "brand": "Epson",
+      "category": "Printers",
+      "price": 17000,
+      "description": "Compact integrated tank design for space-saving convenience, Fast print speeds: 10.5ipm for black and 5.0ipm for colour",
+      "imageFileName": "Ink_Tank_Printer.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Dell Inspiron 5430 13th Gen Laptop",
+      "brand": "Dell",
+      "category": "Laptops",
+      "price": 56000,
+      "description": "Dell Inspiron 5430 13th Gen Laptop | Intel Core i5-1335U | 16GB RAM | 512GB SSD | 14.0 FHD+ Display | Backlit Keyboard | Fingerprint Reader | Windows 11 + MS Office 2022 | Thunderbolt 4.0 | McAfee 15 Months | Thin & Light (1.59kg)",
+      "imageFileName": "Dell_Inspiron_5430_13th_Gen_Laptop.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Canon SELPHY CP1500",
+      "brand": "Canon",
+      "category": "Printers",
+      "price": 16000,
+      "description": "Canon SELPHY CP1500 | Compact Instant Photo Printer | 108 Color Ink & Paper Set | Digital | Wireless | Portable | iPhone & Android Compatible | WiFi | Instant Photos | Includes USB Cable",
+      "imageFileName": "Canon_SELPHY_CP1500.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Logitech G102 Prodigy Optical",
+      "brand": "Logitech",
+      "category": "Mouse",
+      "price": 1500,
+      "description": "Logitech G102 Prodigy Optical USB Gaming Mouse with 16.8M LED Colors, Built-in Storage, and PC/Mac Compatibility (Black).",
+      "imageFileName": "Logitech_G102_Prodigy.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Lenovo ThinkPad E14 AMD",
+      "brand": "Lenovo",
+      "category": "Laptops",
+      "price": 35000,
+      "description": "Lenovo ThinkPad E14 AMD Ryzen 5 7530U 14 WUXGA IPS Laptop - 8GB RAM, 512GB SSD, Windows 11 Pro, AMD Radeon Graphics, Backlit Keyboard, Fingerprint Reader, Graphite Black, 1.41 kg - 21JRS00D00",
+      "imageFileName": "Lenovo_ThinkPad_E14_AMD.jpg"
+    }
   ]
 }
