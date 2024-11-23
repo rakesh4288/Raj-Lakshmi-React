@@ -7,7 +7,10 @@ import SiteHeader from './Components/SiteHeader';
 import SiteFooter from './Components/SiteFooter';
 import HomePage from './Pages/HomePage';
 import ReactReduxPage from './Pages/ReactReduxPage';
-import ReactFormPage from './Pages/ReactFormPage';
+import BasicImageUploadPage from './Pages/BasicImageUploadPage';
+import BasicLiveSearchPage from './Pages/BasicLiveSearchPage';
+import CompleteFormPage from './Pages/CompleteFormPage';
+import CheckboxOperationPage from './Pages/CheckboxOperationPage';
 import ReactHookPage from './Pages/ReactHookPage';
 import ReactHttpPage from './Pages/ReactHttpPage';
 import ReactHttpGetPage from './Pages/ReactHttpGetPage';
@@ -54,7 +57,10 @@ function App() {
           <Route path="/react-controlled-uncontrolled-component" exact Component={ControlledUncontrolledMain} />
           <Route path="/life-cycle-method-in-react" exact Component={LifeCycleMethod}/>
           <Route path="/react-redux-tutorial" exact Component={ReactReduxPage} />
-          <Route path="/react-form-handling" exact Component={ReactFormPage} />
+          <Route path="/checkbox-operation-in-react" exact Component={CheckboxOperationPage} />
+          <Route path="/complete-form-with-validation" exact Component={CompleteFormPage} />
+          <Route path="/how-to-upload-files" exact Component={BasicImageUploadPage} />
+          <Route path="/basic-live-search" exact Component={BasicLiveSearchPage} />
           <Route path="/react-hook-tutorial/" Component={ReactHookPage}>
             <Route path="use-state-page" Component={UseStateInfo} />
             <Route path="use-effect-page" Component={UseEffectInfo} />

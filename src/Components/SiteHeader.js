@@ -47,8 +47,35 @@ const SiteHeader = () => {
                             <Link className="nav-link" to="/react-redux-tutorial">React Redux</Link>
                         </li>
 
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/react-form-handling">Form Handling</Link>
+                        <li className="nav-item dropdown">
+                            <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                React Form Handling
+                            </Link>
+                            <ul className="dropdown-menu">
+                                <li>
+                                    <Link className="dropdown-item" to="/checkbox-operation-in-react">
+                                        <Icon.ArrowRight /> Checkbox Operation 
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link className="dropdown-item" to="/how-to-upload-files">
+                                        <Icon.ArrowRight /> Basic File Upload Functionlity
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link className="dropdown-item" to="/basic-live-search">
+                                        <Icon.ArrowRight /> Live Search By Textbox
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link className="dropdown-item" to="/complete-form-with-validation">
+                                        <Icon.ArrowRight /> Complete Form With Validation
+                                    </Link>
+                                </li>
+                            </ul>
                         </li>
 
                         <li className="nav-item">
