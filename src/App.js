@@ -35,6 +35,7 @@ import EmployeeList from './Pages/EmployeeList';
 import InterviewPart_1 from './Pages/InterviewPart_1';
 import ComputerMaterialDashboard from './Pages/ComputerMaterialDashboard';
 import ComputerMaterialList from './Pages/ComputerMaterialList';
+import ChildToParentPage from './Pages/ChildToParentPage';
 
 
 function App() {
@@ -65,6 +66,7 @@ function App() {
           <Route path='/http-react-get-call' Component={ReactHttpGetPage} />
           <Route path='/http-react-post-call' Component={ReactHttpPostPage} />
           <Route path="/higher-order-component-in-react" exact Component={ReactHocPage} />
+          <Route path="/how-to-pass-data-from-child-to-parent-component" exact Component={ChildToParentPage} />
           <Route path="/react-router-tutorial" Component={ReactRouterPage} />
           <Route path="/node-tutorial" Component={LearningNode} />
           <Route path="/employees-dashboard" element={<EmployeeDashboard />}>

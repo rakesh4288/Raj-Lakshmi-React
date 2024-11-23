@@ -95,7 +95,9 @@ const SiteHeader = () => {
                                     </Link>
                                     </li>
                                 <li>
-                                    <Link className="dropdown-item" href="#">Something else here</Link>
+                                <Link className="dropdown-item" to="/how-to-pass-data-from-child-to-parent-component">
+                                        <Icon.ArrowRight /> How to pass data from Child to Parent
+                                    </Link>
                                 </li>
                             </ul>
                         </li>

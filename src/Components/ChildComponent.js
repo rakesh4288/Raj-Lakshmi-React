@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
-const ChildTesting = ({
-        changeBgColor,
-        myFamilyClick 
-    }) => {
+const ChildComponent = ({
+    getFamilyClick,
+    changeBgColor
+}) => {
     const [showError, setShowError] = useState(false);
     const myFamilyData = [
         {
@@ -33,19 +33,17 @@ const ChildTesting = ({
     ]
 
     const handleChange = (event) => {
-        console.log('handleChange =', event.target.value);
         const selectedValue = event.target.value;
-        if(selectedValue === ''){
+        if(selectedValue === '') {
             setShowError(true);
         } else {
             changeBgColor(selectedValue);
+            setShowError(false);
         }
     }
     return (
-        <div id='child-testing'>
-            <h6>Using callback function we can pass the data from Child to Parent</h6>
-            <button className="btn btn-dark btn-sm" onClick={() => myFamilyClick(myFamilyData)}>Get Family Info</button>
-            &nbsp;&nbsp; Choose Color &nbsp;&nbsp;
+        <div id='child-component'>
+            <label>Choose any Color to in Background: </label> &nbsp;&nbsp;
             <select onChange={handleChange}>
                 <option value="">Select Any Color</option>
                 <option value="red">Red</option>
@@ -55,14 +53,15 @@ const ChildTesting = ({
                 <option value="violet">Violet</option>
                 <option value="gold">Gold</option>
             </select>
-
             {
-                showError ? (
-                    <div> Please Select Any Color </div>
-                ) : null
+                showError && (
+                    <div className='text-danger'>Please select any color</div>
+                )
             }
+            <br/><br/>
+            <button className='btn btn-success btn-sm' onClick={() => getFamilyClick(myFamilyData)}>Show My Family</button>
         </div>
     )
 }
 
-export default ChildTesting;
+export default ChildComponent;

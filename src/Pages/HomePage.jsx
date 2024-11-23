@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
-import ChildTesting from "../Components/ChildTesting";
-import AppImages from "../Assets";
+import ChildComponent from "../Components/ChildComponent";
 import logo from '../Assets/logo.svg';
 import * as Icon from 'react-bootstrap-icons';
 import './PagesStyle.css';
 
 const HomePage = () => {
     const [familyData, setFamilyData] = useState([]);
-    const [color, setColor] = useState('#cff4fc');
+    const [color, setColor] = useState(null);
     const getMyFamily = (data) => {
         console.log('inside getMyFamily =', data);
         setFamilyData(data);
@@ -64,27 +63,6 @@ const HomePage = () => {
                                     <Link className="link" to="/interview-question-part-1">Interview Question Part 1</Link>
                                 </li>
                             </ul>
-                        </div>
-
-                        <div className="alert alert-info" style={{ background: `${color}` }}>
-                            <ChildTesting myFamilyClick={getMyFamily} changeBgColor={getBgColor} />
-                            <br />
-                            <table className="table table-bordered table-striped">
-                                <tbody>
-                                    {
-                                        familyData.map((item, index) => {
-                                            return (
-                                                <tr key={index}>
-                                                    <td>{item.id}</td>
-                                                    <td>{item.name}</td>
-                                                    <td>{item.age}</td>
-                                                    <td>{item.gender}</td>
-                                                </tr>
-                                            )
-                                        })
-                                    }
-                                </tbody>
-                            </table>
                         </div>
                     </div>
                 </div>
