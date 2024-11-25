@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import * as Icon from 'react-bootstrap-icons';
 import AppImages from "../Assets";
+import SelectAllCheckbox from "../Components/SelectAllCheckbox";
 
 const employees = [
     {
@@ -115,6 +116,26 @@ const CheckboxOperationPage = () => {
                             <p>
                                 <img src={AppImages.FormHandlingTwo} alt="react-form-handling" className="img-fluid img-thumbnail" />
                             </p>
+                        </div>
+                    </div>
+
+                    <pre> 
+                        <br/>
+                        {
+                            JSON.stringify(selectedRow, undefined, 2)
+                        }
+                    </pre>
+                </div>
+            </section>
+
+            <hr className="bg-primary"/>
+
+            <section>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-6">
+                            <h5>Select All Checkbox</h5>
+                            <SelectAllCheckbox />
                         </div>
                     </div>
                 </div>
