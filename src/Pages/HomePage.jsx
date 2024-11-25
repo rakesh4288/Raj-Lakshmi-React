@@ -62,6 +62,10 @@ const HomePage = () => {
                                 <li>
                                     <Link className="link" to="/interview-question-part-1">Interview Question Part 1</Link>
                                 </li>
+
+                                <li>
+                                    <Link className="link" to="/interview-question-part-2">Interview Question Part 2</Link>
+                                </li>
                             </ul>
                         </div>
                     </div>

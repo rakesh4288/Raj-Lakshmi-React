@@ -36,6 +36,7 @@ import EmployeeDetails from './Pages/EmployeeDetails';
 import EmployeeEdit from './Pages/EmployeeEdit';
 import EmployeeList from './Pages/EmployeeList';
 import InterviewPart_1 from './Pages/InterviewPart_1';
+import InterviewPart_2 from './Pages/InterviewPart_2';
 import ComputerMaterialDashboard from './Pages/ComputerMaterialDashboard';
 import ComputerMaterialList from './Pages/ComputerMaterialList';
 import ChildToParentPage from './Pages/ChildToParentPage';
@@ -82,6 +83,7 @@ function App() {
             <Route path="edit/:id" element={<EmployeeEdit />} />
           </Route>
           <Route path="/interview-question-part-1" Component={InterviewPart_1} />
+          <Route path="/interview-question-part-2" Component={InterviewPart_2} />
           <Route path="computer-material-dashboard" Component={ComputerMaterialDashboard}>
             <Route path="product-list" element={<ComputerMaterialList />} />
           </Route>
