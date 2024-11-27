@@ -1,22 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from 'react-router-dom';
-import ChildComponent from "../Components/ChildComponent";
 import logo from '../Assets/logo.svg';
 import * as Icon from 'react-bootstrap-icons';
 import './PagesStyle.css';
 
 const HomePage = () => {
-    const [familyData, setFamilyData] = useState([]);
-    const [color, setColor] = useState(null);
-    const getMyFamily = (data) => {
-        console.log('inside getMyFamily =', data);
-        setFamilyData(data);
-    }
-
-    const getBgColor = (data) => {
-        console.log('getBgColor =', data);
-        setColor(data);
-    }
     return (
         <div id="home-page" className="homePageStyle">
             <section className="pageHeader">

@@ -1,62 +1,68 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
-const userData = [
+const employeesData = [
     {
-        name: 'Rakesh Shah'
+        id: 1,
+        name: 'Rakesh Shah',
+        gender: 'male',
+        address: 'Pune India'
     },
     {
-        name: 'Nitish Lamba'
+        id: 2,
+        name: 'Pramod Patil',
+        gender: 'male',
+        address: 'London UK'
     },
     {
-        name: 'Dishant Adlakha'
+        id: 3,
+        name: 'SD Deepika',
+        gender: 'female',
+        address: 'trivandrum, Kerla, India'
     },
     {
-        name: 'Deepika SD'
+        id: 4,
+        name: 'Amadi Williams',
+        gender: 'female',
+        address: 'New York, USA'
     },
     {
-        name: 'Amadi Williams'
-    },
+        id: 5,
+        name: 'Nitish Lamba',
+        gender: 'male',
+        address: 'Noida, UP, India'
+    }
 ]
 
 const SelectAllCheckbox = () => {
-    const [users, setUsers] = useState([]);
-    const [selectedRow, setSelectedRow] = useState([]);
+    const [rowSelected, setRowSelected] = useState([])
+    const selectRowHandler = (row) => {
+        setRowSelected((prevSelected) => (prevSelected.some((selected) => selected.id === row.id)
+        ? prevSelected.filter((selected) => selected.id !== row.id) : [...prevSelected, row]))
+    }
 
-    useEffect(() => {
-        setUsers(userData);
-    }, []);
+    console.log('rowSelected =', rowSelected);
+    
+    const isAllChecked = rowSelected.length === employeesData.length;
 
-
-    const checkboxHandler = (e) => {
-        // console.log('checkboxHandler =', e.target);
-        const { name, checked } = e.target;
-        // console.log('checkboxHandler name =', name);
-        // console.log('checkboxHandler checked =', checked);
-        
-
-        if(name === "selectAllCheckbox") {
-            let tempUser = users.map((user) => {
-                return {...user, isChecked: checked}
-            });
-            setUsers(tempUser);
+    const handleSelectAll = (e) => {
+        const {checked} = e.target;
+        if(checked) {
+            setRowSelected(employeesData);
+            console.log('handleSelectAll =', employeesData);
         } else {
-            let tempUser = users.map((user) =>
-                user.name === name ? { ...user, isChecked: checked } : user
-            );
-            setUsers(tempUser);
+            setRowSelected([]);
+            console.log('handleSelectAll =', employeesData);
         }
     }
-    console.log('setUsers =', users);
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // console.log('selectedRow =', selectedRow);
-    }
     return (
-        <form className="img-thumbnail" onSubmit={handleSubmit}>
+        <form className="img-thumbnail">
             <table className="table table-striped">
                 <tbody>
                     <tr>
+                        <td>Id</td>
                         <td>Name</td>
+                        <td>Gender</td>
+                        <td>Address</td>
                         <td>
                             <div className="form-check">
                                 <input
@@ -64,29 +70,32 @@ const SelectAllCheckbox = () => {
                                     id="selectAllCheck"
                                     className="form-check-input"
                                     name="selectAllCheckbox"
-                                    checked={users.filter((user) => user?.isChecked !== true).length < 1}
-                                    onChange={checkboxHandler}
+                                    checked={isAllChecked}
+                                    onChange={handleSelectAll}
                                 />
                                 <label className="form-check-label" htmlFor="selectAllCheck">
-                                    &nbsp;
+                                    { rowSelected.length === employeesData.length ? 'Deselect All' : 'Select All' }
                                 </label>
                             </div>
                         </td>
                     </tr>
                     {
-                        users && users.map((user, index) => {
+                        employeesData && employeesData.map((emp, index) => {
                             return (
                                 <tr key={index}>
-                                    <td>{user.name}</td>
+                                    <td>{emp.id}</td>
+                                    <td>{emp.name}</td>
+                                    <td>{emp.gender}</td>
+                                    <td>{emp.address}</td>
                                     <td>
                                         <div className="form-check">
                                             <input
                                                 type="checkbox"
                                                 id={`row-index${index + 1}`}
                                                 className="form-check-input"
-                                                name={user.name}
-                                                checked={user.isChecked || false}
-                                                onChange={checkboxHandler}
+                                                value={emp.id}
+                                                checked={rowSelected.some((row) => row.id === emp.id)}
+                                                onChange={() => selectRowHandler(emp)}
                                             />
                                             <label className="form-check-label" htmlFor={`row-index${index + 1}`}>
                                                 &nbsp;

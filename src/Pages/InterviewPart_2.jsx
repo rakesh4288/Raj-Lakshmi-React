@@ -1,6 +1,4 @@
 import React from "react";
-import * as Icon from 'react-bootstrap-icons';
-import AppImages from "../Assets";
 
 const InterviewPart_1 = () => {
     return (
@@ -30,8 +28,21 @@ const InterviewPart_1 = () => {
                         </div>
 
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                        <h5>Best React interview series in short clips: </h5>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/73gvbkS44jg?si=3AadRwb5P05bia0E" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                            <h5>Best React interview series in short clips: </h5>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/73gvbkS44jg?si=3AadRwb5P05bia0E" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr className="bg-primary"/>
+
+            <section id="best-interview-series-1">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <h3>Best interview</h3>
+                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/cXHm_7a7gfE?si=hCnAMB0a_xoWuH-7" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                         </div>
                     </div>
                 </div>
