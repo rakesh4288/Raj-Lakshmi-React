@@ -40,6 +40,7 @@ import InterviewPart_2 from './Pages/InterviewPart_2';
 import ComputerMaterialDashboard from './Pages/ComputerMaterialDashboard';
 import ComputerMaterialList from './Pages/ComputerMaterialList';
 import ChildToParentPage from './Pages/ChildToParentPage';
+import AscDescOrder from './Pages/AscDescOrder';
 
 
 function App() {
@@ -72,6 +73,7 @@ function App() {
           <Route path='/react-http-tutorial' Component={ReactHttpPage} />
           <Route path='/http-react-get-call' Component={ReactHttpGetPage} />
           <Route path='/http-react-post-call' Component={ReactHttpPostPage} />
+          <Route path='/how-to-perform-ascending-descending-order' Component={AscDescOrder}/>
           <Route path="/higher-order-component-in-react" exact Component={ReactHocPage} />
           <Route path="/how-to-pass-data-from-child-to-parent-component" exact Component={ChildToParentPage} />
           <Route path="/react-router-tutorial" Component={ReactRouterPage} />

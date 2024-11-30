@@ -1,5 +1,6 @@
 import React from "react";
 import * as Icon from 'react-bootstrap-icons';
+import { Link } from "react-router-dom";
 import AppImages from "../Assets";
 import SearchByColumn from '../Components/SearchByColumn';
 const ReactHttpPage = () => {
@@ -37,6 +38,10 @@ const ReactHttpPage = () => {
                     </div>
 
                     <hr className="bg-primary"/>
+
+                    <Link to="https://restcountries.com/#endpoints-all" target="_blank">
+                        https://restcountries.com/#endpoints-all
+                    </Link>
 
                     <div className="row">
                         <div className="col-md-12">
