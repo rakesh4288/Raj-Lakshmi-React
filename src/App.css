@@ -141,6 +141,20 @@ h6 {
   padding: 20px 0;
 }
 
+.blueGradientRight {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(239,239,242,1) 0%, rgba(0,212,255,1) 97%);
+  padding: 20px 0;
+  margin: 20px 0;
+}
+
+.blueGradientLeft {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(239,239,242,1) 79%);
+  padding: 20px 0;
+  margin: 20px 0;
+}
+
 .form-group{
   margin-bottom: 15px;
 }
