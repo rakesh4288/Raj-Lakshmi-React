@@ -63,7 +63,7 @@ const InterviewPart_1 = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <h4>Difference between props and state ?</h4>
-                            <p>When working with React components, it's important to understand the differences between state and props. Here, we'll take a look at some common conditions and compare the behavior of props and state.</p>
+                            <p>When we working with React components, it's important to understand the differences between state and props. Here, we'll take a look at some common conditions and compare the behavior of props and state.</p>
                             <table className="table table-striped">
                                 <thead>
                                     <tr>
@@ -84,7 +84,7 @@ const InterviewPart_1 = () => {
                                     </tr>
 
                                     <tr>
-                                        <td>State can be accessed using the use state hooks in a functional components and in a class component we can use ny this.state</td>
+                                        <td>State can be accessed using the use state hooks in a functional components and in a class component we can use by this.state</td>
                                         <td>Similarly, Props can be accessed in functional component using props as a parameter And in a class based component we can accessed by this.props keyword</td>
                                     </tr>
 

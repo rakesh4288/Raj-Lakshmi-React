@@ -10,52 +10,53 @@ const UseReducerInfo = () => {
         switch(action.type) {
             case 'increment' : {
                 return { 
-                    count : state.count+2
+                    count: state.count + 2
                 }
             }
 
             case 'decrement': {
                 return {
-                    count: state.count-2
+                    count: state.count - 2
                 }
             }
 
             default: {
                 return state;
             }
-        }
-        
+        }   
     }
+
     const [state, dispatch]= useReducer(reducer, initialState);
     const increment = () => {
-        dispatch({type: "increment"});
+        dispatch({ type: "increment" });
     }
 
     const decrement = () => {
-        dispatch({type: 'decrement'});
+        dispatch({ type: 'decrement' });
     }
+
     return(
         <div id="use-reducer-info">
             <h3> useReducer React Hook Page <Icon.BagPlusFill /> </h3>
             <ul>
-                <li>useReducer hook is a very powerful hook that can simply the complex state management in your react application.</li>
+                <li>useReducer hook is a very powerful hook that can simplify the complex state management in your react application.</li>
                 <li>This hook is verfy helpful for handling the large amount of todo function using the switch case.</li>
             </ul>
 
-            <h6>When yo use the useReducer Hook ?</h6>
+            <h6>When do you use the useReducer Hook ?</h6>
             <p>
-                Actually <b>useState</b> hook is already sufficient for handling the simple state management. <b>But when you wanted to handle the several todo function is one module and this is the place where you can apply the useReducer hook</b>
+                Actually <b>useState</b> hook is already sufficient for handling the simple state management. <b>But when you wanted to handle the several todo function so this is the situation where you can apply the useReducer hook.</b>
             </p>
             <p>The useReducer Hook is similar to the useState Hook.</p>
             <p> The useReducer Hook returns the current state and a dispatch the method. </p>
-            <p> The reducer function contains your custom state logic and the initialState can be a simple value but generally will contain an object. </p>
+            <p> The reducer function contains your custom state logic and the initial state can be a simple value but generally will contain an object. </p>
 
             <div className="alert alert-info">
                 <div className="row">
                     <div className="col-md-8">
-                        <h6>Let's follow the excercise:</h6>
+                        <h6>Let's follow the below steps in order to implement the useReducer Hook:</h6>
                             <ul>
-                                <li>Firslty You need to import <b>useReducer</b> hook from react</li>
+                                <li>Firslty You need to import <b>useReducer</b> hook from the react</li>
                                 <li>Since this is a function so you need to call the function and keep remember we need to pass the two parameters - one is reducer and another one is state</li>
                                 <li>Now we need to make reducer function and inside that we can initialize the todos function and also we will assign the initial state for the second parameter.</li>
                                 <li>Next is that you need to destruct the useRecuder function into array format</li>
@@ -73,7 +74,7 @@ const UseReducerInfo = () => {
                             </ul>
 
                             <ul>
-                                <li>Here switch case statement come into the picture Because we have large amount of todos function so we need to make the case for per case</li>
+                                <li>Here switch case statement come into the picture Because we have large amount of todos function so we need to make the cases for per case</li>
                                 <li>When we are dispaching the function on that we need to confirm our reguest type like what we are looking "Increment" or "Decrement"</li>
                             </ul>
                     </div>
@@ -82,7 +83,6 @@ const UseReducerInfo = () => {
                         <button className="btn btn-success btn-sm" onClick={increment}>Increment By 2</button>
                         <h6>Count: {state.count} </h6>
                         <button className="btn btn-danger btn-sm" onClick={decrement}>Decrement By 2</button>
-                        
                     </div>
                 </div>
             </div>

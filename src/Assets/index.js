@@ -30,6 +30,7 @@ const AppImages = {
     LifeCycleMethodImg: require('./life_cycle_methods.png'),
     HooksLifeCycleMethod: require('./hooks_life_cycle.png'),
     ComputerParts: require('./computer-parts.png'),
+    UseContextImg: require('./use_context_hook_1.png')
 }
 
 export default AppImages;
