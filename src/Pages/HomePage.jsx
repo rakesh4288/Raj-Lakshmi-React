@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import logo from '../Assets/logo.svg';
 import * as Icon from 'react-bootstrap-icons';
 import './PagesStyle.css';
+import AppImages from "../Assets";
 
 const HomePage = () => {
+    const [toggle, setToggle] = useState(false);
+    const toggleHandler = () => {
+        console.log('inside toggleHandler');
+        setToggle(!toggle);
+    }
     return (
         <div id="home-page" className="homePageStyle">
             <section className="pageHeader">
@@ -27,6 +33,7 @@ const HomePage = () => {
                             <li>Huge collection of third party components</li>
                             <li>Handle large application</li>
                             <li>Virtual DOM is helping to increase the performance</li>
+                            <li>One-way data binding keeps everything modular and fast</li>
                         </ul>
                     </div>
 
@@ -56,11 +63,17 @@ const HomePage = () => {
                                 </li>
                             </ul>
                         </div>
+
+                        <h6>
+                            Git Repo: <a href="https://github.com/rakesh4288/Raj-Lakshmi-React" target="_blank" rel="noopener noreferrer"> https://github.com/rakesh4288/Raj-Lakshmi-React</a>
+                        </h6>
+                    </div>
+
+                    <div className="col-md-6">
+                        <h5>What is JSX ?</h5>
+                        <img src={AppImages.WhatIsJSX} className="img-fluid" alt="what-is-jsx"/>
                     </div>
                 </div>
-
-                <h6>Git Repo: <a href="https://github.com/rakesh4288/Raj-Lakshmi-React" target="_blank" rel="noopener noreferrer">
-                    https://github.com/rakesh4288/Raj-Lakshmi-React</a></h6>
 
                 <hr className="bg-primary" />
 
@@ -70,6 +83,27 @@ const HomePage = () => {
                         <h5>All steps - How to install and use:</h5>
                         https://www.npmjs.com/package/react-bootstrap-icons <br />
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/ZwYLOQk-iRo?si=QrS6NLP53AlPglCB" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                    </div>
+
+                    <div className="col-md-6">
+                        <div className={toggle ? 'darkTheme' : 'whiteTheme'}>
+                            <h5>Dark Mode Challenge</h5>
+                            {
+                                toggle ?
+                                <Icon.Sun onClick={toggleHandler} className="whiteIcon"/>
+                                :
+                                <Icon.Moon onClick={toggleHandler} className="darkIcon"/>
+                            }
+
+                            <br/><br/>
+                            <p>
+                                React is an efficient, flexible, and open-source JavaScript library that allows developers to create simple, fast, and scalable web applications. Jordan Walke, a software engineer who was working for Facebook created React. It was first deployed on Facebook’s news feed in 2011 and on Instagram in 2012. Developers with a Javascript background can easily develop web applications with React.
+                            </p>
+
+                            <p>
+                                JSX is basically a syntax extension of regular JavaScript and is used to create React elements. These elements are then rendered to the React DOM. All the React components are written in JSX.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
