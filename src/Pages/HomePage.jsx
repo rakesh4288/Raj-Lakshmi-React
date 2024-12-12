@@ -41,6 +41,10 @@ const HomePage = () => {
                         <h4>Disadvantages: <Icon.List /></h4>
                         <ul>
                             <li>React is a library not a full blown framework</li>
+                            <li>So everything is not available while installing the react like one its major dependencies is not present i.e. <b>react router dom</b></li>
+                            <li>
+                                <b>react router dom</b> is helping to create the Navigation or routing across the application.  
+                            </li>
                             <li>This is library very large and its very difficult to understand for beginner level</li>
                             <li>Coding gets complicated because its uses inline tamplating with JSX</li>
                         </ul>

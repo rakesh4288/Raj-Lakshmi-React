@@ -182,3 +182,18 @@ h6 {
   font-size: 24px;
   color: yellow;
 }
+
+.modalBackDrop {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0; */
+  transition: opacity .15s linear;
+}

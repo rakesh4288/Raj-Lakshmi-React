@@ -22,14 +22,14 @@ const ReactRouterPage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h6>As we know routing is something which is related to navigation. Using routing you can visit to every paged and component of the application</h6>
+                            <h6>As we know routing is something which is related to navigation. Using routing you can visit to every pages and component of the application</h6>
 
                             <h6>React is also providing the routing !</h6>
                             <div className="alert alert-warning">But while installing the react, React is not providing the router package inside your application. You need to install the react separately.</div>
 
                             <div id="installing-router-steps">
                                 <h5>
-                                    Here is the steps to install the react router and setup the router in React Step By Step:
+                                    Here are the steps to install the react router and setup the router Step By Step:
                                 </h5>
                                 <ol type="1">
                                     <li>
@@ -50,17 +50,17 @@ const ReactRouterPage = () => {
                                         <img src={AppImages.RouterIndexWrap} alt="router-index-wrapping" className="img-fluid" />
                                     </li>
                                     <li className="text-danger">
-                                        BrowserRouter is so important Because with the help of this we are providing the full router to our application.
+                                        BrowserRouter is so important Because with the help of this we are binding the full routes to our application.
                                     </li>
                                     <li>Now only two setps are remaining: one is you need to provide the Link where you can click the try to navigate</li>
                                     <li>You need to use the <b>Link component</b> which is easily available inside the same <b>react-router-dom</b></li>
                                     <li>after importing the Link, you need to use the <b>to="/your-url-name"</b> this is the attribute for Link</li>
                                     <li>Once you click this Link you can easily see at the URL whatever you mentioned inside the to attribute same value is coming at the URL</li>
-                                    <li className="text-danger">But at this time you can't see you desired component Why because React not able to understand which component react should show. so this is the last step where you need to configure the your routing.</li>
+                                    <li className="text-danger">But at this time you can't see you desired component Why because React id not able to understand which component should be show. so this is the last step where you need to configure the your routing.</li>
                                 </ol>
 
                                 <hr className="bg-primary"/>
-                                <h6>This one is the last step: Please focus on below</h6>
+                                <h6>Last step to understand:</h6>
                                 <ol type="A">
                                     <li>Finally you need to open the route file like App.js, Here you need to configure the all routes which is required ! </li>
                                     <li>Firstly you need to import the <b>Routes</b> and <b>Route</b> from <b>react-router-dom</b> </li>

@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import * as Icon from 'react-bootstrap-icons';
+import RajLakshmiModal from "../Components/Modal";
 
 const ReactReduxPage = () => {
+    const [show, setShow] = useState(false);
+    const ModalHandler = () => {
+        setShow(!show);
+    }
+
+    const handleClose = () => {
+        setShow(!show);
+    }
     return(
-        <div id="react-redux-page">
+        <div id="react-redux-page" onClick={handleClose}>
             <section className="pageHeader">
                 <div className="container">
                     <div className="row">
@@ -20,7 +29,9 @@ const ReactReduxPage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
-                            <p>React Redux is a state management library for React applications. Redux is simply helps to manage the state of your application</p>
+                            <p>
+                                React Redux is a state management library for React applications. Redux is simply helps to manage the state of your application
+                            </p>
 
                             <p>In other words it is used to manage the data of the application.</p>
 
@@ -31,12 +42,17 @@ const ReactReduxPage = () => {
                             <p>
                                 Uses: It makes it easier to manage state and data. As the complexity of our application increases. At the start, it is hard to understand but it helps to build complex applications. In the beginning, it feels like a lot of work, but it is really helpful.
                             </p>
+
+                            <button className="btn btn-success btn-sm" onClick={ModalHandler}>Show the Modal</button>
+                            { show ? <RajLakshmiModal handleClose = {handleClose} /> : null }
                         </div>
 
                         <div className="col-md-6">
                             <h4>Why learn React Redux?</h4>
-                            <p>
-                                In React development most commonly task is to update the state, mostly you are passing the state from Parent to child component, and sometimes you need to pass the state from child to parent component. Let's check few scenarios:
+                            <div>
+                                <p>
+                                    In React development most commonly task is to update the state, mostly you are passing the state from Parent to child component, and sometimes you need to pass the state from child to parent component. Let's check few scenarios:
+                                </p>
                                 <ul>
                                     <li>
                                         Let's suppose you have some complex code component structure where you are passing the state using the props so sometimes it can be a difficult to manage the props via upwards or downwards.
@@ -46,7 +62,7 @@ const ReactReduxPage = () => {
 
                                     <li>So handle this situation you can use the Redux where Redux provides the centralized store to help the data flows and provides the smooth transitions to update the states</li>
                                 </ul>
-                            </p>
+                            </div>
                         </div>
                     </div>
                 </div>
