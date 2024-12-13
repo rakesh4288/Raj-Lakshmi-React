@@ -31,7 +31,8 @@ const AppImages = {
     HooksLifeCycleMethod: require('./hooks_life_cycle.png'),
     ComputerParts: require('./computer-parts.png'),
     UseContextImg: require('./use_context_hook_1.png'),
-    WhatIsJSX: require('./what_is_JSX.png')
+    WhatIsJSX: require('./what_is_JSX.png'),
+    UseEffectWithAsync: require('./use_effect_with_async.png')
 }
 
 export default AppImages;

@@ -1,4 +1,6 @@
 import React from "react";
+import AppImages from "../Assets";
+import * as Icon from 'react-bootstrap-icons';
 
 const InterviewPart_1 = () => {
     return (
@@ -73,11 +75,53 @@ const InterviewPart_1 = () => {
                 </div>
             </section>
 
+            <section>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <h5>What happens if we pass null or undefined in second argument in useEffect Hook ?</h5>
+                            <h5>What happens if we not pass the second argumment in useEffect</h5>
+                            <p>If you create an useEffect with no second argument or null or undefined then callback will get executed on every render.</p>
+
+                            <p>If you add null or undefined then it will throw the warning via EsLint. </p>
+
+                            <p className="alert alert-warning">
+                                It will not harm your application in case you don't mutate a state inside the callback. If you added the console.log with Hello Pune so it will print on every render.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <h6>How below will get executed ?</h6>
+                            <img src={AppImages.UseEffectWithAsync} className="img-fluid" alt="UseEffectWithAsync" />
+                        </div>
+
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <p>We should to focus on few points: </p>
+                            <ul>
+                                <li>It will throw the error Because async will return the promise.</li>
+                                <li>useEffect() is designed to handle the side effect in a synchronous manner. UseEffect is expecting the synchronous function as in argument to proceed</li>
+                                
+                                <li>You can not directly use the async function with the useEffect Because useEffect hook is a cleanup function.</li>
+                                <li>it is not returning anyrthing like promises</li>
+                            </ul>
+
+                            <p className="alert alert-danger">
+                            <Icon.ArrowRight /> Best approach to use the async function is that - you can put async inside the useEffect() not as in argument.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr className="bg-info"/>
+
             <section id="best-interview-series-1">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                            <h3>Best interview</h3>
+                            <h3>Best interview video ever</h3>
                             <iframe width="100%" height="500" src="https://www.youtube.com/embed/cXHm_7a7gfE?si=hCnAMB0a_xoWuH-7" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                         </div>
                     </div>
