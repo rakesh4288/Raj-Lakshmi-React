@@ -71,6 +71,11 @@ const ReactHookPage = () => {
                                 </li>
 
                                 <li className="list-group-item">
+                                    <Link to="use-callback-page" className="link">
+                                    <Icon.ArrowRight color="red"  /> useCallback</Link>
+                                </li>
+
+                                <li className="list-group-item">
                                     <Link to="use-reducer-page" className="link">
                                         <Icon.ArrowRight color="red"  /> useReducer
                                     </Link>

@@ -4,7 +4,7 @@ import AppImages from "../Assets";
 const UseEffectInfo = () => {
     return(
         <div id="use-effect-info">
-            <h4> A brief introduction of about useEffect Hook</h4>
+            <h4> A brief introduction of about <i>useEffect</i> Hook</h4>
             <p className="alert alert-info">
                 The useEffect Hook allows you to perform side effects in your components.
             </p>

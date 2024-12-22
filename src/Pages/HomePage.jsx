@@ -51,6 +51,24 @@ const HomePage = () => {
                     </div>
                 </div>
 
+                <hr className="bg-primary" />
+
+                <div className="row">
+                    <div className="col-md-6">
+                        <p>
+                            <img src={AppImages.ReactJsAdvantages} className="img-fluid" alt="ReactJsAdvantages" />
+                        </p>
+                    </div>
+
+                    <div className="col-md-6">
+                        <h6>
+                            The current version of React is 19.0.0, which was released on December 5, 2024. React 19 is designed to improve performance and efficiency, and to streamline web development processes. It's compatible with most existing React projects, but there are some changes and deprecated features that developers should be aware of.
+                        </h6>
+
+                        <h5>What is the stable version of React: React 18  which was released on March 29, 2022.</h5>
+                    </div>
+                </div>
+
                 <hr className="bg-danger" />
 
                 <div className="row">

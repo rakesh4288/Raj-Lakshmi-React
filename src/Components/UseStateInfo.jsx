@@ -4,7 +4,7 @@ import AppImages from "../Assets";
 const UseStateInfo = () => {
     return(
         <div id="use-state-info">
-            <h3> UseStateInfo Page</h3>
+            <h3> <i>useState</i> hook</h3>
             <p>The React <b>useState</b> Hook allows us to track state in a function component.</p>
             <p>State generally refers to data or properties that need to be tracking in an application.</p>
             

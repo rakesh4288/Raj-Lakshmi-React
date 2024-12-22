@@ -10,7 +10,7 @@ const districtName = createContext();
 const UseContextInfo = () => {
     return(
         <div id="use-context-info">
-            <h3> UseContextInfo Hook </h3>
+            <h3> <i>useContext</i> Hook </h3>
             <p> 
                 hook is useful for sharing the global info into all its child component. While using this we can ignore to use props because useContext helping to share the global info at very deep level component
             </p>
