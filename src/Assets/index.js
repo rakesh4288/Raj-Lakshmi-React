@@ -33,7 +33,8 @@ const AppImages = {
     UseContextImg: require('./use_context_hook_1.png'),
     WhatIsJSX: require('./what_is_JSX.png'),
     UseEffectWithAsync: require('./use_effect_with_async.png'),
-    ReactJsAdvantages: require('./react_js_advantages.png')
+    ReactJsAdvantages: require('./react_js_advantages.png'),
+    Tshirt:require('./Tshirt.jpg')
 }
 
 export default AppImages;

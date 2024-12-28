@@ -53,7 +53,7 @@ const CheckboxOperationPage = () => {
         console.log('selectedRow =', selectedRow);
     }
     return(
-        <div id="sample-id">
+        <div id="checkbox-page">
             <section className="pageHeader">
                 <div className="container">
                     <div className="row">

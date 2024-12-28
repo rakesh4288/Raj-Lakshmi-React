@@ -42,6 +42,7 @@ import ComputerMaterialList from './Pages/ComputerMaterialList';
 import ChildToParentPage from './Pages/ChildToParentPage';
 import AscDescOrder from './Pages/AscDescOrder';
 import UseCallInfo from './Components/UseCallInfo';
+import RadioSelection from './Pages/RadioSelection';
 
 
 function App() {
@@ -61,6 +62,7 @@ function App() {
           <Route path="/life-cycle-method-in-react" exact Component={LifeCycleMethod}/>
           <Route path="/react-redux-tutorial" exact Component={ReactReduxPage} />
           <Route path="/checkbox-operation-in-react" exact Component={CheckboxOperationPage} />
+          <Route path="/radio-operation-in-react" exact Component={RadioSelection}/>
           <Route path="/complete-form-with-validation" exact Component={CompleteFormPage} />
           <Route path="/how-to-upload-files" exact Component={BasicImageUploadPage} />
           <Route path="/basic-live-search" exact Component={BasicLiveSearchPage} />
