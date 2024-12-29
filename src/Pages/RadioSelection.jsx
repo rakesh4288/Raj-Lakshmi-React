@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import * as Icon from 'react-bootstrap-icons';
 import AppImages from "../Assets";
+import CountdownTimer from "../Components/CountdownTimer";
 
 const RadioSelection = () => {
     const [size, setSize] = useState('');
@@ -71,7 +72,7 @@ const RadioSelection = () => {
                             </div>
                         </div>
 
-                        <div className="col-md-10">
+                        <div className="col-md-6">
                             {
                                 size && (
                                     <div>Selected Size: <b>{size}</b></div>
@@ -105,6 +106,10 @@ const RadioSelection = () => {
                                 : null
                             }
 
+                        </div>
+
+                        <div className="col-md-4">
+                            <CountdownTimer />
                         </div>
                     </div>
                 </div>

@@ -155,6 +155,12 @@ h6 {
   margin: 20px 0;
 }
 
+.lighGreenBG {
+  padding: .75rem;
+  background: #e2f4e2;
+  border-radius: 5px;
+}
+
 .form-group{
   margin-bottom: 15px;
 }
@@ -196,4 +202,8 @@ h6 {
   overflow-y: auto;
   outline: 0; */
   transition: opacity .15s linear;
+}
+
+.countdownTimerInput input {
+  text-align: center;
 }

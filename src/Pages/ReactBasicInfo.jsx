@@ -25,7 +25,7 @@ const ReactBasicInfo = () => {
                         <div className="col-md-8">
                             <h4>How to Use PropTypes in React</h4>
                             <p>
-                                PropTypes are simply a mechanism that ensures that the passed value is of the correct datatype. This makes sure that we don’t receive an error at the very end of our app by the console which might not be easy to deal with.
+                                PropTypes are simply a mechanism that ensures that the passed value is of the correct datatype. This makes sure that we don't receive an error at the very end of our app by the console which might not be easy to deal with.
                             </p>
 
                             <p className="alert alert-warning">
@@ -39,19 +39,19 @@ const ReactBasicInfo = () => {
                             <p className="alert alert-info"> npm install prop-types --save</p>
 
                             <p>
-                                We can use PropTypes to validate any data we are receiving from props. But before using it we will  have to import it as always in our app:
+                                We can use PropTypes to validate any data that which we are receiving via props. But before using it we will  have to import it as always in our app:
                             </p>
 
                             <p className="alert alert-info"> import PropTypes from 'prop-types';</p>
 
                             <p>
-                                PropTypes are also objects with a key and a value pair where the ‘key’ is the name of the prop  while the value represents the type or class by which they are defined.
+                                PropTypes are also objects with a key and a value pair where the 'key' is the name of the prop  while the value represents the type or class by which they are defined.
                             </p>
 
                             <MyInfo myName="Rakesh Shah" age={36} />
 
                             <div className="alert alert-danger">
-                                <p>If your prop type is not correct then you will warning message in console But your application will be running fine</p>
+                                <p>If your prop type is not correct then you will receive a warning message in console But your application will be running fine.</p>
                                 <p>
                                     <b>Warning: Failed prop type: Invalid prop `age` of type `number` supplied to `MyInfo`, expected `string`.</b>
                                 </p>
@@ -60,9 +60,9 @@ const ReactBasicInfo = () => {
                             <table className="table table-striped">
                                 <tbody>
                                     <tr>
-                                        <td> Type</td>
-                                        <td>Class</td>
-                                        <td>Example</td>
+                                        <th> Type</th>
+                                        <th>Class</th>
+                                        <th>Example</th>
                                     </tr>
 
                                     <tr>
