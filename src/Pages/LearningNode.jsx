@@ -1,8 +1,9 @@
 import React from "react";
 import AppImages from "../Assets";
+import FormValidation from "../Components/FormValidation";
 
 const LearningNode = () => {
-    return(
+    return (
         <div id="node-page">
             <section className="pageHeader">
                 <div className="container">
@@ -22,7 +23,7 @@ const LearningNode = () => {
                         <div className="col-md-6">
                             <h6>Node.js is an open source server environment.</h6>
                             <h6>Node.js allows you to run JavaScript on the server.</h6>
-                            <br/><br/>
+                            <br /><br />
                             <h5>What is Node.js?</h5>
                             <ul>
                                 <li>Node.js is an open source server environment</li>
@@ -43,7 +44,7 @@ const LearningNode = () => {
                 </div>
             </section>
 
-            <hr className="bg-primary"/>
+            <hr className="bg-primary" />
 
             <section>
                 <div className="container">
@@ -74,7 +75,7 @@ const LearningNode = () => {
                         </div>
                     </div>
 
-                    <hr/>
+                    <hr />
 
                     <div className="row">
                         <div className="col-md-6">
@@ -95,6 +96,16 @@ const LearningNode = () => {
                                 <li>Node.js files must be initiated on the server before having any effect</li>
                                 <li>Node.js files have extension ".js"</li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-4">
+                            <FormValidation />
                         </div>
                     </div>
                 </div>

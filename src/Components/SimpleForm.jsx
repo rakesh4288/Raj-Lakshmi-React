@@ -28,11 +28,12 @@ const SimpleForm = () => {
     useEffect(() => {
         if(Object.keys(formError).length === 0 && isSubmit){
             console.log('Form data is ready =', formValues);
-            console.log('Form SUbmitted Successfully !');
+            console.log('Form Submitted Successfully !');
             setFormValues({
                 username: '',
                 email: '',
                 password: '',
+                confirmPassword: '',
             });
         }
     }, [formError]);

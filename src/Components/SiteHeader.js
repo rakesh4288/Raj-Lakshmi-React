@@ -49,7 +49,7 @@ const SiteHeader = () => {
 
                         <li className="nav-item dropdown">
                             <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                React Form Handling
+                                Form Handling
                             </Link>
                             <ul className="dropdown-menu">
                                 <li>

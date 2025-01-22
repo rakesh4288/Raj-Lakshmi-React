@@ -37,7 +37,7 @@ const useFetch = (url) => {
                 setIsServerError(error);
                 setIsLoading(false)
             }
-        }
+        }   
 
         fetchingApiData()
     }, [url]);
