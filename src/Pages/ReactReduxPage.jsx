@@ -18,7 +18,7 @@ const ReactReduxPage = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <h4 className="pageHeading">
-                                What is React Redux  <Icon.BorderCenter />
+                                What is the React Redux  <Icon.BorderCenter />
                             </h4>
                         </div>
                     </div>
@@ -33,14 +33,14 @@ const ReactReduxPage = () => {
                                 React Redux is a state management library for React applications. Redux is simply helps to manage the state of your application
                             </p>
 
-                            <p>In other words it is used to manage the data of the application.</p>
+                            <p>In other words React Redux is used to manage the data of the application by keeping centralized store.</p>
 
                             <p>
                                 It provides a predictable state container by connecting React components to a centralized store, simplifying data flow and enabling efficient management of application state across components.
                             </p>
 
                             <p>
-                                Uses: It makes it easier to manage state and data. As the complexity of our application increases. At the start, it is hard to understand but it helps to build complex applications. In the beginning, it feels like a lot of work, but it is really helpful.
+                                Redux Uses: It makes it easier to manage the state and data. As the complexity of our application increases. At the start, it is hard to understand but it helps to build complex applications. In the beginning, it feels like a lot of work, but it is really helpful.
                             </p>
 
                             <button className="btn btn-success btn-sm" onClick={ModalHandler}>Show the Modal</button>
@@ -48,10 +48,10 @@ const ReactReduxPage = () => {
                         </div>
 
                         <div className="col-md-6">
-                            <h4>Why learn React Redux?</h4>
+                            <h4>Why we learn React Redux?</h4>
                             <div>
                                 <p>
-                                    In React development most commonly task is to update the state, mostly you are passing the state from Parent to child component, and sometimes you need to pass the state from child to parent component. Let's check few scenarios:
+                                    In the React development most common task is to update the state, mostly you are passing the state from Parent to child component, and sometimes you need to pass the state from child to parent component. Let's check few scenarios:
                                 </p>
                                 <ul>
                                     <li>

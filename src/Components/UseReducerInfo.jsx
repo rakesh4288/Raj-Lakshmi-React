@@ -66,15 +66,15 @@ const UseReducerInfo = () => {
                             <hr className="bg-primary"/>
 
                             <ul>
-                                <li>After above steps this is the time Where we need to make the <b>reducer function</b></li>
-                                <li> This function is accepting a two parameter one is <b>state</b> and another one is <b>action</b> </li>
-                                <li>action is responsible for finding the manipulating or business logic</li>
+                                <li>After above steps, this is the time Where we need to make the <b>reducer function</b></li>
+                                <li>This function is accepting a two parameter one is <b>state</b> and another one is <b>action</b> </li>
+                                <li>Only action is responsible for finding the manipulating or business logic</li>
                                 <li>Now either you can make a <b>Switch Case statement</b> or <b>if conditoin</b></li>
                                 <li>Now each case you need to verify and make the operation and dispatch the latest value</li>
                             </ul>
 
                             <ul>
-                                <li>Here switch case statement come into the picture Because we have large amount of todos function so we need to make the cases for per case</li>
+                                <li>Here is the switch case statement come into the picture Because we have large amount of todos function so we need to make the cases for per case</li>
                                 <li>When we are dispaching the function on that we need to confirm our reguest type like what we are looking "Increment" or "Decrement"</li>
                             </ul>
                     </div>

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 // import { countryName, stateName, districtName } from '../Components/UseContextInfo';
 
-import { countryName, stateName, districtName } from './UseContextInfo';
+import { countryName, stateName, districtName } from './UseContextInfo'; // Destructuring is the all useContext Hook
 
 const MyDistrict = () => {
     const getCountryName = useContext(countryName);

@@ -30,7 +30,7 @@ const InterviewPart_1 = () => {
                                 <p><b>VirtualDOM in React is a lightweight copy of the actual DOM.</b> Its a virtual representation of the DOM and its optimized the code and take the updates on every object that exists in the original DOM,</p>
 
                                 <p>
-                                    Manipulating DOM is slow,  but manipulating Virtual DOM is very fast because its taking full refresh of the screen.
+                                    Manipulating DOM is slow,  but manipulating Virtual DOM is very fast because its not taking full refresh of the page, only selected node will get changed.
                                 </p>
 
                                 <p>
@@ -48,7 +48,7 @@ const InterviewPart_1 = () => {
                             <div className="alert alert-danger">
                                 <h6>Summary</h6>
                                 <p>
-                                    <b>Virtual DOM plays a major role in boosting the performance</b> of the applications. When the state of a component changes in an application, the Virtual DOM is updated and then compared with its previous state of the component.<b>Only those few objects are changed in the real DOM that was the outcome of the comparison between the previous states and the new states.</b> This feature made things move faster and also reduced cost. We hope you understood the comparison of virtual dom vs real dom and why React uses virtual dom.
+                                    <b>Virtual DOM plays a major role in boosting the performance</b> of the applications. When the state of a component changes in an application, the Virtual DOM is getting updated and then compared with its previous state of the component. This feature made things move faster and also reduced cost. <br/> We hope you understood the comparison of virtual dom vs real dom and why React uses virtual dom.
                                 </p>
                             </div>
                         </div>
@@ -63,7 +63,7 @@ const InterviewPart_1 = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <h4>Difference between props and state ?</h4>
-                            <p>When we working with React components, it's important to understand the differences between state and props. Here, we'll take a look at some common conditions and compare the behavior of props and state.</p>
+                            <p>When we starts working with React components, it's important to understand the differences between state and props. <br/>Here, we'll take a look at some common conditions and compare the behavior of props and state.</p>
                             <table className="table table-striped">
                                 <thead>
                                     <tr>
@@ -74,13 +74,13 @@ const InterviewPart_1 = () => {
 
                                 <tbody>
                                     <tr>
-                                        <td>State is managed within the component</td>
-                                        <td>Props gets passed to the component</td>
+                                        <td>States are managing within the component</td>
+                                        <td>But Props are getting passed to the component</td>
                                     </tr>
 
                                     <tr>
-                                        <td>State can be changed and its mutable</td>
-                                        <td>Where props are readonly its cannot be changed, its immutable</td>
+                                        <td>State can be changed and it's called mutable</td>
+                                        <td>Where props are in readonly mode we cannot be change, it's called immutable</td>
                                     </tr>
 
                                     <tr>
@@ -105,7 +105,7 @@ const InterviewPart_1 = () => {
                             </p>
 
                             <p>
-                                As we can see from the table, props and state have some similarities. They are both plain JavaScript objects that can contain default values, and they are both read-only when using the `this` keyword.
+                                As we can see from the table, <b>props</b> and <b>states</b> have some similarities. They are both plain JavaScript objects that can contain default values, and they are both read-only when using the `this` keyword.
                             </p>
                         </div>
 
@@ -124,7 +124,7 @@ const InterviewPart_1 = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
-                            <h4>React js is bidirectional or unidirectional</h4>
+                            <h4><u>React js is bidirectional or unidirectional</u></h4>
                             <p>
                                 React uses a unidirectional data flow, which means that data flows in one direction, from parent to child components. This is a structural best practice for React applications.
                             </p>

@@ -38,10 +38,10 @@ const ReactHocPage = () => {
                                 <h5>How to call the HOC component:</h5>
                                 <div>
                                     <ul>
-                                        <li>First your need to create one component which you wanted to show after authenticatoin is passed</li>
+                                        <li>First your need to create one component which you wanted to show after the authenticatoin is passed</li>
                                         <li>We have created one simple dashboard component</li>
                                         <li>In any component you need to import the HOC component and pass the simple dashboard component as a parameter. please refer below screenshot</li>
-                                        <li>then finally you need to assgin in any variable and this variable will behave like component and you can use anywhere</li>
+                                        <li>Then finally you need to assgin in any variable and this variable will behave like component and you can use anywhere</li>
                                     </ul>
                                 </div>
                                 <p>

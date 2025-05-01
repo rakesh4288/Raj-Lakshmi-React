@@ -45,13 +45,13 @@ const ControlledUncontrolledMain = () => {
                             <div className="alert alert-info">
                                 <h5>Controlled Component</h5>
                                 <p>
-                                    Controlled Components are those in which form’s data is handled by the component’s state. It takes its current value through props and makes changes through callbacks like onClick, onChange, etc. A parent component manages its own state and passes the new values as props to the controlled component.
+                                    Controlled Components are where form’s data is handled by the component’s state itself. It takes its current value through props and makes changes through callbacks like onClick, onChange, etc. A parent component manages its own state and passes the new values as props to the controlled component.
                                 </p>
 
-                                <Controlled/>
+                                <Controlled/> <br/>
 
                                 <div>
-                                    <h6>Sample Screenshot:</h6>
+                                    <h6>Controlled Component Screenshot:</h6>
                                     <img src={AppImages.ControlledImg} alt="ControlledImg" className="img-fluid" />
                                 </div>
                             </div>
@@ -61,9 +61,9 @@ const ControlledUncontrolledMain = () => {
                             <div className="alert alert-warning">
                                 <h5>Uncontrolled Component</h5>
                                 <p>
-                                    Uncontrolled Components are the components that are not controlled by the React state and are handled by the DOM (Document Object Model). So in order to access any value that has been entered we take the help of refs.
+                                    Uncontrolled Components are the components that are not controlled by the DOM (Document Object Model). So in order to access any value that has been entered we take the help of refs.
                                 </p>
-                                <Uncontrolled/>
+                                <Uncontrolled/> <br/>
                                 <div>
                                     <h6>Uncontrolled Component Screenshot:</h6>
                                     <img src={AppImages.UncontrolledImg} alt="UncontrolledImg" className="img-fluid" />

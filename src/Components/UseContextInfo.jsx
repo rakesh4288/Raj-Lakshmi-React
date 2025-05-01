@@ -3,6 +3,7 @@ import * as Icon from 'react-bootstrap-icons';
 import AppImages from "../Assets";
 import MyCountry from "./MyCountry";
 
+// initialization of useContext Hook, since this is the hook so you need to import it
 const countryName = createContext();
 const stateName = createContext();
 const districtName = createContext();
@@ -12,7 +13,7 @@ const UseContextInfo = () => {
         <div id="use-context-info">
             <h3> <i>useContext</i> Hook </h3>
             <p> 
-                hook is useful for sharing the global info into all its child component. While using this we can ignore to use props because useContext helping to share the global info at very deep level component
+                useContext() hook is useful for sharing the global info into all its child component. While using this we can ignore to use props because useContext helping to share the global info at very deep level component
             </p>
 
             <p>
@@ -41,12 +42,12 @@ const UseContextInfo = () => {
             <Icon.ArrowRight /> Solution is to create the context and React Js providing the useContext hook here to solve this issue</h6>
 
             <ul>
-                <li>Firstly you need to create the context. you need to decide which kind of data you are going to pass in the deep level component</li>
+                <li>Firstly you need to create the context. you need to decide what kind of data you are going to pass in the deep level component</li>
                 <li>After creating the context now you need to use the Provider, so basically providers is wrapping the child component and helping to hold the data to pass</li>
                 <li>In your child component - you need to call the useContext hook for getting the global state.</li>
             </ul>
 
-            <p className="alert alert-warning">Always make sure you are exporting your createContext variable in bottom of component. Because we just need to pass or export the data</p>
+            <p className="alert alert-warning">Always make sure you are exporting your createContext variable in bottom of component. Because without exported we can not import the ueContext</p>
 
             <div className="row">
                 <div className="col-md-6">
@@ -61,7 +62,9 @@ const UseContextInfo = () => {
                     <countryName.Provider value={"India 'Bharat'"}>
                         <stateName.Provider value={"Maharashtra"}>
                             <districtName.Provider value={"Pune"}>
-                                <div className="alert alert-info"><MyCountry/></div>
+                                <div className="alert alert-info">
+                                    <MyCountry/>
+                                </div>
                             </districtName.Provider>
                         </stateName.Provider>
                     </countryName.Provider>
@@ -80,6 +83,7 @@ const UseContextInfo = () => {
             <hr className="bg-success"/>
 
             <iframe width="100%" height="350" src="https://www.youtube.com/embed/s1Ix2jBhCkI?si=aA9v1YVqqo-9FSrr" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            <hr/>
         </div>
     )
 }

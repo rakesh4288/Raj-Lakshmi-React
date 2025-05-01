@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import * as Icon from 'react-bootstrap-icons';
 import SimpleForm from "../Components/SimpleForm";
+import AddRemoveItem from "../Components/AddRemoveItem";
 
 const CompleteFormPage = () => {
     const intialValues = {
@@ -209,6 +210,12 @@ const CompleteFormPage = () => {
                     <div className="row">
                         <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                             <SimpleForm />
+                        </div>
+
+                        <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                            <div className="img-thumbnail">
+                                <AddRemoveItem />
+                            </div>
                         </div>
                     </div>
                 </div>

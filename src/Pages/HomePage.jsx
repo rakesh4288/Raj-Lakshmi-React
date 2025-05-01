@@ -25,6 +25,16 @@ const HomePage = () => {
 
             <div className="container">
                 <div className="row">
+                    <div className="col-md-12">
+                        <h5>
+                            The latest stable version of React is 19.1.0, released on March 28, 2025. React 19 was officially released on December 5, 2024. 
+                        </h5>
+                    </div>
+                </div>
+
+                <hr className="bg-primary"/>
+                
+                <div className="row">
                     <div className="col-md-6">
                         <h4>Advantages <Icon.Plus /></h4>
                         <ul>
@@ -45,7 +55,7 @@ const HomePage = () => {
                             <li>
                                 <b>react router dom</b> is helping to create the Navigation or routing across the application.  
                             </li>
-                            <li>This is library very large and its very difficult to understand for beginner level</li>
+                            <li>This library is very very large and its difficult to understand for beginner level</li>
                             <li>Coding gets complicated because its uses inline tamplating with JSX</li>
                         </ul>
                     </div>
@@ -62,10 +72,10 @@ const HomePage = () => {
 
                     <div className="col-md-6">
                         <h6>
-                            The current version of React is 19.0.0, which was released on December 5, 2024. React 19 is designed to improve performance and efficiency, and to streamline web development processes. It's compatible with most existing React projects, but there are some changes and deprecated features that developers should be aware of.
+                            The current version of React is 19.0.0, which was released on December 5, 2024. React 19 is designed to improve the performance and efficiency, and to streamline the web development processes. <br/><br/> It's compatible with most existing React projects, but there are some changes and deprecated features that developers should be aware of.
                         </h6>
 
-                        <h5>What is the stable version of React: React 18  which was released on March 29, 2022.</h5>
+                        <h5>What is the stable version of React: <br/>React 18 is the stable version which was released on March 29, 2022.</h5>
                     </div>
                 </div>
 
@@ -129,6 +139,26 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
+
+            <hr className="bg-danger" />
+
+            <section>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-6">
+                            <h5>How to optimize React App ?</h5>
+                            <p>Here are some key points By which we can improve the React application:</p>
+
+                            <ul>
+                                <li>Code Spliting</li>
+                                <li>Memoization: You can use the useMemo hook for this</li>
+                                <li>Using Es Lint for better coding experience</li>
+                                <li>Don't use the Inline CSS styling and inline event</li>
+                            </ul>
+                        </div> 
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }

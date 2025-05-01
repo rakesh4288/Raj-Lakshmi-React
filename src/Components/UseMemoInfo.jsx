@@ -27,7 +27,7 @@ const UseMemoInfo = () => {
             <h6>The React useMemo Hook returns a memoized value</h6>
             <h6>The useMemo Hook only runs when one of its dependencies update.</h6>
             <p className="alert alert-warning">
-                The useMemo and useCallback Hooks are similar. The main difference is that useMemo returns a memoized value and useCallback returns a memoized function.
+                The useMemo and useCallback both Hooks are similar. The main difference is that useMemo returns a memoized value and useCallback returns a memoized function.
             </p>
 
             <p>

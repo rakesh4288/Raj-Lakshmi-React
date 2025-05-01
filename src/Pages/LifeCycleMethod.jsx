@@ -45,7 +45,7 @@ const LifeCycleMethod = () => {
                             <p>The React lifecycle is divided into three main phases:</p>
                             <ol>
                                 <li value="1">
-                                    <b className="text-danger">Initialization phase:</b>This is the stage where the component is constructed with the given Props and default state. This is done in the constructor of a Component Class.
+                                    <b className="text-danger">Initialization phase:</b>This is the stage where the component is getting constructed with the given Props and default state. This is done in the constructor of a Component Class.
                                 </li>
                                 <li value="2">
                                     <b className="text-success">Mounting Phase</b>: This phase begins when a component is created and inserted into the DOM.

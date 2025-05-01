@@ -13,11 +13,11 @@ const UseCallInfo = () => {
             </p>
 
             <p>
-                The <b><i>useCallback</i></b> hook is used the memooize a function, ensuring that it only gets recreated when its dependencies change. The <b><i>useCallback</i></b> hook stores a memoized version of any <b>"DoSomthingFunction() which will only change when its dependencies changed.</b>
+                The <b><i>useCallback</i></b> hook is used the memoized a function, ensuring that it only gets recreated when its dependencies change. The <b><i>useCallback</i></b> hook stores a memoized version of any <b>"DoSomthingFunction() which will only change when its dependencies changed.</b>
             </p>
             <h5>Problem</h5>
             <p>
-                One reason to use useCallback is to prevent a component from re-rendering unless its props have changed.
+                One reason to use useCallback is to prevent a component from re-rendering unless its props getting changed.
             </p>
 
             <p>
@@ -25,7 +25,7 @@ const UseCallInfo = () => {
             </p>
 
             <p className="alert alert-success">
-                The useMemo and useCallback Hooks are similar. The main difference is that useMemo returns a memoized value and useCallback returns a memoized function.
+                The useMemo and useCallback both Hooks are similar. The main difference is that useMemo returns a memoized value and useCallback returns a memoized function.
             </p>
 
             <button className="btn btn-success btn-sm" onClick={callbackFuntion}>useCallback</button>

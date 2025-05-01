@@ -10,7 +10,7 @@ const UseEffectInfo = () => {
             </p>
 
             <p className="alert alert-warning">
-                Some examples of side effects are: fetching data, directly updating the DOM, and timers.
+                Some examples of side effects are like: fetching the data, directly updating the DOM, and timers.
                 useEffect accepts two arguments. <br/> <b>The second argument is optional.</b>
             </p>
             

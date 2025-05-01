@@ -63,7 +63,7 @@ function App() {
           <Route path="/react-redux-tutorial" exact Component={ReactReduxPage} />
           <Route path="/checkbox-operation-in-react" exact Component={CheckboxOperationPage} />
           <Route path="/radio-operation-in-react" exact Component={RadioSelection}/>
-          <Route path="/complete-form-with-validation" exact Component={CompleteFormPage} />
+          <Route path="/how-to-handle-form-in-react" exact Component={CompleteFormPage} />
           <Route path="/how-to-upload-files" exact Component={BasicImageUploadPage} />
           <Route path="/basic-live-search" exact Component={BasicLiveSearchPage} />
           <Route path="/react-hook-tutorial/" Component={ReactHookPage}>

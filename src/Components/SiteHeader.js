@@ -59,6 +59,12 @@ const SiteHeader = () => {
                                 </li>
 
                                 <li>
+                                    <Link className="dropdown-item" to="/how-to-handle-form-in-react">
+                                        <Icon.ArrowRight /> React Form Dashboard
+                                    </Link>
+                                </li>
+
+                                <li>
                                     <Link className="dropdown-item" to="/how-to-upload-files">
                                         <Icon.ArrowRight /> Basic File Upload Functionlity
                                     </Link>
@@ -67,12 +73,6 @@ const SiteHeader = () => {
                                 <li>
                                     <Link className="dropdown-item" to="/basic-live-search">
                                         <Icon.ArrowRight /> Live Search By Textbox
-                                    </Link>
-                                </li>
-
-                                <li>
-                                    <Link className="dropdown-item" to="/complete-form-with-validation">
-                                        <Icon.ArrowRight /> Complete Form With Validation
                                     </Link>
                                 </li>
 

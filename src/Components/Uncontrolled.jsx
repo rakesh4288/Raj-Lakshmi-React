@@ -7,7 +7,7 @@ const Uncontrolled = () => {
         alert(`Your Name is - ${yourNameRef.current.value}`);
     }
     return (
-        <form id="controlled-component" onSubmit={handleSubmit}>
+        <form id="uncontrolled-component" onSubmit={handleSubmit}>
             <label>Enter Your Name:</label>
             <input type="text" ref={yourNameRef}/>
             <button type="submit">Submit</button>

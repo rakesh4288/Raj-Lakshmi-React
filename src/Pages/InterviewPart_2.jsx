@@ -22,8 +22,8 @@ const InterviewPart_1 = () => {
                             <h4>What is React Js and its better than other ?</h4>
                             <p>Just because of its Virtual DOM concept. React is using virtual DOM for updating the component. By using Virtual DOM the performance of React is increasing</p>
                             <ul>
-                                <li>It's library for creating the UI components and its NOT a FRAMEWORK</li>
-                                <li>Angular and Vue is completely framework and its following the MVC pattern</li>
+                                <li>It's library for creating the UI components and its not a FRAMEWORK</li>
+                                <li>Angular and Vue is completely framework and its following their own MVC pattern</li>
                                 <li>MVC stands for Model View Controller</li>
                                 <li>But React is following only View Part</li>
                             </ul>
@@ -55,8 +55,8 @@ const InterviewPart_1 = () => {
                         </div>
 
                         <div className="col-md-6">
-                            <h3>Why is Babel Important for ReactJS?</h3>
-                            <p>Babel is essential for ReactJS development for several reasons:</p>
+                            <h3>Why is Babel Important for React JS?</h3>
+                            <p>Babel is essential for React JS development for several reasons:</p>
                             <ul>
                                 <li>
                                     <b>Transforms JSX into JavaScript:</b> React’s syntax extension, JSX, allows developers to write HTML like code in JavaScript. However, browsers cannot execute JSX directly. Babel transpiles JSX code into standard JavaScript that browsers can understand.
@@ -104,7 +104,7 @@ const InterviewPart_1 = () => {
                                 <li>useEffect() is designed to handle the side effect in a synchronous manner. UseEffect is expecting the synchronous function as in argument to proceed</li>
                                 
                                 <li>You can not directly use the async function with the useEffect Because useEffect hook is a cleanup function.</li>
-                                <li>it is not returning anyrthing like promises</li>
+                                <li>it is not returning anything like promises</li>
                             </ul>
 
                             <p className="alert alert-danger">
@@ -123,6 +123,21 @@ const InterviewPart_1 = () => {
                         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                             <h3>Best interview video ever</h3>
                             <iframe width="100%" height="500" src="https://www.youtube.com/embed/cXHm_7a7gfE?si=hCnAMB0a_xoWuH-7" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr/>
+
+            <section>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <h4>What is the Error Bounderies in React ?</h4>
+                            <p>
+                            Error Boundaries are React components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of crashing the entire application. They act like a try/catch block for components, but specifically for errors that occur during rendering, in lifecycle methods, and in constructors.
+                            </p>
                         </div>
                     </div>
                 </div>
