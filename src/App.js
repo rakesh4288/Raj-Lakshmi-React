@@ -29,6 +29,7 @@ import LearningNode from './Pages/LearningNode';
 import ReactBasicInfo from './Pages/ReactBasicInfo';
 import ControlledUncontrolledMain from './Pages/ControlledUncontrolledMain';
 import LifeCycleMethod from './Pages/LifeCycleMethod';
+import ReactFragment from './Pages/ReactFragment';
 import ReactHocPage from './Pages/ReactHocPage';
 import EmployeeDashboard from './Pages/EmployeeDashboard';
 import EmployeeCreate from './Pages/EmployeeCreate';
@@ -78,6 +79,7 @@ function App() {
           <Route path='/http-react-get-call' Component={ReactHttpGetPage} />
           <Route path='/http-react-post-call' Component={ReactHttpPostPage} />
           <Route path='/how-to-perform-ascending-descending-order' Component={AscDescOrder}/>
+          <Route path="/fragment-in-react" Component={ReactFragment} />
           <Route path="/higher-order-component-in-react" exact Component={ReactHocPage} />
           <Route path="/how-to-pass-data-from-child-to-parent-component" exact Component={ChildToParentPage} />
           <Route path="/react-router-tutorial" Component={ReactRouterPage} />

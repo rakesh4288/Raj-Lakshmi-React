@@ -124,7 +124,7 @@ const SiteHeader = () => {
                             </Link>
                             <ul className="dropdown-menu">
                                 <li>
-                                    <Link className="dropdown-item" href="#">
+                                    <Link className="dropdown-item" to="/fragment-in-react">
                                         <Icon.ArrowRight /> React Fragment
                                     </Link>
                                 </li>
