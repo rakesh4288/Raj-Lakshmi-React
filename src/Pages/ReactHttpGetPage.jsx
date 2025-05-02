@@ -3,6 +3,7 @@ import * as Icon from 'react-bootstrap-icons';
 import AppImages from "../Assets";
 import DummyUsers from '../Components/DummyUsers';
 import useFetch from "../Global/useFetch";
+import CountryInfo from "../Components/CountryInfo";
 
 const ReactHttpGetPage = () => {
     const url = "https://dummyapi.online/api/pokemon";
@@ -21,6 +22,12 @@ const ReactHttpGetPage = () => {
                     </div>
                 </div>
             </section>
+
+            <section>
+                <CountryInfo />
+            </section>
+
+            <hr className="bg-primary"/>
 
             <section>
                 <div className="container">
