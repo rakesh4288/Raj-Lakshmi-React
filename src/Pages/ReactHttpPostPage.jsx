@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import * as Icon from 'react-bootstrap-icons';
 import SimplePostCall from "../Components/SimplePostCall";
 import PostIdComponent from "../Components/PostIdComponent";
+import DummyPostCall from "../Components/DummyPostCall";
 
 const ReactHttpPostPage = () => {
     const [page, setPage] = useState(1);
@@ -84,17 +85,21 @@ const ReactHttpPostPage = () => {
                                         <td>{posts.url}</td>
                                     </tr>
 
-                                    <tr>
+                                    {/* <tr>
                                         <td>Image</td>
                                         <td>
                                             <img src={posts.thumbnailUrl} alt={posts.thumbnailUrl} />
                                         </td>
-                                    </tr>
+                                    </tr> */}
                                 </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section>
+                <DummyPostCall />
             </section>
         </div>
     )

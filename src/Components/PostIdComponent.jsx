@@ -15,7 +15,7 @@ const PostIdComponent = ({
                 onChange={handlePageChange}
             />
             <br/>
-            <button type="button" className="btn btn-info btn-sm" onClick={handleSubmit}>Submit</button>
+            <button type="button" className="btn btn-warning btn-sm" onClick={handleSubmit}>Submit</button>
         </>
     )
 }
