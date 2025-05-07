@@ -14,7 +14,7 @@ const CountryInfo = () => {
             try {
                 const response = await fetch(countryUrl);
                 const res = await response.json();
-                // console.log('fetchingCountries =', res);
+                console.log('fetchingCountries =', res);
                 setCountryData(res);
                 setCountryLoader(false);
             }
@@ -41,7 +41,7 @@ const CountryInfo = () => {
         }
     }
 
-    console.log('handleCountry =', selectedCountry);
+    // console.log('handleCountry =', selectedCountry);
 
     // https://restcountries.com/v3.1/name/{name}
     // https://restcountries.com/v3.1/alpha/{code}
@@ -69,12 +69,11 @@ const CountryInfo = () => {
 
     }, [selectedCountry]);
 
-    console.log('oneCountry =', oneCountry.length);
     return (
         <div className="container">
             <div className="row">
                 <div className="col-md-3">
-                    <h5> Country Information: </h5>
+                    <h5> Search Country Name: </h5>
                     <Select
                         className="basic-single"
                         classNamePrefix="select"
@@ -96,56 +95,64 @@ const CountryInfo = () => {
                     {
                         oneCountry.length === 0 ? (
                             <><br /> <div className='alert alert-danger'>Please select any country</div></>
-                        ) : (
-                            <div className='row'>
-                                <div className="col-md-7">
-                                    <table className="table table-striped">
-                                        <tbody>
-                                            <tr>
-                                                <td>Country </td>
-                                                <td colSpan={3}>{oneCountry[0].name.common}</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Capital </td>
-                                                <td>{oneCountry[0].capital}</td>
-                                            </tr>
+                        ) : 
+                        oneCountry.map(( item, index) => {
+                            return (
+                                <div className='row' key={index+1}>
+                                    <div className="col-md-7">
+                                        <table className="table table-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Country </td>
+                                                    <td>{item.name.common}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Capital </td>
+                                                    <td>{item.capital}</td>
+                                                </tr>
 
-                                            <tr>
-                                                <td>Continent </td>
-                                                <td>{oneCountry[0].region}</td>
-                                            </tr>
+                                                <tr>
+                                                    <td>Continent </td>
+                                                    <td>{item.region}</td>
+                                                </tr>
 
-                                            <tr>
-                                                <td>Timezone </td>
-                                                <td colSpan={3}>{oneCountry[0].timezones}</td>
-                                            </tr>
+                                                <tr>
+                                                    <td>Timezone </td>
+                                                    <td>{item.timezones}</td>
+                                                </tr>
 
-                                            <tr>
-                                                <td>Population </td>
-                                                <td>{oneCountry[0].population}</td>
-                                            </tr>
+                                                {/* <tr>
+                                                    <td>Currency </td>
+                                                    <td>{ Object.values(item.currencies[0].symbol) }</td>
+                                                </tr> */}
 
-                                            <tr>
-                                                <td>Google Map </td>
-                                                <td>
-                                                    <a
-                                                        href={oneCountry[0].maps.googleMaps}
-                                                        target='_blank'
-                                                        rel="noreferrer"
-                                                    >
-                                                        {oneCountry[0].maps.googleMaps}
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                                                <tr>
+                                                    <td>Population </td>
+                                                    <td>{item.population}</td>
+                                                </tr>
 
-                                <div className="col-md-5">
-                                    <img src={oneCountry[0].flags.svg} alt='country flag' className='img-fluid img-thumbnail' />
-                                </div>
+                                                <tr>
+                                                    <td>Google Map </td>
+                                                    <td>
+                                                        <a
+                                                            href={item.maps.googleMaps}
+                                                            target='_blank'
+                                                            rel="noreferrer"
+                                                        >
+                                                            {item.maps.googleMaps}
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div className="col-md-5">
+                                        <img src={oneCountry[0].flags.svg} alt='country flag' className='img-fluid img-thumbnail' />
+                                    </div>
                             </div>
-                        )
+                            )
+                        })
                     }
                 </div>
             </div>

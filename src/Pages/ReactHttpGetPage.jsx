@@ -1,13 +1,30 @@
-import React from "react";
+import React, {useEffect} from "react";
 import * as Icon from 'react-bootstrap-icons';
 import AppImages from "../Assets";
 import DummyUsers from '../Components/DummyUsers';
-import useFetch from "../Global/useFetch";
+// import useFetch from "../Global/useFetch";
 import CountryInfo from "../Components/CountryInfo";
 
 const ReactHttpGetPage = () => {
-    const url = "https://dummyapi.online/api/pokemon";
-    const { apiData, isLoading, isServerError} = useFetch(url);
+    // const url = "https://dummyapi.online/api/pokemon";
+    // const { apiData, isLoading, isServerError} = useFetch(url);
+    useEffect(() => {
+        // ComponentDidMount()
+        // this will runs on when component is loaded
+    });
+
+    useEffect(() => {
+        // this is called ComponentDidUpdate()
+        // This hooks will occur when we are passing any dependecies
+        // [] this blank array is optional and giving opportunity for updating phase
+    },[]);
+
+    useEffect(() => {
+        return () => {
+            // this is called ComponentWillUmount()
+            // This is the final phase of component and its called when you need to unmount any business logic
+        }
+    }, []);
     return(
         <div id="react-http-get-page">
             <section className="pageHeader">
@@ -44,7 +61,7 @@ const ReactHttpGetPage = () => {
                 </div>
             </section>
             
-            <section className="grayBgWithPinkBorder">
+            {/* <section className="grayBgWithPinkBorder">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-4">
@@ -99,7 +116,7 @@ const ReactHttpGetPage = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </div>
     )
 }

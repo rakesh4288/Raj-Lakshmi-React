@@ -40,7 +40,7 @@ const LifeCycleMethod = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <p>The React lifecycle is an essential concept for any React developer to understand. Each component in React has a lifecycle that you can monitor and manipulate during its three main phases: <b>Mounting</b>, <b>Updating</b>, and <b>Unmounting</b>. </p>
+                            <p>The React lifecycle is an essential concept for any React developer to understand the concept. Each component in React has a lifecycle that you can monitor and manipulate during its three main phases: <b>Mounting</b>, <b>Updating</b>, and <b>Unmounting</b>. </p>
 
                             <p>The React lifecycle is divided into three main phases:</p>
                             <ol>
