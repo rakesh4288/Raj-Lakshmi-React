@@ -24,6 +24,8 @@ const UseContextInfo = () => {
             <p>
                 <b>Detail Explanation:</b> Let's suppose you have multiple child component like parent to child or nested child so before useContext you need to use the props for passing the data. so in this approach your component structure will look like prop drilling. so here React js providing the useContext API for avoiding props drilling. Because it will become very difficult to handle this prop drilling.
             </p>
+            
+            <h6>Prop Drilling are something like when you are passing props with parent to child component or nested child component or nth child component so this is called prop drilling.</h6>
 
             <hr className="bg-primary"/>
 

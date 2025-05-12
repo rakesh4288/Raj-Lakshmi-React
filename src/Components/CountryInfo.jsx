@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import Select from 'react-select';
 
 const CountryInfo = () => {
@@ -69,6 +69,11 @@ const CountryInfo = () => {
 
     }, [selectedCountry]);
 
+    const inputRef = useRef(null);
+    useEffect(() => {
+        inputRef.current.focus();
+    }, []);
+
     return (
         <div className="container">
             <div className="row">
@@ -81,6 +86,7 @@ const CountryInfo = () => {
                         name="countries"
                         options={countriesList}
                         onChange={handleCountry}
+                        ref={inputRef}
                     />
                 </div>
 

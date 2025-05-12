@@ -47,8 +47,7 @@ const UseReducerInfo = () => {
             <p>
                 Actually <b>useState</b> hook is already sufficient for handling the simple state management. <b>But when you wanted to handle the several todo function so this is the situation where you can apply the useReducer hook.</b>
             </p>
-            <p>The useReducer Hook is similar to the useState Hook.</p>
-            <p> The useReducer Hook returns the current state and a dispatch the method. </p>
+            <p className="text-danger"> The useReducer Hook returns the current state and a dispatch the method. </p>
             <p> The reducer function contains your custom state logic and the initial state can be a simple value but generally will contain an object. </p>
 
             <div className="alert alert-info">
@@ -57,7 +56,7 @@ const UseReducerInfo = () => {
                         <h6>Let's follow the below steps in order to implement the useReducer Hook:</h6>
                             <ul>
                                 <li>Firslty You need to import <b>useReducer</b> hook from the react</li>
-                                <li>Since this is a function so you need to call the function and keep remember we need to pass the two parameters - one is reducer and another one is state</li>
+                                <li>Since this is a function so you need to call the function and keep remember we need to pass the two parameters - one is reducer and another one is the initial state</li>
                                 <li>Now we need to make reducer function and inside that we can initialize the todos function and also we will assign the initial state for the second parameter.</li>
                                 <li>Next is that you need to destruct the useRecuder function into array format</li>
                                 <li>First will be the <b>State</b> and other one is <b>dispatch</b></li>

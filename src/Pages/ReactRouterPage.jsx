@@ -35,7 +35,7 @@ const ReactRouterPage = () => {
                                     <li>
                                         As we know the React does provides the router packages while installing the Router so, in that case we need to install the router packages explicitly.
                                     </li>
-                                    <li>Here is the NPM command for installing the same : <b>npm i react-router-dom</b> and current version is that - v6</li>
+                                    <li>Here is the NPM command for installing the same : <b>npm i react-router-dom</b> and current version is that - V7.6.0 But the stable version is 6</li>
                                     <li>
                                         Here you can see we installed the required packages. <br/>
                                         <img src={AppImages.RouterPackages} alt="router-packages" className="img-fluid" />

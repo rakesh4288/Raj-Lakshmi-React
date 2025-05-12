@@ -1,10 +1,12 @@
 import React, {useState} from 'react';
 import AppImages from "../Assets";
 import ChildComponent from '../Components/ChildComponent';
+import ColorChild from '../Components/ColorChild';
 
 const ChildToParentPage = () => {
     const [storeFamilyData, setStoreFamilyData] = useState([]);
     const [newBgColor, setNewBgColor] = useState(null);
+    const [newBgColorCode, setNewBgColorCode] = useState('#ededed');
     const getFamilyData = (data) => {
         // console.log('getFamilyData =', data);
         setStoreFamilyData(data);
@@ -14,6 +16,16 @@ const ChildToParentPage = () => {
     const getBgColor = (data) => {
         console.log('getBgColor =', data);
         setNewBgColor(data);
+    }
+
+    const changeBgColorCode = (colorValue) => {
+        console.log('changeBgColorCode =', colorValue);
+        setNewBgColorCode(colorValue);
+    }
+
+    const directOnPage = (e) => {
+        const selectedColor = e.target.value
+        setNewBgColorCode(selectedColor);
     }
     return (
         <div id='child-to-parent-page'>
@@ -30,7 +42,7 @@ const ChildToParentPage = () => {
             <section>
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12">
+                        <div className="col-md-6">
                             <h5>Let's check how can we pass the data from child to parent:</h5>
                             <p>Using callback function we can pass the data from Child to Parent</p>
                             <ChildComponent getFamilyClick={getFamilyData} changeBgColor={getBgColor}  />
@@ -46,6 +58,17 @@ const ChildToParentPage = () => {
 
                             <div style={{width: '200px', height: '200px', border: '1px solid #ededed', background: `${newBgColor}`}}>
 
+                            </div>
+                        </div>
+
+                        <div className="col-md-6 border-left">
+                            <h5>Change Color by Child Component using Callback:</h5>
+                            <ColorChild changeBgColorClick={changeBgColorCode} /> 
+                            <hr className='bg-primary'/>
+                            or choose here:  <input type='color' onChange={directOnPage} />
+                            
+                            <div
+                                style={{height: '200px', width: '100%', borderRadius: '5px', backgroundColor: `${newBgColorCode}`}}> 
                             </div>
                         </div>
                     </div>

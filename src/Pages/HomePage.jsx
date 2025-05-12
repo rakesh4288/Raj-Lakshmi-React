@@ -93,6 +93,10 @@ const HomePage = () => {
                                 <li>
                                     <Link className="link" to="/interview-question-part-2">Interview Question Part 2</Link>
                                 </li>
+
+                                <li>
+                                    <Link className="link" to="/interview-question-part-3">Interview Question Part 3</Link>
+                                </li>
                             </ul>
                         </div>
 
@@ -151,6 +155,9 @@ const HomePage = () => {
 
                             <ul>
                                 <li>Code Spliting</li>
+                                <li>Using React Fragment</li>
+                                <li>Use key attribute in list</li>
+                                <li>Lazy Loading Images</li>
                                 <li>Memoization: You can use the useMemo hook for this</li>
                                 <li>Using Es Lint for better coding experience</li>
                                 <li>Don't use the Inline CSS styling and inline event</li>

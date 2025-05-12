@@ -3,6 +3,9 @@ import AppImages from "../Assets";
 import * as Icon from 'react-bootstrap-icons';
 
 const InterviewPart_1 = () => {
+    const checkSyntheticEvent = (e) => {
+        console.log('checkSyntheticEvent =', e);
+    }
     return (
         <div id="interview-part-1">
             <section className="pageHeader">
@@ -136,22 +139,35 @@ const InterviewPart_1 = () => {
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <h4>What is the Error Bounderies in React ?</h4>
                             <p>
-                            Error Boundaries are React components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of crashing the entire application. They act like a try/catch block for components, but specifically for errors that occur during rendering, in lifecycle methods, and in constructors.
+                                Error Boundaries are the React components that catchs the JavaScript errors anywhere in their child component tree, we can log those errors and display a fallback UI instead of crashing the entire application. They act like a try/catch block for the components, but specifically for errors that occur during rendering, in lifecycle methods and in constructors.
                             </p>
+
                             <h5>How Error Boundaries Work?</h5>
-                            <p>Error boundaries work similarly to try/catch in JavaScript.  If an error occurs within a component's rendering process or lifecycle methods,</p>
-                            <p>React looks for the nearest error boundary in the component tree.</p>
+                            <p>
+                                Error boundaries work similarly as the try/catch works in the JavaScript. If an error occurs within a component's rendering process or lifecycle methods
+                            </p>
+                            <p>
+                                React looks for the nearest error boundary in the component tree.
+                            </p>
                         </div>
 
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <div className="bg-dark p-2 mb-2">
-                                <h4 className="text-white">What are synthetic events in ReactJS ?</h4>
+                                <h4 className="text-white">What are Synthetic Events in ReactJS ?</h4>
                                 <p className="text-white">
-                                    Synthetic events are cross-browser wrappers around the all browsers. The main purpose of creating the synthetic event is to perform cross browser issue. 
+                                    Synthetic events are the cross-browser wrappers around the all browsers. The main purpose of creating the synthetic event is to perform cross browser issues. 
                                 </p>
 
                                 <p className="text-white">
-                                    In tradition web development we were using onclick event for JavaScript But in React side we are using onClick camel cases, so basically this is helping to perform the Cross Browser issue. In every browser while clicking it should provide the basic details about event
+                                    In traditional web development we were using onclick event for JavaScript But in React side we are using onClick camel cases, so basically this is helping to perform the Cross Browser issue. In every browser while clicking it should provide the basic details about event
+                                </p>
+
+                                <p>
+                                    <button onClick={checkSyntheticEvent} className="btn btn-warning btn-sm">Click Me</button>
+                                </p>
+
+                                <p>
+                                    <img src={AppImages.SyntheticEventImg} alt="SyntheticEventImg" className="img-fluid" />
                                 </p>
 
                                 <p className="text-white">

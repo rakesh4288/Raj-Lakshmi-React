@@ -45,7 +45,7 @@ const ControlledUncontrolledMain = () => {
                             <div className="alert alert-info">
                                 <h5>Controlled Component</h5>
                                 <p>
-                                    Controlled Components are where form’s data is handled by the component’s state itself. It takes its current value through props and makes changes through callbacks like onClick, onChange, etc. A parent component manages its own state and passes the new values as props to the controlled component.
+                                Controlled Components are the components which is totaly handled by the react. while working with form element if you are using state for handling the input values so it is called the controlled component Because you are assigning the value to state and this is states controlled by the React Life Cycle Hook and its called while rendering the component.
                                 </p>
 
                                 <Controlled/> <br/>

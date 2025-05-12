@@ -80,6 +80,12 @@ const ReactHookPage = () => {
                                         <Icon.ArrowRight color="red"  /> useReducer
                                     </Link>
                                 </li>
+
+                                <li className="list-group-item">
+                                    <Link to="use-ref-page" className="link">
+                                        <Icon.ArrowRight color="red"  /> useRef
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
                     </div>

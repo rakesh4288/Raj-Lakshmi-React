@@ -35,7 +35,8 @@ const AppImages = {
     UseEffectWithAsync: require('./use_effect_with_async.png'),
     ReactJsAdvantages: require('./react_js_advantages.png'),
     Tshirt:require('./Tshirt.jpg'),
-    ReactFragment: require('./react_fragment.png')
+    ReactFragment: require('./react_fragment.png'),
+    SyntheticEventImg: require('./SyntheticEvent.png')
 }
 
 export default AppImages;

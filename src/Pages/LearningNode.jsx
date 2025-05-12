@@ -22,14 +22,14 @@ const LearningNode = () => {
                     <div className="row">
                         <div className="col-md-6">
                             <h6>Node.js is an open source server environment.</h6>
-                            <h6>Node.js allows you to run JavaScript on the server.</h6>
+                            <h6>Node.js allows you to run JavaScript on the server side.</h6>
                             <br /><br />
                             <h5>What is Node.js?</h5>
                             <ul>
                                 <li>Node.js is an open source server environment</li>
                                 <li>Node.js is free to use</li>
                                 <li>Node.js runs on various platforms like <i>Windows, Linux, Unix, Mac OS X, etc.</i></li>
-                                <li>Node.js uses JavaScript on the server</li>
+                                <li>Node.js uses JavaScript on the server side</li>
                             </ul>
 
                             <div className="alert alert-warning">

@@ -24,6 +24,7 @@ import UseEffectInfo from './Components/UseEffectInfo';
 import UseContextInfo from './Components/UseContextInfo';
 import UseMemoInfo from './Components/UseMemoInfo';
 import UseReducerInfo from './Components/UseReducerInfo';
+import UseRefInfo from './Components/UseRefInfo';
 import ReactRouterPage from './Pages/ReactRouterPage';
 import LearningNode from './Pages/LearningNode';
 import ReactBasicInfo from './Pages/ReactBasicInfo';
@@ -38,6 +39,7 @@ import EmployeeEdit from './Pages/EmployeeEdit';
 import EmployeeList from './Pages/EmployeeList';
 import InterviewPart_1 from './Pages/InterviewPart_1';
 import InterviewPart_2 from './Pages/InterviewPart_2';
+import InterviewPart_3 from './Pages/InterviewPart_3';
 import ComputerMaterialDashboard from './Pages/ComputerMaterialDashboard';
 import ComputerMaterialList from './Pages/ComputerMaterialList';
 import ChildToParentPage from './Pages/ChildToParentPage';
@@ -74,6 +76,7 @@ function App() {
             <Route path="use-memo-page" Component={UseMemoInfo} />
             <Route path="use-callback-page" Component={UseCallInfo} />
             <Route path="use-reducer-page" Component={UseReducerInfo} />
+            <Route path="use-ref-page" Component={UseRefInfo}/>
           </Route>
           <Route path='/react-http-tutorial' Component={ReactHttpPage} />
           <Route path='/http-react-get-call' Component={ReactHttpGetPage} />
@@ -92,6 +95,7 @@ function App() {
           </Route>
           <Route path="/interview-question-part-1" Component={InterviewPart_1} />
           <Route path="/interview-question-part-2" Component={InterviewPart_2} />
+          <Route path="/interview-question-part-3" Component={InterviewPart_3} />
           <Route path="computer-material-dashboard" Component={ComputerMaterialDashboard}>
             <Route path="product-list" element={<ComputerMaterialList />} />
           </Route>
