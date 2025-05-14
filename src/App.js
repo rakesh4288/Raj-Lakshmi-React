@@ -46,6 +46,7 @@ import ChildToParentPage from './Pages/ChildToParentPage';
 import AscDescOrder from './Pages/AscDescOrder';
 import UseCallInfo from './Components/UseCallInfo';
 import RadioSelection from './Pages/RadioSelection';
+import DebouncingPage from './Pages/DebouncingPage';
 
 
 function App() {
@@ -85,6 +86,7 @@ function App() {
           <Route path="/fragment-in-react" Component={ReactFragment} />
           <Route path="/higher-order-component-in-react" exact Component={ReactHocPage} />
           <Route path="/how-to-pass-data-from-child-to-parent-component" exact Component={ChildToParentPage} />
+          <Route path="/what-is-debouncing-and-throttling" exact Component={DebouncingPage} />
           <Route path="/react-router-tutorial" Component={ReactRouterPage} />
           <Route path="/node-tutorial" Component={LearningNode} />
           <Route path="/employees-dashboard" element={<EmployeeDashboard />}>

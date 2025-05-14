@@ -128,14 +128,22 @@ const SiteHeader = () => {
                                         <Icon.ArrowRight /> React Fragment
                                     </Link>
                                 </li>
+                                
                                 <li>
                                     <Link className="dropdown-item" to="/higher-order-component-in-react">
                                         <Icon.ArrowRight /> Higher Order Component
                                     </Link>
-                                    </li>
+                                </li>
+
                                 <li>
-                                <Link className="dropdown-item" to="/how-to-pass-data-from-child-to-parent-component">
+                                    <Link className="dropdown-item" to="/how-to-pass-data-from-child-to-parent-component">
                                         <Icon.ArrowRight /> How to pass data from Child to Parent
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link className="dropdown-item" to="/what-is-debouncing-and-throttling">
+                                        <Icon.ArrowRight /> Debouncing and Throttling in React
                                     </Link>
                                 </li>
                             </ul>

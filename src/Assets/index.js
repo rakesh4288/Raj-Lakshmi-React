@@ -36,7 +36,10 @@ const AppImages = {
     ReactJsAdvantages: require('./react_js_advantages.png'),
     Tshirt:require('./Tshirt.jpg'),
     ReactFragment: require('./react_fragment.png'),
-    SyntheticEventImg: require('./SyntheticEvent.png')
+    SyntheticEventImg: require('./SyntheticEvent.png'),
+    Debouncing_Img_1: require('./debouncing_1.png'),
+    Debouncing_Img_2: require('./debouncing_2.png'),
+    PostOfficeImg: require('./PostOfficeImg.jpg'),
 }
 
 export default AppImages;
