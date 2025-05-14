@@ -17,7 +17,7 @@ const HomePage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h1 className="pageHeading"> React Js <img src={logo} className="App-logo" alt="logo" /> </h1>
+                            <h1 className="pageHeading"> React JS <img src={logo} className="App-logo" alt="logo" /> </h1>
                         </div>
                     </div>
                 </div>
@@ -27,7 +27,7 @@ const HomePage = () => {
                 <div className="row">
                     <div className="col-md-12">
                         <h5>
-                            The latest stable version of React is 19.1.0, released on March 28, 2025. React 19 was officially released on December 5, 2024. 
+                            The latest stable version of React is 19.1.0, <br/>released on March 28, 2025. React 19 was officially released on December 5, 2024. 
                         </h5>
                     </div>
                 </div>

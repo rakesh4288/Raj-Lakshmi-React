@@ -36,7 +36,7 @@ const InterviewPart_3 = () => {
                 </div>
             </section>
 
-            <section className="bg-dark p-4">
+            <section className="bg-dark p-4 mb-4">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -59,6 +59,19 @@ const InterviewPart_3 = () => {
                             <img src={AppImages.SyntheticEventImg} alt="SyntheticEventImg" className="img-fluid img-thumbnail" />
                         </p>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="container">
+                <div className="row">
+                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <h4>What is the content negotiation in web api ?</h4>
+                        
+                    </div>
+
+                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    
                     </div>
                 </div>
             </section>

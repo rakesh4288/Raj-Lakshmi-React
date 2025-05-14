@@ -8,8 +8,18 @@ const ReactHookPage = () => {
             <section className="pageHeader">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12">
-                            <h3 className="pageHeading"> React Hook Dashboard !! <Icon.Badge3dFill  /> </h3>
+                        <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                            <h3 className="pageHeading">
+                                React Hook Dashboard !! <Icon.Badge3dFill  /> 
+                            </h3>
+                        </div>
+
+                        <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                            <div className="text-end mt-2">
+                                <Link to="/how-to-create-custom-hook" className="btn btn-warning btn-sm">
+                                    Go to Custom Hook
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -90,6 +100,10 @@ const ReactHookPage = () => {
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section className="curvBg">
+
             </section>
         </div>
     )

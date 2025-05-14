@@ -47,6 +47,7 @@ import AscDescOrder from './Pages/AscDescOrder';
 import UseCallInfo from './Components/UseCallInfo';
 import RadioSelection from './Pages/RadioSelection';
 import DebouncingPage from './Pages/DebouncingPage';
+import ReactCustomHook from './Pages/ReactCustomHook';
 
 
 function App() {
@@ -70,6 +71,7 @@ function App() {
           <Route path="/how-to-handle-form-in-react" exact Component={CompleteFormPage} />
           <Route path="/how-to-upload-files" exact Component={BasicImageUploadPage} />
           <Route path="/basic-live-search" exact Component={BasicLiveSearchPage} />
+          <Route path="/how-to-create-custom-hook" Component={ReactCustomHook}/>
           <Route path="/react-hook-tutorial/" Component={ReactHookPage}>
             <Route path="use-state-page" Component={UseStateInfo} />
             <Route path="use-effect-page" Component={UseEffectInfo} />

@@ -40,6 +40,9 @@ const AppImages = {
     Debouncing_Img_1: require('./debouncing_1.png'),
     Debouncing_Img_2: require('./debouncing_2.png'),
     PostOfficeImg: require('./PostOfficeImg.jpg'),
+    useSelectorImg: require('./use_selector.png'),
+    useCount_img_1: require('./useCount_1.png'),
+    useCount_img_2: require('./useCount_2.png'),
 }
 
 export default AppImages;
