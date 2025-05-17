@@ -43,6 +43,7 @@ const AppImages = {
     useSelectorImg: require('./use_selector.png'),
     useCount_img_1: require('./useCount_1.png'),
     useCount_img_2: require('./useCount_2.png'),
+    Lazy_Loading_Suspense: require('./Lazy_Loading_1.png'),
 }
 
 export default AppImages;

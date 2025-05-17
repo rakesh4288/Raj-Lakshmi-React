@@ -101,10 +101,6 @@ const ReactHookPage = () => {
                     </div>
                 </div>
             </section>
-
-            <section className="curvBg">
-
-            </section>
         </div>
     )
 }

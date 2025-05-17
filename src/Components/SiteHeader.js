@@ -146,6 +146,12 @@ const SiteHeader = () => {
                                         <Icon.ArrowRight /> Debouncing and Throttling in React
                                     </Link>
                                 </li>
+
+                                <li>
+                                    <Link className="dropdown-item" to="/what-is-lazy-loading-in-react">
+                                        <Icon.ArrowRight /> Lazy Loading in React
+                                    </Link>
+                                </li>
                             </ul>
                         </li>
 

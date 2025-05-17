@@ -157,8 +157,14 @@ const HomePage = () => {
                                 <li>Code Spliting</li>
                                 <li>Using React Fragment</li>
                                 <li>Use key attribute in list</li>
-                                <li>Lazy Loading Images</li>
-                                <li>Memoization: You can use the useMemo hook for this</li>
+                                <li>
+                                    <Link to="/what-is-lazy-loading-in-react">Lazy Loading Component</Link>
+                                </li>
+                                <li>
+                                    <Link to="/react-hook-tutorial/use-memo-page">
+                                        Memoization: You can use the useMemo hook for this 
+                                    </Link>
+                                </li>
                                 <li>Using Es Lint for better coding experience</li>
                                 <li>Don't use the Inline CSS styling and inline event</li>
                             </ul>
