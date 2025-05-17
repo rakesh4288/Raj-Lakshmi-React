@@ -68,6 +68,10 @@ body{
   margin-bottom: 0;
 }
 
+h2, h3, h4, h5, h6 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+}
+
 h3 {
   color: #cc0995;
 }
@@ -79,14 +83,16 @@ h4 {
 
 h5{
   /* color: #0e4371; */
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important; */
   color: #0d61dc
 }
 
 h6 {
   /* color: #5f45e0; */
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important; */
   color: #2206ad;
+  line-height: 1.5rem !important;
+  font-size: 14px !important;
 }
 
 /* .App {

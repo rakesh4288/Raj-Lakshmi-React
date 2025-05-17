@@ -44,6 +44,10 @@ const AppImages = {
     useCount_img_1: require('./useCount_1.png'),
     useCount_img_2: require('./useCount_2.png'),
     Lazy_Loading_Suspense: require('./Lazy_Loading_1.png'),
+    PropDrilling_vs_useContext_ReactRedux: require('./propDrilling_useContext_ReactRedux.png'),
+    ReconciliationImg: require('./reconciliation.jpg'),
+    Web_Api_JSON_response: require('./Web_Api_JSON_Response.jpg'),
+    Web_Api_XML_response: require('./Web_Api_XML_Response.jpg'),
 }
 
 export default AppImages;

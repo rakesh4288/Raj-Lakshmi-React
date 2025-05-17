@@ -76,7 +76,7 @@ const ReactReduxPage = () => {
                                 When the states are changing inside the Redux store, so the useSelector automatically re-renders, ensuring that it always displays the most up-to-date information.
                             </p>
 
-                            <button className="btn btn-success btn-sm" onClick={ModalHandler}>Use Selector</button>
+                            <button className="btn btn-success btn-sm" onClick={ModalHandler}>What is Use Selector ?</button>
                             { show ? <RajLakshmiModal handleClose = {handleClose} /> : null }
                         </div>
 
@@ -84,6 +84,62 @@ const ReactReduxPage = () => {
                             <p>
                                 <img src={AppImages.useSelectorImg} alt='useSelectorImg' className='img-fluid' />
                             </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="bg-dark pt-2 pb-2">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <h4 className="text-white">What are Reducers in Redux ?</h4>
+                            <h6 className="text-white">
+                                In Redux, reducers are pure functions that handle state logic, accepting the initial state and action type to update and return the state, facilitating changes in React view components.
+                            </h6>
+
+                            <p className="text-white">
+                                In a simple way Reducers are a function which is helping to getting the updated states from the reducer function. Because in Redux we are stroing the states in a common file and this common states are serving to the across application.
+                            </p>                            
+                        </div>
+
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <h6 className="text-white">Here is a syntax:</h6>
+                            <pre className="bg-warning p-2">
+                                <span>(State,action) =&gt; newState</span><br/>
+                            </pre>
+
+                            <p className="bg-warning p-2 text-dark">
+                                If you see here we are passing the states and also sending the action type as parameter. So what type of the action we are requesting from Redux Store with the help of reducers only that states are returning 
+                            </p>
+                        </div>
+                    </div>
+
+                    <hr className="bg-warning"/>
+
+                    <div className="row">
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <h6 className="text-warning">Prop Drilling Vs useContext Vs React Redux</h6>
+                            <p>
+                                <img src={AppImages.PropDrilling_vs_useContext_ReactRedux} alt="PropDrilling_vs_useContext_ReactRedux" className="img-fluid img-thumbnail"/>
+                            </p>                           
+                        </div>
+
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div className="text-white">
+                                <p>
+                                    useContext and Redux are both state management tools in React. The use of these two is totally based on the requirement. React JS by default providing the useContext where is Redux you need to install separately. 
+                                </p>
+
+                                <p>
+                                     <b>useContext </b>is helping to solve the Prop Drilling issue. If you have multiple component which is combined with each other like Parent to child component at deep level and you need to get the one state from the top level component so in this case useContext Hook is really helpful for solving this
+                                </p>
+
+                                <p>
+                                    <b>Redux</b> is a more powerful library which is helping for managing the state. This is keeping the centralized state where any component can interact with centralized store and retrieve the latest states. <br/>
+                                    This is more useful for complex state requirements in the applications.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
