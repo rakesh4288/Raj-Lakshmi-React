@@ -89,7 +89,7 @@ const ReactReduxPage = () => {
                 </div>
             </section>
 
-            <section className="bg-dark pt-2 pb-2">
+            <section className="bg-dark pt-4 pb-4 mt-4 mb-4">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">

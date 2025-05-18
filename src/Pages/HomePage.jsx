@@ -87,15 +87,15 @@ const HomePage = () => {
                             <h6> React Interview Questions <Icon.Infinity /></h6>
                             <ul>
                                 <li>
-                                    <Link className="link" to="/interview-question-part-1">Interview Question Part 1</Link>
+                                    <Link className="link" to="/interview-series-part-1">Interview Series Part 1</Link>
                                 </li>
 
                                 <li>
-                                    <Link className="link" to="/interview-question-part-2">Interview Question Part 2</Link>
+                                    <Link className="link" to="/interview-series-part-2">Interview Series Part 2</Link>
                                 </li>
 
                                 <li>
-                                    <Link className="link" to="/interview-question-part-3">Interview Question Part 3</Link>
+                                    <Link className="link" to="/interview-series-part-3">Interview Series Part 3</Link>
                                 </li>
                             </ul>
                         </div>
@@ -146,22 +146,22 @@ const HomePage = () => {
 
             <hr className="bg-danger" />
 
-            <section>
+            <section className="darkBlueBgWithPinkBorder">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
-                            <h5>How to optimize React App ?</h5>
+                            <h5 className="text-white">How to optimize React App ?</h5>
                             <p>Here are some key points By which we can improve the React application:</p>
 
-                            <ul>
+                            <ul className="text-white">
                                 <li>Code Spliting</li>
                                 <li>Using React Fragment</li>
                                 <li>Use key attribute in list</li>
                                 <li>
-                                    <Link to="/what-is-lazy-loading-in-react">Lazy Loading Component</Link>
+                                    <Link className="text-white" to="/what-is-lazy-loading-in-react">Lazy Loading Component</Link>
                                 </li>
                                 <li>
-                                    <Link to="/react-hook-tutorial/use-memo-page">
+                                    <Link className="text-white" to="/react-hook-tutorial/use-memo-page">
                                         Memoization: You can use the useMemo hook for this 
                                     </Link>
                                 </li>

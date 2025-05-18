@@ -48,6 +48,9 @@ const AppImages = {
     ReconciliationImg: require('./reconciliation.jpg'),
     Web_Api_JSON_response: require('./Web_Api_JSON_Response.jpg'),
     Web_Api_XML_response: require('./Web_Api_XML_Response.jpg'),
+    Server_Side_Rendering: require('./Server_Side_Rendering.png'),
+    Client_Side_Rendering: require('./Client_Side_Rendering.png'),
+    React_Strict_Mode: require('./React_Strict_Mode.png')
 }
 
 export default AppImages;

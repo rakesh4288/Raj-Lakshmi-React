@@ -2,7 +2,7 @@ import React from "react";
 import AppImages from "../Assets";
 import * as Icon from 'react-bootstrap-icons';
 
-const InterviewPart_1 = () => {
+const InterviewSeries_2 = () => {
     const checkSyntheticEvent = (e) => {
         console.log('checkSyntheticEvent =', e);
     }
@@ -12,7 +12,7 @@ const InterviewPart_1 = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h4 className="pageHeading"> React Interview Questions Answer Part 2</h4>
+                            <h4 className="pageHeading"> React Interview Questions Answer Part 2 <Icon.Fullscreen/></h4>
                         </div>
                     </div>
                 </div>
@@ -149,6 +149,10 @@ const InterviewPart_1 = () => {
                             <p>
                                 React looks for the nearest error boundary in the component tree.
                             </p>
+
+                            <hr className="bg-primary"/>
+
+                           
                         </div>
 
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -178,8 +182,44 @@ const InterviewPart_1 = () => {
                     </div>
                 </div>
             </section>
+
+            <hr className="bg-primary"/>
+        
+            <section className="container pt-4 pb-5">
+                <div className="row">
+                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <h5>What is React Strict Mode ? <Icon.Book/></h5>
+                        <h6>
+                            StrictMode is a react component which is used to identify the potential issues and finding the bug in the react code. It is helping to provides warning and alerts after running a check on complete code.
+                        </h6>
+
+                        <h6>
+                            React StrictMode goal is to improve the quality of the react application by avoiding the common mistakes in the development.
+                        </h6>
+
+                        <pre className="lighGreenBG">
+                            <span>&lt;React.StrictMode&gt;</span><br/><span>    &lt;App /&gt;</span><br/><span>&lt;/React.StrictMode&gt;</span>
+                        </pre>
+
+                        <div>
+                            <h6>Explanation for right side screenshot:</h6> 
+                            <p>
+                                In the above example, the StrictMode checks will be applicable only on Component2 and Component3 (as they the child components of React.StrictMode). Contrary to this, Component1 and Component4 will not have any checks.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <h6>Full Component Screenshot:</h6>
+                        <p>
+                            <img src={AppImages.React_Strict_Mode} alt="React_Strict_Mode"
+                            className="img-fluid img-thumbnail" />
+                        </p>
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }
 
-export default InterviewPart_1;
+export default InterviewSeries_2;

@@ -9,7 +9,7 @@ const InterviewPart_3 = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h4 className="pageHeading"> React Interview Questions Answer Part 3</h4>
+                            <h4 className="pageHeading"> React Interview Questions Answer Part 3 <Icon.Fullscreen/></h4>
                         </div>
                     </div>
                 </div>
@@ -108,18 +108,18 @@ const InterviewPart_3 = () => {
                         </p>
                     </div>
 
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                    <div class="alert alert-info">
+                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div className="alert alert-info">
                         <h6>Content-Type: application/json</h6>
                         <p>
-                        <img src={AppImages.Web_Api_JSON_response} alt="Web API JSON" class="img-fluid img-thumbnail" />
+                        <img src={AppImages.Web_Api_JSON_response} alt="Web API JSON" className="img-fluid img-thumbnail" />
                         </p>
 
-                        <hr class="bg-dark"/>
+                        <hr className="bg-dark"/>
 
                         <h6>Content-Type: application/xml</h6>
                         <p>
-                        <img src={AppImages.Web_Api_XML_response} alt="Web API XML" class="img-fluid img-thumbnail" />
+                        <img src={AppImages.Web_Api_XML_response} alt="Web API XML" className="img-fluid img-thumbnail" />
                         </p>
                     </div>
                     </div>
@@ -132,7 +132,7 @@ const InterviewPart_3 = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <h2>What is Reconciliation in ReactJS?</h2>
+                            <h2>What is Reconciliation in React JS?</h2>
                             <h6>
                                 Reconciliation is one of the most important concepts by which React. It is helping to update the DOM in very efficiently manner. This mechanism ensures that UI updates are optimized, minimizing performance overhead and improving the user experience
                             </h6>
@@ -149,8 +149,6 @@ const InterviewPart_3 = () => {
                         </div>
 
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            
-
                             <p>
                                 <img src={AppImages.ReconciliationImg} alt="Reconciliation - Img" className="img-fluid img-thumbnail" />
                             </p>
@@ -158,6 +156,93 @@ const InterviewPart_3 = () => {
                     </div>
                 </div>
             </section>
+
+            <hr className="bg-danger"/>
+
+            <section id="ssr-csr" className="pt-4 pb-5">  
+                <div className="container">
+                    <div className="row">
+                        <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <h3>What is Server Side Rendering and Client Side Rendering in React JS?</h3>
+                            <p>
+                                In the world of web development, there are several approaches to rendering web pages: server-side rendering, client-side rendering, and server-side generation. Each approach has its own advantages and disadvantages, and choosing the right one for your project depends on your specific needs and goals.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <h4>Server-Side Rendering</h4>
+                            <p>
+                                Server-side rendering (SSR) is the process of rendering the web pages on the server side and sending the fully-rendered HTML and related assets to the client side.
+                            </p>
+
+                            <p>
+                                In this approach, the server generates the HTML, inclusing its all assets and including any dynamic data, and sends it to the client as a complete page. After this client is displays the page without any further processing.
+                            </p>
+
+                            <p><b>One example of a popular SSR framework is Next.js. </b></p>
+
+                            <h5>Advantages:</h5>
+                            <ul>
+                                <li>Faster initial load times</li>
+                                <li>Improved SEO optimization</li>
+                            </ul>
+
+                            <h5>Disadvantages:</h5>
+                            <ul>
+                                <li>This can be take more resources and maintenance</li>
+                                <li>
+                                    While loading the web page slowly If user make another server request on may be this will take more time to load.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                           <p>
+                                <img src={AppImages.Server_Side_Rendering} alt="Server Side Rendering" className="img-fluid" />
+                           </p>
+                        </div>
+                    </div>
+
+                    <hr className="bg-primary"/>
+
+                    <div className="row">
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                           <p>
+                                <img src={AppImages.Client_Side_Rendering} alt="Client Side Rendering" className="img-fluid" />
+                           </p>
+                        </div>
+
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <h4>Client-Side Rendering</h4>
+                            <p>
+                                Client-side rendering (CSR) is the process of rendering the web pages on the client using JavaScript.
+                            </p>
+
+                            <p>
+                                In this approach, the server sends the initial HTML file, but the client then uses JavaScript to dynamically update the page as needed. This allows for more interactive and responsive web pages, as the client can update specific parts of the page without needing to reload the entire page.
+                            </p>
+
+                            <p><b>One example of a popular CSR framework is React.</b></p>
+
+                            <h5>Advantages:</h5>
+                            <ul>
+                                <li>More dynamic and interactive web applications</li>
+                                <li>Can provide a smoother and more seamless user experience</li>
+                                <li>Can reduce the need for additional server requests</li>
+                            </ul>
+
+                            <h5>Disadvantages:</h5>
+                            <ul>
+                                <li>Can be less SEO-friendly, as search engines may have difficulty indexing client-rendered content</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr className="bg-danger"/>
         </div>
     )
 }

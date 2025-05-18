@@ -1,14 +1,15 @@
 import React from "react";
 import AppImages from "../Assets";
+import * as Icon from 'react-bootstrap-icons';
 
-const InterviewPart_1 = () => {
+const InterviewSeries_1 = () => {
     return (
         <div id="interview-part-1">
             <section className="pageHeader">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h4 className="pageHeading"> React Interview Questions Answer Part 1</h4>
+                            <h4 className="pageHeading"> React Interview Questions Answer Part 1 <Icon.Fullscreen/></h4>
                         </div>
                     </div>
                 </div>
@@ -179,4 +180,4 @@ const InterviewPart_1 = () => {
     )
 }
 
-export default InterviewPart_1;
+export default InterviewSeries_1;

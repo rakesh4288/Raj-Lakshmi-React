@@ -37,9 +37,9 @@ import EmployeeCreate from './Pages/EmployeeCreate';
 import EmployeeDetails from './Pages/EmployeeDetails';
 import EmployeeEdit from './Pages/EmployeeEdit';
 import EmployeeList from './Pages/EmployeeList';
-import InterviewPart_1 from './Pages/InterviewPart_1';
-import InterviewPart_2 from './Pages/InterviewPart_2';
-import InterviewPart_3 from './Pages/InterviewPart_3';
+import InterviewSeries_1 from './Pages/InterviewSeries_1';
+import InterviewSeries_2 from './Pages/InterviewSeries_2';
+import InterviewSeries_3 from './Pages/InterviewSeries_3';
 import ComputerMaterialDashboard from './Pages/ComputerMaterialDashboard';
 import ComputerMaterialList from './Pages/ComputerMaterialList';
 import ChildToParentPage from './Pages/ChildToParentPage';
@@ -99,9 +99,9 @@ function App() {
             <Route path="details/:id" element={<EmployeeDetails />} />
             <Route path="edit/:id" element={<EmployeeEdit />} />
           </Route>
-          <Route path="/interview-question-part-1" Component={InterviewPart_1} />
-          <Route path="/interview-question-part-2" Component={InterviewPart_2} />
-          <Route path="/interview-question-part-3" Component={InterviewPart_3} />
+          <Route path="/interview-series-part-1" Component={InterviewSeries_1} />
+          <Route path="/interview-series-part-2" Component={InterviewSeries_2} />
+          <Route path="/interview-series-part-3" Component={InterviewSeries_3} />
           <Route path="computer-material-dashboard" Component={ComputerMaterialDashboard}>
             <Route path="product-list" element={<ComputerMaterialList />} />
           </Route>
