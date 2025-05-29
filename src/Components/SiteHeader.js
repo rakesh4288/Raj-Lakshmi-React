@@ -169,7 +169,7 @@ const SiteHeader = () => {
                             </Link>
                             <ul className="dropdown-menu">
                                 <li>
-                                    <Link className="dropdown-item" to="/employees-dashboard">
+                                    <Link className="dropdown-item" to="/employees-dashboard/create">
                                         <Icon.ArrowRight /> Employees Crud
                                     </Link>
                                 </li>
@@ -177,12 +177,6 @@ const SiteHeader = () => {
                                 <li>
                                     <Link className="dropdown-item" to="/computer-material-dashboard">
                                         <Icon.ArrowRight /> Computer Accessories
-                                    </Link>
-                                </li>
-
-                                <li>
-                                    <Link className="dropdown-item" to="/employees-dashboard">
-                                        <Icon.ArrowRight /> Movies Crud
                                     </Link>
                                 </li>
                             </ul>

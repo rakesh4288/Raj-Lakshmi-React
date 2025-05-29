@@ -13,7 +13,7 @@ const UseRefInfo = () => {
             </p>
 
             <p>
-                <code class="w3-codespan">useRef()</code> only returns one item. It returns an Object called <code class="w3-codespan">current</code>.
+                <code>useRef()</code> only returns one item. It returns an Object called <code>current</code>.
             </p>
 
             <img src={AppImages.UncontrolledImg} alt="UncontrolledImg" className="img-fluid" /> <br/><br/>

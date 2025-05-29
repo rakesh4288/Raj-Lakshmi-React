@@ -99,7 +99,7 @@ const ReactReduxPage = () => {
                             </h6>
 
                             <p className="text-white">
-                                In a simple way Reducers are a function which is helping to getting the updated states from the reducer function. Because in Redux we are stroing the states in a common file and this common states are serving to the across application.
+                                In a simple way - Reducers are a function which is helping to getting the updated states from the reducer function. Because in Redux we are stroing the states in a common file and this common states are serving to the across application.
                             </p>                            
                         </div>
 
@@ -110,7 +110,7 @@ const ReactReduxPage = () => {
                             </pre>
 
                             <p className="bg-warning p-2 text-dark">
-                                If you see here we are passing the states and also sending the action type as parameter. So what type of the action we are requesting from Redux Store with the help of reducers only that states are returning 
+                                If you see here we are passing the states and also sending the action type as parameter. So what type of the action we are requesting from Redux Store with the help of reducers only that states are returning.
                             </p>
                         </div>
                     </div>
@@ -140,6 +140,62 @@ const ReactReduxPage = () => {
                                     This is more useful for complex state requirements in the applications.
                                 </p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="pt-4 pb-4 mt-4 mb-4">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <h5>Redux Thunk vs. Redux Saga: Choosing the Right Middleware <Icon.Activity/></h5>
+                            <h6>
+                                Redux is a predictable state container for React apps. This is widely used in React application for managing the application state globaly.
+                            </h6>
+
+                            <h6 className="text-danger">
+                                Redux Thunk and Redux Saga are the middleware libraries in React applications for handling the side effect such as asynchronous API calls and some complex state transitions and many more. Both offering a solution for handling a asynchronous operations.
+                            </h6>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <h6><b>Redux Thunk:</b></h6>
+                            <p>
+                                Redux Thunk is a middleware of React applications which is allow to write the actions creators that returns a functions instead of an action.
+                            </p>
+
+                            <p>
+                                This function receives the store's dispatch method, which is used to dispatch the regular synchornous actions.
+                            </p>
+
+                            <h6>Features:</h6>
+                            <ul>
+                                <li>Simple setup and integration with existing Redux applications.</li>
+                                <li>This is Best for simpler use cases and smaller applications.</li>
+                                <li>Easier to understand for developers familiar with Redux.</li>
+                            </ul>
+                        </div>
+
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <h6><b>Redux Saga:</b></h6>
+                            <p>
+                                Redux Saga is also a middleware of React applications that main aim to make a side effect in Redux application. This is easier to manage and more efficient to execute
+                            </p>
+
+                            <p>
+                                It uses ES6 generators to make asynchronous flow control more readable and easier to debug.
+                            </p>
+
+                            <h6>Features:</h6>
+
+                            <ul>
+                                <li>This is a more powerful and flexible for complex asynchronous flows.</li>
+                                <li>Built-in support for cancellation, which can be useful for handling user interactions like cancellation of ongoing requests.</li>
+                                <li>Allows for easier testing due to the use of generator functions.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

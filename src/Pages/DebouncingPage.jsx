@@ -40,6 +40,7 @@ const DebouncingPage = () => {
     }, [pincode]);
 
     const handleInput = (e) => {
+        e.preventDefault();
         setPincode(e.target.value)
     }
     return (
@@ -85,7 +86,7 @@ const DebouncingPage = () => {
 
                 <div className="row">
                     <div className='col-xl-4 col-lg-4 col-md-4 col-sm-12'>
-                        <form className='alert alert-info'>
+                        <div className='alert alert-info'>
                             <label className='label'>Enter Indian Pincode: </label>
                             <input
                                 type='search'
@@ -93,7 +94,7 @@ const DebouncingPage = () => {
                                 onChange={handleInput}
                                 // onChange={(e) => setPincode(e.target.value)}
                             />
-                        </form>
+                        </div>
 
                         <div>
                             <img src={AppImages.PostOfficeImg} alt='PostOfficeImg' className='img-fluid' />
@@ -125,8 +126,8 @@ const DebouncingPage = () => {
                                         <th>SNO</th>
                                         <th>Name</th>
                                         <th>Pincode</th>
-                                        <th>Region</th>
                                         <th>District</th>
+                                        <th>Region</th>                                        
                                         <th>State</th>
                                     </tr>
                                 </thead>
@@ -138,8 +139,8 @@ const DebouncingPage = () => {
                                                     <td>{index + 1}</td>
                                                     <td>{item.Name}</td>
                                                     <td>{item.Pincode}</td>
-                                                    <td>{item.Region}</td>
                                                     <td>{item.District}</td>
+                                                    <td>{item.Region}</td>
                                                     <td>{item.State}</td>
                                                 </tr>
                                             )

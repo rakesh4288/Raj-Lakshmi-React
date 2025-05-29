@@ -2,7 +2,7 @@ import React from "react";
 import AppImages from "../Assets";
 import * as Icon from 'react-bootstrap-icons';
 
-const InterviewPart_3 = () => {
+const InterviewSeries_3 = () => {
     return (
         <div id="interview-part-1">
             <section className="pageHeader">
@@ -65,8 +65,8 @@ const InterviewPart_3 = () => {
             </section>
 
             <section className="container">
-                <div class="row">
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <div className="row">
+                    <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                         <h4>What is the content negotiation in web api ?</h4>
                         <p>
                             Content negotiation is the best format for getting the response from the server. When a client is requesting the data from the server so server offer few options to send the data like JSON format or XML format. 
@@ -74,8 +74,8 @@ const InterviewPart_3 = () => {
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div className="row">
+                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <h5>Here's a more detailed explanation:</h5>
                         <h6>The Problem:</h6>
                         <ul>
@@ -247,4 +247,4 @@ const InterviewPart_3 = () => {
     )
 }
 
-export default InterviewPart_3;
+export default InterviewSeries_3;

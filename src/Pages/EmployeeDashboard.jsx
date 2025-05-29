@@ -2,6 +2,7 @@ import React from "react";
 import * as Icon from 'react-bootstrap-icons';
 import { Link, Outlet } from 'react-router-dom';
 import DynamicInput from "../Components/DynamicInput";
+import SimpleDataFilter from '../Components/SimpleDataFilter';
 
 const EmployeeDashboard = () => {
     return (
@@ -25,8 +26,12 @@ const EmployeeDashboard = () => {
                             <div className="float-start">
                                 <h6>Here is the command for running json-server</h6>
                                 <pre className="alert alert-warning">json-server --watch db.json --port 8000</pre>
-                                https://blog.logrocket.com/using-react-toastify-style-toast-messages/ <br />
-                                https://deadsimplechat.com/blog/react-toastify-the-complete-guide/
+                                <a href="https://blog.logrocket.com/using-react-toastify-style-toast-messages/" target="_blank" rel="noreferrer">
+                                    https://blog.logrocket.com/using-react-toastify-style-toast-messages/
+                                </a> <br />
+                                <a href="https://deadsimplechat.com/blog/react-toastify-the-complete-guide/" target="_blank" rel="noreferrer">
+                                    https://deadsimplechat.com/blog/react-toastify-the-complete-guide/
+                                </a>
                             </div>
 
                             <div className="float-end">
@@ -45,6 +50,8 @@ const EmployeeDashboard = () => {
                 <Outlet />
             </section>
 
+            <hr className="bg-info"/>
+
             <section id="dynamic-input">
                 <div className="container">
                     <div className="row">
@@ -61,6 +68,12 @@ const EmployeeDashboard = () => {
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <hr className="bg-info"/>
+
+            <section className="container pt-3 pb-3">
+                <SimpleDataFilter/>
             </section>
         </div>
     )

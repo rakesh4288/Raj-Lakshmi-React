@@ -19,11 +19,11 @@ const EmployeeDetails = () => {
     return (
         <div className="container">
             <div className="row">
-                <div className="col-md-4">
+                <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                     {empdata &&
                         <div>
                             <h5>Full Details of <b>{empdata.name}</b> <Icon.Postcard /> </h5>
-                            <table className="table table-striped">
+                            <table className="table table-striped table-bordered">
                                 <tbody>
                                     <tr>
                                         <td>Employee Id</td>
@@ -57,6 +57,10 @@ const EmployeeDetails = () => {
                             </Link>
                         </div>
                     }
+                </div>
+
+                <div className="col-xl-8 col-lg-8 col-md-5 col-sm-12">
+                    image
                 </div>
             </div>
         </div>

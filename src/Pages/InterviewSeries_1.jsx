@@ -1,6 +1,7 @@
 import React from "react";
 import AppImages from "../Assets";
 import * as Icon from 'react-bootstrap-icons';
+import DerivedStates from "../Components/DerivedStates";
 
 const InterviewSeries_1 = () => {
     return (
@@ -99,7 +100,7 @@ const InterviewSeries_1 = () => {
                     </div>
 
                     <div className="row">
-                        <div className="col-md-6">
+                        <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
                             <h5>State vs Props in React: A Comparison Table</h5>
                             <p>
                                 <img src={AppImages.StatePropsCamparison} alt="state props" className="img-fluid" />
@@ -110,7 +111,7 @@ const InterviewSeries_1 = () => {
                             </p>
                         </div>
 
-                        <div className="col-md-6">
+                        <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
                             <p>
                                 <img src={AppImages.StateVsProps} alt="state props" className="img-fluid" />
                             </p>
@@ -171,6 +172,170 @@ const InterviewSeries_1 = () => {
                         <div className="col-md-6">
                             <p>
                                 <img src={AppImages.ReactDataApproach} alt="react-data-approach" className="img-fluid" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr className="bg-primary"/>
+
+            <section id="bidirectional-vs-unidirectional">
+                <div className="container">
+                    <div className="row">
+                        <div className='col-xl-12 col-lg-12 col-md-12 col-sm-12'>
+                            <h3>Difference between package.json and package-lock.json ?</h3>
+                        </div>
+                    </div>  
+
+                    <div className="row">
+                        <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
+                            <h5><b>package.json</b></h5>
+                            <p>
+                                records the minimum version that your app needs. If you update the versions of a particular package, the change is not going to be reflected here.
+                            </p>
+
+                            <p>
+                                So lets say I am having some library with ^3.0.0 in package.json and then library team releases version 3.5.2 and now when someone clone my repo and runs npm install in that directory they will get the version 3.5.2 (You can also put ~ instead of ^ it will update to latest patch version)
+                            </p>
+
+                            <ul>
+                                <li>This file contains information about the project like defining project properties, description, author & license information, scripts, etc.</li>
+                                <li>There are two types of dependencies, first is the dependencies and another one is dev dependencies.</li>
+                                <li>The dev dependencies are required during the development process and the others are needed to run the application.</li>
+                            </ul>
+                        </div>
+
+                        <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
+                            <h5><b>package-lock.json</b></h5>
+                            <p>
+                                Actually it is recording the exact version of each installed package in angular application which allows you to re-install them. Future installs will be able to build an identical dependency tree.
+                            </p>
+
+                            <p>
+                                The package-lock.json is solely used to lock dependencies to a specific version number.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr className="bg-success"/>
+
+            <section id="bidirectional-vs-unidirectional">
+                <div className="container">
+                    <div className="row">
+                        <div className='col-xl-12 col-lg-12 col-md-12 col-sm-12'>
+                            <h3>Difference between dependencies vs dev dependencies ?</h3>
+                            <p>
+                                Every web application project typically includes a file called package.json, which serves as a central repository for important project metadata. This file holds information such as dependencies, dev dependencies means development dependencies.
+                            </p>
+                        </div>
+                    </div>  
+
+                    <div className="row">
+                        <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
+                            <h6><b>Dependencies</b></h6>
+                            <p>
+                                Dependencies are mostly required for production build and core functionality of React
+                            </p>
+
+                            <div>
+                                <ul>
+                                    <li> 
+                                        <b>Production Use:</b> These are essential for running the application in production.
+                                    </li>
+
+                                    <li>
+                                        <b>Automatic Installation:</b> These packages are automatically installed when you run npm install.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
+                            <h6><b>Dev Dependencies</b></h6>
+                            <p>
+                                In package.json file, there is an object called as dev Dependencies and it consists of all the packages that are used in the project in its development phase and not in the production or testing environment
+                            </p>
+
+                            <p>
+                                So, whenever you want to install any library that is required only in your development phase then you can find it in the dev Dependencies object. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr className="bg-success"/>
+
+            <section id="derived-state" className="pt-3 mb-4">
+                <div className="container">
+                    <div className="row">
+                        <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
+                            <h5>What is Derived States ?</h5>
+                            <h6>
+                                Derived states is basically a state value that can be computed from the existing states or props instead of storing a independently.
+                            </h6>
+
+                            <h6>
+                                Actually this is a way to avoid the redundant data and keep the states straight forward in the component.
+                            </h6>
+
+                            <DerivedStates />
+                        </div>
+
+                        <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
+                            <div className="border p-2">
+                                <h6>Here in below screenshot: <br/>
+                                    Total variable coming from Derived States, as soon as User states get updated so total variable will also be updated.
+                                </h6>
+                                <p>
+                                    <img  src={AppImages.DerivedStatesImg_1} alt={AppImages.DerivedStatesImg_1} className="img-fluid"/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr className="bg-primary"/>
+
+            <section id="derived-state" className="pt-3 mb-4">
+                <div className="container">
+                    <div className="row">
+                        <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
+                            <h5>What is getDerivedStatesFromProps ?</h5>
+                            <h6>
+                                The getDerivedStateFromProps method is a static lifecycle method used when the state of a component depends on changes of props. <b>It is a static method that is called just before render() method in both mounting and updating phase in React.</b>
+                            </h6>
+
+                            <pre className="alert alert-warning">
+                                <span>getDerivedStateFromProps(props, state) </span>
+                            </pre>
+
+                            <h6>Parameters:</h6>
+                            <ul>
+                                <li value="1">
+                                    <b>props:</b>
+                                    <span>The updated props which is passed from the parent component</span>
+                                </li>
+                                <li value="2">
+                                    <b>state:</b><span> The current state of the component</span>
+                                </li>
+                            </ul>
+
+                            <h6>Return:</h6>
+                            <p>
+                                We have to return an object to update state or null to indicate that nothing has changed.
+                            </p>
+
+                            
+                        </div>
+
+                        <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
+                            <p>
+                                <img  src={AppImages.DerivedStatesImg_2} alt={AppImages.DerivedStatesImg_2} className="img-fluid"/>
                             </p>
                         </div>
                     </div>

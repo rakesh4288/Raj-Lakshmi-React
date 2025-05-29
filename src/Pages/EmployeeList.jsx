@@ -50,6 +50,7 @@ const EmployeeList = () => {
             })
         }
     }
+    
     useEffect(() => {
         fetchingEmpData();
     }, []);
@@ -65,7 +66,12 @@ const EmployeeList = () => {
                             </div>
                         </div>
                     )}
-                    <table className="table table-striped">
+
+                    {
+                       empData.length < 1 ? (
+                        <div className="alert alert-danger"> No records available !! </div>
+                       ) : (
+                            <table className="table table-striped">
                         <thead>
                             <tr className="bg-dark text-white">
                                 <td>SL No</td>
@@ -99,6 +105,8 @@ const EmployeeList = () => {
                             }
                         </tbody>
                     </table>
+                       ) 
+                    }
                 </div>
             </div>
             <ToastContainer position="top-right" />

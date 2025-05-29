@@ -35,7 +35,9 @@ const AppImages = {
     UseEffectWithAsync: require('./use_effect_with_async.png'),
     ReactJsAdvantages: require('./react_js_advantages.png'),
     Tshirt:require('./Tshirt.jpg'),
-    ReactFragment: require('./react_fragment.png'),
+    React_Fragment_1: require('./react_fragment_1.png'),
+    React_Fragment_2: require('./react_fragment_2.png'),
+    React_Fragment_3: require('./react_fragment_3.png'),
     SyntheticEventImg: require('./SyntheticEvent.png'),
     Debouncing_Img_1: require('./debouncing_1.png'),
     Debouncing_Img_2: require('./debouncing_2.png'),
@@ -50,7 +52,9 @@ const AppImages = {
     Web_Api_XML_response: require('./Web_Api_XML_Response.jpg'),
     Server_Side_Rendering: require('./Server_Side_Rendering.png'),
     Client_Side_Rendering: require('./Client_Side_Rendering.png'),
-    React_Strict_Mode: require('./React_Strict_Mode.png')
+    React_Strict_Mode: require('./React_Strict_Mode.png'),
+    DerivedStatesImg_1: require('./Derived_States_1.png'),
+    DerivedStatesImg_2: require('./Derived_States_2.png')
 }
 
 export default AppImages;

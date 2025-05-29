@@ -21,7 +21,7 @@ const ReactFragment = () => {
                     <div className='row'>
                         <div className='col-md-12'>
                             <h6>
-                                ReactJS Fragments are a way to group multiple elements without adding an extra node to the DOM. It allows you to return multiple child elements from a component without wrapping them in a parent container
+                                React JS Fragments are a way to group the multiple elements without adding any extra node to the parent element in DOM. It allows you to return the multiple child elements from a component without wrapping them in a parent container
                             </h6>
                         </div>
                     </div>
@@ -45,9 +45,39 @@ const ReactFragment = () => {
                         </div>
 
                         <div className='col-md-6'>
-                            All Images
                             <p>
-                                <img src={AppImages.ReactFragment} alt={ReactFragment} className='img-fluid' />
+                                <img src={AppImages.React_Fragment_1} alt={AppImages.React_Fragment_1} className='img-fluid' />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className='whiteBgWithVioletBorder'>
+                <div className="container">
+                    <div className='row'>
+                        <div className='col-xl-12 col-lg-12 col-md-12 col-sm-12'>
+                            <h4>What is the difference betweem two images:</h4>
+                            <h6>
+                                Actually both are not correct approach to add the HTML in React Component Because React Component needs all HTML tags should be wrap inside on parent Block level element.
+                            </h6>
+
+                            <h6>
+                                Main things is that all the HTML element is treating as object while rendering in web page so per the fundamental two objects should be wrap in array then it can be easily loop. One more thing if you giving a commma after one element like below image so it will not through error app will be running. it will be undefined.
+                            </h6>
+                        </div>
+                    </div>
+
+                    <div className='row'>
+                        <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
+                            <p>
+                                <img src={AppImages.React_Fragment_2} alt={AppImages.React_Fragment_2} className='img-fluid' />
+                            </p>
+                        </div>
+
+                        <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
+                            <p>
+                                <img src={AppImages.React_Fragment_3} alt={AppImages.React_Fragment_3} className='img-fluid' />
                             </p>
                         </div>
                     </div>
