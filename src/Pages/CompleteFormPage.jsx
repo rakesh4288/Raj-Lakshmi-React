@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import * as Icon from 'react-bootstrap-icons';
 import SimpleForm from "../Components/SimpleForm";
 import AddRemoveItem from "../Components/AddRemoveItem";
+import SimpleLoginForm from "../Components/SimpleLoginForm";
 
 const CompleteFormPage = () => {
     const intialValues = {
@@ -216,6 +217,21 @@ const CompleteFormPage = () => {
                             <div className="img-thumbnail">
                                 <AddRemoveItem />
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr className="bg-info"/>
+            <section>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                            <SimpleLoginForm/>
+                        </div>
+
+                        <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                            
                         </div>
                     </div>
                 </div>

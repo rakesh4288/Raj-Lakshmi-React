@@ -1,12 +1,17 @@
 import React, { useEffect, useState, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Select from 'react-select';
 
 const CountryInfo = () => {
     const [countryData, setCountryData] = useState([]);
+    const [copyCountryData, setCopyCountryData] = useState([]);
+    
     const [countryLoader, setCountryLoader] = useState(false);
     const [selectedCountry, setSelectedCountry] = useState(null);
     const [oneCountry, setOneCountry] = useState([]);
     const [oneCountryLoader, setOneCountryLoader] = useState(false);
+    const navigate = useNavigate();
+
     useEffect(() => {
         const countryUrl = "https://restcountries.com/v3.1/all";
         const fetchingCountries = async () => {
@@ -16,6 +21,7 @@ const CountryInfo = () => {
                 const res = await response.json();
                 console.log('fetchingCountries =', res);
                 setCountryData(res);
+                setCopyCountryData(res);
                 setCountryLoader(false);
             }
             catch (error) {
@@ -31,6 +37,7 @@ const CountryInfo = () => {
         value: item.cca2,
         label: item.name.common,
     }));
+
     // console.log('countriesList =', countriesList);
 
     const handleCountry = (selectedEvent) => {
@@ -74,10 +81,28 @@ const CountryInfo = () => {
         inputRef.current.focus();
     }, []);
 
+    const findCountry = (e) => {
+        // console.log('findCountry =', e.target.value);
+        let searchQuery = e.target.value;
+        let tempArray = [];
+        if(searchQuery === '') {
+            setCountryData(copyCountryData);
+        } else {
+            tempArray = copyCountryData.filter((item) => item.name.common?.toLowerCase().includes(searchQuery.toLowerCase()));
+            console.log('tempArray =', tempArray);
+            setCountryData(tempArray);
+        }
+    }
+
+    const countryFullInfo = (id) => {
+        console.log('inside countryFullInfo');
+        navigate(`/http-react-get-call/country-full-info/${id}`);
+    }
+
     return (
         <div className="container">
             <div className="row">
-                <div className="col-md-3">
+                <div className="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                     <h5> Search Country Name: </h5>
                     <Select
                         className="basic-single"
@@ -90,7 +115,7 @@ const CountryInfo = () => {
                     />
                 </div>
 
-                <div className="col-md-9">
+                <div className="col-xl-9 col-lg-9 col-md-9 col-sm-12">
                     {oneCountryLoader && (
                         <div className="d-flex justify-content-center">
                             <div className="spinner-border text-primary" role="status">
@@ -166,7 +191,7 @@ const CountryInfo = () => {
             <hr className='bg-primary' />
 
             <div className="row">
-                <div className="col-md-12">
+                <div className="col-xl-9 col-lg-9 col-md-9 col-sm-12">
                     {countryLoader && (
                         <div className="d-flex justify-content-center">
                             <div className="spinner-border text-primary" role="status">
@@ -174,14 +199,17 @@ const CountryInfo = () => {
                             </div>
                         </div>
                     )}
-                    <table className="table table-striped">
+
+                    <h6 className='float-start'>All Countries List Here:</h6>
+                    <h6 className='text-end'>Countries Count:<b>{countryData.length}</b></h6>
+                    <table className='table table-bordered table-striped'>
                         <thead>
                             <tr>
-                                <th>Id</th>
-                                <th>Name</th>
-                                <th>Capital</th>
-                                <th>Region</th>
-                                <th>Currencies</th>
+                                <td>SNO</td>
+                                <td>Name</td>
+                                <td>Capital</td>
+                                <td>Region</td>
+                                <td>Time Zone</td>
                             </tr>
                         </thead>
                         <tbody>
@@ -189,18 +217,30 @@ const CountryInfo = () => {
                                 countryData &&
                                 countryData.map((item, index) => {
                                     return (
-                                        <tr key={index + 1}>
+                                        <tr key={index + 1} onClick={() => countryFullInfo(item.altSpellings[0])} style={{cursor: 'pointer'}}>
                                             <td>{index + 1}</td>
                                             <td>{item.name.common}</td>
                                             <td>{item.capital}</td>
                                             <td>{item.region}</td>
-                                            <td>{item.timezones}</td>
+                                            <td>
+                                                <span className='wrapColumn'>
+                                                    {item.timezones}
+                                                </span>
+                                            </td>
                                         </tr>
                                     )
                                 })
                             }
                         </tbody>
                     </table>
+                </div>
+
+                <div className="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                    <h6>Here are some filter available:</h6>
+                    <div className='alert alert-info'>
+                        <h6>Search By Country Name:</h6>
+                        <input type='search' id='country-name' name='countryName' className='form-control' onChange={findCountry} />
+                    </div>
                 </div>
             </div>
         </div>

@@ -20,9 +20,7 @@ const FormValidation = () => {
           if (e.target.checked) {
             copy.languages.push(e.target.value);
           } else {
-            copy.languages = copy.languages.filter(
-              (item) => item !== e.target.value
-            );
+            copy.languages = copy.languages.filter((item) => item !== e.target.value);
             setFormData(copy);
           }
         } else {
@@ -61,19 +59,19 @@ const FormValidation = () => {
         if (formData.userName === '') {
           currentError.userName = 'User Name should not be blank !';
         } else if (!userNameRegex.test(formData.userName)) {
-            currentError.userName = 'Only alphabet is allowed !';
+          currentError.userName = 'Only alphabet is allowed !';
         }
     
         if (formData.email === '') {
           currentError.email = 'Please enter email id';
         } else if (!emailRegex.test(formData.email)) {
-            currentError.email = 'Email is not valid, Please enter valid email !';
+          currentError.email = 'Email is not valid, Please enter valid email !';
         }
     
         if (formData.phone === '') {
           currentError.phone = 'Please enter phone';
         } else if (!phoneRegex.test(formData.phone)) {
-            currentError.phone = 'Invalid phone number';
+          currentError.phone = 'Invalid phone number';
         }
     
         if (formData.gender === '') {
@@ -225,10 +223,10 @@ const FormValidation = () => {
             </div>
 
             <div className="form-group">
-                <button type="submit" className="btn btn-primary btn-sm">
-                    {' '}
-                    Submit{' '}
-                </button>
+              <button type="submit" className="btn btn-primary btn-sm">
+                  {' '}
+                  Submit{' '}
+              </button>
             </div>
         </form>
     )

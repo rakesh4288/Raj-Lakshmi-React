@@ -49,6 +49,7 @@ import RadioSelection from './Pages/RadioSelection';
 import DebouncingPage from './Pages/DebouncingPage';
 import ReactCustomHook from './Pages/ReactCustomHook';
 import LazyLoadingPage from './Pages/LazyLoadingPage';
+import CountryFullDetails from './Components/CountryFullDetails';
 
 
 function App() {
@@ -84,6 +85,7 @@ function App() {
           </Route>
           <Route path='/react-http-tutorial' Component={ReactHttpPage} />
           <Route path='/http-react-get-call' Component={ReactHttpGetPage} />
+          <Route path='/http-react-get-call/country-full-info/:id' Component={CountryFullDetails}/>
           <Route path='/http-react-post-call' Component={ReactHttpPostPage} />
           <Route path='/how-to-perform-ascending-descending-order' Component={AscDescOrder}/>
           <Route path="/fragment-in-react" Component={ReactFragment} />

@@ -26,9 +26,15 @@ const UseContextInfo = () => {
                 <br/>So here React js providing the useContext API for avoiding props drilling. Because it will become very difficult to handle this prop drilling issue
             </p>
             
-            <h6>
-                <i>Prop Drilling are something like when you are passing props with parent to child component or nested child component or nth child component so this is called prop drilling.</i>
-            </h6>
+            <div className="alert alert-info">
+                <h6>
+                    <i>Prop Drilling are something like when you are passing the props with parent to child component or nested child component or nth child component so this is called prop drilling.</i>
+                </h6>
+
+                <h6>
+                    Props drilling refers to the process of the data from a parent component to deeply nested child component through the multiple levels of components in React. It happens when you need to pass the props through multiple layers of component, even if some itermediate components don't need the data.
+                </h6>
+            </div>
 
             <hr className="bg-primary"/>
 

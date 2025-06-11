@@ -227,3 +227,10 @@ h6 {
   width: 100%;
   height: 600px;
 }
+
+.wrapColumn {
+  display: block;
+  width: 100%;
+  height: auto;
+  word-break: break-all;
+}
