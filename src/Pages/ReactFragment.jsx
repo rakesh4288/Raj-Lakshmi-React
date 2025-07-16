@@ -59,11 +59,11 @@ const ReactFragment = () => {
                         <div className='col-xl-12 col-lg-12 col-md-12 col-sm-12'>
                             <h4>What is the difference betweem two images:</h4>
                             <h6>
-                                Actually both are not correct approach to add the HTML in React Component Because React Component needs all HTML tags should be wrap inside on parent Block level element.
+                                Actually both are not correct approach to add the HTML in React Because React Component needs all HTML tags should be wrap inside a parent Block level element.
                             </h6>
 
                             <h6>
-                                Main things is that all the HTML element is treating as object while rendering in web page so per the fundamental two objects should be wrap in array then it can be easily loop. One more thing if you giving a commma after one element like below image so it will not through error app will be running. it will be undefined.
+                                Main things is that all the HTML element is treating as object while rendering in web page so as per the fundamental two objects should be wrap in array then it can be easily loop. <br/>One more thing if you giving a commma after one element like below image so it will not through error app will be running. it will be undefined.
                             </h6>
                         </div>
                     </div>

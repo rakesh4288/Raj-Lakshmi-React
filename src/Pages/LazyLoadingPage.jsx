@@ -26,7 +26,7 @@ const LazyLoadingPage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                            <h1 className="pageHeading"> What is Lazy Loading in React <Icon.Laptop /></h1>
+                            <h1 className="pageHeading"> What is the Lazy Loading in React <Icon.Laptop /></h1>
                         </div>
                     </div>
                 </div>
@@ -36,7 +36,7 @@ const LazyLoadingPage = () => {
                 <div className="row">
                     <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                         <h6>
-                            Lazy loading is a technique that allows you to load components, modules, or assets asynchronously, Lazy loading is improving the loading time of your application. It can be achieved by using the built-in <b>React.lazy() method</b> and <b>Suspense component.</b>
+                            Lazy loading is a technique that allows you to load the components, modules, or assets asynchronously, Lazy loading is improving the loading time of your application. It can be achieved by using the built-in <b>React.lazy() method</b> and <b>Suspense component.</b>
                         </h6>
                         
                         <pre className='alert alert-info'>
@@ -53,14 +53,14 @@ const LazyLoadingPage = () => {
                 <div className='row'>
                     <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <h5>Approach</h5>
-                        <p>To implement the lazyloading in react follow the steps given below:</p>
+                        <p>To implement the lazy loading in react Please follow the steps given below:</p>
                         <ul>
                             <li>
-                                Firstly, Recognize the component that you wanted to Lazy Load. These are mostly Large or complex component which is not necessary for all the users when the page loads.
+                                Firstly, Recognize the component that you wanted to Lazy Load. These are mostly Large or some complex component which is not necessary to load all while rendering.
                             </li>
 
                             <li>
-                                Import the <b>lazy()</b> and <b>Suspense components</b> from the React package
+                                Import the <b>lazy()</b> and <b>Suspense</b> from the React package
                             </li>
 
                             <li>
@@ -97,11 +97,11 @@ const LazyLoadingPage = () => {
                     </div>
                 </div>
                 {
-                    showTourist ? (
+                    showTourist && (
                         <Suspense fallback={Spinner()}>
                             <TouristPlaces/>
                         </Suspense>
-                    ) : null
+                    ) 
                 }
             </section>
 

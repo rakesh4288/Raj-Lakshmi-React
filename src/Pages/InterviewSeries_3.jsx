@@ -21,11 +21,11 @@ const InterviewSeries_3 = () => {
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <h4>What is Pure Component ?</h4>
                             <p>
-                                ReactJS Pure Components are similar to regular class base components but with a key optimization. They skip the re-renders when the props and state remain the same.
+                                React JS Pure Components are similar to the regular class base components with a key optimization. They skip the re-renders when the props and states are remain the same.
                             </p>
 
                             <p>
-                                Generally React is recommending to use functional base components with hooks in new code for better performance and simplicity.
+                                Generally React core team is recommending to use functional base components with hooks for better performance and simplicity.
                             </p>
                         </div>
 
@@ -51,7 +51,7 @@ const InterviewSeries_3 = () => {
                             </p>
 
                             <p className="text-white">
-                                Synthetic event is providing the more details about the event logs. We can use the objects to use business logic.
+                                Synthetic event is also providing the more details about the event logs. There are many events you can check via consoles and We can use these events for developement purpose.
                             </p>
                         </div>
 
@@ -64,23 +64,23 @@ const InterviewSeries_3 = () => {
                 </div>
             </section>
 
-            <section className="container">
+            <section id="content-negotiation" className="container">
                 <div className="row">
                     <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                         <h4>What is the content negotiation in web api ?</h4>
                         <p>
-                            Content negotiation is the best format for getting the response from the server. When a client is requesting the data from the server so server offer few options to send the data like JSON format or XML format. 
+                            Content negotiation is the best format for getting the response from the server. When a client is requesting the data from the server so server offers few options to send the data like JSON format or XML format. 
                         </p>
                     </div>
                 </div>
 
                 <div className="row">
                     <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                        <h5>Here's a more detailed explanation:</h5>
+                        <h5>More detailed explanation:</h5>
                         <h6>The Problem:</h6>
                         <ul>
                         <li>
-                            Web APIs often need to serve the data to different clients, which may have varying preferences (e.g., some clients might prefer JSON, while others prefer XML).
+                            Web APIs often need to serve the data to the different clients, which may have varying preferences (e.g., some clients might prefer JSON, while others prefer XML).
                         </li>
 
                         <li>
@@ -134,7 +134,7 @@ const InterviewSeries_3 = () => {
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <h2>What is Reconciliation in React JS?</h2>
                             <h6>
-                                Reconciliation is one of the most important concepts by which React. It is helping to update the DOM in very efficiently manner. This mechanism ensures that UI updates are optimized, minimizing performance overhead and improving the user experience
+                                Reconciliation is one of the most important concepts by React. It is helping to update the DOM in very efficient manner. This mechanism ensures that UI updates are optimized, minimized by which performance can be improved for the best user experience.
                             </h6>
 
                             <h6>
@@ -163,9 +163,9 @@ const InterviewSeries_3 = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                            <h3>What is Server Side Rendering and Client Side Rendering in React JS?</h3>
+                            <h3>What is the Server Side Rendering and the Client Side Rendering in React JS?</h3>
                             <p>
-                                In the world of web development, there are several approaches to rendering web pages: server-side rendering, client-side rendering, and server-side generation. Each approach has its own advantages and disadvantages, and choosing the right one for your project depends on your specific needs and goals.
+                                In the world of web development, there are several approaches to rendering web pages: server-side rendering and client-side rendering. Each approach has its own advantages and disadvantages, and choosing the right one for your project depends on your specific needs and goals.
                             </p>
                         </div>
                     </div>
@@ -178,7 +178,7 @@ const InterviewSeries_3 = () => {
                             </p>
 
                             <p>
-                                In this approach, the server generates the HTML, inclusing its all assets and including any dynamic data, and sends it to the client as a complete page. After this client is displays the page without any further processing.
+                                In this approach, the server generates the HTML, including the all assets and sends it to the client as a complete page. After this client is displays the page without any further processing.
                             </p>
 
                             <p><b>One example of a popular SSR framework is Next.js. </b></p>
@@ -217,11 +217,11 @@ const InterviewSeries_3 = () => {
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <h4>Client-Side Rendering</h4>
                             <p>
-                                Client-side rendering (CSR) is the process of rendering the web pages on the client using JavaScript.
+                                Client-side rendering (CSR) is the process of rendering the web pages on the client using the JavaScript.
                             </p>
 
                             <p>
-                                In this approach, the server sends the initial HTML file, but the client then uses JavaScript to dynamically update the page as needed. This allows for more interactive and responsive web pages, as the client can update specific parts of the page without needing to reload the entire page.
+                                In this approach, the server sends the initial HTML file, but the client then uses JavaScript to dynamically update the page as needed. This allows for more interactive and responsive web pages, as the client can update specific parts of the page without reloading the entire page.
                             </p>
 
                             <p><b>One example of a popular CSR framework is React.</b></p>

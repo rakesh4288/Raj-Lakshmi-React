@@ -53,12 +53,22 @@ const UseContextInfo = () => {
             <Icon.ArrowRight /> Solution is to create the context and React Js providing the useContext hook here to solve this issue</h6>
 
             <ul>
-                <li>Firstly you need to create the context. you need to decide what kind of data you are going to pass in the deep level component</li>
-                <li>After creating the context now you need to use the Provider, so basically providers is wrapping the child component and helping to hold the data to pass</li>
-                <li>In your child component - you need to call the useContext hook for getting the global state.</li>
+                <li>
+                    Firstly you need to create the context. you need to decide what kind of data you are going to pass in the deep level component
+                </li>
+                
+                <li>
+                    After creating the context now you need to use the Provider, so basically providers is wrapping the child component and helping to hold the data to pass
+                </li>
+                
+                <li>
+                    In your child component - you need to call the useContext hook for getting the global state.
+                </li>
             </ul>
 
-            <p className="alert alert-warning">Always make sure you are exporting your createContext variable in bottom of component. Because without exported we can not import the ueContext</p>
+            <p className="alert alert-warning">
+                Always make sure you are exporting your createContext variable in then bottom of component. Because without exporting we can not import the ueContext in last xyz component.
+            </p>
 
             <div className="row">
                 <div className="col-md-6">
@@ -66,7 +76,9 @@ const UseContextInfo = () => {
                         <img src={AppImages.UseContextImg} className="img-fluid" alt="UseContextImg" />
                     </p>
 
-                    <p>In this above screenshot we can easily understand its will be very difficult to handle and pass the props at very the deep level component. </p>
+                    <p>
+                        In this above screenshot we can easily understand its will be very difficult to handle and pass the props at very the deep level component. 
+                    </p>
                 </div>
 
                 <div className="col-md-6">

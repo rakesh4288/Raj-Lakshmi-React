@@ -9,7 +9,7 @@ const UseRefInfo = () => {
             <p>useRef is a React Hook, ref means references</p>
             <h6>with the help of useRef we can directly access to the DOM element</h6>
             <p>
-                If you updating your useState hook then your program will re-render But with useRef hook your program will not rerender
+                If you are updating your useState hook then your program will re-render But with useRef hook your program will not rerender
             </p>
 
             <p>
@@ -22,7 +22,7 @@ const UseRefInfo = () => {
             <ul>
                 <li>Firstly, you need to import the useRef from the react</li>
                 <li>You need to assign the this useRef() to any variable like this <b>const inputRef = useRef()</b></li>
-                <li>And lastly we can use this <b>inputRef</b> to any input element and we can access the dom element</li>
+                <li>And lastly we can use this <b>ref</b> to any input element and we can access the dom element</li>
                 <li>in any input element we can use like this - ref=inputRef</li>
                 <li>so now you can access dom element of this ref</li>
                 <li>generally we can use the .current object to make desired operation</li>

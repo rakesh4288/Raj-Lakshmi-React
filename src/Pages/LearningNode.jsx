@@ -1,6 +1,7 @@
 import React from "react";
 import AppImages from "../Assets";
 import FormValidation from "../Components/FormValidation";
+import ArrayState from "../Components/ArrayState";
 
 const LearningNode = () => {
     return (
@@ -106,6 +107,10 @@ const LearningNode = () => {
                     <div className="row">
                         <div className="col-md-4">
                             <FormValidation />
+                        </div>
+
+                        <div className="col-md-4">
+                            <ArrayState />
                         </div>
                     </div>
                 </div>

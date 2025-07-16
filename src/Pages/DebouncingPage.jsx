@@ -61,7 +61,7 @@ const DebouncingPage = () => {
                         <h4>Debouncing and Throttling in React</h4>
                         <h5>Debouncing:</h5>
                         <p>
-                            Debouncing is a technique where you delay the execution of some set of function pn certain amount of time has passed. This is a very useful technique in some cases where are calling function frequently. We should use this technique for improving the performance where you are trying to call some function frequently.
+                            Debouncing is a technique where you delay the execution of some set of function on certain amount of time has passed. This is a very useful technique in some cases where are calling function frequently. We should use this technique for improving the performance where you are trying to call some function frequently.
                         </p>
 
                         <p>
@@ -71,7 +71,7 @@ const DebouncingPage = () => {
                         <h6>Most useful case when we are calling API on onChange event</h6>
                         <p>Yes so this is one of the best use case for api calling.</p>
                         <p className="text-danger">
-                            Let's suppose you have one input and while typing any letter you wanted to execute the API. So just imagine your API will call to every typing letter. Now let's suppose any user typing 5-10 letter in just 4-5 seconds so how many API will get call. This is not a correct approach for searching.
+                            Let's suppose you have one input and while typing any letter you wanted to execute the API. So just imagine your API will call will be executed on every typing letter. Now let's suppose any user typing 5-10 letter in just 4-5 seconds so how many API will get call. This is not a correct approach for searching.
                         </p>
                     </div>
 
@@ -214,7 +214,12 @@ const DebouncingPage = () => {
                 </div>
 
                 <div className="row">
-                    <div></div>
+                    <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <h6>
+                            Debouncing and Throttling are similar only the difference is between function behaviour.
+                            Debouncing is working with setTimeout() and Throttling is working the setInterval(). 
+                        </h6>
+                    </div>
                 </div>
             </section>
         </div>

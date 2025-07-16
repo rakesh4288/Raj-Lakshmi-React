@@ -29,10 +29,10 @@ const InterviewSeries_1 = () => {
 
                             <div className="alert alert-info">
                                 <h6>What is Virtual DOM ?</h6>
-                                <p><b>VirtualDOM in React is a lightweight copy of the actual DOM.</b> Its a virtual representation of the DOM and its optimized the code and take the updates on every object that exists in the original DOM,</p>
+                                <p><b>VirtualDOM is a lightweighted copy of the actual DOM.</b> Its a virtual representation of the DOM and its optimized the code and take the updates on every object that exists in the original DOM,</p>
 
                                 <p>
-                                    Manipulating DOM is slow,  but manipulating Virtual DOM is very fast because its not taking full refresh of the page, only selected node will get changed.
+                                    Manipulating the DOM is slow,  but manipulating Virtual DOM is very fast because its not taking full refresh of the page, only selected node will get changed.
                                 </p>
 
                                 <p>
@@ -77,7 +77,7 @@ const InterviewSeries_1 = () => {
                                 <tbody>
                                     <tr>
                                         <td>States are managing within the component</td>
-                                        <td>But Props are getting passed to the component</td>
+                                        <td>But Props are getting passed from the component</td>
                                     </tr>
 
                                     <tr>
@@ -209,7 +209,7 @@ const InterviewSeries_1 = () => {
                         <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
                             <h5><b>package-lock.json</b></h5>
                             <p>
-                                Actually it is recording the exact version of each installed package in angular application which allows you to re-install them. Future installs will be able to build an identical dependency tree.
+                                Actually it is recording the exact version of each installed package in React application which allows you to re-install them. Future installs will be able to build an identical dependency tree.
                             </p>
 
                             <p>
@@ -222,13 +222,13 @@ const InterviewSeries_1 = () => {
 
             <hr className="bg-success"/>
 
-            <section id="bidirectional-vs-unidirectional">
+            <section id="dependencies-vs-Devdependencies">
                 <div className="container">
                     <div className="row">
                         <div className='col-xl-12 col-lg-12 col-md-12 col-sm-12'>
                             <h3>Difference between dependencies vs dev dependencies ?</h3>
                             <p>
-                                Every web application project typically includes a file called package.json, which serves as a central repository for important project metadata. This file holds information such as dependencies, dev dependencies means development dependencies.
+                                Every web application project typically includes a file called package.json, which serves as a central repository for important project metadata. This file holds information such as dependencies and dev dependencies.
                             </p>
                         </div>
                     </div>  
@@ -247,7 +247,7 @@ const InterviewSeries_1 = () => {
                                     </li>
 
                                     <li>
-                                        <b>Automatic Installation:</b> These packages are automatically installed when you run npm install.
+                                        <b>Automatic Installation:</b> These packages are automatically installed when you run npm install command.
                                     </li>
                                 </ul>
                             </div>
@@ -287,8 +287,8 @@ const InterviewSeries_1 = () => {
 
                         <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
                             <div className="border p-2">
-                                <h6>Here in below screenshot: <br/>
-                                    Total variable coming from Derived States, as soon as User states get updated so total variable will also be updated.
+                                <h6>Look at below screenshot: <br/>
+                                    Total variable coming from Derived States, as soon as User states get updated so total variable will also get updated.
                                 </h6>
                                 <p>
                                     <img  src={AppImages.DerivedStatesImg_1} alt={AppImages.DerivedStatesImg_1} className="img-fluid"/>
@@ -307,7 +307,7 @@ const InterviewSeries_1 = () => {
                         <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
                             <h5>What is getDerivedStatesFromProps ?</h5>
                             <h6>
-                                The getDerivedStateFromProps method is a static lifecycle method used when the state of a component depends on changes of props. <b>It is a static method that is called just before render() method in both mounting and updating phase in React.</b>
+                                The getDerivedStateFromProps method is a static lifecycle method which is used when the state of a component depends on changes of props. <b>It is a static method which is called just before render() method in both mounting and updating phase in React.</b>
                             </h6>
 
                             <pre className="alert alert-warning">
@@ -318,7 +318,7 @@ const InterviewSeries_1 = () => {
                             <ul>
                                 <li value="1">
                                     <b>props:</b>
-                                    <span>The updated props which is passed from the parent component</span>
+                                    <span> The updated props which is passed from the parent component</span>
                                 </li>
                                 <li value="2">
                                     <b>state:</b><span> The current state of the component</span>

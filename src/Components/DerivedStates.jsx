@@ -18,9 +18,9 @@ const DerivedStates = () => {
     // const [searchQuery, setSearchQuery] = useState('');
 
     const handleSearch = (e) => {
-       const searchValue = e.target.value;
-       console.log('searchValue =', searchValue);
-       let temp = [];
+        const searchValue = e.target.value;
+        console.log('searchValue =', searchValue);
+        let temp = [];
         temp = filterCar.filter((item) => item.name.toLowerCase().includes(searchValue.toLowerCase()));
         console.log('filterCar =', temp);
         setCarProducts(temp);

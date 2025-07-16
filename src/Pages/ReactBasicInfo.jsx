@@ -25,7 +25,7 @@ const ReactBasicInfo = () => {
                         <div className="col-md-8">
                             <h4>How to Use PropTypes in React</h4>
                             <p>
-                                PropTypes are simply a mechanism that ensures that the passed value is of the correct datatype. This makes sure that we don't receive an error at the very end of our app by the console which might not be easy to deal with.
+                                PropTypes are simply a mechanism that ensures that the passed value is one of the correct datatype. This makes sure that we don't receive an error at the very end of our app by the console which might not be easy to deal with.
                             </p>
 
                             <p className="alert alert-warning">
@@ -33,7 +33,7 @@ const ReactBasicInfo = () => {
                             </p>
 
                             <p>
-                                We can do so by running the following command in our terminal:
+                                We can install this following command in our terminal:
                             </p>
 
                             <p className="alert alert-info"> npm install prop-types --save</p>

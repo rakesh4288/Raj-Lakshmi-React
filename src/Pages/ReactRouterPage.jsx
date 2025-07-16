@@ -25,7 +25,9 @@ const ReactRouterPage = () => {
                             <h6>As we know routing is something which is related to the navigation. Using routing we can visit to every pages and component of the application</h6>
 
                             <h6>React is also providing the routing !</h6>
-                            <div className="alert alert-warning">Points to remember: But while installing the react, React is not providing the router package inside your application. You need to install the react separately.</div>
+                            <div className="alert alert-warning">
+                                Points to remember: But while installing the react, React is not providing the router package inside your application. You need to install the react-router-dom separately.
+                            </div>
 
                             <div id="installing-router-steps">
                                 <h5>
@@ -46,7 +48,7 @@ const ReactRouterPage = () => {
                                 <hr className="bg-primary"/>
                                 <ol>
                                     <li>
-                                        The first step would be to wrap your application with <b>BrowserRouter</b> which is available inside the <b>react-router-dom</b>
+                                        The first step would be to wrap your application with <b>BrowserRouter</b> which is available inside the <b>react-router-dom</b> You have to open the index.js file like below
                                         <img src={AppImages.RouterIndexWrap} alt="router-index-wrapping" className="img-fluid" />
                                     </li>
                                     <li className="text-danger">
@@ -62,7 +64,7 @@ const ReactRouterPage = () => {
                                 <hr className="bg-primary"/>
                                 <h6>Last step to understand:</h6>
                                 <ol type="A">
-                                    <li>Finally you need to open the route file like App.js, Here you need to configure the all routes which is required ! </li>
+                                    <li>Finally you need to open the App.js, Here you need to configure the all routes which is required ! </li>
                                     <li>Firstly you need to import the <b>Routes</b> and <b>Route</b> from <b>react-router-dom</b> </li>
                                     <li><img src={AppImages.RouterAppImports} alt={AppImages.RouterAppImports} className="img-fluid" /></li>
                                     <li>Now go to the return block and configure like this:</li>

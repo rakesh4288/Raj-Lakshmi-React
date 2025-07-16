@@ -22,8 +22,10 @@ const InterviewSeries_2 = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <h4>What is React Js and its better than other ?</h4>
-                            <p>Just because of its Virtual DOM concept. React is using virtual DOM for updating the component. By using Virtual DOM the performance of React is increasing</p>
+                            <h4>What is React Js and why its better than other ?</h4>
+                            <p>
+                                Just because of its Virtual DOM concept. React is using virtual DOM for updating the component. By using Virtual DOM the performance of React is increasing.
+                            </p>
                             <ul>
                                 <li>It's library for creating the UI components and its not a FRAMEWORK</li>
                                 <li>Angular and Vue is completely framework and its following their own MVC pattern</li>
@@ -46,14 +48,15 @@ const InterviewSeries_2 = () => {
                         <div className="col-md-6">
                             <h3>What is babel?</h3>
                             <p>
-                                Babel is a popular JavaScript transpiler that converts modern JavaScript code (ES6 and beyond) and JSX into a backwards-compatible version of JavaScript that can run in every browsers.
+                                Babel is a popular JavaScript transpiler that converts the modern JavaScript code (ES6 and beyond) and JSX into a backwards-compatible version of JavaScript that can run in every browsers.
                             </p>
+                            
                             <p>
-                                It allows developers to write code using the latest JavaScript features without worrying about compatibility issues across different browsers.
+                                It allows developers to write the code using the latest JavaScript features without worrying about the compatibility issues across the different browsers.
                             </p>
 
                             <p>
-                                In ReactJS, Babel is often used to transform the JSX syntax into standard JavaScript, as browsers do not natively understand JSX. Babel also provides polyfills to emulate newer JavaScript features in older environments.
+                                In React JS, Babel is often used to transform the JSX syntax into standard JavaScript, as browsers do not natively understand the JSX. Babel is also providing polyfills to emulate newer JavaScript features in older environments.
                             </p>
                         </div>
 
@@ -190,11 +193,11 @@ const InterviewSeries_2 = () => {
                     <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <h5>What is React Strict Mode ? <Icon.Book/></h5>
                         <h6>
-                            StrictMode is a react component which is used to identify the potential issues and finding the bug in the react code. It is helping to provides warning and alerts after running a check on complete code.
+                            React Strict Mode is a react component which is used to identify the potential issues and finding the bug in the react code. It is helping to provides the warning and alerts while building the app.
                         </h6>
 
                         <h6>
-                            React StrictMode goal is to improve the quality of the react application by avoiding the common mistakes in the development.
+                            React Strict Mode goal is to improve the quality of the react application by avoiding the common mistakes while developming a app.
                         </h6>
 
                         <pre className="lighGreenBG">

@@ -38,10 +38,10 @@ const HomePage = () => {
                     <div className="col-md-6">
                         <h4>Advantages <Icon.Plus /></h4>
                         <ul>
-                            <li>React is increasing the performance of your web application Because its uses virtual DOM</li>
+                            <li>React is increasing the performance of your web application Because its uses the virtual DOM</li>
                             <li>Using React, writing a test cases is very easy</li>
                             <li>Huge collection of third party components</li>
-                            <li>Handle large application</li>
+                            <li>Handle the large application</li>
                             <li>Virtual DOM is helping to increase the performance</li>
                             <li>One-way data binding keeps everything modular and fast</li>
                         </ul>
@@ -97,6 +97,10 @@ const HomePage = () => {
                                 <li>
                                     <Link className="link" to="/interview-series-part-3">Interview Series Part 3</Link>
                                 </li>
+
+                                <li>
+                                    <Link className="link" to="https://github.com/anil-sidhu/50-Reac-js-objective-mcqs-for-interview-questions/blob/main/README.md" target="_blank"> React MCQ </Link>
+                                </li>
                             </ul>
                         </div>
 
@@ -151,14 +155,17 @@ const HomePage = () => {
                     <div className="row">
                         <div className="col-md-6">
                             <h5 className="text-white">How to optimize React App ?</h5>
-                            <p>Here are some key points By which we can improve the React application:</p>
+                            <p>Here are some key points By which we can improve the React application like:</p>
 
                             <ul className="text-white">
                                 <li>Code Spliting</li>
-                                <li>Using React Fragment</li>
-                                <li>Use key attribute in list</li>
                                 <li>
-                                    <Link className="text-white" to="/what-is-lazy-loading-in-react">Lazy Loading Component</Link>
+                                    <Link className="text-white" to="/fragment-in-react">Using React Fragment</Link>
+                                </li>
+                                <li>Use key attribute in list: We should always use the key attributes while using .map() method Because React make the difference between two HTML nodes</li>
+                                <li>
+                                    <Link className="text-white" to="/what-is-lazy-loading-in-react">
+                                    Lazy Loading Component</Link>
                                 </li>
                                 <li>
                                     <Link className="text-white" to="/react-hook-tutorial/use-memo-page">

@@ -22,7 +22,7 @@ const ControlledUncontrolledMain = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                           <h6> In React, Controlled components refer to the components where the state and behaviors are controlled by Parent components while Uncontrolled components are the ones having control of their own state and manage the behaviors on themselves.</h6>
+                           <h6> In React, Controlled components are the components where the state and behaviors are controlled by Parent components while Uncontrolled components are the ones having control of their own state and manage the behaviors on themselves.</h6>
 
                            <div className="row">
                                 <br/>

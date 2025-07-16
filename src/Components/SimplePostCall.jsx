@@ -51,19 +51,19 @@ const SimplePostCall = () => {
                     body: formValues.body,
                 }),
             })
-                .then((res) => res.json())
-                .then((data) => {
-                    console.log('Success:', data);
-                    let responseArr = [];
-                    responseArr.push(data);
-                    console.log('responseArr:', responseArr);
-                    setShowPost(responseArr);
-                    setIsLoading(false);
-                })
-                .catch((error) => {
-                    console.log('Error while post call', error);
-                    setIsServerError(error);
-                })
+            .then((res) => res.json())
+            .then((data) => {
+                console.log('Success:', data);
+                let responseArr = [];
+                responseArr.push(data);
+                console.log('responseArr:', responseArr);
+                setShowPost(responseArr);
+                setIsLoading(false);
+            })
+            .catch((error) => {
+                console.log('Error while post call', error);
+                setIsServerError(error);
+            })
 
             setFormValues({
                 title: '',

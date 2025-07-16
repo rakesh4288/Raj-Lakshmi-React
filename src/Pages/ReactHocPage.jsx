@@ -25,7 +25,7 @@ const ReactHocPage = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <h6>
-                                Definition: Higher order component is a React frunction which is accepting a component as a parameter and returning with new component after adding the business logic.
+                                Definition: Higher order component is a React frunction which is accepting a component as a parameter and returning with new component.
                             </h6>
 
                             <h6>You can also say that - Newly component produced after adding extra features</h6>
