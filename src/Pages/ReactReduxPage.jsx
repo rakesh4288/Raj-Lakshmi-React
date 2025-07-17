@@ -70,6 +70,16 @@ const ReactReduxPage = () => {
 
                     <div className="row">
                         <div className="col-xl-6 col-lg-6 col-md-5 col-sm-12">
+                            <div>
+                                <h6>Steps for configure Redux:</h6>
+                                <ul>
+                                    <li>Step 1: Firstly we need to create the store</li>
+                                    <li>Step 2: Wrap the react app by using provoder in index.js file</li>
+                                    <li>Step 3: Create the feature slice, This is the actual file where you need to create feature about common States</li>
+                                    <li>Step4: Register the slice feature with store.js file., This file needs all the slice registration</li>
+                                </ul>
+                            </div>
+                            <hr className="bg-primary"/>
                             <p>
                                 The <b>useSelector()</b> hook is primarily used for extracting the data from Redux store within the functional component. <b>useSelector()</b> takes a selector function as an argument. This function receiving the entire Redux store state and returning the specefic piece of data that the component needs.
                             </p>
@@ -86,6 +96,14 @@ const ReactReduxPage = () => {
                             <p>
                                 <img src={AppImages.useSelectorImg} alt='useSelectorImg' className='img-fluid' />
                             </p>
+
+                            <div>
+                                <h5>What are the action in Redux ?</h5>
+                                <p>
+                                    Actions are the plain JavaScript objects that have a type field. As mentioned earlier,
+                                    you can think of an action as an event that describes something that happened in the application.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -98,7 +116,11 @@ const ReactReduxPage = () => {
                             <h4 className="text-white">What are the Reducers in Redux ?</h4>
                             <p className="text-white">
                                 In a simple way - Reducers are a function which is helping to getting the updated states from the reducer function. Because in Redux we are stroing the states in a common file and this common states are serving to the across application.
-                            </p>                            
+                            </p> 
+
+                            <p className="text-white">
+                                Reducers: As we know already, actions only tell what to do, but they don't tell how to do, so reducers are the pure functions that take the current state and action and return the new state and tell the store how to do. Store: The store is the object which holds the state of the application.27 Jan 2019
+                            </p>                           
                         </div>
 
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">

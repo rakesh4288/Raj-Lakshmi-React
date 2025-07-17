@@ -2,6 +2,7 @@ import React from "react";
 import AppImages from "../Assets";
 import FormValidation from "../Components/FormValidation";
 import ArrayState from "../Components/ArrayState";
+import Counter from "../Components/Counter";
 
 const LearningNode = () => {
     return (
@@ -111,6 +112,7 @@ const LearningNode = () => {
 
                         <div className="col-md-4">
                             <ArrayState />
+                            <Counter initialValue={0} />
                         </div>
                     </div>
                 </div>
