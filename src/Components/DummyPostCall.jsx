@@ -79,76 +79,74 @@ const DummyPostCall = () => {
 
     // console.log('handleChange =', formValues);
     return (
-        <div className='container'>
-            <div className='row'>
-                <div className='col-md-3'>
-                    <form className='alert alert-success' onSubmit={handleSubmit}>
-                        <div className='mb-3'>
-                            <h5>Post call with dummy API</h5>
-                        </div>
+        <>
+            <div className='col-md-3'>
+                <form className='alert alert-success' onSubmit={handleSubmit}>
+                    <div className='mb-3'>
+                        <h5>Post call with dummy API</h5>
+                    </div>
 
-                        <div className='mb-3'>
-                            <label htmlFor='title' className="form-label">Title</label>
-                            <input type='text' id='title' name='title' className='form-control' onChange={handleChange} />
-                        </div>
+                    <div className='mb-3'>
+                        <label htmlFor='title' className="form-label">Title</label>
+                        <input type='text' id='title' name='title' className='form-control' onChange={handleChange} />
+                    </div>
 
-                        <div className='mb-3'>
-                            <label htmlFor='body' className="form-label">Body</label>
-                            <input type='text' id='body' name='body' className='form-control' onChange={handleChange} />
-                        </div>
+                    <div className='mb-3'>
+                        <label htmlFor='body' className="form-label">Body</label>
+                        <input type='text' id='body' name='body' className='form-control' onChange={handleChange} />
+                    </div>
 
-                        <div className='mb-3'>
-                            <button className='btn btn-dark btn-sm'>Submit</button>
-                        </div>
-                    </form>
-                </div>
-
-                <div className='col-md-3'>
-                    {
-                        isLoading && (
-                            <div className="d-flex justify-content-center">
-                                <div className="spinner-border text-primary" role="status">
-                                    <span className="visually-hidden">Loading...</span>
-                                </div>
-                            </div>
-                        )
-                    }
-
-                    {
-                        isServerError && (
-                            <div className="d-flex justify-content-center">
-                                <div className="spinner-border text-primary" role="status">
-                                    <span className="visually-hidden">Getting Error while fetching the Data...</span>
-                                </div>
-                            </div>
-                        )
-                    }
-                    <table className='table table-striped'>
-                        <thead>
-                            <tr>
-                                <td>Id</td>
-                                <td>Title</td>
-                                <td>Body</td>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                        {
-                            showPost.map((item, index) => {
-                                return (
-                                    <tr key={index + 1}>
-                                        <td>{item.id}</td>
-                                        <td>{item.title}</td>
-                                        <td>{item.body}</td>
-                                    </tr>
-                                )
-                            })
-                        }
-                        </tbody>
-                    </table>
-                </div>
+                    <div className='mb-3'>
+                        <button className='btn btn-dark btn-sm'>Submit</button>
+                    </div>
+                </form>
             </div>
-        </div>
+
+            <div className='col-md-3'>
+                {
+                    isLoading && (
+                        <div className="d-flex justify-content-center">
+                            <div className="spinner-border text-primary" role="status">
+                                <span className="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                    )
+                }
+
+                {
+                    isServerError && (
+                        <div className="d-flex justify-content-center">
+                            <div className="spinner-border text-primary" role="status">
+                                <span className="visually-hidden">Getting Error while fetching the Data...</span>
+                            </div>
+                        </div>
+                    )
+                }
+                <table className='table table-striped'>
+                    <thead>
+                        <tr>
+                            <td>Id</td>
+                            <td>Title</td>
+                            <td>Body</td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                    {
+                        showPost.map((item, index) => {
+                            return (
+                                <tr key={index + 1}>
+                                    <td>{item.id}</td>
+                                    <td>{item.title}</td>
+                                    <td>{item.body}</td>
+                                </tr>
+                            )
+                        })
+                    }
+                    </tbody>
+                </table>
+            </div>
+        </>
     )
 }
 

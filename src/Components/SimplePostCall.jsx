@@ -76,6 +76,7 @@ const SimplePostCall = () => {
             <div className="row">
                 <div className="col-md-3">
                     <form className="alert alert-primary" onSubmit={handleSubmit}>
+                        <h5>Simple Post Call </h5>
                         <div className="mb-3">
                             <label htmlFor="title" className="form-label">Title</label>
                             <input type="text" id="title" name="title" value={formValues.title} className="form-control" onChange={handleInput} />

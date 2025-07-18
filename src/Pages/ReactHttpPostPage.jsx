@@ -3,6 +3,7 @@ import * as Icon from 'react-bootstrap-icons';
 import SimplePostCall from "../Components/SimplePostCall";
 import PostIdComponent from "../Components/PostIdComponent";
 import DummyPostCall from "../Components/DummyPostCall";
+import SimpleUserForm from "../Components/SimpleUserForm";
 
 const ReactHttpPostPage = () => {
     const [page, setPage] = useState(1);
@@ -98,9 +99,20 @@ const ReactHttpPostPage = () => {
                 </div>
             </section>
 
-            <section>
-                <DummyPostCall />
+            <section className='container'>
+                <div className='row'>
+                    <DummyPostCall />
+                </div>
             </section>
+            
+            <hr className="bg-primary"/>
+
+            <section className='container'>
+                <div className='row'>
+                    <SimpleUserForm />
+                </div>
+            </section>
+            <br/>
         </div>
     )
 }
