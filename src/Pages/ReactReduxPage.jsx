@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import * as Icon from 'react-bootstrap-icons';
 import RajLakshmiModal from "../Components/Modal";
 import AppImages from '../Assets';
+import Counter from "../Components/Counter";
+import TaskManager from "../Components/TaskManager";
 
 const ReactReduxPage = () => {
     const [show, setShow] = useState(false);
@@ -74,9 +76,9 @@ const ReactReduxPage = () => {
                                 <h6>Steps for configure Redux:</h6>
                                 <ul>
                                     <li>Step 1: Firstly we need to create the store</li>
-                                    <li>Step 2: Wrap the react app by using provoder in index.js file</li>
+                                    <li>Step 2: Wrap the react app by using provider in index.js file</li>
                                     <li>Step 3: Create the feature slice, This is the actual file where you need to create feature about common States</li>
-                                    <li>Step4: Register the slice feature with store.js file., This file needs all the slice registration</li>
+                                    <li>Step 4: Register the slice feature with store.js file., This file needs all the slice registration</li>
                                 </ul>
                             </div>
                             <hr className="bg-primary"/>
@@ -90,6 +92,8 @@ const ReactReduxPage = () => {
 
                             <button className="btn btn-success btn-sm" onClick={ModalHandler}>What is Use Selector ?</button>
                             { show ? <RajLakshmiModal handleClose = {handleClose} /> : null }
+
+                            <Counter initialState={0}/>
                         </div>
 
                         <div className="col-xl-6 col-lg-6 col-md-5 col-sm-12">
@@ -99,6 +103,9 @@ const ReactReduxPage = () => {
 
                             <div>
                                 <h5>What are the action in Redux ?</h5>
+                                <p>
+                                    If I would say in simple terms so Actions are the just message which is just dispatching to the reducer like what to do. Then reducer are taking the action and performing the operations and updating the state.
+                                </p>
                                 <p>
                                     Actions are the plain JavaScript objects that have a type field. As mentioned earlier,
                                     you can think of an action as an event that describes something that happened in the application.
@@ -117,6 +124,10 @@ const ReactReduxPage = () => {
                             <p className="text-white">
                                 In a simple way - Reducers are a function which is helping to getting the updated states from the reducer function. Because in Redux we are stroing the states in a common file and this common states are serving to the across application.
                             </p> 
+
+                            <p className="bg-warning p-2">
+                                Reducers are the actual place where you are manipulating the states and defining your actual logic here.
+                            </p>
 
                             <p className="text-white">
                                 Reducers: As we know already, actions only tell what to do, but they don't tell how to do, so reducers are the pure functions that take the current state and action and return the new state and tell the store how to do. Store: The store is the object which holds the state of the application.27 Jan 2019
@@ -216,6 +227,22 @@ const ReactReduxPage = () => {
                                 <li>Built-in support for cancellation, which can be useful for handling user interactions like cancellation of ongoing requests.</li>
                                 <li>Allows for easier testing due to the use of generator functions.</li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr className="bg-primary"/>
+
+            <section className="pt-2 pb-2 mt-2 mb-2">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                            <TaskManager />
+                        </div>
+
+                        <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/EV168NQvCHc?si=d4E4WDHoW7q8iZSA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                         </div>
                     </div>
                 </div>

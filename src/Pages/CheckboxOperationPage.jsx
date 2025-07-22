@@ -67,7 +67,7 @@ const CheckboxOperationPage = () => {
             <section>
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-6">
+                        <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
                             <form className="img-thumbnail" onSubmit={handleSubmit}>
                                 <h6>Table row selectoin with checkbox and send data to API</h6>
                                 <table className="table table-striped">
@@ -112,7 +112,7 @@ const CheckboxOperationPage = () => {
                             </form>
                         </div>
 
-                        <div className="col-md-6">
+                        <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
                             <p>
                                 <img src={AppImages.FormHandlingTwo} alt="react-form-handling" className="img-fluid img-thumbnail" />
                             </p>
@@ -133,9 +133,14 @@ const CheckboxOperationPage = () => {
             <section>
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-6">
+                        <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
                             <h5>Select All Checkbox</h5>
                             <SelectAllCheckbox />
+                        </div>
+
+                        <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
+                            <h5>Top 30 React JS Interview Questions Answers:</h5>
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/U7QZfAQWkkU?si=cp9UCZwAqTxpnSq8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                         </div>
                     </div>
                 </div>

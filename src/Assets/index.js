@@ -54,7 +54,10 @@ const AppImages = {
     Client_Side_Rendering: require('./Client_Side_Rendering.png'),
     React_Strict_Mode: require('./React_Strict_Mode.png'),
     DerivedStatesImg_1: require('./Derived_States_1.png'),
-    DerivedStatesImg_2: require('./Derived_States_2.png')
+    DerivedStatesImg_2: require('./Derived_States_2.png'),
+    Props_Design_1: require('./props_design_1.png'),
+    Props_Design_2: require('./props_design_2.png'),
+    Props_Design_3: require('./props_design_3.png')
 }
 
 export default AppImages;

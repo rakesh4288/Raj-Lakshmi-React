@@ -115,6 +115,14 @@ const LearningNode = () => {
                             <Counter initialValue={0} />
                         </div>
                     </div>
+
+                    <hr className="bg-primary"/>
+
+                    <div className="row">
+                        <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
+                           <iframe width="100%" height="315" src="https://www.youtube.com/embed/3-PZsjRSfao?si=jiOaD2LkKqavwmna" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>

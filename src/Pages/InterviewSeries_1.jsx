@@ -118,6 +118,40 @@ const InterviewSeries_1 = () => {
                         </div>
                     </div>
                 </div>
+
+                <div className="container">
+                    <div className="row">
+                        <div className='col-xl-12 col-lg-12 col-md-12 col-sm-12'>
+                            <h5>Using Spread Operator with Component Props:</h5>
+                            <h6>What will be happen if we pass the hard code value along with dynamic object</h6>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
+                            <p>
+                                If we pass the hard codes props along with existing dynamic props so the priority of rendering will be hard coded props 
+                            </p>
+                            <p>
+                                <img src={AppImages.Props_Design_1} alt="props design one" className="img-fluid" />
+                            </p>
+
+                            <p>
+                                <img src={AppImages.Props_Design_3} alt="props design three" className="img-fluid" />
+                            </p>
+                        </div>
+
+                        <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
+                            <p>
+                                Here you can see we are just accepting the props as we do regularly.
+                            </p>
+
+                            <p>
+                                <img src={AppImages.Props_Design_2} alt="props design two" className="img-fluid" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <hr className="bg-danger" />
