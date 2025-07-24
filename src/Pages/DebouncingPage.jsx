@@ -35,6 +35,7 @@ const DebouncingPage = () => {
         }, 2000);
 
         return () => {
+            // This is for cleaning up activity
             clearTimeout(delayDebouncing);
         }
     }, [pincode]);

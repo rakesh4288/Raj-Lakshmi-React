@@ -91,7 +91,7 @@ const ChildToParentPage = () => {
                             </div>
 
                             <p>
-                                <b>Unidirectional Data Flow:</b> React enforces a unidirectional data flow, where data flows downwards from parent components to child components via props. This one-way flow of data makes the application state more predictable and easier to reason about.
+                                <b>Unidirectional Data Flow:</b> React enforces a unidirectional data flow, where data flows downwards from parent components to child components via props.
                             </p>
 
                             <table className="table table-striped">

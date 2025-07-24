@@ -134,7 +134,7 @@ const InterviewSeries_3 = () => {
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <h2>What is Reconciliation in React JS?</h2>
                             <h6>
-                                Reconciliation is one of the most important concepts by React. It is helping to update the DOM in very efficient manner. This mechanism ensures that UI updates are optimized, minimized by which performance can be improved for the best user experience.
+                                Reconciliation is one of the most important concepts in React. It is helping to update the DOM in very efficient manner. This mechanism ensures that UI updates are optimized, minimized by which performance can be improved for the best user experience.
                             </h6>
 
                             <h6>
@@ -143,7 +143,7 @@ const InterviewSeries_3 = () => {
 
                             <h6>
                                 <i>
-                                    React Reconciliation refers to React's process of comparing the current and previous states of the Virtual DOM and updating the DOM efficiently. It makes the DOM updates faster in React. It updates the virtual DOM first and then uses the diffing algorithm to make efficient and optimized updates in the Real DOM.
+                                    React Reconciliation refers to the React's process of comparing the current and previous states of the Virtual DOM and updating the DOM efficiently. It makes the DOM updates faster in React. It updates the virtual DOM first and then uses the diffing algorithm to make efficient and optimized updates in the Real DOM.
                                 </i>
                             </h6>
                         </div>

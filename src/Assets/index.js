@@ -57,7 +57,10 @@ const AppImages = {
     DerivedStatesImg_2: require('./Derived_States_2.png'),
     Props_Design_1: require('./props_design_1.png'),
     Props_Design_2: require('./props_design_2.png'),
-    Props_Design_3: require('./props_design_3.png')
+    Props_Design_3: require('./props_design_3.png'),
+    Dependecies: require('./dependencies.png'),
+    DevDependecies: require('./dev_dependencies.png'),
+    NPM_VS_NPX: require('./npm-vs-npx.png')
 }
 
 export default AppImages;

@@ -31,7 +31,7 @@ const Counter = () => {
     }
     return (
         <div>
-            <br/><br/>
+            <br/>
             <div>
                 <button className='btn btn-info btn-sm' onClick={incrementByOne}>Increment</button>
             </div>
@@ -46,6 +46,7 @@ const Counter = () => {
             <br/>
             <div>   
                 <input type='number' placeholder='Enter amount' value={amount} onChange={handleAmount} />
+                &nbsp;
                 <button className='btn btn-success btn-sm' onClick={handleIncrementAmount}>Increment By Amount</button>
             </div>
         </div>

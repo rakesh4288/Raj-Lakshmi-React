@@ -21,6 +21,7 @@ const ReactHttpGetPage = () => {
 
     useEffect(() => {
         return () => {
+            // Cleanup: Removing event listner
             // this is called ComponentWillUmount()
             // This is the final phase of component and its called when you need to unmount any business logic
         }

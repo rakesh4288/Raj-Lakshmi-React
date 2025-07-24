@@ -218,30 +218,29 @@ const InterviewSeries_1 = () => {
                 <div className="container">
                     <div className="row">
                         <div className='col-xl-12 col-lg-12 col-md-12 col-sm-12'>
-                            <h3>Difference between package.json and package-lock.json ?</h3>
+                            <h5>Difference between package.json and package-lock.json ?</h5>
                         </div>
                     </div>  
 
                     <div className="row">
                         <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
-                            <h5><b>package.json</b></h5>
+                            <h6><b>package.json</b></h6>
                             <p>
-                                records the minimum version that your app needs. If you update the versions of a particular package, the change is not going to be reflected here.
+                                package.json records the minimum version that your app needs. If you update the versions of a particular package, the change is not going to be reflected here.
                             </p>
 
                             <p>
-                                So lets say I am having some library with ^3.0.0 in package.json and then library team releases version 3.5.2 and now when someone clone my repo and runs npm install in that directory they will get the version 3.5.2 (You can also put ~ instead of ^ it will update to latest patch version)
+                                So lets say I am having some library with ^3.0.0 in package.json and then library team releases version 3.5.2 and now when someone clone my repo and runs npm install in their machine so they will get the version 3.5.2 (You can also put ~ instead of ^ it will update to latest patch version)
                             </p>
 
                             <ul>
                                 <li>This file contains information about the project like defining project properties, description, author & license information, scripts, etc.</li>
                                 <li>There are two types of dependencies, first is the dependencies and another one is dev dependencies.</li>
-                                <li>The dev dependencies are required during the development process and the others are needed to run the application.</li>
                             </ul>
                         </div>
 
                         <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
-                            <h5><b>package-lock.json</b></h5>
+                            <h6><b>package-lock.json</b></h6>
                             <p>
                                 Actually it is recording the exact version of each installed package in React application which allows you to re-install them. Future installs will be able to build an identical dependency tree.
                             </p>
@@ -262,7 +261,7 @@ const InterviewSeries_1 = () => {
                         <div className='col-xl-12 col-lg-12 col-md-12 col-sm-12'>
                             <h3>Difference between dependencies vs dev dependencies ?</h3>
                             <p>
-                                Every web application project typically includes a file called package.json, which serves as a central repository for important project metadata. This file holds information such as dependencies and dev dependencies.
+                                Every web application project includes a file called package.json, which serves as a central repository for an important project metadata. <br/> This file holds information such as dependencies and dev dependencies.
                             </p>
                         </div>
                     </div>  
@@ -271,20 +270,22 @@ const InterviewSeries_1 = () => {
                         <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
                             <h6><b>Dependencies</b></h6>
                             <p>
-                                Dependencies are mostly required for production build and core functionality of React
+                                Dependencies are mostly required for the production build and core functionality of the React
                             </p>
 
-                            <div>
-                                <ul>
-                                    <li> 
-                                        <b>Production Use:</b> These are essential for running the application in production.
-                                    </li>
+                             <ul>
+                                <li> 
+                                    <b>Production Use:</b> These are essential for running the application in production.
+                                </li>
 
-                                    <li>
-                                        <b>Automatic Installation:</b> These packages are automatically installed when you run npm install command.
-                                    </li>
-                                </ul>
-                            </div>
+                                <li>
+                                    <b>Automatic Installation:</b> These packages are automatically installed when you run npm install command.
+                                </li>
+                            </ul>
+
+                            <p>
+                                <img  src={AppImages.Dependecies} alt={AppImages.Dependecies} className="img-fluid"/>
+                            </p>
                         </div>
 
                         <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
@@ -295,6 +296,10 @@ const InterviewSeries_1 = () => {
 
                             <p>
                                 So, whenever you want to install any library that is required only in your development phase then you can find it in the dev Dependencies object. 
+                            </p>
+
+                            <p>
+                                <img  src={AppImages.DevDependecies} alt={AppImages.DevDependecies} className="img-fluid"/>
                             </p>
                         </div>
                     </div>

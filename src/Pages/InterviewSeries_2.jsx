@@ -45,7 +45,7 @@ const InterviewSeries_2 = () => {
             <section id="what-is-babel" className="blueGradientRight">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-6">
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <h3>What is babel?</h3>
                             <p>
                                 Babel is a popular JavaScript transpiler that converts the modern JavaScript code (ES6 and beyond) and JSX into a backwards-compatible version of JavaScript that can run in every browsers.
@@ -60,7 +60,7 @@ const InterviewSeries_2 = () => {
                             </p>
                         </div>
 
-                        <div className="col-md-6">
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <h3>Why is Babel Important for React JS?</h3>
                             <p>Babel is essential for React JS development for several reasons:</p>
                             <ul>
@@ -75,6 +75,25 @@ const InterviewSeries_2 = () => {
                                 <li>
                                     <b>Polyfills for Missing Features:</b> Babel can also include polyfills for newer JavaScript features that are not natively supported in some browsers. This ensures that the application’s code behaves consistently across all environments.
                                 </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <h5>What is the webpack in react ?</h5>
+                            <h6>
+                                Webpack is a just helping to create the bundle for your react js application.
+                                <br/>Its primary role is to take all the individual JavaScript files and assets alos like CSS, images, fonts in a project and combine them into a single, optimized bundle that can be efficiently loaded by a web browser.
+                            </h6>
+
+                            <h5>Key functions of Webpack in a React context</h5>
+                            <ul>
+                                <li>Module Bundling</li>
+                                <li>Transpilation</li>
+                                <li>Asset Management</li>
+                                <li>Optimization</li>
+                                <li>Development Features</li>
                             </ul>
                         </div>
                     </div>
@@ -118,6 +137,17 @@ const InterviewSeries_2 = () => {
                             </p>
                         </div>
                     </div>
+
+                    <div className="row">
+                        <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <br/>
+                            <h6>Let's talk about the dependency array</h6>
+                            <ul>
+                                <li>If you adding a blank dependency array inside useEffect hook then it will render on every component rendering</li>
+                                <li>But let's suppose you added any array dependecies over there then it will execute when your array dependecies array updated. </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -127,7 +157,7 @@ const InterviewSeries_2 = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                            <h3>Best interview video ever</h3>
+                            <h5>Best interview video ever</h5>
                             <iframe width="100%" height="500" src="https://www.youtube.com/embed/cXHm_7a7gfE?si=hCnAMB0a_xoWuH-7" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                         </div>
                     </div>

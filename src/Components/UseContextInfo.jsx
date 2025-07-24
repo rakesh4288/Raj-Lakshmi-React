@@ -13,7 +13,7 @@ const UseContextInfo = () => {
         <div id="use-context-info">
             <h3> <i>useContext</i> Hook </h3>
             <p> 
-                useContext() hook is useful for sharing the global info for all the child components. While using this we can ignore to use props because useContext helping to share the global info at very deep level component
+                useContext() hook is a very useful hook for sharing the global info for all the child components. While using this we can ignore to use props because useContext helping to share the global info at very deep level component
             </p>
 
             <p>
@@ -23,7 +23,7 @@ const UseContextInfo = () => {
             <h4>What was the problem:</h4>
             <p>
                 <b>Detail Explanation:</b> Let's suppose you have multiple child component like parent to child or nested child so before useContext you need to use the props for passing the data, So in this approach your component structure will look like a prop drilling, 
-                <br/>So here React js providing the useContext API for avoiding props drilling. Because it will become very difficult to handle this prop drilling issue
+                <br/>So here React js providing the useContext API for avoiding the props drilling. Because it will become very difficult to handle this prop drilling issue
             </p>
             
             <div className="alert alert-info">
@@ -93,15 +93,6 @@ const UseContextInfo = () => {
                     </countryName.Provider>
                 </div>
             </div>
-
-            <hr className="bg-info"/>
-
-            <h6>How to use the useContext, here are the steps:</h6>
-            <ul>
-                <li>Create the Context by using the create context</li>
-                <li>Providing the Context</li>
-                <li>Consuming the Context</li>
-            </ul>
 
             <hr className="bg-success"/>
 

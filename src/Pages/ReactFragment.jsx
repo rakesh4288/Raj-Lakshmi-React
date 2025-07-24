@@ -21,7 +21,7 @@ const ReactFragment = () => {
                     <div className='row'>
                         <div className='col-md-12'>
                             <h6>
-                                React JS Fragments are a way to group the multiple elements without adding any extra node to the parent element in DOM. It allows you to return the multiple child elements from a component without wrapping them in a parent container
+                                React Fragments are a simple way to group the multiple elements without adding any extra node to the parent element in DOM. It allows you to return the multiple child elements from a component without wrapping them in a parent container
                             </h6>
                         </div>
                     </div>
