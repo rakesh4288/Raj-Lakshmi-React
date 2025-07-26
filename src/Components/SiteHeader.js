@@ -179,6 +179,12 @@ const SiteHeader = () => {
                                         <Icon.ArrowRight /> Computer Accessories
                                     </Link>
                                 </li>
+
+                                <li>
+                                    <Link className="dropdown-item" to="/simple-crud-using-redux-toolkit">
+                                        <Icon.ArrowRight /> Crud using Redux Toolkit
+                                    </Link>
+                                </li>
                             </ul>
                         </li>
                     </ul>

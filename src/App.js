@@ -50,7 +50,9 @@ import DebouncingPage from './Pages/DebouncingPage';
 import ReactCustomHook from './Pages/ReactCustomHook';
 import LazyLoadingPage from './Pages/LazyLoadingPage';
 import CountryFullDetails from './Components/CountryFullDetails';
-
+import ReduxCrudPage from './Pages/ReduxCrudPage';
+import ReduxCrudCreate from './Pages/ReduxCrudCreate';
+import ReduxCrudUpdate from './Pages/ReduxCrudUpdate';
 
 function App() {
   // const value = useSelector((data) => data.counter.value);
@@ -107,6 +109,9 @@ function App() {
           <Route path="computer-material-dashboard" Component={ComputerMaterialDashboard}>
             <Route path="product-list" element={<ComputerMaterialList />} />
           </Route>
+          <Route path="/simple-crud-using-redux-toolkit" Component={ReduxCrudPage} />
+          <Route path="/redux-create-new-contact" Component={ReduxCrudCreate}/>
+          <Route path="edit-student/:id" Component={ReduxCrudUpdate} />
           <Route path="*" Component={PageNotFound} />
         </Routes>
       </main>

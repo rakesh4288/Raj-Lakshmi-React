@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import * as Icon from 'react-bootstrap-icons';
 import RajLakshmiModal from "../Components/Modal";
 import AppImages from '../Assets';
@@ -19,10 +20,14 @@ const ReactReduxPage = () => {
             <section className="pageHeader">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12">
+                        <div className="col-xl-9 col-lg-9 col-md-9 col-sm-12">
                             <h4 className="pageHeading">
                                 What is the React Redux  <Icon.BorderCenter />
                             </h4>
+                        </div>
+
+                        <div className="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                            <Link to="/simple-crud-using-redux-toolkit" className="btn btn-warning btn-sm">Crud Operation using Redux Toolkit</Link>
                         </div>
                     </div>
                 </div>
@@ -237,11 +242,11 @@ const ReactReduxPage = () => {
             <section className="pt-2 pb-2 mt-2 mb-2">
                 <div className="container">
                     <div className="row">
-                        <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <TaskManager />
                         </div>
 
-                        <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <iframe width="100%" height="315" src="https://www.youtube.com/embed/EV168NQvCHc?si=d4E4WDHoW7q8iZSA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                         </div>
                     </div>
