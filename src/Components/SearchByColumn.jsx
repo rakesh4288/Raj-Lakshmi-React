@@ -32,7 +32,7 @@ const SearchByColumn = () => {
     });
     return (
         <div className="img-thumbnail">
-            <h6>Dummy User</h6>
+            <h5>Dummy User</h5>
             <label>Search by First & Last Name:</label> <br />
             <input type="text" name="userSearch" value={inputValue} onChange={handleSearch} />
             <table className="table table-striped">

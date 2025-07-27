@@ -3,6 +3,7 @@ import * as Icon from 'react-bootstrap-icons';
 import SimpleForm from "../Components/SimpleForm";
 import AddRemoveItem from "../Components/AddRemoveItem";
 import SimpleLoginForm from "../Components/SimpleLoginForm";
+import SimpleCarManager from "../Components/SimpleCarManager";
 
 const CompleteFormPage = () => {
     const intialValues = {
@@ -231,7 +232,7 @@ const CompleteFormPage = () => {
                         </div>
 
                         <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12">
-                            
+                            <SimpleCarManager/>
                         </div>
                     </div>
                 </div>

@@ -2,7 +2,7 @@ import React from "react";
 import * as Icon from 'react-bootstrap-icons';
 import { Link, Outlet } from 'react-router-dom';
 import DynamicInput from "../Components/DynamicInput";
-import SimpleDataFilter from '../Components/SimpleDataFilter';
+import ThreeFilterOnApi from '../Components/ThreeFilterOnApi';
 
 const EmployeeDashboard = () => {
     return (
@@ -73,7 +73,7 @@ const EmployeeDashboard = () => {
             <hr className="bg-info"/>
 
             <section className="container pt-3 pb-3">
-                <SimpleDataFilter/>
+                <ThreeFilterOnApi />
             </section>
         </div>
     )

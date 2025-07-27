@@ -95,7 +95,7 @@ const SiteHeader = () => {
                             <ul className="dropdown-menu">
                                 <li>
                                     <Link className="dropdown-item" to="/react-http-tutorial">
-                                        <Icon.ArrowRight /> React HTTP Tutorial Landing Page
+                                        <Icon.ArrowRight /> React HTTP Dashboard
                                     </Link>
                                 </li>
                                 <li>

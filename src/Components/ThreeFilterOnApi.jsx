@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const SimpleDataFilter = () => {
+const ThreeFilterOnApi = () => {
     const [userData, setUserData] = useState([]);
     const [copyUser, setCopyUser] = useState([]);
     useEffect(() => {
@@ -49,9 +49,6 @@ const SimpleDataFilter = () => {
         console.log('handleAge =', e.target.value);
         const ageValue = parseInt(e.target.value);
         let tempUser = [];
-        // if(ageValue === 35) {
-        //     console.log('inside');
-        // }
         if(ageValue === 35) {
             console.log(`inside ${ageValue}`);
             tempUser = copyUser.filter((item) => item.age >=35);
@@ -86,7 +83,6 @@ const SimpleDataFilter = () => {
                             <th>Gender</th>
                         </tr>
                     </thead>
-
                     <tbody>
                         {
                             userData.length === 0 ? (
@@ -96,7 +92,7 @@ const SimpleDataFilter = () => {
                         ) : 
                             userData.map((item, index = 0) => {
                                 return (
-                                    <tr key={index.id}>
+                                    <tr key={index + 1}>
                                         <td>{index + 1}</td>
                                         <td>{item.firstName}</td>
                                         <td>{item.lastName}</td>
@@ -140,4 +136,4 @@ const SimpleDataFilter = () => {
     )
 }
 
-export default SimpleDataFilter;
+export default ThreeFilterOnApi;

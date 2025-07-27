@@ -118,7 +118,7 @@ const AddRemoveItem = () => {
 
                                     mainItems.map((item, index) => {
                                         return (
-                                            <div key={index + 1} className='alert alert-info'>
+                                            <div key={index + 1} className='alert alert-info' style={{marginBottom: '10px'}}>
                                                 <div className='float-start'>{item}</div>
                                                 <div className='float-end' style={{cursor: 'pointer'}} onClick={()=> handleDelete(item)}><Icon.Trash /></div>
                                                 <div className='clearfix'></div>
@@ -129,35 +129,6 @@ const AddRemoveItem = () => {
                             </>
                         )
                     }
-
-
-                    {/* {
-                        mainItems && (
-                            <div>
-                                <ol>
-                                    {
-
-                                        mainItems.map((item, index) => {
-                                            return (
-                                                <li key={index + 1}>{item}</li>
-                                            )
-                                        })
-                                    }
-                                </ol>
-                            </div>
-                        )
-                    } */}
-
-                    {/* <ol>
-                        {
-                            
-                            mainItems.map((item, index) => {
-                                return (
-                                    <li key={index + 1}>{item}</li>
-                                )
-                            })
-                        }
-                    </ol> */}
                 </div>
             </div>
         </div>
