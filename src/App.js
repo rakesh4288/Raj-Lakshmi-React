@@ -53,6 +53,7 @@ import CountryFullDetails from './Components/CountryFullDetails';
 import ReduxCrudPage from './Pages/ReduxCrudPage';
 import ReduxCrudCreate from './Pages/ReduxCrudCreate';
 import ReduxCrudUpdate from './Pages/ReduxCrudUpdate';
+import GitAndGitHub from './Pages/GitAndGitHub';
 
 function App() {
   // const value = useSelector((data) => data.counter.value);
@@ -112,6 +113,7 @@ function App() {
           <Route path="/simple-crud-using-redux-toolkit" Component={ReduxCrudPage} />
           <Route path="/redux-create-new-contact" Component={ReduxCrudCreate}/>
           <Route path="edit-student/:id" Component={ReduxCrudUpdate} />
+          <Route path="/what-is-git-and-git-github" Component={GitAndGitHub}/>
           <Route path="*" Component={PageNotFound} />
         </Routes>
       </main>

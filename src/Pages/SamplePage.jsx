@@ -6,7 +6,7 @@ const SamplePage = () => {
             <section className="pageHeader">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12">
+                        <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                             <h4 className="pageHeading"> Sample</h4>
                         </div>
                     </div>
@@ -16,7 +16,7 @@ const SamplePage = () => {
             <section>
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12">
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <p>Sample Coding</p>
                         </div>
                     </div>

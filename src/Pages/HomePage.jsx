@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from '../Assets/logo.svg';
 import * as Icon from 'react-bootstrap-icons';
 import './PagesStyle.css';
@@ -7,9 +7,15 @@ import AppImages from "../Assets";
 
 const HomePage = () => {
     const [toggle, setToggle] = useState(false);
+    const navigate = useNavigate();
     const toggleHandler = () => {
         console.log('inside toggleHandler');
         setToggle(!toggle);
+    }
+
+    const handleGit = () => {
+        //alert('inside handleGit');
+        navigate('/what-is-git-and-git-github');
     }
     return (
         <div id="home-page" className="homePageStyle">
@@ -17,7 +23,17 @@ const HomePage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                            <h1 className="pageHeading"> React JS <img src={logo} className="App-logo" alt="logo" /> </h1>
+                           <div className="clearfix">
+                                <div className="float-start">
+                                <h1 className="pageHeading"> React JS <img src={logo} className="App-logo" alt="logo" /> </h1>
+                            </div>
+
+                            <div className="float-end">
+                                <button className="btn btn-warning btn-sm" onClick={handleGit}>
+                                    Learning Git & GitHub <Icon.Alexa />
+                                </button>
+                            </div>
+                           </div>
                         </div>
                     </div>
                 </div>
