@@ -54,7 +54,7 @@ const SiteHeader = () => {
                             <ul className="dropdown-menu">
                                 <li>
                                     <Link className="dropdown-item" to="/how-to-handle-form-in-react">
-                                        <Icon.ArrowRight /> React Form Dashboard
+                                        <Icon.ArrowRight /> Form Dashboard
                                     </Link>
                                 </li>
 

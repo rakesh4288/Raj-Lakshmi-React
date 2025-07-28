@@ -54,6 +54,11 @@ const SelectAllCheckbox = () => {
             console.log('handleSelectAll =', employeesData);
         }
     }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log('Final Object =', rowSelected);
+    }
     return (
         <form className="img-thumbnail">
             <table className="table table-striped">
@@ -108,7 +113,13 @@ const SelectAllCheckbox = () => {
                     }
                 </tbody>
             </table>
-            <button className="btn btn-info btn-sm" type="submit">Submit Selected</button>
+            <button className="btn btn-success btn-sm" type="submit" onClick={handleSubmit}>Submit Selected</button>
+            <br/>
+            <pre>
+                {
+                    JSON.stringify(rowSelected, undefined, 2)
+                }
+            </pre>
         </form>
     )
 }
