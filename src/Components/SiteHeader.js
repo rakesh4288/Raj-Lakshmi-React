@@ -27,7 +27,7 @@ const SiteHeader = () => {
                             <ul className="dropdown-menu">
                                 <li>
                                     <Link className="dropdown-item" to="/basic-info-of-react">
-                                        <Icon.ArrowRight /> React Basic Landing Page
+                                        <Icon.ArrowRight /> React Basic Page
                                     </Link>
                                 </li>
                                 <li>

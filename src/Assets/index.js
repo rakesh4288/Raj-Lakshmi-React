@@ -61,7 +61,10 @@ const AppImages = {
     Dependecies: require('./dependencies.png'),
     DevDependecies: require('./dev_dependencies.png'),
     NPM_VS_NPX: require('./npm-vs-npx.png'),
-    GitVsGitHub: require('./git-vs-github.png')
+    GitVsGitHub: require('./git-vs-github.png'),
+    EventDelegation_1: require('./event_delegation_1.png'),
+    EventDelegation_2: require('./event_delegation_2.png'),
+    EventDelegation_3: require('./event_delegation_3.png')
 }
 
 export default AppImages;
