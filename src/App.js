@@ -54,12 +54,9 @@ import ReduxCrudPage from './Pages/ReduxCrudPage';
 import ReduxCrudCreate from './Pages/ReduxCrudCreate';
 import ReduxCrudUpdate from './Pages/ReduxCrudUpdate';
 import GitAndGitHub from './Pages/GitAndGitHub';
+import ReduxThunkGetApi from './Pages/ReduxThunkGetApi';
 
 function App() {
-  // const value = useSelector((data) => data.counter.value);
-  // const userData = useSelector((data) => data.counter.userData);
-  //  console.log('value =', value);
-  // console.log('userData =', userData);
   return (
     <div className="App">
       <SiteHeader />
@@ -114,33 +111,11 @@ function App() {
           <Route path="/redux-create-new-contact" Component={ReduxCrudCreate}/>
           <Route path="edit-student/:id" Component={ReduxCrudUpdate} />
           <Route path="/what-is-git-and-git-github" Component={GitAndGitHub}/>
+          <Route path="/http-get-api-calling-via-redux-thunk" Component={ReduxThunkGetApi}/>
           <Route path="*" Component={PageNotFound} />
         </Routes>
       </main>
       <SiteFooter />
-      {/* <header className="App-header">  
-        <div>
-          <Junior />
-        </div>
-
-        <hr/>
-        
-        <h1>{value}</h1>
-        <h2>{userData}</h2>
-        <div>
-          <Green/>
-        </div>
-
-        <hr/>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
     </div>
   );
 }

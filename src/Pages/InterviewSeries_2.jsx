@@ -230,7 +230,7 @@ const InterviewSeries_2 = () => {
                             React Strict Mode goal is to improve the quality of the react application by avoiding the common mistakes while developming a app.
                         </h6>
 
-                        <pre className="lighGreenBG">
+                        <pre className="lightGreenBG">
                             <span>&lt;React.StrictMode&gt;</span><br/><span>    &lt;App /&gt;</span><br/><span>&lt;/React.StrictMode&gt;</span>
                         </pre>
 

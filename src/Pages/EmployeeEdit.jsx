@@ -32,7 +32,7 @@ const EmployeeEdit = () => {
             .catch((err) => {
                 console.log(err.message);
             })
-    }, []);
+    }, [id]);
 
     const handleSubmit = (e) => {
         e.preventDefault();

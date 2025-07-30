@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import * as Icon from 'react-bootstrap-icons';
 import RajLakshmiModal from "../Components/Modal";
 import AppImages from '../Assets';
-import Counter from "../Components/Counter";
+import CounterAppUsingRedux from "../Components/CounterAppUsingRedux";
 import TaskManager from "../Components/TaskManager";
 
 const ReactReduxPage = () => {
@@ -33,89 +33,99 @@ const ReactReduxPage = () => {
                 </div>
             </section>
 
-            <section>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-6">
-                            <p>
-                                React Redux is a state management library. Redux is simply helps to manage the state of your entire application
-                            </p>
+            <section className="container">
+                <div className="row">
+                    <div className="col-md-6">
+                        <p>
+                            React Redux is a state management library. Redux is simply helps to manage the state of your entire application
+                        </p>
 
-                            <p>
-                                In other words React Redux is used to manage the data of the application by keeping centralized store.
-                            </p>
+                        <p>
+                            In other words React Redux is used to manage the data of the application by keeping centralized store.
+                        </p>
 
-                            <p>
-                                It provides a predictable state container by connecting React components to a centralized store, simplifying data flow and enabling efficient management of application state across components.
-                            </p>
+                        <p>
+                            It provides a predictable state container by connecting React components to a centralized store, simplifying data flow and enabling efficient management of application state across components.
+                        </p>
 
-                            <p>
-                                Redux Uses: It makes it easier to manage the state and data. As the complexity of our application increases. At the start, it is hard to understand but it helps to build complex applications. In the beginning, it feels like a lot of work, but it is really helpful.
-                            </p>
-                        </div>
-
-                        <div className="col-md-6">
-                            <h4>Why we learn React Redux?</h4>
-                            <div>
-                                <p>
-                                    In the React development most common task is to update the state, mostly you are passing the state from Parent to child component, and sometimes you need to pass the state from child to parent component. Let's check few scenarios:
-                                </p>
-                                <ul>
-                                    <li>
-                                        Let's suppose you have some complex code component structure where you are passing the state using the props so sometimes it can be a difficult to manage the props via upwards or downwards.
-                                    </li>
-
-                                    <li>Generally React passing the props via parent to child like Downwards it means top to the bottom, and similarly how you will the states from bottom to top you will use the callback options no any other methods are present to handle this case.</li>
-
-                                    <li>So handle this situation you can use the Redux where Redux provides the centralized store to help the data flows and provides the smooth transitions to update the states</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <p>
+                            Redux Uses: It makes it easier to manage the state and data. As the complexity of our application increases. At the start, it is hard to understand but it helps to build complex applications. In the beginning, it feels like a lot of work, but it is really helpful.
+                        </p>
                     </div>
 
-                    <hr className="bg-success"/>
-
-                    <div className="row">
-                        <div className="col-xl-6 col-lg-6 col-md-5 col-sm-12">
-                            <div>
-                                <h6>Steps for configure Redux:</h6>
-                                <ul>
-                                    <li>Step 1: Firstly we need to create the store</li>
-                                    <li>Step 2: Wrap the react app by using provider in index.js file</li>
-                                    <li>Step 3: Create the feature slice, This is the actual file where you need to create feature about common States</li>
-                                    <li>Step 4: Register the slice feature with store.js file., This file needs all the slice registration</li>
-                                </ul>
-                            </div>
-                            <hr className="bg-primary"/>
+                    <div className="col-md-6">
+                        <h4>Why we learn React Redux?</h4>
+                        <div>
                             <p>
-                                The <b>useSelector()</b> hook is primarily used for extracting the data from Redux store within the functional component. <b>useSelector()</b> takes a selector function as an argument. This function receiving the entire Redux store state and returning the specefic piece of data that the component needs.
+                                In the React development most common task is to update the state, mostly you are passing the state from Parent to child component, and sometimes you need to pass the state from child to parent component. Let's check few scenarios:
                             </p>
+                            <ul>
+                                <li>
+                                    Let's suppose you have some complex code component structure where you are passing the state using the props so sometimes it can be a difficult to manage the props via upwards or downwards.
+                                </li>
 
-                            <p className='text-danger'>
-                                When the states are changing inside the Redux store, so the useSelector automatically re-renders and ensuring that you are always receiving the most up-to-date information.
-                            </p>
+                                <li>Generally React passing the props via parent to child like Downwards it means top to the bottom, and similarly how you will the states from bottom to top you will use the callback options no any other methods are present to handle this case.</li>
 
-                            <button className="btn btn-success btn-sm" onClick={ModalHandler}>What is Use Selector ?</button>
-                            { show ? <RajLakshmiModal handleClose = {handleClose} /> : null }
+                                <li>So handle this situation you can use the Redux where Redux provides the centralized store to help the data flows and provides the smooth transitions to update the states</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-                            <Counter initialState={0}/>
+                <hr className="bg-success"/>
+
+                <div className="row">
+                    <div className="col-xl-6 col-lg-6 col-md-5 col-sm-12">
+                        <div>
+                            <h6>Steps for configure Redux:</h6>
+                            <ul>
+                                <li>Step 1: Firstly we need to create the store</li>
+                                <li>Step 2: Wrap the react app by using provider and add the store attribute and assign the store configuration in index.js file</li>
+                                <li>Step 3: Create the feature slice, This is the actual file where you need to create feature about common States</li>
+                                <li>
+                                    Step 4: Register the slice feature with store.js file., This file needs all the slice registration
+                                </li>
+                                <li>
+                                    Step 5: Later you can use the useSelector() hook for getting the latest data from the store
+                                    </li>
+                                <li>
+                                    Step 5: And if you wanted to update the state then you need to use the useDispatch() hook to pass the action to the reducer, and reducer will take your action and payload and perform the opertion based on your request
+                                </li>
+                            </ul>
+                            <h6>
+                                Best tutorial for Setup: <Link href="https://whataboutcoding.com/redux-toolkit-tutorial/" target="_target">https://whataboutcoding.com/redux-toolkit-tutorial/</Link> 
+                            </h6>
                         </div>
 
-                        <div className="col-xl-6 col-lg-6 col-md-5 col-sm-12">
-                            <p>
-                                <img src={AppImages.useSelectorImg} alt='useSelectorImg' className='img-fluid' />
-                            </p>
+                        <hr className="bg-primary"/>
+                        <p>
+                            The <b>useSelector()</b> hook is primarily used for extracting the data from Redux store within the functional component. <b>useSelector()</b> takes a selector function as an argument. This function receiving the entire Redux store state and returning the specefic piece of data that the component needs.
+                        </p>
 
-                            <div>
-                                <h5>What are the action in Redux ?</h5>
-                                <p>
-                                    If I would say in simple terms so Actions are the just message which is just dispatching to the reducer like what to do. Then reducer are taking the action and performing the operations and updating the state.
-                                </p>
-                                <p>
-                                    Actions are the plain JavaScript objects that have a type field. As mentioned earlier,
-                                    you can think of an action as an event that describes something that happened in the application.
-                                </p>
-                            </div>
+                        <p className='text-danger'>
+                            When the states are changing inside the Redux store, so the useSelector automatically re-renders and ensuring that you are always receiving the most up-to-date information.
+                        </p>
+
+                        <button className="btn btn-success btn-sm" onClick={ModalHandler}>What is Use Selector ?</button>
+                        { show ? <RajLakshmiModal handleClose = {handleClose} /> : null }
+
+                        <CounterAppUsingRedux initialState={0}/>
+                    </div>
+
+                    <div className="col-xl-6 col-lg-6 col-md-5 col-sm-12">
+                        <p>
+                            <img src={AppImages.useSelectorImg} alt='useSelectorImg' className='img-fluid' />
+                        </p>
+
+                        <div>
+                            <h5>What are the action in Redux ?</h5>
+                            <p>
+                                If I would say in simple terms so Actions are the just message which is just dispatching to the reducer like what to do. Then reducer are taking the action and performing the operations and updating the state.
+                            </p>
+                            <p>
+                                Actions are the plain JavaScript objects that have a type field. As mentioned earlier,
+                                you can think of an action as an event that describes something that happened in the application.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -148,6 +158,13 @@ const ReactReduxPage = () => {
                             <p className="bg-warning p-2 text-dark">
                                 If you see here we are passing the states and also sending the action type as parameter. So what type of the action we are requesting from Redux Store with the help of reducers only that states are returning.
                             </p>
+
+                            <div className="lightGreenBG">
+                                <h6>can we have multiple reducers in redux</h6>
+                                <p>
+                                    Yes, it is possible to have multiple reducers in Redux. While Redux maintains a single, immutable state tree, it provides a utility function called combineReducers to manage different parts, or "slices," of that state tree with separate reducer functions.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
@@ -181,13 +198,27 @@ const ReactReduxPage = () => {
                 </div>
             </section>
 
+            <section className="container">
+                <div className="row">
+                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <h5>Best Redux Interview Questions:</h5>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/Qh9tarU1KWg?si=XJ7WAoxXDDfzmrHX" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                    </div>
+
+                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <h5>How to call the API using Redux Thunk:</h5>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/2JBx_06dD1k?si=VLPTfoq2U7AP1GDt" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                    </div>
+                </div>
+            </section>
+
             <section className="pt-4 pb-4 mt-4 mb-4">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                             <h5>Redux Thunk vs. Redux Saga: Choosing the Right Middleware <Icon.Activity/></h5>
                             <h6>
-                                Redux is a predictable state container for React apps. This is widely used in React application for managing the application state globaly.
+                                Redux is a predictable state container for React apps. This is a mainly used in React application for managing the application state globally.
                             </h6>
 
                             <h6 className="text-danger">
@@ -218,7 +249,7 @@ const ReactReduxPage = () => {
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <h6><b>Redux Saga:</b></h6>
                             <p>
-                                Redux Saga is also a middleware of React applications that main purpose is to make a side effect in Redux application. This is easier to manage and more efficient to execute
+                                Redux Saga is also a middleware of the React applications and the main purpose is to make a side effect in the Redux application while dealing with API. This is easier to manage and more efficient to execute
                             </p>
 
                             <p>
@@ -247,6 +278,7 @@ const ReactReduxPage = () => {
                         </div>
 
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <h5>Redux Toolkit Video for Task Management: </h5>
                             <iframe width="100%" height="315" src="https://www.youtube.com/embed/EV168NQvCHc?si=d4E4WDHoW7q8iZSA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                         </div>
                     </div>

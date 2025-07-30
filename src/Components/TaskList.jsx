@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
-import { deleteTask, toggleTask } from "../features/taskSlice";
+import { deleteTask, toggleTask } from "../features/TaskManagerSlice";
 import * as Icon from 'react-bootstrap-icons';
 const TaskList = () => {
     const [taskItemList, setTaskItemList] = useState([]);

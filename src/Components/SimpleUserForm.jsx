@@ -107,7 +107,7 @@ const SimpleUserForm = () => {
     return (
         <>
             <div className='col-xl-3 col-lg-3 col-md-3 col-sm-12'>
-                <form className='lighGreenBG rounded shadow-sm p-3' onSubmit={handleSubmit}>
+                <form className='lightGreenBG rounded shadow-sm p-3' onSubmit={handleSubmit}>
                     <h5>User Registration:</h5>
                     <div className='mb-3'>
                         <label htmlFor="name" className="form-label"> Name:</label>

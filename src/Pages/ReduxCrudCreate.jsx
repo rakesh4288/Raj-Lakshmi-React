@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import * as Icon from 'react-bootstrap-icons';
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux"; 
@@ -157,6 +158,30 @@ const ReduxCrudCreate = () => {
 
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <iframe width="100%" height="315" src="https://www.youtube.com/embed/DOkSU3yg4vQ?si=IIlp9pUyfpKzrV0o" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                        </div>
+
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div className="lightGreenBG">
+                                <h6>Steps for configure Redux:</h6>
+                                <ul>
+                                    <li>Step 1: Firstly we need to create the store</li>
+                                    <li>Step 2: Wrap the react app by using provider and add the store attribute and assign the store configuration in index.js file</li>
+                                    <li>Step 3: Create the feature slice, This is the actual file where you need to create feature about common States</li>
+                                    <li>
+                                        Step 4: Register the slice feature with store.js file., This file needs all the slice registration
+                                    </li>
+                                    <li>
+                                        Step 5: Later you can use the useSelector() hook for getting the latest data from the store
+                                        </li>
+                                    <li>
+                                        Step 5: And if you wanted to update the state then you need to use the useDispatch() hook to pass the action to the reducer, and reducer will take your action and payload and perform the opertion based on your request
+                                    </li>
+                                </ul>
+
+                                <h6>
+                                    Best tutorial for Setup: <Link href="https://whataboutcoding.com/redux-toolkit-tutorial/" target="_target">https://whataboutcoding.com/redux-toolkit-tutorial/</Link> 
+                                </h6>
+                            </div>
                         </div>
                     </div>
                 </div>

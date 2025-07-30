@@ -12,7 +12,7 @@ const studentSlice = createSlice({
         updateStudent: (state, action) => {
             console.log('studentSlice updateStudent =', action.payload);
             const {id, studentName, studentEmail, studentPhone, city} = action.payload;
-            const updateStudent = state.find(student => student.id == id);
+            const updateStudent = state.find(student => student.id === id);
             if(updateStudent) {
                 updateStudent.studentName = studentName;
                 updateStudent.studentEmail = studentEmail;

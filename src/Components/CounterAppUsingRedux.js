@@ -1,11 +1,12 @@
 import React, {useState} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { increment, decrement, reset, incrementByAmount } from '../features/counterSlice';
+import { increment, decrement, reset, incrementByAmount } from '../features/CounterSlice';
 
-const Counter = () => {
+const CounterAppUsingRedux = () => {
     const [amount, setAmount] = useState(0);
-    const count = useSelector((state) => state.counter.value); 
+    const count = useSelector((state) => state.CounterStore.value); 
     // conuter is basically name of slice
+
     const dispatch = useDispatch(); 
     // dispatch is just helping to go inside the store and finding the exact actio which we need to perform
     const incrementByOne = () => {
@@ -29,6 +30,7 @@ const Counter = () => {
     const handleIncrementAmount = () => {
         dispatch(incrementByAmount(amount));
     }
+    
     return (
         <div>
             <br/>
@@ -53,4 +55,4 @@ const Counter = () => {
     )
 }
 
-export default Counter;
+export default CounterAppUsingRedux;

@@ -43,8 +43,30 @@ const SiteHeader = () => {
                             </ul>
                         </li>
                         
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/react-redux-tutorial">React Redux</Link>
+                        <li className="nav-item dropdown">
+                            <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                React Redux
+                            </Link>
+
+                            <ul className="dropdown-menu">
+                                <li>
+                                    <Link className="dropdown-item" to="/react-redux-tutorial">
+                                        <Icon.ArrowRight /> Redux Home Page
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link className="dropdown-item" to="/simple-crud-using-redux-toolkit">
+                                        <Icon.ArrowRight /> Crud Operation with React Redux Toolkit
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link className="dropdown-item" to="/http-get-api-calling-via-redux-thunk">
+                                        <Icon.ArrowRight /> Http API calling via Redux Thunk
+                                    </Link>
+                                </li>
+                            </ul>
                         </li>
 
                         <li className="nav-item dropdown">

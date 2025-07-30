@@ -1,14 +1,16 @@
 import { configureStore } from '@reduxjs/toolkit'
-import counterReducer from '../features/counterSlice'
-import taskReducer from '../features/taskSlice';
+import CounterSlice from '../features/CounterSlice'
+import taskReducer from '../features/TaskManagerSlice';
 // import UserContactSlice from '../features/User';
 import StudentContactSlice from '../features/StudentContactSlice';
+import DummyUserSlice from '../features/DummyUserSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    CounterStore: CounterSlice,
     task: taskReducer,
-    StudentRecord: StudentContactSlice
+    StudentRecord: StudentContactSlice,
+    DummyUserStore: DummyUserSlice
   },
 })
 

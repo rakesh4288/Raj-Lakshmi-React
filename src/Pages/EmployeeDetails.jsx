@@ -15,7 +15,7 @@ const EmployeeDetails = () => {
         }).catch((err) => {
             console.log(err.message);
         })
-    }, []);
+    }, [id]);
     return (
         <div className="container">
             <div className="row">
