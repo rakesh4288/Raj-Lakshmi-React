@@ -223,7 +223,7 @@ const HomePage = () => {
             <section id="how-to-optimize-react" className="darkBlueBgWithPinkBorder">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-6">
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <h5 className="text-white">How to optimize React App ?</h5>
                             <p>Here are some key points By which we can improve the React application like:</p>
 
@@ -232,7 +232,7 @@ const HomePage = () => {
                                 <li>
                                     <Link className="text-white" to="/fragment-in-react">Using React Fragment</Link>
                                 </li>
-                                <li>Use key attribute in list: We should always use the key attributes while using .map() method Because React make the difference between two HTML nodes</li>
+                                <li>Use key attribute in list: We should always use the key attributes while using .map() method Because React makes the difference between two HTML nodes</li>
                                 <li>
                                     <Link className="text-white" to="/what-is-lazy-loading-in-react">
                                     Lazy Loading Component</Link>
@@ -246,6 +246,123 @@ const HomePage = () => {
                                 <li>Don't use the Inline CSS styling and inline event</li>
                             </ul>
                         </div> 
+
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            
+                        </div> 
+                    </div>
+                </div>
+            </section>
+
+            <section id="vulnerabilities-in-react">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <h4>What are the vulnerabilities in Node.js?</h4>
+                            <p>
+                                In Node.js, vulnerabilities are security weaknesses in your application or its dependencies that can be exploited by attackers to:
+                            </p>
+
+                            <ul>
+                                <li>Run unauthorized code</li>
+                                <li>Steal data</li>
+                                <li>Crash the app</li>
+                                <li>Gain system access</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <h5>Common Types of Vulnerabilities in Node.js</h5>
+                            <table className="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Description</th>
+                                        <th>Example</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>Remote Code Execution (RCE)</td>
+                                        <td>Malicious input leads to code execution</td>
+                                        <td>eval() with user input</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Prototype Pollution</td>
+                                        <td>Attacker manipulates JS object prototypes</td>
+                                        <td>Vulnerable lodash version</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Denial of Service (DoS)</td>
+                                        <td>Resource exhaustion crashes the app</td>
+                                        <td>Unvalidated JSON, regex backtracking</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>Insecure Dependencies</td>
+                                        <td>A package has known security bugs</td>
+                                        <td>Outdated express, mongoose</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <h5>Best Practices to Avoid Vulnerabilities</h5>
+                            
+                            <table className="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Best Practice</th>
+                                        <th>Why It Helps</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>Keep all dependencies up to date</td>
+                                        <td>Becaise it helps to Fixes known issues</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Avoid eval(), exec(), and Function()</td>
+                                        <td>Becaise it helps to Prevents code injection</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Validate and sanitize the all user input</td>
+                                        <td>Becaise it helps to Stops injection, XSS, etc.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Use environment variables for secrets</td>
+                                        <td>Becaise it helps to Keeps credentials safe</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Implement proper error handling</td>
+                                        <td>Becaise it helps to Avoids info leaks</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Use HTTPS</td>
+                                        <td>Becaise it helps to Encrypts data in transit</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <h6>How to Resolve Vulnerabilities when "npm audit fix" does not work</h6>
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/GKUW7f91I4w?si=18NUCi5iWqVMr7Dy" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                        </div>
                     </div>
                 </div>
             </section>

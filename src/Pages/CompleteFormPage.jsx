@@ -90,7 +90,7 @@ const CompleteFormPage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h4 className="pageHeading"> Complete Form With Validation  <Icon.DatabaseAdd /> </h4>
+                            <h4 className="pageHeading">  </h4>
                         </div>
                     </div>
                 </div>
@@ -100,6 +100,7 @@ const CompleteFormPage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                            <h4>Complete Form With Validation  <Icon.DatabaseAdd /></h4>
                             <form className="alert alert-primary" onSubmit={handleSubmit}>
                                 <div className="form-group">
                                     <label htmlFor="username" className="form-label">Name</label>

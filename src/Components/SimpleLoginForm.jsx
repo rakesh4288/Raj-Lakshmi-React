@@ -1,5 +1,5 @@
-import React, {useState} from "react";
-import * as Icon from 'react-bootstrap-icons';
+import {useState} from "react";
+
 const SimpleLoginForm = () => {
     const initialState = {
         userEmail: '',
@@ -8,9 +8,8 @@ const SimpleLoginForm = () => {
 
     const [formValues, setFormValues] = useState(initialState);
     const [formError, setFormError] = useState({});
-    const [modalShow, setModalShow] = useState(false);
+
     const handleInput = (e) => {
-        // console.log('handleInput =', e);
         const {name, value}= e.target;
         setFormValues({
             ...formValues,
@@ -19,9 +18,7 @@ const SimpleLoginForm = () => {
     }
 
     const handleSubmit = (e) => {
-        // console.log('handleSubmit =', e);
         e.preventDefault();
-        console.log('formValues =', formValues);
         const isValid = formValidation();
         console.log('isValid =', isValid);
         if(isValid) {
@@ -30,7 +27,6 @@ const SimpleLoginForm = () => {
                 userEmail: '',
                 userPass: ''
             });
-            setModalShow(true);
         } else {
             console.log('Unable to Submit the Form');
         }
@@ -58,79 +54,26 @@ const SimpleLoginForm = () => {
             return false;
         }
     }
-    // console.log('formError =', formError);
 
-    const handleModalClose = () => {
-        setModalShow(false);
-    }
+    console.log('formError =', formError);
+    console.log('formValues =', formValues);
     return (
         <>
             <form className="alert alert-info" onSubmit={handleSubmit}>
-            <h5>Simple Login Form</h5>
-            <div className="mb-3">
-                <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
-                <input
-                    type="text"
-                    className="form-control"
-                    id="exampleInputEmail1" 
-                    name="userEmail"
-                    value={formValues.userEmail}
-                    onChange={handleInput}
-                />
-                {
-                   formError  && (
-                        <div className="text-danger">{formError.userEmail}</div>
-                   ) 
-                }
-            </div>
-
-            <div className="mb-3">
-                <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
-                <input
-                    type="password"
-                    className="form-control"
-                    id="exampleInputPassword1"
-                    name="userPass"
-                    value={formValues.userPass}
-                    onChange={handleInput}
-                />
-                {
-                   formError  && (
-                        <div className="text-danger">{formError.userPass}</div>
-                   ) 
-                }
-            </div>
-
-            {/* <div className="mb-3 form-check">
-                <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-                <label className="form-check-label" for="exampleCheck1">Check me out</label>
-            </div> */}
-            <button type="submit" className="btn btn-primary btn-sm">Submit</button>
-        </form>
-
-
-        {
-            modalShow && (
-                <div id="modalBackdrop" className="modalBackDrop">
-                    <div className="modal-dialog modal-dialog-centered">
-                        <div className="modal-content">
-                        <div className="modal-header">
-                            <h5 className="modal-title" id="exampleModalCenterTitle">Login Confirmation Page <Icon.UsbDrive /></h5>
-                            <button type="button" className="btn-close" aria-label="Close" onClick={handleModalClose}></button>
-                        </div>
-                        <div className="modal-body">
-                            <p> Your Login Credentails is correct.. </p>
-
-                            <p> Now you are redirecting to Dashboard Page !!</p>
-                        </div>
-                        <div className="modal-footer">
-                            <button type="button" className="btn btn-primary btn-sm" onClick={handleModalClose}>OK</button>
-                        </div>
-                        </div>
-                    </div>
+                <h5>Simple Login Form</h5>
+                <div className="mb-3">
+                    <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
+                    <input type="text" className="form-control" id="exampleInputEmail1"  name="userEmail" value={formValues.userEmail} onChange={handleInput}/>
+                    {formError  && ( <div className="text-danger">{formError.userEmail}</div>)}
                 </div>
-            )
-        }
+
+                <div className="mb-3">
+                    <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
+                    <input type="password" className="form-control" id="exampleInputPassword1" name="userPass" value={formValues.userPass} onChange={handleInput}/>
+                    { formError  && ( <div className="text-danger">{formError.userPass}</div>) }
+                </div>
+                <button type="submit" className="btn btn-primary btn-sm">Submit</button>
+            </form>
         </>
     )
 }

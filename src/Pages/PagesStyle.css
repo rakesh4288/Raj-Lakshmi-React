@@ -9,7 +9,7 @@
 .pageHeading {
     font-family: monospace;
     margin-bottom: 0;
-    color: #0aecec;
+    color: #0aecec !important;
     font-size: 30px;
 }
 

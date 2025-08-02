@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../Assets/logo.svg';
 import * as Icon from 'react-bootstrap-icons';
