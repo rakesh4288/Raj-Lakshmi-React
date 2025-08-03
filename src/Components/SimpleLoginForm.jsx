@@ -8,6 +8,7 @@ const SimpleLoginForm = () => {
 
     const [formValues, setFormValues] = useState(initialState);
     const [formError, setFormError] = useState({});
+    const [modalShow, setModalShow] = useState(false);
 
     const handleInput = (e) => {
         const {name, value}= e.target;
@@ -27,6 +28,7 @@ const SimpleLoginForm = () => {
                 userEmail: '',
                 userPass: ''
             });
+            setModalShow(true);
         } else {
             console.log('Unable to Submit the Form');
         }
@@ -55,6 +57,10 @@ const SimpleLoginForm = () => {
         }
     }
 
+    const handleClose = () => {
+        setModalShow(false);
+    }
+
     console.log('formError =', formError);
     console.log('formValues =', formValues);
     return (
@@ -74,6 +80,29 @@ const SimpleLoginForm = () => {
                 </div>
                 <button type="submit" className="btn btn-primary btn-sm">Submit</button>
             </form>
+
+            {
+                modalShow && (
+                    <div id="modalBackdrop" className="modalBackDrop">
+                        <div className="modal-dialog modal-dialog-centered">
+                            <div className="modal-content">
+                            <div className="modal-header">
+                                <h5 className="modal-title" id="exampleModalCenterTitle">
+                                    This is only a Simple Popup
+                                </h5>
+                                <button type="button" className="btn-close" aria-label="Close" onClick={handleClose}></button>
+                            </div>
+                            <div className="modal-body">
+                                <p>This is only a Simple Popup</p>
+                            </div>
+                            <div className="modal-footer">
+                                <button type="button" className="btn btn-primary btn-sm" onClick={handleClose}>OK</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                )
+            }
         </>
     )
 }

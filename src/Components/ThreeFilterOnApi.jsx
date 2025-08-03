@@ -8,7 +8,7 @@ const ThreeFilterOnApi = () => {
         try{
             const response = await fetch('https://dummyjson.com/users');
             const res = await response.json();
-            console.log('fetchUsers =', res.users);
+            // console.log('fetchUsers =', res.users);
             setUserData(res.users);
             setCopyUser(res.users);
         }

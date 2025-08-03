@@ -1,9 +1,9 @@
 import React from "react";
 import * as Icon from 'react-bootstrap-icons';
-import { Link } from "react-router-dom";
 import AppImages from "../Assets";
 import SearchByColumn from '../Components/SearchByColumn';
 import ThreeFilterOnApi from "../Components/ThreeFilterOnApi";
+import DataLimitUsingSlice from "../Components/DataLimitUsingSlice";
 const ReactHttpPage = () => {
     return (
         <div id="react-http-page">
@@ -37,17 +37,13 @@ const ReactHttpPage = () => {
 
                     <hr className="bg-primary"/>
 
-                    <Link to="https://restcountries.com/#endpoints-all" target="_blank">
-                        https://restcountries.com/#endpoints-all
-                    </Link>
-
                     <div className="row">
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <SearchByColumn />
                         </div>
 
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            
+                            <DataLimitUsingSlice />
                         </div>
                     </div>
                 </div>

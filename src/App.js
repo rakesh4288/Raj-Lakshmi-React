@@ -41,7 +41,7 @@ import ComputerMaterialDashboard from './Pages/ComputerMaterialDashboard';
 import ComputerMaterialList from './Pages/ComputerMaterialList';
 import ChildToParentPage from './Pages/ChildToParentPage';
 import AscDescOrder from './Pages/AscDescOrder';
-import UseCallInfo from './Components/UseCallInfo';
+import UseCallBackInfo from './Components/UseCallBackInfo';
 import RadioSelection from './Pages/RadioSelection';
 import DebouncingPage from './Pages/DebouncingPage';
 import ReactCustomHook from './Pages/ReactCustomHook';
@@ -76,7 +76,7 @@ function App() {
             <Route path="use-effect-page" Component={UseEffectInfo} />
             <Route path="use-context-page" Component={UseContextInfo} />
             <Route path="use-memo-page" Component={UseMemoInfo} />
-            <Route path="use-callback-page" Component={UseCallInfo} />
+            <Route path="use-callback-page" Component={UseCallBackInfo} />
             <Route path="use-reducer-page" Component={UseReducerInfo} />
             <Route path="use-ref-page" Component={UseRefInfo}/>
           </Route>

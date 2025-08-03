@@ -64,7 +64,8 @@ const AppImages = {
     GitVsGitHub: require('./git-vs-github.png'),
     EventDelegation_1: require('./event_delegation_1.png'),
     EventDelegation_2: require('./event_delegation_2.png'),
-    EventDelegation_3: require('./event_delegation_3.png')
+    EventDelegation_3: require('./event_delegation_3.png'),
+    MapSliceLimit: require('./map_slice.png')
 }
 
 export default AppImages;

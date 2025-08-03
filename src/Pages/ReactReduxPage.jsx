@@ -106,7 +106,7 @@ const ReactReduxPage = () => {
                             When the states are changing inside the Redux store, so the useSelector automatically re-renders and ensuring that you are always receiving the most up-to-date information.
                         </p>
 
-                        <button className="btn btn-success btn-sm" onClick={ModalHandler}>What is Use Selector ?</button>
+                        <button className="btn btn-success btn-sm" onClick={ModalHandler}>What is Use Selector - See in Modal ?</button>
                         { show ? <RajLakshmiModal handleClose = {handleClose} /> : null }
 
                         <CounterAppUsingRedux initialState={0}/>

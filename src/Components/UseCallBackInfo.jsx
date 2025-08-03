@@ -1,10 +1,22 @@
-import React, { useCallback } from "react";
+import { useCallback, useEffect, useState } from "react";
 
-const UseCallInfo = () => {
+const UseCallBackInfo = () => {
+    const [count, setCount] = useState(0);
+    const [otherCount, setOtherCount] = useState(0);
 
-    const callbackFuntion = useCallback(() => {
-        console.log('inside UseCallbackInfo Page');
-    }, []);
+    // const increment = () => {
+    //     setCount(count + 1);
+    //     // setCount((prevCount) => prevCount + 1)
+    // }
+
+    const increment = useCallback(() => {
+        setCount(count + 1);
+    }, [count]);
+
+    useEffect(() => {
+        console.log('Increment function is getting triggered !');
+    }, [increment]);
+
     return (
         <div id="use-callback-info">
             <h3><i>useCallback</i> hook </h3>
@@ -28,11 +40,17 @@ const UseCallInfo = () => {
                 The useMemo and useCallback both Hooks are similar. The main difference is that useMemo returns a memoized value and useCallback returns a memoized function.
             </p>
 
-            <button className="btn btn-success btn-sm" onClick={callbackFuntion}>useCallback</button>
+            <div>
+                <button className="btn btn-success btn-sm" onClick={increment}>Increment</button> &nbsp;&nbsp;
+                <button className="btn btn-info btn-sm" onClick={() => setOtherCount(otherCount + 1)}>Other Count</button>
+                <h6>Count {count}</h6>
+                <h6>Other Count {otherCount}</h6>
+            </div>
             
+            <iframe width="100%" height="450" src="https://www.youtube.com/embed/jX57Hcq-Rv8?si=kEF_nF3zgVcmYoWU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             <hr className="bg-success"/>
         </div>
     )
 }
 
-export default UseCallInfo;
+export default UseCallBackInfo;
