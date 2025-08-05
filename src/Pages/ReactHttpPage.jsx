@@ -11,7 +11,7 @@ const ReactHttpPage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                            <h4 className="pageHeading"> Learning HTTP in React !! <Icon.Airplane /> </h4>
+                            <h4 className="pageHeading"> Learning HTTP methods in React !! <Icon.Airplane /> </h4>
                         </div>
                     </div>
                 </div>

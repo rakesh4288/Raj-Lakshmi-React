@@ -23,7 +23,7 @@ const DataLimitUsingSlice = () => {
         fetchingUserData();
     }, []);
     return (
-        <div>
+        <div id="data-limit-using-slice">
             <h5>How to perform limit in API call:</h5>
             <p> we can use traditional array.slice() method to make the limit:</p>
 
@@ -73,6 +73,46 @@ const DataLimitUsingSlice = () => {
                     </table>
                 )
             }
+
+            <div className="alert alert-info">
+                <h5>How to handle the large amount of response while calling API:</h5>
+
+                <table className='table table-striped'>
+                    <thead>
+                        <tr>
+                            <td>Technique</td>
+                            <td>When to Use</td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Pagination</td>
+                            <td>API supports it / too many records</td>
+                        </tr>
+
+                        <tr>
+                            <td>Lazy loading / Infinite scroll</td>
+                            <td>UI loads in chunks as needed</td>
+                        </tr>
+
+                        <tr>
+                            <td>Virtualization</td>
+                            <td>Rendering hundreds/thousands of items</td>
+                        </tr>
+
+                        <tr>
+                            <td>Memoization</td>
+                            <td>Avoid reprocessing the same data</td>
+                        </tr>
+
+                        <tr>
+                            <td>Web Workers</td>
+                            <td>Heavy data transformation</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     )
 }

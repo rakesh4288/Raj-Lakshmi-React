@@ -136,6 +136,12 @@ const SiteHeader = () => {
                                         <Icon.ArrowRight /> Ascending Descending Order
                                     </Link>
                                 </li>
+
+                                <li>
+                                    <Link className="dropdown-item" to="/data-virtualization-in-react">
+                                        <Icon.ArrowRight /> Data Virtualization 
+                                    </Link>
+                                </li>
                             </ul>
                         </li>
 

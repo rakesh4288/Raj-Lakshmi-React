@@ -52,6 +52,7 @@ import ReduxCrudCreate from './Pages/ReduxCrudCreate';
 import ReduxCrudUpdate from './Pages/ReduxCrudUpdate';
 import GitAndGitHub from './Pages/GitAndGitHub';
 import ReduxThunkGetApi from './Pages/ReduxThunkGetApi';
+import DataVirtualizationPage from './Pages/DataVirtualizationPage';
 
 function App() {
   return (
@@ -80,11 +81,14 @@ function App() {
             <Route path="use-reducer-page" Component={UseReducerInfo} />
             <Route path="use-ref-page" Component={UseRefInfo}/>
           </Route>
+          
           <Route path='/react-http-tutorial' Component={ReactHttpPage} />
           <Route path='/http-react-get-call' Component={ReactHttpGetPage} />
           <Route path='/http-react-get-call/country-full-info/:id' Component={CountryFullDetails}/>
           <Route path='/http-react-post-call' Component={ReactHttpPostPage} />
           <Route path='/how-to-perform-ascending-descending-order' Component={AscDescOrder}/>
+          <Route path='/data-virtualization-in-react' Component={DataVirtualizationPage}/>
+
           <Route path="/fragment-in-react" Component={ReactFragment} />
           <Route path="/higher-order-component-in-react" exact Component={ReactHocPage} />
           <Route path="/how-to-pass-data-from-child-to-parent-component" exact Component={ChildToParentPage} />

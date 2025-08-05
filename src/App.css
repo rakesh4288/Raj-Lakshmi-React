@@ -18,6 +18,10 @@ body{
   margin-right: 0;
 }
 
+.navbar-dark .navbar-brand {
+  color: #fd0989 !important;
+}
+
 .navbar {
   padding-top: .2rem;
   padding-bottom: .2rem;
