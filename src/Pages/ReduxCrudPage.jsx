@@ -1,15 +1,14 @@
 import React from "react";
 import * as Icon from 'react-bootstrap-icons';
-import AppImages from "../Assets";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux"; 
-import { deleteStudent } from "../features/StudentContactSlice";
+import { deleteStudent } from "../Features/StudentContactSlice";
 // useSelector provides the access of reducer from where we can fetch the data
 import { useNavigate } from "react-router-dom";
 import ReduxConfiguration from "../Components/ReduxConfiguration";
 
 const ReduxCrudPage = () => {
-    const studentData = useSelector((state) => state.StudentRecord);
+    const studentData = useSelector((state) => state.StudentStore);
     const navigate = useNavigate();
     const dispatch = useDispatch();
     console.log('studentData ReduxCrudPage =', studentData);

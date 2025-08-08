@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-// This is the Action
+// This is a Action, which will dispatch from another component
 export const fetchDummyUserSlice = createAsyncThunk('fetchDummyUserSlice', async() => {
     const url = 'https://dummyjson.com/users';
     const response = await fetch(url);
@@ -32,10 +32,13 @@ const DummyUserSlice = createSlice({
     }
 })
 
-// these extraReducers will help to handle the three scenario: 
-// 1: success or fullfilled
-// 2: failed or Pending
-// 3: Error Rejection scenarion
-// Since this is an API call so we have to handle the everything
+/* 
+these extraReducers will help you to handle the three scenarios: 
+1: fullfilled
+2: pending
+3: rejection
+
+Since this is an API call so we have to handle the everything
+*/
 
 export default DummyUserSlice.reducer;

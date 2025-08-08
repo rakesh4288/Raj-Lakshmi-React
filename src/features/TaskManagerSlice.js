@@ -1,7 +1,7 @@
 import { createSlice, nanoid } from "@reduxjs/toolkit";
 
-const taskSlice = createSlice({
-    name: 'taskManager',
+const TaskManagerSlice = createSlice({
+    name: 'TaskManagerSlice',
     initialState: {
         items: [],
         filters: 'all',
@@ -36,5 +36,5 @@ const taskSlice = createSlice({
 
 // Always remember after ccreating reducers we need to export the all
 
-export const {addTask, toggleTask, deleteTask, setFilter} = taskSlice.actions;
-export default taskSlice.reducer;
+export const {addTask, toggleTask, deleteTask, setFilter} = TaskManagerSlice.actions;
+export default TaskManagerSlice.reducer;

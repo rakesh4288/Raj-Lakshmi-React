@@ -1,10 +1,10 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
-import { deleteTask, toggleTask } from "../features/TaskManagerSlice";
+import { deleteTask, toggleTask } from "../Features/TaskManagerSlice";
 import * as Icon from 'react-bootstrap-icons';
 const TaskList = () => {
     const [taskItemList, setTaskItemList] = useState([]);
-    const {items, filters} = useSelector(state => state.task);
+    const {items, filters} = useSelector(state => state.TaskManagerStore);
     const dispatch = useDispatch();
     // console.log('All Task items =', items);
     // console.log('Selected filter =', filters);

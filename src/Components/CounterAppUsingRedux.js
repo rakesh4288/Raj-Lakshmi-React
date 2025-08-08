@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { increment, decrement, reset, incrementByAmount } from '../features/CounterSlice';
+import { increment, decrement, reset, incrementByAmount } from '../Features/CounterSlice';
 
 const CounterAppUsingRedux = () => {
     const [amount, setAmount] = useState(0);

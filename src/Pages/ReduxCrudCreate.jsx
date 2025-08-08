@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 import * as Icon from 'react-bootstrap-icons';
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux"; 
-import { addNewStudent } from "../features/StudentContactSlice";
+import { addNewStudent } from "../Features/StudentContactSlice";
 // useSelector provides the access of reducer from where we can fetch the data
 
 const ReduxCrudCreate = () => {
-    const studentData = useSelector((state) => state.StudentRecord);
+    const studentData = useSelector((state) => state.StudentStore);
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const initialFormValues = {
@@ -17,6 +17,7 @@ const ReduxCrudCreate = () => {
         studentPhone: '',
         city: ''
     }
+    
     const [formValues, setFormValues] = useState(initialFormValues);
     const [formError, setFormError] = useState({});
 

@@ -9,10 +9,12 @@ const studentSlice = createSlice({
             // console.log('studentSlice addNewStudent =', action);
             state.push(action.payload)
         },
+        
         updateStudent: (state, action) => {
             console.log('studentSlice updateStudent =', action.payload);
             const {id, studentName, studentEmail, studentPhone, city} = action.payload;
-            const updateStudent = state.find(student => student.id === id);
+            console.log('updateStudent id =', parseInt(id));
+            const updateStudent = state.find(student => student.id === parseInt(id));
             if(updateStudent) {
                 updateStudent.studentName = studentName;
                 updateStudent.studentEmail = studentEmail;
@@ -20,6 +22,7 @@ const studentSlice = createSlice({
                 updateStudent.city = city;
             }
         },
+
         deleteStudent: (state, action) => {
             console.log('studentSlice deleteStudent =', action);
             const {id} = action.payload;

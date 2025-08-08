@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from "react-redux"
-import { setFilter } from "../features/TaskManagerSlice";
+import { setFilter } from "../Features/TaskManagerSlice";
 
 const FilterTask = () => {
-   const filter = useSelector(state => state.task.filters);
+   const filter = useSelector(state => state.TaskManagerStore.filters);
    // console.log('FilterTask =', filter);
    const dispatch = useDispatch();
 

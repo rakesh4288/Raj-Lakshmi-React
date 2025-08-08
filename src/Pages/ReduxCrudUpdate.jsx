@@ -1,15 +1,14 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import * as Icon from 'react-bootstrap-icons';
-import AppImages from '../Assets';
 import { Link } from "react-router-dom";
 import { useNavigate, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux"; 
-import { updateStudent } from "../features/StudentContactSlice";
+import { updateStudent } from "../Features/StudentContactSlice";
 import ReduxConfiguration from "../Components/ReduxConfiguration";
 // useSelector provides the access of reducer from where we can fetch the data
 
 const ReduxCrudUpdate = () => {
-    const studentData = useSelector((state) => state.StudentRecord);
+    const studentData = useSelector((state) => state.StudentStore);
     console.log('ReduxCrudUpdate studentData =', studentData);
     const dispatch = useDispatch();
     const navigate = useNavigate();

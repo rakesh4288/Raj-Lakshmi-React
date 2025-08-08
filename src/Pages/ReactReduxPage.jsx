@@ -5,6 +5,7 @@ import RajLakshmiModal from "../Components/Modal";
 import AppImages from '../Assets';
 import CounterAppUsingRedux from "../Components/CounterAppUsingRedux";
 import TaskManager from "../Components/TaskManager";
+import ReduxConfiguration from "../Components/ReduxConfiguration";
 
 const ReactReduxPage = () => {
     const [show, setShow] = useState(false);
@@ -76,26 +77,10 @@ const ReactReduxPage = () => {
 
                 <div className="row">
                     <div className="col-xl-6 col-lg-6 col-md-5 col-sm-12">
-                        <div>
-                            <h6>Steps for configure Redux:</h6>
-                            <ul>
-                                <li>Step 1: Firstly we need to create the store</li>
-                                <li>Step 2: Wrap the react app by using provider and add the store attribute and assign the store configuration in index.js file</li>
-                                <li>Step 3: Create the feature slice, This is the actual file where you need to create feature about common States</li>
-                                <li>
-                                    Step 4: Register the slice feature with store.js file., This file needs all the slice registration
-                                </li>
-                                <li>
-                                    Step 5: Later you can use the useSelector() hook for getting the latest data from the store
-                                    </li>
-                                <li>
-                                    Step 5: And if you wanted to update the state then you need to use the useDispatch() hook to pass the action to the reducer, and reducer will take your action and payload and perform the opertion based on your request
-                                </li>
-                            </ul>
-                            <h6>
-                                Best tutorial for Setup: <Link href="https://whataboutcoding.com/redux-toolkit-tutorial/" target="_target">https://whataboutcoding.com/redux-toolkit-tutorial/</Link> 
-                            </h6>
-                        </div>
+                        <ReduxConfiguration />
+                        <h6>
+                            Best tutorial for Setup: <Link to="https://whataboutcoding.com/redux-toolkit-tutorial/" target="_target">https://whataboutcoding.com/redux-toolkit-tutorial/</Link> 
+                        </h6>
 
                         <hr className="bg-primary"/>
                         <p>
