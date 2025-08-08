@@ -53,6 +53,7 @@ import ReduxCrudUpdate from './Pages/ReduxCrudUpdate';
 import GitAndGitHub from './Pages/GitAndGitHub';
 import ReduxThunkGetApi from './Pages/ReduxThunkGetApi';
 import DataVirtualizationPage from './Pages/DataVirtualizationPage';
+import ReactTestingPage from './Pages/ReactTestingPage';
 
 function App() {
   return (
@@ -65,13 +66,21 @@ function App() {
           <Route path="basic-info-of-react" exact Component={ReactBasicInfo} />
           <Route path="/react-controlled-uncontrolled-component" exact Component={ControlledUncontrolledMain} />
           <Route path="/life-cycle-method-in-react" exact Component={LifeCycleMethod}/>
+          
           <Route path="/react-redux-tutorial" exact Component={ReactReduxPage} />
+          <Route path="/simple-crud-using-redux-toolkit" Component={ReduxCrudPage} />
+          <Route path="/redux-create-new-contact" Component={ReduxCrudCreate}/>
+          <Route path="edit-student/:id" Component={ReduxCrudUpdate} />
+          <Route path="/what-is-git-and-git-github" Component={GitAndGitHub}/>
+          <Route path="/http-get-api-calling-via-redux-thunk" Component={ReduxThunkGetApi}/>
+
           <Route path="/checkbox-operation-in-react" exact Component={CheckboxOperationPage} />
           <Route path="/radio-operation-in-react" exact Component={RadioSelection}/>
           <Route path="/how-to-handle-form-in-react" exact Component={CompleteFormPage} />
           <Route path="/how-to-upload-files" exact Component={BasicImageUploadPage} />
           <Route path="/basic-live-search" exact Component={BasicLiveSearchPage} />
           <Route path="/how-to-create-custom-hook" Component={ReactCustomHook}/>
+          
           <Route path="/react-hook-tutorial/" Component={ReactHookPage}>
             <Route path="use-state-page" Component={UseStateInfo} />
             <Route path="use-effect-page" Component={UseEffectInfo} />
@@ -96,23 +105,23 @@ function App() {
           <Route path="/what-is-lazy-loading-in-react" exact Component={LazyLoadingPage}/>
           <Route path="/react-router-tutorial" Component={ReactRouterPage} />
           <Route path="/node-tutorial" Component={LearningNode} />
+          
           <Route path="/employees-dashboard" element={<EmployeeDashboard />}>
             <Route path="create" element={<EmployeeCreate />} />
             <Route path="list" element={<EmployeeList />} />
             <Route path="details/:id" element={<EmployeeDetails />} />
             <Route path="edit/:id" element={<EmployeeEdit />} />
           </Route>
+
+          <Route path="/how-to-write-test-cases-in-react" Component={ReactTestingPage}/>
+          
           <Route path="/interview-series-part-1" Component={InterviewSeries_1} />
           <Route path="/interview-series-part-2" Component={InterviewSeries_2} />
           <Route path="/interview-series-part-3" Component={InterviewSeries_3} />
           <Route path="computer-material-dashboard" Component={ComputerMaterialDashboard}>
             <Route path="product-list" element={<ComputerMaterialList />} />
           </Route>
-          <Route path="/simple-crud-using-redux-toolkit" Component={ReduxCrudPage} />
-          <Route path="/redux-create-new-contact" Component={ReduxCrudCreate}/>
-          <Route path="edit-student/:id" Component={ReduxCrudUpdate} />
-          <Route path="/what-is-git-and-git-github" Component={GitAndGitHub}/>
-          <Route path="/http-get-api-calling-via-redux-thunk" Component={ReduxThunkGetApi}/>
+
           <Route path="*" Component={PageNotFound} />
         </Routes>
       </main>

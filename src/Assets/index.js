@@ -65,7 +65,8 @@ const AppImages = {
     EventDelegation_1: require('./event_delegation_1.png'),
     EventDelegation_2: require('./event_delegation_2.png'),
     EventDelegation_3: require('./event_delegation_3.png'),
-    MapSliceLimit: require('./map_slice.png')
+    MapSliceLimit: require('./map_slice.png'),
+    ReduxProviderSteps: require('./redux_provider_confirgure.png'),
 }
 
 export default AppImages;

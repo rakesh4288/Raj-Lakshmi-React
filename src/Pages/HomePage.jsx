@@ -101,7 +101,7 @@ const HomePage = () => {
             <section id="interview-list" className="container">
                 <div className="row">
                     <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                        <div className="alert alert-warning">
+                        <div className="alert alert-dark">
                             <h6> React Interview Questions <Icon.Infinity /></h6>
                             <ul>
                                 <li>
@@ -123,6 +123,10 @@ const HomePage = () => {
                                 <li>
                                     <Link to="https://cdngmstr.notion.site/React-JS-Interview-Questions-Beginner-Level-209f16a691da800eae3ae176432535fa" target="_blank">Best Interview Questions Asnwers</Link>
                                 </li>
+
+                                <li>
+                                    <Link to="https://github.com/mohitdjcet/react-interview-questions-answers" target="_blank"> React Beginner & intermediate Level Interview Questions Asnwers </Link>
+                                </li>
                             </ul>
                         </div>
 
@@ -140,18 +144,18 @@ const HomePage = () => {
         
             <hr className="bg-primary" />
 
-            <section id="npm-vs-npx" className="lighGreenBG">
+            <section id="npm-vs-npx" className="lighGreenBG pt-4 pb-4">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <h5>What Are The Differences Between npm and npx?</h5>
                             <p>
-                                When we working with Node.js, you will frequently using the two important tools like npm and npx. 
+                                When we are working with Node.js, you will frequently using the two important tools like npm and npx. 
                                 While both npm and npx are important part to managing the JavaScript dependencies, they serve the different purposes.
                             </p>
 
                             <p>
-                                The key difference between npm and npx is that npm is a node package manager for installing and managing the dependencies, whereas npx is an execution tool that allows you to run the Node.js packages directly without installing them globally.
+                                The key difference between npm and npx is that npm is a node package manager for installing and managing the dependencies, <b><i>whereas npx is an execution tool that allows you to run the Node.js packages directly without installing them globally.</i></b>
                             </p>
                         </div>
 

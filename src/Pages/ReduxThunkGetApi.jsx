@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchDummyUserSlice } from '../features/DummyUserSlice';
+import AppImages from '../Assets';
+import ReduxConfiguration from '../Components/ReduxConfiguration';
 
 const ReduxThunkGetApi = () => {
     const userData = useSelector((state) => state);
@@ -28,37 +30,7 @@ const ReduxThunkGetApi = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <div className="lightGreenBG">
-                                <h6>Steps for configure Redux:</h6>
-                                <ul>
-                                    <li>
-                                        Step 1: Firstly we need to create the store where we configure the store
-                                    </li>
-
-                                    <li>
-                                        Step 2: Next step would be - go to the index.js file and Wrap the react app by using provider and add the store attribute and assign the store configuration.
-                                    </li>
-                                    
-                                    <li>
-                                        Step 3: Create the feature slice, This is the actual file where you need to create feature about common States.
-                                    </li>
-                                    
-                                    <li>
-                                        Step 4: Register the slice feature with store.js file., This file needs all the features slice registration.
-                                    </li>
-                                    
-                                    <li>
-                                        Step 5: Later you can use the useSelector() hook and this hook need to import by react-redux for getting the latest data from the store in your whole react app
-                                    </li>
-                                    <li>
-                                        Step 5: And if you wanted to update the state then you need to use the useDispatch() hook and pass the action to the reducer, and finally reducer function will take your action with payload and perform the opertion based on your request.
-                                    </li>
-                                </ul>
-
-                                <h6>
-                                    Best tutorial for Setup: <Link href="https://whataboutcoding.com/redux-toolkit-tutorial/" target="_target">https://whataboutcoding.com/redux-toolkit-tutorial/</Link> 
-                                </h6>
-                            </div>
+                            <ReduxConfiguration />
                         </div>
 
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -74,7 +46,7 @@ const ReduxThunkGetApi = () => {
                     <div className="row">
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <button className='btn btn-info btn-sm' onClick={handleFetchUser}>
-                                Fetch Dummy User via Redux Thunk:
+                                Fetch Dummy User via Redux Thunk
                             </button>
 
                             <br/><br/>
