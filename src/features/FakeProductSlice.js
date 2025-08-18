@@ -2,8 +2,8 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 // This is a Action, which will dispatch from another component
 export const FetchingProductDetails = createAsyncThunk("productsDetails", async() => {
-    const gitUrl = "https://fakestoreapi.com/products";
-    const response = await fetch(gitUrl);
+    const productUrl = "https://fakestoreapi.com/products";
+    const response = await fetch(productUrl);
     const result = await response.json();
     return result;
 });

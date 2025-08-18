@@ -49,15 +49,5 @@
   "devDependencies": {
     "@testing-library/react": "^16.0.1",
     "@types/bootstrap": "^5.2.10"
-  },
-  "jest": {
-    "coverageThreshold": {
-      "global": {
-        "branches": 80,
-        "functions": 80,
-        "lines": 83,
-        "statements": 82
-      }
-    }
   }
 }

@@ -1,7 +1,7 @@
 const jsonServer = require('json-server');
 const multer  = require('multer')
 const server = jsonServer.create();
-const router = jsonServer.router('database/db.json');
+const router = jsonServer.router('Database/db.json');
 const middlewares = jsonServer.defaults();
 
 server.use(middlewares);

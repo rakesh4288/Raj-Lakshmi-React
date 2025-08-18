@@ -46,6 +46,33 @@ const ReactTestingPage = () => {
                     </div>
                 </div>
             </section>
+
+            <hr className="bg-success"/>
+
+            <section>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <h6>What is snapshot testing in React</h6>
+                            <p>
+                                In React JS Snapshot capturing the rendered outoput of the component at the specific point of time. Snapshot is helping to detect the unexpected changes in the UI side
+                            </p>
+
+                            <p>
+                                It works by taking a "snapshot" of a component's rendered output and saving it in a file. Later, when you run the test again, it compares the current output to the saved snapshot. 
+                                <br/>if there's a difference, so the test fails and notify how we can resolve this issue.
+                            </p>
+                        </div>
+
+                        
+
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <h6>Complete understanding by video:</h6>
+                           <iframe width="100%" height="315" src="https://www.youtube.com/embed/tu8thOjb_S8?si=1Z4pXUznoy9NQZre" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }

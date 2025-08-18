@@ -127,6 +127,10 @@ const HomePage = () => {
                                 <li>
                                     <Link to="https://github.com/mohitdjcet/react-interview-questions-answers" target="_blank"> React Beginner & intermediate Level Interview Questions Asnwers </Link>
                                 </li>
+
+                                <li>
+                                    <Link to="https://www.thecodingskills.com/" target="_blank">All MCQ questions are here</Link>
+                                </li>
                             </ul>
                         </div>
 

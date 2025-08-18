@@ -7,7 +7,7 @@ const ReduxConfiguration = () => {
             <h6>Steps for configuring React Redux:</h6>
             <ul>
                 <li>
-                    Step 1: Firstly we need to create the store where we configure the store
+                    Step 1: Firstly we need to create the store where we configure the common store
                 </li>
 
                 <li>
@@ -34,7 +34,7 @@ const ReduxConfiguration = () => {
                 </li>
                 
                 <li>
-                    Step 5: Later you can use the useSelector() hook and this hook need to import by react-redux for getting the latest data from the store in your whole react app
+                    Step 5: Later you can use the useSelector() hook and this hook is helping for getting the latest data from the store in your whole react app and its easily imported by react-redux 
                 </li>
                 <li>
                     Step 5: And if you wanted to update the state then you need to use the useDispatch() hook and pass the action to the reducer, and finally reducer will take your action with payload and perform the opertion based on your request.
