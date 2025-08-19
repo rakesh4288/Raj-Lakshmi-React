@@ -53,6 +53,16 @@
       "empPhone": "7049703003",
       "empGender": "female",
       "empAddress": "B-608, Green Life Society, Near Lakshmi Chowk Pune, India Pincode: 486887"
+    },
+    {
+      "id": "de5e",
+      "empId": "234543",
+      "empName": "Manish Sengar",
+      "empEmail": "Manish@test.com",
+      "empPhone": "9384739583",
+      "empGender": "male",
+      "empAddress": "Pune India",
+      "termsCondition": "on"
     }
   ],
   "computerProducts": [

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import * as Icon from 'react-bootstrap-icons';
 import { useDispatch } from "react-redux";
 import { createEmployee } from "../Features/EmpDetailSlice";
+import { toast } from 'react-toastify';
 const EmpReduxCreate = () => {
     const dispatch = useDispatch();
     const initalFormValues = {
@@ -78,7 +79,7 @@ const EmpReduxCreate = () => {
         const isValid = formValidation();
         if(isValid) {
             dispatch(createEmployee(formValues));
-            console.log('Form Submitted Succesfully');
+            toast.success("Form Submitted Succesfully");
             setFormValues({
                 empId: '',
                 empName: '',
@@ -87,12 +88,13 @@ const EmpReduxCreate = () => {
                 empGender: '',
                 empAddress: ''
             });
-        } else {
-            console.log("Not able to Submit");
         }
     }
     console.log('formError =', formError);
     console.log('formValues =', formValues);
+
+    // toast.error("This is Error Message");
+    // toast.warning("This is Warning Message");
     return(
         <div id="emp-redux-create">
             <h5> Employees Create  <Icon.Receipt /></h5>

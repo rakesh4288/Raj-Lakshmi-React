@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import * as Icon from 'react-bootstrap-icons';
 import { useNavigate } from 'react-router-dom';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
 
 const EmployeeList = () => {
     const navigate = useNavigate();
@@ -109,7 +108,6 @@ const EmployeeList = () => {
                     }
                 </div>
             </div>
-            <ToastContainer position="top-right" />
         </div>
     )
 }

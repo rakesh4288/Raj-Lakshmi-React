@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import * as Icon from 'react-bootstrap-icons';
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import AppImages from "../Assets";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
 
 const EmployeeEdit = () => {
     const params = useParams();
@@ -163,7 +162,6 @@ const EmployeeEdit = () => {
                     </form>
                 </div>
             </div>
-            <ToastContainer position="top-right" />
         </div>
     )
 }
