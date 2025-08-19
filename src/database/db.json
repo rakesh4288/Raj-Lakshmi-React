@@ -3,98 +3,56 @@
     {
       "empId": 2105871,
       "name": "Rakesh Shah",
-      "location": "Pune India",
+      "address": "Pune India",
       "phone": 9762462383,
       "email": "rakesh.shah4288@gmail.com",
+      "empAddress": "anything",
       "id": "1"
     },
     {
-      "empId": "564322",
-      "name": "Amadi Willimans",
-      "location": "Newyork USA",
-      "phone": "8010172281",
-      "email": "amadi.williams@gmail.com",
-      "id": "0c63"
+      "id": "de0b",
+      "empId": "345676",
+      "empName": "SHIVANI",
+      "empEmail": "amadi@test.com",
+      "empPhone": "9384739583",
+      "empGender": "female",
+      "empAddress": "Hyderabad"
     },
     {
-      "id": "89c2",
+      "id": "e198",
+      "empId": "43533",
+      "empName": "Harish",
+      "empEmail": "rakesh@test..com",
+      "empPhone": "8010172281",
+      "empGender": "male",
+      "empAddress": "Hinjawadi"
+    },
+    {
+      "id": "19e8",
       "empId": "784565",
-      "name": "Sohan Lal",
-      "location": "Delhi",
-      "phone": "876543345676",
-      "email": "sohan@gmail.com"
+      "empName": "Amadi Willimans",
+      "empEmail": "rakesh@test.co",
+      "empPhone": "34566543234",
+      "empGender": "male",
+      "empAddress": "ad avd fasfl sjflksd fjlf slfjsl fjsldfkj"
     },
     {
-      "id": "b67e",
+      "id": "99d3",
       "empId": "876544",
-      "name": "Prakash",
-      "location": "Pune",
-      "phone": "876543456765",
-      "email": "praskash@gmail.com"
+      "empName": "Raj Lakshmi",
+      "empEmail": "rajlakshmi@test.com",
+      "empPhone": "89898989",
+      "empGender": "male",
+      "empAddress": "dfdfsdfbsfs fnsdfnfssfs"
     },
     {
-      "id": "21ac",
-      "empId": "784565",
-      "name": "gayathri",
-      "location": "Mumbai",
-      "phone": "45676543",
-      "email": "gayathri@gmail.com"
-    },
-    {
-      "id": "2ce8",
-      "empId": "909090",
-      "name": "Munna",
-      "location": "Delhi",
-      "phone": "90909090",
-      "email": "munna@gmail.com"
-    },
-    {
-      "id": "49f9",
-      "empId": "121212",
-      "name": "Harish",
-      "location": "Mumbai",
-      "phone": "6767676767",
-      "email": "harish@gmail.cin"
-    },
-    {
-      "id": "7603",
-      "empId": "212121",
-      "name": "Sumona",
-      "location": "Mumbai",
-      "phone": "89898989",
-      "email": "sumona@test.com"
-    },
-    {
-      "id": "68ba",
-      "empId": "434343",
-      "name": "siyaz",
-      "location": "Mumbai",
-      "phone": "7653456543456",
-      "email": "siyaz@test.com"
-    },
-    {
-      "empId": "123432",
-      "name": "Sohan Lal",
-      "location": "Delhi",
-      "phone": "8010172281",
-      "email": "sohan@gmail.com",
-      "id": "e708"
-    },
-    {
-      "empId": "261645",
-      "name": "SHIVANI",
-      "location": "testingedit",
-      "phone": "9384739583",
-      "email": "SHIVANI@gmail.com",
-      "id": "8473"
-    },
-    {
-      "id": "1045",
-      "empId": "920677",
-      "name": "",
-      "location": "Pune",
-      "phone": "Suraj",
-      "email": ""
+      "id": "76c2",
+      "empId": "589592",
+      "empName": "Lalita Sahu",
+      "empEmail": "lalita90sahu@gmail.com",
+      "empPhone": "7049703003",
+      "empGender": "female",
+      "empAddress": "B-608, Green Life Society, Near Lakshmi Chowk Pune, India Pincode: 486887"
     }
   ],
   "computerProducts": [

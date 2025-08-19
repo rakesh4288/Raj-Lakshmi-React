@@ -61,6 +61,12 @@ const SiteHeader = () => {
                                             <Icon.ArrowRight /> Http API calling via Redux Thunk
                                         </Link>
                                     </li>
+
+                                    <li>
+                                        <Link className="dropdown-item" to="/employee-crud-via-redux">
+                                            <Icon.ArrowRight /> Employee Crud Operatoin with Redux
+                                        </Link>
+                                    </li>
                                 </ul>
                             </li>
 

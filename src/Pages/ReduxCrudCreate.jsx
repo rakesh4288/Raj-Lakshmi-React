@@ -202,7 +202,7 @@ const ReduxCrudCreate = () => {
                                 </ul>
 
                                 <h6>
-                                    Best tutorial for Setup: <Link href="https://whataboutcoding.com/redux-toolkit-tutorial/" target="_target">https://whataboutcoding.com/redux-toolkit-tutorial/</Link> 
+                                    Best tutorial for Setup: <Link to="https://whataboutcoding.com/redux-toolkit-tutorial/" target="_blank">https://whataboutcoding.com/redux-toolkit-tutorial/</Link> 
                                 </h6>
                             </div>
                         </div>

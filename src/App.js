@@ -54,6 +54,7 @@ import GitAndGitHub from './Pages/GitAndGitHub';
 import ReduxThunkGetApi from './Pages/ReduxThunkGetApi';
 import DataVirtualizationPage from './Pages/DataVirtualizationPage';
 import ReactTestingPage from './Pages/ReactTestingPage';
+import EmpReduxMain from './EmployeeReduxCrud/EmpReduxMain';
 
 function App() {
   return (
@@ -80,6 +81,8 @@ function App() {
           <Route path="/how-to-upload-files" exact Component={BasicImageUploadPage} />
           <Route path="/basic-live-search" exact Component={BasicLiveSearchPage} />
           <Route path="/how-to-create-custom-hook" Component={ReactCustomHook}/>
+
+          <Route path="employee-crud-via-redux" Component={EmpReduxMain} />
           
           <Route path="/react-hook-tutorial/" Component={ReactHookPage}>
             <Route path="use-state-page" Component={UseStateInfo} />

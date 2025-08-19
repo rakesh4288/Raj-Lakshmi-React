@@ -79,7 +79,7 @@ const ReactReduxPage = () => {
                     <div className="col-xl-6 col-lg-6 col-md-5 col-sm-12">
                         <ReduxConfiguration />
                         <h6>
-                            Best tutorial for Setup: <Link to="https://whataboutcoding.com/redux-toolkit-tutorial/" target="_target">https://whataboutcoding.com/redux-toolkit-tutorial/</Link> 
+                            Best tutorial for Setup: <Link to="https://whataboutcoding.com/redux-toolkit-tutorial/" target="_blank">https://whataboutcoding.com/redux-toolkit-tutorial/</Link> 
                         </h6>
 
                         <hr className="bg-primary"/>
