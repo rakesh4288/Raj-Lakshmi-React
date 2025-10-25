@@ -242,3 +242,25 @@ h6 {
   height: auto;
   word-break: break-all;
 }
+
+.dmartCard {
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 1rem;
+}
+
+.dmartCard .card-header {
+  background: linear-gradient(360deg, #dadff8 0%, #c7d2fe 100%);
+  color: #222;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  font-weight: 600;
+}
+
+.card-hover {
+  transition: transform 0.25s cubic-bezier(.21,.98,.6,.99), box-shadow 0.25s cubic-bezier(.21,.98,.6,.99);
+}
+.card-hover:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 32px 0 rgba(60, 80, 180, 0.18), 0 2px 8px 0 rgba(60, 80, 180, 0.10);
+  z-index: 2;
+}

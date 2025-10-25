@@ -30,14 +30,15 @@ const ReduxConfiguration = () => {
                 </li>
                 
                 <li>
-                    Step 4: Register the slice feature with store.js file., This file needs all the features slice registration at one place. Because a store can have multiple features based on your project requirement.
+                    Step 4: Register the  feature with store.js file., This file needs all the features slice registration at one place. Because a store can have multiple features based on your project requirement.
+                    Step 4: Register the feature  with store.js file., This file needs all the features slice registration at one place. Because a store can have multiple features based on your project requirement.
                 </li>
                 
                 <li>
                     Step 5: Later you can use the useSelector() hook and this hook is helping for getting the latest data from the store in your whole react app and its easily imported by react-redux 
                 </li>
                 <li>
-                    Step 5: And if you wanted to update the state then you need to use the useDispatch() hook and pass the action to the reducer, and finally reducer will take your action with payload and perform the opertion based on your request.
+                    Step 6: And if you wanted to update the state then you need to use the useDispatch() hook and pass the action to the reducer, and finally reducer will take your action with payload and perform the opertion based on your request.
                 </li>
             </ul>
 

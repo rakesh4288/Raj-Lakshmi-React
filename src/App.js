@@ -54,7 +54,9 @@ import GitAndGitHub from './Pages/GitAndGitHub';
 import ReduxThunkGetApi from './Pages/ReduxThunkGetApi';
 import DataVirtualizationPage from './Pages/DataVirtualizationPage';
 import ReactTestingPage from './Pages/ReactTestingPage';
-import EmpReduxMain from './EmployeeReduxCrud/EmpReduxMain';
+import DmartReduxMain from './DmartReduxCrud/DmartReduxMain';
+import DmartReduxList from './DmartReduxCrud/DmartReduxList';
+import DmartReduxCreate from './DmartReduxCrud/DmartReduxCreate';
 
 function App() {
   return (
@@ -81,8 +83,6 @@ function App() {
           <Route path="/how-to-upload-files" exact Component={BasicImageUploadPage} />
           <Route path="/basic-live-search" exact Component={BasicLiveSearchPage} />
           <Route path="/how-to-create-custom-hook" Component={ReactCustomHook}/>
-
-          <Route path="employee-crud-via-redux" Component={EmpReduxMain} />
           
           <Route path="/react-hook-tutorial/" Component={ReactHookPage}>
             <Route path="use-state-page" Component={UseStateInfo} />
@@ -114,6 +114,11 @@ function App() {
             <Route path="list" element={<EmployeeList />} />
             <Route path="details/:id" element={<EmployeeDetails />} />
             <Route path="edit/:id" element={<EmployeeEdit />} />
+          </Route>
+
+          <Route path="/dmart-crud-via-redux" element={<DmartReduxMain />}>
+            <Route path="create" element={<DmartReduxCreate/>} />
+            <Route path="list" element={<DmartReduxList/>} />
           </Route>
 
           <Route path="/how-to-write-test-cases-in-react" Component={ReactTestingPage}/>

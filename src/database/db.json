@@ -1,21 +1,13 @@
 {
   "employees": [
     {
-      "empId": 2105871,
-      "name": "Rakesh Shah",
-      "address": "Pune India",
-      "phone": 9762462383,
-      "email": "rakesh.shah4288@gmail.com",
-      "empAddress": "anything",
-      "id": "1"
-    },
-    {
       "id": "de0b",
       "empId": "345676",
       "empName": "SHIVANI",
       "empEmail": "amadi@test.com",
       "empPhone": "9384739583",
       "empGender": "female",
+      "empCity": "Indore",
       "empAddress": "Hyderabad"
     },
     {
@@ -25,6 +17,7 @@
       "empEmail": "rakesh@test..com",
       "empPhone": "8010172281",
       "empGender": "male",
+      "empCity": "Mumbai",
       "empAddress": "Hinjawadi"
     },
     {
@@ -34,6 +27,7 @@
       "empEmail": "rakesh@test.co",
       "empPhone": "34566543234",
       "empGender": "male",
+      "empCity": "Hyderabad",
       "empAddress": "ad avd fasfl sjflksd fjlf slfjsl fjsldfkj"
     },
     {
@@ -43,6 +37,7 @@
       "empEmail": "rajlakshmi@test.com",
       "empPhone": "89898989",
       "empGender": "male",
+      "empCity": "Delhi",
       "empAddress": "dfdfsdfbsfs fnsdfnfssfs"
     },
     {
@@ -52,6 +47,7 @@
       "empEmail": "lalita90sahu@gmail.com",
       "empPhone": "7049703003",
       "empGender": "female",
+      "empCity": "Pune",
       "empAddress": "B-608, Green Life Society, Near Lakshmi Chowk Pune, India Pincode: 486887"
     },
     {
@@ -61,7 +57,41 @@
       "empEmail": "Manish@test.com",
       "empPhone": "9384739583",
       "empGender": "male",
+      "empCity": "Pune",
       "empAddress": "Pune India",
+      "termsCondition": "on"
+    },
+    {
+      "id": "d976",
+      "empId": "7575",
+      "empName": "Shikha Verma",
+      "empEmail": "shikha.verma@gmail.com",
+      "empPhone": "8010172281",
+      "empGender": "female",
+      "empCity": "Indore",
+      "empAddress": "Hello",
+      "termsCondition": "on"
+    },
+    {
+      "id": "62e2",
+      "empId": "8787",
+      "empName": "Sohan Lal",
+      "empEmail": "amadi@gmail.com",
+      "empPhone": "8010172281",
+      "empGender": "male",
+      "empCity": "Mumbai",
+      "empAddress": "ssfgdg d fgd ggdgd",
+      "termsCondition": "on"
+    },
+    {
+      "id": "f4a1",
+      "empId": "920677",
+      "empName": "Shubhshree Mehta",
+      "empEmail": "subhshree@gmail.com",
+      "empPhone": "9898657564",
+      "empGender": "female",
+      "empAddress": "B2 - 101 SONIGARA EXCLUZEE NEAR DRAUPDA LAWNS",
+      "empCity": "Hyderabad",
       "termsCondition": "on"
     }
   ],

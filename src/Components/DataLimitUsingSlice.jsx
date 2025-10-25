@@ -31,48 +31,43 @@ const DataLimitUsingSlice = () => {
                 <img src={AppImages.MapSliceLimit} alt={AppImages.MapSliceLimit} className="img-fluid" />
             </p>
 
-            {
-                isLoading && (
+            {isLoading && (
                     <div className="d-flex justify-content-center">
                         <div className="spinner-border text-primary" role="status">
                             <span className="visually-hidden">Loading...</span>
                         </div>
                     </div>
-                )
-            }
+                )}
 
-            {
-                userData.length === 0 ? (
+            {userData.length === 0 ? (
                     <div className="text-danger"> User Data is not available </div>
-                )
-                : (
-                    <table className='table table-striped'>
-                        <thead>
-                            <tr>
-                                <td>Id</td>
-                                <td>Name</td>
-                                <td>Age</td>
-                                <td>Gender</td>
-                            </tr>
-                        </thead>
+            ) : (
+                <table className='table table-striped'>
+                    <thead>
+                        <tr>
+                            <td>Id</td>
+                            <td>Name</td>
+                            <td>Age</td>
+                            <td>Gender</td>
+                        </tr>
+                    </thead>
 
-                        <tbody>
-                            {
-                                userData.slice(0, 5).map((item, index) => {
-                                    return (
-                                        <tr key={index + 1}>
-                                            <td>{item.id}</td>
-                                            <td>{item.firstName}</td>
-                                            <td>{item.age}</td>
-                                            <td>{item.gender}</td>
-                                        </tr>
-                                    )
-                                })
-                            }
-                        </tbody>
-                    </table>
-                )
-            }
+                    <tbody>
+                        {
+                            userData.slice(0, 5).map((item, index) => {
+                                return (
+                                    <tr key={index + 1}>
+                                        <td>{item.id}</td>
+                                        <td>{item.firstName}</td>
+                                        <td>{item.age}</td>
+                                        <td>{item.gender}</td>
+                                    </tr>
+                                )
+                            })
+                        }
+                    </tbody>
+                </table>
+            )}
 
             <div className="alert alert-info">
                 <h5>How to handle the large amount of response while calling API:</h5>

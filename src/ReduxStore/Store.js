@@ -4,7 +4,7 @@ import TaskReducer from '../Features/TaskManagerSlice';
 import StudentContactSlice from '../Features/StudentContactSlice';
 import DummyUserSlice from '../Features/DummyUserSlice';
 import FakeProductSlice from '../Features/FakeProductSlice';
-import EmpDetailSlice from '../Features/EmpDetailSlice';
+import DmartEmpSlice from '../Features/DmartEmpSlice';
 
 export const Store = configureStore({
   reducer: {
@@ -13,7 +13,7 @@ export const Store = configureStore({
     StudentStore: StudentContactSlice,
     DummyUserStore: DummyUserSlice,
     FakeProductStore: FakeProductSlice,
-    EmpDetailStore: EmpDetailSlice,
+    DmartEmpStore: DmartEmpSlice,
   },
 })
 

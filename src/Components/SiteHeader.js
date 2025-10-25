@@ -63,8 +63,8 @@ const SiteHeader = () => {
                                     </li>
 
                                     <li>
-                                        <Link className="dropdown-item" to="/employee-crud-via-redux">
-                                            <Icon.ArrowRight /> Employee Crud Operatoin with Redux
+                                        <Link className="dropdown-item" to="/dmart-crud-via-redux/create">
+                                            <Icon.ArrowRight /> Dmart Emp Crud Operatoin with Redux
                                         </Link>
                                     </li>
                                 </ul>
