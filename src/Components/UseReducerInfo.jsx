@@ -41,13 +41,13 @@ const UseReducerInfo = () => {
             <h3> <i>useReducer</i> React Hook Page <Icon.BagPlusFill /> </h3>
             <ul>
                 <li>useReducer hook is a very powerful hook that can simplify the complex state management in your react application.</li>
-                <li>This hook is verfy helpful for handling the large amount of todo function using the switch case.</li>
+                <li>This hook is verfy helpful for handling the large amount of todo function.</li>
             </ul>
 
             <h6>When do you use the useReducer Hook ?</h6>
             
             <p>
-                When you wanted to handle the several todo function so this is the situation where you can apply the useReducer hook.
+                So basically when you wanted to handle the several todo function,  so this can be a best situation where you can apply the useReducer hook.
             </p>
             
             <p className="text-danger"> 

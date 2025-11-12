@@ -19,7 +19,7 @@ export const Store = configureStore({
 
 // Setps:
 // Create the store first
-// wrap the app by using provoder in index.js file
+// wrap the app by using provoder in index.js file and assign the store attribute inside and pass this store file
 // create slice
 // register the store
 

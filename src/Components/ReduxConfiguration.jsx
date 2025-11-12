@@ -7,11 +7,12 @@ const ReduxConfiguration = () => {
             <h6>Steps for configuring React Redux:</h6>
             <ul>
                 <li>
-                    Step 1: Firstly we need to create the store where we configure the common store
+                    Step 1: Firstly we need to create the store where we configure the entry point of common store
                 </li>
 
                 <li>
-                    Step 2: Next step would be - go to the index.js file and Wrap the react app by using provider and add the store attribute and assign the store configuration. here is the syntax:
+                    Step 2: Next step would be - go to the index.js file and wrap the react app by using provider and append the store attribute. you need to import the store from where you have created. <br/>
+                    here is the syntax:
                     <pre className='aleet alert-warning'>
                         <code>import { "Provider" } from "react-redux";</code>
                     </pre>
@@ -26,19 +27,19 @@ const ReduxConfiguration = () => {
                 </li>
                 
                 <li>
-                    Step 3: Create the feature slice, This is the actual file where you need to create feature about common States.
+                    Step 3: Create the feature slice, This is the actual file where you need to create feature and logic about common States.
                 </li>
                 
                 <li>
-                    Step 4: Register the  feature with store.js file., This file needs all the features slice registration at one place. Because a store can have multiple features based on your project requirement.
-                    Step 4: Register the feature  with store.js file., This file needs all the features slice registration at one place. Because a store can have multiple features based on your project requirement.
+                    Step 4: Register the  feature with store.js file., This file needs all the features slice registration at one place. Because a store can have a multiple features based on your project requirement.
                 </li>
                 
                 <li>
-                    Step 5: Later you can use the useSelector() hook and this hook is helping for getting the latest data from the store in your whole react app and its easily imported by react-redux 
+                    Step 5: Later you can use the <b>useSelector()</b> hook and you can use this <b>useSelector()</b> hook in any component Because we already wrapped the all whole react app by usinf Provider with store. 
+                    This hook is helping for getting the latest state from the store.
                 </li>
                 <li>
-                    Step 6: And if you wanted to update the state then you need to use the useDispatch() hook and pass the action to the reducer, and finally reducer will take your action with payload and perform the opertion based on your request.
+                    Step 6: And if you wanted to update the state then you need to use the <b>useDispatch()</b> hook and pass the action to the reducer, and finally reducer will take your action with payload and perform the opertion based on your request.
                 </li>
             </ul>
 

@@ -24,12 +24,14 @@ const InterviewSeries_1 = () => {
                             <h6>Before leaning virtual let's understand the DOM first</h6>
                             <div className="alert alert-warning">
                                 <h6>What is DOM ?</h6>
-                                <p><b>DOM stands for Document Object Model.</b> In simple terms, it is a structured representation of the HTML elements that are present in a webpage or web app. DOM represents the entire UI of your application. The DOM is represented as a tree data structure. It contains a node for each UI element present in the web document. It is very useful as it allows web developers to modify content through JavaScript, also it being in structured format helps a lot as we can choose specific targets and all the code becomes much easier to work with.</p>
+                                <p>
+                                    <b>DOM stands for Document Object Model.</b> In simple terms, it is a structured representation of the HTML elements that are present in a webpage. DOM represents the entire UI of your application as a tree data structure. It contains a node for each UI element present in the web document. It is very useful as it allows web developers to modify content through JavaScript
+                                </p>
                             </div>
 
                             <div className="alert alert-info">
                                 <h6>What is Virtual DOM ?</h6>
-                                <p><b>VirtualDOM is a lightweighted copy of the actual DOM.</b> Its a virtual representation of the DOM and its optimized the code and take the updates on every object that exists in the original DOM,</p>
+                                <p><b>Virtual DOM is a lightweighted copy of the actual DOM.</b> Its a virtual representation of the DOM and its optimized the code and take the updates on every object that exists in the original DOM,</p>
 
                                 <p>
                                     Manipulating the DOM is slow,  but manipulating Virtual DOM is very fast because its not taking full refresh of the page, only selected node will get changed.
@@ -65,7 +67,11 @@ const InterviewSeries_1 = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <h4>Difference between props and state ?</h4>
-                            <p>When we starts working with React components, it's important to understand the differences between state and props. <br/>Here, we'll take a look at some common conditions and compare the behavior of props and state.</p>
+                            <p>
+                                When we start working with React JS, it's important to understand the differences between state and props.
+                                Here, we'll take a look at some common conditions and compare the behavior of props and state.
+                            </p>
+
                             <table className="table table-striped">
                                 <thead>
                                     <tr>
@@ -81,7 +87,7 @@ const InterviewSeries_1 = () => {
                                     </tr>
 
                                     <tr>
-                                        <td>State can be changed and it's called mutable</td>
+                                        <td>State can be changed and it's called a mutable</td>
                                         <td>Where props are in readonly mode we cannot be change, it's called immutable</td>
                                     </tr>
 
@@ -118,7 +124,11 @@ const InterviewSeries_1 = () => {
                         </div>
                     </div>
                 </div>
+            </section>
 
+            <hr className="bg-primary" />
+
+            <section id="spread-operator-with-props">
                 <div className="container">
                     <div className="row">
                         <div className='col-xl-12 col-lg-12 col-md-12 col-sm-12'>
@@ -130,7 +140,7 @@ const InterviewSeries_1 = () => {
                     <div className="row">
                         <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
                             <p>
-                                If we pass the hard codes props along with existing dynamic props so the priority of rendering will be hard coded props 
+                                If we pass the hard code props along with existing dynamic props so the priority of rendering will be hard coded props 
                             </p>
                             <p>
                                 <img src={AppImages.Props_Design_1} alt="props design one" className="img-fluid" />
@@ -160,13 +170,13 @@ const InterviewSeries_1 = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
-                            <h4><u>React js is bidirectional or unidirectional</u></h4>
+                            <h4>React js is bidirectional or unidirectional</h4>
                             <p>
-                                React uses a unidirectional data flow, which means that data flows in one direction, from parent to child components. This is a structural best practice for React applications.
+                                React Js uses a unidirectional data flow, which means that data flows in one direction, from parent to child components. This is a structural best practice for React applications.
                             </p>
 
                             <div className="alert alert-warning">
-                                The React core team strongly recommends using unidirectional data flow as often as possible.
+                                The React core team strongly recommends use a unidirectional data flow as often as possible.
                             </div>
 
                             <p>
@@ -197,7 +207,7 @@ const InterviewSeries_1 = () => {
 
                                     <tr>
                                         <td>What to do if a child component needs to send a message to its parent</td>
-                                        <td>Use a special technique called inversion data flow</td>
+                                        <td>Use a special technique called inversion data flow or some callback technique</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -214,7 +224,7 @@ const InterviewSeries_1 = () => {
 
             <hr className="bg-primary"/>
 
-            <section id="bidirectional-vs-unidirectional">
+            <section id="package-vs-package-lock.json">
                 <div className="container">
                     <div className="row">
                         <div className='col-xl-12 col-lg-12 col-md-12 col-sm-12'>
@@ -224,29 +234,34 @@ const InterviewSeries_1 = () => {
 
                     <div className="row">
                         <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
-                            <h6><b>package.json</b></h6>
+                            <h6>package.json</h6>
                             <p>
-                                package.json records the minimum version that your app needs. If you update the versions of a particular package, the change is not going to be reflected here.
-                            </p>
-
-                            <p>
-                                So lets say I am having some library with ^3.0.0 in package.json and then library team releases version 3.5.2 and now when someone clone my repo and runs npm install in their machine so they will get the version 3.5.2 (You can also put ~ instead of ^ it will update to latest patch version)
+                                Package.json is the main configuration for any Node.js project.
                             </p>
 
                             <ul>
-                                <li>This file contains information about the project like defining project properties, description, author & license information, scripts, etc.</li>
-                                <li>There are two types of dependencies, first is the dependencies and another one is dev dependencies.</li>
+                                <li>
+                                    This file contains metadata information about the project like project name, project description, author & license information, scripts, etc.
+                                </li>
+                                
+                                <li>
+                                    There are two types of dependencies, first is the dependencies and another one is dev dependencies.
+                                </li>
                             </ul>
                         </div>
 
                         <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
-                            <h6><b>package-lock.json</b></h6>
+                            <h6>package-lock.json</h6>
                             <p>
-                                Actually it is recording the exact version of each installed package in React application which allows you to re-install them. Future installs will be able to build an identical dependency tree.
+                                package-lock.json file is automatically generated by npm.
                             </p>
 
                             <p>
-                                The package-lock.json is solely used to lock dependencies to a specific version number.
+                                Actually package-lock.json maintaining the exact version of each installed package in React application which allows you to re-install them. Future installs will be able to build an identical dependency tree.
+                            </p>
+
+                            <p>
+                                The package-lock.json is solely used to lock the dependencies to a specific version number.
                             </p>
                         </div>
                     </div>
@@ -261,16 +276,16 @@ const InterviewSeries_1 = () => {
                         <div className='col-xl-12 col-lg-12 col-md-12 col-sm-12'>
                             <h3>Difference between dependencies vs dev dependencies ?</h3>
                             <p>
-                                Every web application project includes a file called package.json, which serves as a central repository for an important project metadata. <br/> This file holds information such as dependencies and dev dependencies.
+                                Every node js project includes a file called package.json, which serves as a central repository for an important project metadata. <br/> This file holds information such as dependencies and dev dependencies.
                             </p>
                         </div>
                     </div>  
 
                     <div className="row">
                         <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
-                            <h6><b>Dependencies</b></h6>
+                            <h6>Dependencies</h6>
                             <p>
-                                Dependencies are mostly required for the production build and core functionality of the React
+                                Dependencies are mostly required for the production build and core functionality of the React. In other ways - dependencies are required to run the application in production,
                             </p>
 
                              <ul>
@@ -289,13 +304,12 @@ const InterviewSeries_1 = () => {
                         </div>
 
                         <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
-                            <h6><b>Dev Dependencies</b></h6>
+                            <h6>Dev Dependencies</h6>
                             <p>
-                                In package.json file, there is an object called as dev Dependencies and it consists of all the packages that are used in the project in its development phase and not in the production or testing environment
+                                Dev Dependencies are the required only during development phase, not in production.
                             </p>
-
                             <p>
-                                So, whenever you want to install any library that is required only in your development phase then you can find it in the dev Dependencies object. 
+                                In package.json file, there is an object called as dev Dependencies and its containing the all packages that are used in the project in its development phase and not in the production or testing environment
                             </p>
 
                             <p>
@@ -326,9 +340,11 @@ const InterviewSeries_1 = () => {
 
                         <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
                             <div className="border p-2">
-                                <h6>Look at below screenshot: <br/>
+                                <h6>Look at below screenshot:</h6>
+                                <p>
                                     Total variable coming from Derived States, as soon as User states get updated so total variable will also get updated.
-                                </h6>
+                                </p>
+
                                 <p>
                                     <img  src={AppImages.DerivedStatesImg_1} alt={AppImages.DerivedStatesImg_1} className="img-fluid"/>
                                 </p>

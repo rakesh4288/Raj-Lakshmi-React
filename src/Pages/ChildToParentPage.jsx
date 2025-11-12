@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import AppImages from "../Assets";
 import ChildComponent from '../Components/ChildComponent';
 import ColorChild from '../Components/ColorChild';
+import TeamA from '../Components/TeamA';
 
 const ChildToParentPage = () => {
     const [storeFamilyData, setStoreFamilyData] = useState([]);
@@ -132,6 +133,17 @@ const ChildToParentPage = () => {
                     </div>
                 </div>
             </section>
+            
+            <hr className='bg-info' />
+
+            <section className='container'>
+                <div className='row'>
+                    <div className="col-md-6">
+                        <TeamA />
+                    </div>
+                </div>
+            </section>
+
         </div>
     )
 }

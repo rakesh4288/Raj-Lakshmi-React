@@ -31,6 +31,8 @@ const AppImages = {
     HooksLifeCycleMethod: require('./hooks_life_cycle.png'),
     ComputerParts: require('./computer-parts.png'),
     UseContextImg: require('./use_context_hook_1.png'),
+    UseContextImg5: require('./use_context_hook_5.png'),
+    UseContextImg6: require('./use_context_hook_6.png'),
     WhatIsJSX: require('./what_is_JSX.png'),
     UseEffectWithAsync: require('./use_effect_with_async.png'),
     ReactJsAdvantages: require('./react_js_advantages.png'),

@@ -103,7 +103,7 @@ const ReduxThunkGetApi = () => {
                             <b>createAsyncThunk</b> is a utility function which is provided by the Redux Toolkit that helps to handle the asynchronous logic in your Redux application, such as fetching data from an API.
 
                             <p>
-                                It automatically generates the action creators and action types for the three typical promise states of an async reques
+                                It automatically generates the action creators and action types for the three typical promise states of an async request.
                             </p>
 
                             <ul>

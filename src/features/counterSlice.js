@@ -16,7 +16,7 @@ export const CounterSlice = createSlice({
       state.value += Number(action.payload)
     },
     reset: (state) => {
-        state.value = 0
+      state.value = 0
     },
   },
 })

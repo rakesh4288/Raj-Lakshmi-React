@@ -209,7 +209,7 @@ const ReactBasicInfo = () => {
                             <h6>Instead of this we can add the event on parent element:</h6>
 
                             <p>
-                                <img src={AppImages.EventDelegation_2} alt={AppImages.EventDelegation_2} className="img-fluid" />
+                                <img src={AppImages.EventDelegation_3} alt={AppImages.EventDelegation_2} className="img-fluid" />
                             </p>
                         </div>
                     </div>

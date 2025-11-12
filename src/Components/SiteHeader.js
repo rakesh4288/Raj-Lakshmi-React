@@ -25,14 +25,22 @@ const SiteHeader = () => {
                                             <Icon.ArrowRight /> React Basic Page
                                         </Link>
                                     </li>
+                                    
                                     <li>
                                         <Link className="dropdown-item" to="/react-controlled-uncontrolled-component">
                                             <Icon.ArrowRight /> Controlled and Uncontrolled Component
                                         </Link>
                                     </li>
+
                                     <li>
                                         <Link className="dropdown-item" to="/life-cycle-method-in-react">
                                             <Icon.ArrowRight /> Life Cycle Method in React
+                                        </Link>
+                                    </li>
+
+                                    <li>
+                                        <Link className="dropdown-item" to="/how-to-pass-data-from-child-to-parent-component">
+                                            <Icon.ArrowRight /> How to pass data from Child to Parent
                                         </Link>
                                     </li>
                                 </ul>

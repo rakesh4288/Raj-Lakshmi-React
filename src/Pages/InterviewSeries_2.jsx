@@ -22,7 +22,7 @@ const InterviewSeries_2 = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <h4>What is React Js and why its better than other ?</h4>
+                            <h4>What is React Js and why it is better than other ?</h4>
                             <p>
                                 Just because of its Virtual DOM concept. React is using virtual DOM for updating the component. By using Virtual DOM the performance of React is increasing.
                             </p>
@@ -48,7 +48,7 @@ const InterviewSeries_2 = () => {
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <h3>What is babel?</h3>
                             <p>
-                                Babel is a popular JavaScript transpiler that converts the modern JavaScript code (ES6 and beyond) and JSX into a backwards-compatible version of JavaScript that can run in every browsers.
+                                Babel is a popular JavaScript transpiler that converts the modern JavaScript code like ES6 and JSX into a compatible version of JavaScript that can run in every browsers.
                             </p>
                             
                             <p>
@@ -56,16 +56,16 @@ const InterviewSeries_2 = () => {
                             </p>
 
                             <p>
-                                In React JS, Babel is often used to transform the JSX syntax into standard JavaScript, as browsers do not natively understand the JSX. Babel is also providing polyfills to emulate newer JavaScript features in older environments.
+                                In React JS, Babel is often used to transform the JSX syntax into the standard JavaScript, as browsers do not natively understand the JSX. Babel is also providing polyfills to emulate newer JavaScript features in older environments.
                             </p>
                         </div>
 
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <h3>Why is Babel Important for React JS?</h3>
-                            <p>Babel is essential for React JS development for several reasons:</p>
+                            <p>Babel is essential for the React JS development for its several reasons:</p>
                             <ul>
                                 <li>
-                                    <b>Transforms JSX into JavaScript:</b> React’s syntax extension, JSX, allows developers to write HTML like code in JavaScript. However, browsers cannot execute JSX directly. Babel transpiles JSX code into standard JavaScript that browsers can understand.
+                                    <b>Transforms JSX into JavaScript:</b> React's syntax extension, JSX, allows developers to write HTML like code in JavaScript. However, browsers cannot execute JSX directly. Babel transpiles JSX code into standard JavaScript that browsers can understand.
                                 </li>
 
                                 <li>
@@ -73,45 +73,57 @@ const InterviewSeries_2 = () => {
                                 </li>
 
                                 <li>
-                                    <b>Polyfills for Missing Features:</b> Babel can also include polyfills for newer JavaScript features that are not natively supported in some browsers. This ensures that the application’s code behaves consistently across all environments.
+                                    <b>Polyfills for Missing Features:</b> Babel can also include polyfills for newer JavaScript features that are not natively supported in some browsers. This ensures that the application's code behaves consistently across all environments.
                                 </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className="row">
-                        <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                            <h5>What is the webpack in react ?</h5>
-                            <h6>
-                                Webpack is a just helping to create the bundle for your react js application.
-                                <br/>Its primary role is to take all the individual JavaScript files and assets alos like CSS, images, fonts in a project and combine them into a single, optimized bundle that can be efficiently loaded by a web browser.
-                            </h6>
-
-                            <h5>Key functions of Webpack in a React context</h5>
-                            <ul>
-                                <li>Module Bundling</li>
-                                <li>Transpilation</li>
-                                <li>Asset Management</li>
-                                <li>Optimization</li>
-                                <li>Development Features</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section>
+            <section id="webback-pollyfills" className="container">
+                <div className="row">
+                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <h5>What is the webpack in react ?</h5>
+                        <h6>
+                            Webpack is a just helping to create the bundle for your react js application.
+                            <br/>Its primary role is to take all the individual JavaScript files and assets also like CSS, images, fonts in a project and combine them into a single, optimized bundle that can be efficiently loaded by a web browser.
+                        </h6>
+
+                        <h5>Key functions of Webpack in a React context</h5>
+                        <ul>
+                            <li>Module Bundling</li>
+                            <li>Transpilation</li>
+                            <li>Asset Management</li>
+                            <li>Optimization</li>
+                            <li>Development Features</li>
+                        </ul>
+                    </div>
+
+                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <h5>What is the Pollyfill in react ?</h5>
+                        <p>
+                            In React, a polyfill is a piece of code, typically written in JavaScript, that provides modern functionality to older web browsers or environments that do not natively support those features.
+                            React applications often taking the advantages modern JavaScript features like ES6, ES7, or beyond and browser APIs, which might not be available in all user environments, particularly older browsers like Internet Explorer. 
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <hr className="bg-success"/>
+
+            <section id="useeffect-query">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                             <h5>What happens if we pass null or undefined in second argument in useEffect Hook ?</h5>
                             <h5>What happens if we not pass the second argumment in useEffect</h5>
-                            <p>If you create an useEffect with no second argument or null or undefined then callback will get executed on every render.</p>
+                            <p>If you are creating an useEffect with no second argument or null or undefined then callback will get executed on every render.</p>
 
                             <p>If you add null or undefined then it will throw the warning via EsLint. </p>
 
                             <p className="alert alert-warning">
-                                It will not harm your application in case you don't mutate a state inside the callback. If you added the console.log with Hello Pune so it will print on every render.
+                                It will not harm your application in case you don't mutate a state inside the callback. If you added the console.log so it will print on every render.
                             </p>
                         </div>
                     </div>
@@ -166,7 +178,7 @@ const InterviewSeries_2 = () => {
 
             <hr/>
 
-            <section>
+            <section id="error-bounderies">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -192,11 +204,11 @@ const InterviewSeries_2 = () => {
                             <div className="bg-dark p-2 mb-2">
                                 <h4 className="text-white">What are Synthetic Events in ReactJS ?</h4>
                                 <p className="text-white">
-                                    Synthetic events are the cross-browser wrappers around the all browsers. The main purpose of creating the synthetic event is to perform cross browser issues. 
+                                    Synthetic events are the cross-browser wrappers around all the browsers and the main purpose of creating the synthetic event is to perform cross browser issues. 
                                 </p>
 
                                 <p className="text-white">
-                                    In traditional web development we were using onclick event for JavaScript But in React side we are using onClick camel cases, so basically this is helping to perform the Cross Browser issue. In every browser while clicking it should provide the basic details about event
+                                    In a traditional web development we were using onclick event for JavaScript But in React side we are using onClick camel cases, so basically this is helping to perform the Cross Browser issue. In every browser while clicking it should provide the basic details about event
                                 </p>
 
                                 <p>

@@ -9,14 +9,13 @@ const HomePage = () => {
     const [toggle, setToggle] = useState(false);
     const navigate = useNavigate();
     const toggleHandler = () => {
-        console.log('inside toggleHandler');
         setToggle(!toggle);
     }
 
     const handleGit = () => {
-        //alert('inside handleGit');
         navigate('/what-is-git-and-git-github');
     }
+
     return (
         <div id="home-page" className="homePageStyle">
             <section className="pageHeader">
@@ -206,12 +205,7 @@ const HomePage = () => {
                     <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <div className={toggle ? 'darkTheme' : 'whiteTheme'}>
                             <h5>Dark Mode Challenge</h5>
-                            {
-                                toggle ?
-                                <Icon.Sun onClick={toggleHandler} className="whiteIcon"/>
-                                :
-                                <Icon.Moon onClick={toggleHandler} className="darkIcon"/>
-                            }
+                            {toggle ? <Icon.Sun onClick={toggleHandler} className="whiteIcon"/> : <Icon.Moon onClick={toggleHandler} className="darkIcon"/>}
 
                             <br/><br/>
                             <p>
@@ -336,32 +330,32 @@ const HomePage = () => {
                                 <tbody>
                                     <tr>
                                         <td>Keep all dependencies up to date</td>
-                                        <td>Becaise it helps to Fixes known issues</td>
+                                        <td>Because it helps to Fixes known issues</td>
                                     </tr>
 
                                     <tr>
                                         <td>Avoid eval(), exec(), and Function()</td>
-                                        <td>Becaise it helps to Prevents code injection</td>
+                                        <td>Because it helps to Prevents code injection</td>
                                     </tr>
 
                                     <tr>
                                         <td>Validate and sanitize the all user input</td>
-                                        <td>Becaise it helps to Stops injection, XSS, etc.</td>
+                                        <td>Because it helps to Stops injection, XSS, etc.</td>
                                     </tr>
 
                                     <tr>
                                         <td>Use environment variables for secrets</td>
-                                        <td>Becaise it helps to Keeps credentials safe</td>
+                                        <td>Because it helps to Keeps credentials safe</td>
                                     </tr>
 
                                     <tr>
                                         <td>Implement proper error handling</td>
-                                        <td>Becaise it helps to Avoids info leaks</td>
+                                        <td>Because it helps to Avoids info leaks</td>
                                     </tr>
 
                                     <tr>
                                         <td>Use HTTPS</td>
-                                        <td>Becaise it helps to Encrypts data in transit</td>
+                                        <td>Because it helps to Encrypts data in transit</td>
                                     </tr>
                                 </tbody>
                             </table>

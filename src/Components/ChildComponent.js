@@ -30,7 +30,7 @@ const ChildComponent = ({
             age: 0.2,
             gender: 'Female'
         }
-    ]
+    ];
 
     const handleChange = (event) => {
         const selectedValue = event.target.value;

@@ -12,7 +12,7 @@ const ArrayState = () => {
 
     const handleCity = (e) => {
         console.log(e);
-        // cityList.push('Banaras'); //  Why this is not working is just because of Memory references. Generally takes the memory references
+        // cityList.push('Banaras'); //  Why this is not working because of Memory references. Generally takes the memory references
         setCityList([...cityList, newCity]);
         setNewCity('');
     }
@@ -21,16 +21,14 @@ const ArrayState = () => {
             <h5>How to update the Array State</h5>
 
             <ul>
-                {
-                    cityList.map((item, index) => {
-                        return (
-                            <li key={index}>{item}</li>
-                        )
-                    })
-                }
+                {cityList.map((item, index) => {
+                    return (
+                        <li key={index}>{item}</li>
+                    )
+                })}
             </ul>
             <input type='text' placeholder='Add any city' value={newCity} onChange={handleChange} /> &nbsp;
-            <button className='btn btn-dark btn-sm' onClick={handleCity}>Add Banaras</button> <br/>
+            <button className='btn btn-dark btn-sm' onClick={handleCity}>Add City</button> <br/>
             <Link to="https://www.youtube.com/shorts/kqYpp5Q1aCI" target="_blank"> Short Video</Link>
         </div>
     )

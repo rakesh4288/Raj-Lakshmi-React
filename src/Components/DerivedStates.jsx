@@ -15,19 +15,16 @@ const DerivedStates = () => {
     ]
     const [carProducts, setCarProducts] = useState(carData);
     const [filterCar, setFilterCar] = useState(carProducts);
-    // const [searchQuery, setSearchQuery] = useState('');
 
     const handleSearch = (e) => {
         const searchValue = e.target.value;
-        console.log('searchValue =', searchValue);
         let temp = [];
         temp = filterCar.filter((item) => item.name.toLowerCase().includes(searchValue.toLowerCase()));
-        console.log('filterCar =', temp);
         setCarProducts(temp);
     }
     return (
         <div id='practical-tour'>
-            <input type='search' placeholder='Search By Car Name' name='searchQuery' onChange={handleSearch} />
+            <input type='search' className='form-control' placeholder='Search By Car Name' name='searchQuery' onChange={handleSearch} />
             <table className='table table-striped'>
                 <thead>
                     <tr>
@@ -38,17 +35,15 @@ const DerivedStates = () => {
                 </thead>
 
                 <tbody>
-                    {
-                        carProducts.map((item) => {
-                            return (
-                                <tr key={item.id}>
-                                    <td>{item.id}</td>
-                                    <td>{item.name}</td>
-                                    <td>{item.color}</td>
-                                </tr>
-                            )
-                        })
-                    }
+                    {carProducts.map((item) => {
+                        return (
+                            <tr key={item.id}>
+                                <td>{item.id}</td>
+                                <td>{item.name}</td>
+                                <td>{item.color}</td>
+                            </tr>
+                        )
+                    })}
                 </tbody>
             </table>
         </div>

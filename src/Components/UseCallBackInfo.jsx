@@ -25,7 +25,7 @@ const UseCallBackInfo = () => {
             </p>
 
             <p>
-                The <b><i>useCallback</i></b> hook is used the memoized a function, ensuring that it only gets recreated when its dependencies change. The <b><i>useCallback</i></b> hook stores a memoized version of any <b>"DoSomthingFunction() which will only change when its dependencies changed.</b>
+                The <b><i>useCallback</i></b> hook is used the memoized a function, And this hook is getting triggered when its dependencies change. The <b><i>useCallback</i></b> hook stores a memoized version of any <b>"DoSomthingFunction() which will only change when its dependencies changed.</b>
             </p>
             <h5>Problem</h5>
             <p>

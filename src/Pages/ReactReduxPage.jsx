@@ -42,7 +42,7 @@ const ReactReduxPage = () => {
                         </p>
 
                         <p>
-                            In other words React Redux is used to manage the data of the application by keeping centralized store.
+                            In the other words Redux is used to manage the data of the application by keeping the states in centralized store.
                         </p>
 
                         <p>
@@ -62,12 +62,16 @@ const ReactReduxPage = () => {
                             </p>
                             <ul>
                                 <li>
-                                    Let's suppose you have some complex code component structure where you are passing the state using the props so sometimes it can be a difficult to manage the props via upwards or downwards.
+                                    Let's suppose you have some complex code structure where you are passing the state using the props so sometimes it can be a difficult to manage the props via upwards or downwards.
                                 </li>
 
-                                <li>Generally React passing the props via parent to child like Downwards it means top to the bottom, and similarly how you will the states from bottom to top you will use the callback options no any other methods are present to handle this case.</li>
+                                <li>
+                                    Generally React passing the props via parent to child like Downwards it means top to the bottom, and similarly how you will the pass states from bottom to top you will use the callback options no any other methods are present to handle this case.
+                                </li>
 
-                                <li>So handle this situation you can use the Redux where Redux provides the centralized store to help the data flows and provides the smooth transitions to update the states</li>
+                                <li>
+                                    So handle this situation you can use the Redux where Redux provides the centralized store to help the data flows and provides the smooth transitions to update the states
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -84,7 +88,7 @@ const ReactReduxPage = () => {
 
                         <hr className="bg-primary"/>
                         <p>
-                            The <b>useSelector()</b> hook is primarily used for extracting the data from Redux store within the functional component. <b>useSelector()</b> takes a selector function as an argument. This function receiving the entire Redux store state and returning the specefic piece of data that the component needs.
+                            The <b>useSelector()</b> hook is primarily used for extracting the data from Redux store within the functional component. <b>useSelector()</b> takes a selector function as an argument. This function receiving the entire Redux store state and returns a specefic piece of data based on the component requirement.
                         </p>
 
                         <p className='text-danger'>
@@ -116,7 +120,7 @@ const ReactReduxPage = () => {
                 </div>
             </section>
 
-            <section className="bg-dark pt-4 pb-4 mt-4 mb-4">
+            <section id='what-are-the-reducers' className="bg-dark pt-4 pb-4 mt-4 mb-4">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -130,7 +134,9 @@ const ReactReduxPage = () => {
                             </p>
 
                             <p className="text-white">
-                                Reducers: As we know already, actions only tell what to do, but they don't tell how to do, so reducers are the pure functions that take the current state and action and return the new state and tell the store how to do. Store: The store is the object which holds the state of the application.27 Jan 2019
+                                Reducers: As we know already, actions are only telling what to do, but they don't tell how to do, so reducers are the pure functions that take the current state and action and return the new state and telling the store how to do. 
+                                <br/>
+                                Store: The store is the object which holds the state of the application.
                             </p>                           
                         </div>
 
@@ -170,7 +176,7 @@ const ReactReduxPage = () => {
                                 </p>
 
                                 <p>
-                                     <b>useContext </b>is helping to solve the Prop Drilling issue. If you have multiple component which is combined with each other like Parent to child component at deep level and you need to get the one state from the top level component so in this case useContext Hook is really helpful for solving this
+                                     <b>useContext </b>is helping to solve the Prop Drilling issue. If you have a multiple component which is combined with each other like Parent to child scenario at deep level and you need to get the one state from the top level component so in this case useContext Hook is really helpful for solving this
                                 </p>
 
                                 <p>
@@ -183,7 +189,7 @@ const ReactReduxPage = () => {
                 </div>
             </section>
 
-            <section className="container">
+            <section id='redux-interview-videos' className="container">
                 <div className="row">
                     <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <h5>Best Redux Interview Questions:</h5>
@@ -197,13 +203,13 @@ const ReactReduxPage = () => {
                 </div>
             </section>
 
-            <section className="pt-4 pb-4 mt-4 mb-4">
+            <section id="redux-thunk-vs-redux-saga" className="pt-4 pb-4 mt-4 mb-4">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                             <h5>Redux Thunk vs. Redux Saga: Choosing the Right Middleware <Icon.Activity/></h5>
                             <h6>
-                                Redux is a predictable state container for React apps. This is a mainly used in React application for managing the application state globally.
+                                Redux is a predictable state container for React. This is a mainly used in React application for managing the state globally.
                             </h6>
 
                             <h6 className="text-danger">
@@ -214,40 +220,44 @@ const ReactReduxPage = () => {
 
                     <div className="row">
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <h6><b>Redux Thunk:</b></h6>
-                            <p>
-                                Redux Thunk is a middleware of React applications which is allow to write the actions creators that returns a functions instead of an action.
-                            </p>
+                            <div className="alert alert-info">
+                                <h6><b>Redux Thunk:</b></h6>
+                                <p>
+                                    Redux Thunk is a middleware of React applications which is allow to write the actions creators that returns a functions instead of an action.
+                                </p>
 
-                            <p>
-                                This function receives the store's dispatch method, which is used to dispatch the regular synchornous actions.
-                            </p>
+                                <p>
+                                    This function receives the store's dispatch method, which is used to dispatch the regular synchornous actions.
+                                </p>
 
-                            <h6>Features:</h6>
-                            <ul>
-                                <li>Simple setup and integration with existing Redux applications.</li>
-                                <li>This is Best for simpler use cases and smaller applications.</li>
-                                <li>Easier to understand for developers familiar with Redux.</li>
-                            </ul>
+                                <h6>Features:</h6>
+                                <ul>
+                                    <li>Simple setup and integration with existing Redux applications.</li>
+                                    <li>This is Best for simpler use cases and smaller applications.</li>
+                                    <li>Easier to understand for developers familiar with Redux.</li>
+                                </ul>
+                            </div>
                         </div>
 
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <h6><b>Redux Saga:</b></h6>
-                            <p>
-                                Redux Saga is also a middleware of the React applications and the main purpose is to make a side effect in the Redux application while dealing with API. This is easier to manage and more efficient to execute
-                            </p>
+                            <div className="alert alert-success">
+                                <h6><b>Redux Saga:</b></h6>
+                                <p>
+                                    Redux Saga is also a middleware of the React applications and the main purpose is to make a side effect in the Redux application while dealing with API. This is a easier way to manage and more efficient to execute.
+                                </p>
 
-                            <p>
-                                It uses ES6 generators to make asynchronous flow control more readable and easier to debug.
-                            </p>
+                                <p>
+                                    It uses the ES6 generators to make asynchronous flow control more readable and easier to debug.
+                                </p>
 
-                            <h6>Features:</h6>
+                                <h6>Features:</h6>
 
-                            <ul>
-                                <li>This is a more powerful and flexible for complex asynchronous flows.</li>
-                                <li>Built-in support for cancellation, which can be useful for handling user interactions like cancellation of ongoing requests.</li>
-                                <li>Allows for easier testing due to the use of generator functions.</li>
-                            </ul>
+                                <ul>
+                                    <li>This is a more powerful and flexible for complex asynchronous flows.</li>
+                                    <li>Built-in support for cancellation, which can be useful for handling the user interactions like cancellation of ongoing requests.</li>
+                                    <li>Allows for easier testing due to the use of generator functions.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -43,15 +43,15 @@ const InterviewSeries_3 = () => {
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <h4 className="text-white">What are synthetic events in ReactJS ?</h4>
                             <p className="text-white">
-                                Synthetic events are the cross-browser wrappers around the all browsers. The main purpose of creating the synthetic event is to perform cross browser issues. 
+                                Synthetic events are the cross-browser wrappers around all the browsers. The main purpose of creating the synthetic event is to perform cross browser issues. 
                             </p>
 
                             <p className="text-white">
-                                In traditional web development we were using onclick event for JavaScript But in React side we are using onClick camel cases, so basically this is helping to perform the Cross Browser issue. In every browser while clicking it should provide the basic details about event
+                                In a traditional web development we were using onclick event for JavaScript But in React side we are using onClick camel cases, so basically this is helping to perform the Cross Browser issue. In every browser while clicking it should provide the basic details about event
                             </p>
 
                             <p className="text-white">
-                                Synthetic event is also providing the more details about the event logs. There are many events you can check via consoles and We can use these events for developement purpose.
+                                Synthetic event is also providing the more details about the event logs. There are many objects in events log,  you can check via consoles and We can use these events for developement purpose.
                             </p>
                         </div>
 
@@ -134,16 +134,16 @@ const InterviewSeries_3 = () => {
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <h2>What is Reconciliation in React JS?</h2>
                             <h6>
-                                Reconciliation is one of the most important concepts in React. It is helping to update the DOM in very efficient manner. This mechanism ensures that UI updates are optimized, minimized by which performance can be improved for the best user experience.
+                                Reconciliation is one of the most important concepts in React. It is helping to update the DOM in very efficient manner. This mechanism ensures that UI updates are optimized, minimized so that performance can be improved for the best user experience.
                             </h6>
 
                             <h6>
-                                Reconciliation in React is the process of efficiently updating the user interface (UI) to reflect changes in a component's state or props. It involves comparing the current virtual DOM tree with the new virtual DOM tree and then updating only the necessary parts of the actual DOM. This process ensures that React applications remain performant by minimizing the number of DOM operations.
+                                Reconciliation in React is the process of efficiently updating the user interface (UI) to reflect the changes in a component's via state or props. It involves comparing the current virtual DOM tree with the new virtual DOM tree and then updating only the necessary parts of the actual DOM. This process ensures that React applications remain performance by minimizing the number of DOM operations.
                             </h6>
 
-                            <h6>
+                            <h6 className="text-success">
                                 <i>
-                                    React Reconciliation refers to the React's process of comparing the current and previous states of the Virtual DOM and updating the DOM efficiently. It makes the DOM updates faster in React. It updates the virtual DOM first and then uses the diffing algorithm to make efficient and optimized updates in the Real DOM.
+                                    React Reconciliation refers to the React's process of comparing the current and previous states of the Virtual DOM and updating the DOM efficiently.
                                 </i>
                             </h6>
                         </div>
@@ -217,7 +217,7 @@ const InterviewSeries_3 = () => {
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <h4>Client-Side Rendering</h4>
                             <p>
-                                Client-side rendering (CSR) is the process of rendering the web pages on the client using the JavaScript.
+                                Client-side rendering (CSR) is the process of rendering the web pages on the client side using the JavaScript.
                             </p>
 
                             <p>

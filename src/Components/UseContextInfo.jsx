@@ -17,7 +17,7 @@ const UseContextInfo = () => {
             </p>
 
             <p>
-                React is a way to manage the state globally. If you have any global info that you need to pass in all comopnent or every child or nested child so in this case you can use the useContext hook
+                React is a way to manage the state globally. If you have any global info and you wanted to pass in all comopnent or every child or nested child so in this case you can use the useContext hook
             </p>
 
             <h4>What was the problem:</h4>
@@ -91,6 +91,14 @@ const UseContextInfo = () => {
                             </districtName.Provider>
                         </stateName.Provider>
                     </countryName.Provider>
+
+                    <p>
+                        <img src={AppImages.UseContextImg5} alt={AppImages.UseContextImg5} className="img-fluid"/>
+                    </p>
+
+                    <p>
+                        <img src={AppImages.UseContextImg6} alt={AppImages.UseContextImg6} className="img-fluid"/>
+                    </p>
                 </div>
             </div>
 
