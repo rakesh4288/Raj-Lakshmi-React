@@ -57,6 +57,7 @@ import ReactTestingPage from './Pages/ReactTestingPage';
 import DmartReduxMain from './DmartReduxCrud/DmartReduxMain';
 import DmartReduxList from './DmartReduxCrud/DmartReduxList';
 import DmartReduxCreate from './DmartReduxCrud/DmartReduxCreate';
+import ToDoDashboard from './Pages/ToDoDashboard';
 
 function App() {
   return (
@@ -79,6 +80,7 @@ function App() {
 
           <Route path="/checkbox-operation-in-react" exact Component={CheckboxOperationPage} />
           <Route path="/radio-operation-in-react" exact Component={RadioSelection}/>
+          <Route path="/todo-operation-in-react" exact Component={ToDoDashboard}/>
           <Route path="/how-to-handle-form-in-react" exact Component={CompleteFormPage} />
           <Route path="/how-to-upload-files" exact Component={BasicImageUploadPage} />
           <Route path="/basic-live-search" exact Component={BasicLiveSearchPage} />

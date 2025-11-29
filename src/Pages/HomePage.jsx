@@ -151,14 +151,14 @@ const HomePage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <h5>What Are The Differences Between npm and npx?</h5>
+                            <h5>What are the differences between npm and npx?</h5>
                             <p>
                                 When we are working with Node.js, you will frequently using the two important tools like npm and npx. 
                                 While both npm and npx are important part to managing the JavaScript dependencies, they serve the different purposes.
                             </p>
 
                             <p>
-                                The key difference between npm and npx is that npm is a node package manager for installing and managing the dependencies, <b><i>whereas npx is an execution tool that allows you to run the Node.js packages directly without installing them globally.</i></b>
+                                The key difference between npm and npx is that npm is a node package manager for installing and managing the dependencies, <b><i>whereas npx is an execution tool that allows you to execute the Node.js packages directly.</i></b>
                             </p>
                         </div>
 
@@ -175,7 +175,7 @@ const HomePage = () => {
                             <ul>
                                 <li>When You need to install the packages locally or globally for your project.</li>
                                 <li>When You want to manage the dependencies and ensure that they are tracked in your package.json file</li>
-                                <li>You are working on a long-term project where you’ll frequently use the same packages and libraries.</li>
+                                <li>When You are working on a long-term project where you'll frequently use the same packages and libraries.</li>
                             </ul>
                         </div>
 
@@ -262,7 +262,7 @@ const HomePage = () => {
                         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                             <h4>What are the vulnerabilities in Node.js?</h4>
                             <p>
-                                In Node.js, vulnerabilities are security weaknesses in your application or its dependencies that can be exploited by attackers to:
+                                In Node.js, vulnerabilities are security weaknesses in your application
                             </p>
 
                             <ul>
@@ -276,7 +276,7 @@ const HomePage = () => {
 
                     <div className="row">
                         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                            <h5>Common Types of Vulnerabilities in Node.js</h5>
+                            <h5>Common types of Vulnerabilities in Node.js</h5>
                             <table className="table table-striped">
                                 <thead>
                                     <tr>
@@ -317,7 +317,7 @@ const HomePage = () => {
 
                     <div className="row">
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <h5>Best Practices to Avoid Vulnerabilities</h5>
+                            <h5>Best practices to avoid Vulnerabilities</h5>
                             
                             <table className="table table-striped">
                                 <thead>

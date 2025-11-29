@@ -5,7 +5,7 @@ const DebouncingPage = () => {
     const [apiData, setApiData] = useState([]);
     const [pincode, setPincode] = useState('');
     const [isLoading, setIsLoading] = useState(false);
-    //const url = 'https://api.postalpincode.in/pincode/411057';
+    // const url = 'https://api.postalpincode.in/pincode/411057';
     // https://demo.dataverse.org/api/search?q=mobile
     const url = `https://api.postalpincode.in/pincode/${pincode}`;
 
@@ -35,14 +35,14 @@ const DebouncingPage = () => {
         }, 2000);
 
         return () => {
-            // This is for cleaning up activity
+            // This is for clean up activity
             clearTimeout(delayDebouncing);
         }
     }, [pincode]);
 
     const handleInput = (e) => {
         e.preventDefault();
-        setPincode(e.target.value)
+        setPincode(e.target.value);
     }
     return (
         <div id='debouncing-page'>
@@ -62,14 +62,17 @@ const DebouncingPage = () => {
                         <h4>Debouncing and Throttling in React</h4>
                         <h5>Debouncing:</h5>
                         <p>
-                            Debouncing is a technique where you delay the execution of some set of function on certain amount of time has passed. This is a very useful technique in some cases where are calling function frequently. We should use this technique for improving the performance where you are trying to call some function frequently.
+                            Debouncing is a technique where you delay the execution on some certain amount of time has passed. This is a very useful technique in some cases where you are calling function frequently. We should use this technique for improving the performance.
                         </p>
 
                         <p>
-                            Generally we are using setTimeout() function for working with Debouncing. As you know we are not doing something new. This function is already present in native JavaScript. We are just using this technique for delaying some function to execute.
+                            Generally we are using setTimeout() function for working with Debouncing. As you know we are not doing something new. This function is already present in native JavaScript. We are just using this technique for executing our function on some certain of time.
                         </p>
 
-                        <h6>Most useful case when we are calling API on onChange event</h6>
+                        <h6>
+                            There may be multiple usecase for using this technique But Most useful case is hen we are calling API on onChange event.
+                        </h6>
+
                         <p>Yes so this is one of the best use case for api calling.</p>
                         <p className="text-danger">
                             Let's suppose you have one input and while typing any letter you wanted to execute the API. So just imagine your API will call will be executed on every typing letter. Now let's suppose any user typing 5-10 letter in just 4-5 seconds so how many API will get call. This is not a correct approach for searching.
@@ -80,7 +83,7 @@ const DebouncingPage = () => {
                         <img src={AppImages.Debouncing_Img_1} alt="Debouncing_Img_1" className="img-fluid" />
                         <br/><br/><br/><br/><br/>
                         <p className="text-success">
-                            Now let's see the solution: Here if we attach the API call inside setTimeout() function with some specific delay time like 3 or 5 seconds, so only this giveen time API call will get executed. So we can avoid the the multiple API call the same time.
+                            Now let's see the solution: Here if we attach the API call inside setTimeout() function with some specific delay like 3 or 5 seconds, So after passing some certain amount of time this API call will get executed. So here we can avoid the multiple API call.
                         </p>
                     </div>
                 </div>
@@ -104,18 +107,15 @@ const DebouncingPage = () => {
 
                     <div className='col-xl-8 col-lg-8 col-md-8 col-sm-12'>
                         <h5>Trying Debouncing with API </h5>
-                        {
-                            isLoading && (
-                                <div className="d-flex justify-content-center" style={{textAlign: 'center'}}>
-                                    <div className="spinner-border text-primary" role="status">
-                                        <span className="visually-hidden">Loading...</span>
-                                    </div>
+                        {isLoading && (
+                            <div className="d-flex justify-content-center" style={{textAlign: 'center'}}>
+                                <div className="spinner-border text-primary" role="status">
+                                    <span className="visually-hidden">Loading...</span>
                                 </div>
-                            )
-                        }
-                        
-                                
-                        {   apiData.length === 0 ? (
+                            </div>
+                        )}
+                                                        
+                        {apiData && apiData.length === 0 ? (
                             <div className='alert alert-danger text-center'>
                                 Please enter the Pincode in number format !!
                             </div>
@@ -133,24 +133,21 @@ const DebouncingPage = () => {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {
-                                        apiData.map((item, index) => {
-                                            return (
-                                                <tr key={index + 1}>
-                                                    <td>{index + 1}</td>
-                                                    <td>{item.Name}</td>
-                                                    <td>{item.Pincode}</td>
-                                                    <td>{item.District}</td>
-                                                    <td>{item.Region}</td>
-                                                    <td>{item.State}</td>
-                                                </tr>
-                                            )
-                                        })
-                                    }
+                                    {apiData.map((item, index) => {
+                                        return (
+                                            <tr key={index + 1}>
+                                                <td>{index + 1}</td>
+                                                <td>{item.Name}</td>
+                                                <td>{item.Pincode}</td>
+                                                <td>{item.District}</td>
+                                                <td>{item.Region}</td>
+                                                <td>{item.State}</td>
+                                            </tr>
+                                        )
+                                    })}
                                 </tbody>
                             </table>
                         )}
-                            
                     </div>
                 </div>
 
@@ -163,7 +160,7 @@ const DebouncingPage = () => {
                     <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <h5>Throttling</h5>
                         <p>
-                            Throttling is a similar type of technique as like debouncing. but instead of delaying the execution of a function on certain time. Here we are calling a function on every given interval time.
+                            Throttling is a similar type of technique as like a debouncing. but instead of delaying the execution of a function on certain time. Here we are calling a function on every given interval time.
                         </p>
 
                         <p>
@@ -217,7 +214,7 @@ const DebouncingPage = () => {
                 <div className="row">
                     <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                         <h6>
-                            Debouncing and Throttling are similar only the difference is between function behaviour.
+                            <br/>Debouncing and Throttling are similar only the difference is between the function behaviour.
                             Debouncing is working with setTimeout() and Throttling is working the setInterval(). 
                         </h6>
                     </div>

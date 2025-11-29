@@ -63,7 +63,7 @@ const ReactFragment = () => {
                             </h6>
 
                             <h6>
-                                Main things is that all the HTML element is treating as object while rendering in web page so as per the fundamental two objects should be wrap in array then it can be easily loop. <br/>One more thing if you giving a commma after one element like below image so it will not through error app will be running. it will be undefined.
+                                Main thing is that all the HTML element is treating as object while rendering in web page so as per the fundamental two objects should be wrap in array then it can be easily loop. <br/>One more thing if you giving a commma after one element like below image so it will not through error app will be running. it will be undefined.
                             </h6>
                         </div>
                     </div>

@@ -1,56 +1,6 @@
 {
   "employees": [
     {
-      "id": "de0b",
-      "empId": "345676",
-      "empName": "SHIVANI",
-      "empEmail": "amadi@test.com",
-      "empPhone": "9384739583",
-      "empGender": "female",
-      "empCity": "Indore",
-      "empAddress": "Hyderabad"
-    },
-    {
-      "id": "e198",
-      "empId": "43533",
-      "empName": "Harish",
-      "empEmail": "rakesh@test..com",
-      "empPhone": "8010172281",
-      "empGender": "male",
-      "empCity": "Mumbai",
-      "empAddress": "Hinjawadi"
-    },
-    {
-      "id": "19e8",
-      "empId": "784565",
-      "empName": "Amadi Willimans",
-      "empEmail": "rakesh@test.co",
-      "empPhone": "34566543234",
-      "empGender": "male",
-      "empCity": "Hyderabad",
-      "empAddress": "ad avd fasfl sjflksd fjlf slfjsl fjsldfkj"
-    },
-    {
-      "id": "99d3",
-      "empId": "876544",
-      "empName": "Raj Lakshmi",
-      "empEmail": "rajlakshmi@test.com",
-      "empPhone": "89898989",
-      "empGender": "male",
-      "empCity": "Delhi",
-      "empAddress": "dfdfsdfbsfs fnsdfnfssfs"
-    },
-    {
-      "id": "76c2",
-      "empId": "589592",
-      "empName": "Lalita Sahu",
-      "empEmail": "lalita90sahu@gmail.com",
-      "empPhone": "7049703003",
-      "empGender": "female",
-      "empCity": "Pune",
-      "empAddress": "B-608, Green Life Society, Near Lakshmi Chowk Pune, India Pincode: 486887"
-    },
-    {
       "id": "de5e",
       "empId": "234543",
       "empName": "Manish Sengar",
@@ -59,7 +9,7 @@
       "empGender": "male",
       "empCity": "Pune",
       "empAddress": "Pune India",
-      "termsCondition": "on"
+      "empTC": "on"
     },
     {
       "id": "d976",
@@ -70,7 +20,7 @@
       "empGender": "female",
       "empCity": "Indore",
       "empAddress": "Hello",
-      "termsCondition": "on"
+      "empTC": "on"
     },
     {
       "id": "62e2",
@@ -81,7 +31,7 @@
       "empGender": "male",
       "empCity": "Mumbai",
       "empAddress": "ssfgdg d fgd ggdgd",
-      "termsCondition": "on"
+      "empTC": "on"
     },
     {
       "id": "f4a1",
@@ -92,7 +42,18 @@
       "empGender": "female",
       "empAddress": "B2 - 101 SONIGARA EXCLUZEE NEAR DRAUPDA LAWNS",
       "empCity": "Hyderabad",
-      "termsCondition": "on"
+      "empTC": "on"
+    },
+    {
+      "id": "4d44",
+      "empId": "123432",
+      "empName": "SHIVANI",
+      "empEmail": "rajlakshmi@test.com",
+      "empPhone": "5678765431",
+      "empGender": "male",
+      "empCity": "Pune",
+      "empAddress": "karve nagar Sai Colony",
+      "empTC": "agreed"
     }
   ],
   "computerProducts": [

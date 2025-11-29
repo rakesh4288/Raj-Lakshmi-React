@@ -48,13 +48,11 @@ const ChildToParentPage = () => {
                             <p>Using callback function we can pass the data from Child to Parent</p>
                             <ChildComponent getFamilyClick={getFamilyData} changeBgColor={getBgColor}  />
                             <ul>
-                                {
-                                   storeFamilyData.map((item, index) => {
+                                {storeFamilyData.map((item, index) => {
                                     return (
                                         <li key={index}>{item.name}</li>
                                     )
-                                   }) 
-                                }
+                                })}
                             </ul>
 
                             <div style={{width: '200px', height: '200px', border: '1px solid #ededed', background: `${newBgColor}`}}>
@@ -67,7 +65,6 @@ const ChildToParentPage = () => {
                             <ColorChild changeBgColorClick={changeBgColorCode} /> 
                             <hr className='bg-primary'/>
                             or choose here:  <input type='color' onChange={directOnPage} />
-                            
                             <div
                                 style={{height: '200px', width: '100%', borderRadius: '5px', backgroundColor: `${newBgColorCode}`}}> 
                             </div>

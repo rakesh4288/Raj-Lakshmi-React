@@ -1,7 +1,10 @@
 import * as Icon from 'react-bootstrap-icons';
+import AppImages from "../Assets";
 import SelectAllCheckbox from "../Components/SelectAllCheckbox";
 import RowSelection from "../Components/RowSelection";
 import RowSelectionOnApi from "../Components/RowSelectionOnApi";
+import SimpleCheckboxObject from '../Components/SimpleCheckboxObject';
+import SimpleCheckboxArray from '../Components/SimpleCheckboxArray';
 
 const CheckboxOperationPage = () => {
     return(
@@ -16,8 +19,24 @@ const CheckboxOperationPage = () => {
                 </div>
             </section>
 
-            <section>
-                <RowSelection/>
+            <section className="container">
+                <div className="row">
+                    <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
+                        <RowSelection/>
+                    </div>
+
+                    <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
+                         <p>
+                            <img src={AppImages.FormHandlingTwo} alt="react-form-handling" className="img-fluid img-thumbnail" />
+                        </p>
+
+                        <SimpleCheckboxObject /> <br/>
+
+                        <hr className='bg-info' />
+
+                        <SimpleCheckboxArray />
+                    </div>
+                </div>
             </section>
 
             <section className="lightBlueBG pt-4 pb-4">

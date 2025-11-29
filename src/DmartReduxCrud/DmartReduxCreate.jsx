@@ -11,17 +11,38 @@ const DmartReduxCreate = () => {
         empEmail: '',
         empPhone: '',
         empGender: '',
-        empAddress: ''
+        empCity: '',
+        empAddress: '',
+        empTC: ''
     }
     const [formValues, setFormValues] = useState(initalFormValues);
     const [formError, setFormError] = useState({});
+    // const handleInput = (e) => {
+    //     const {name, value}= e.target;
+    //     if(name === 'empTC') {
+    //         let copyForm = {...formValues};
+    //         if(e.target.checked) {
+    //             console.log('e.target.checked =', e.target.checked);
+    //             copyForm.empTC = e.target.value;
+    //         } else {
+    //             copyForm.empTC = '';
+    //         }
+    //     } else {
+    //         setFormValues({
+    //             ...formValues,
+    //             [name]: value
+    //         })
+    //     }
+    // }
+
     const handleInput = (e) => {
-        const {name, value}= e.target;
-        // setFormValues({...formValues, [e.target.name]: e.target.value})
-        setFormValues({
-            ...formValues,
-            [name]: value
-        })
+        const { name, value, type, checked } = e.target;
+        if (type === 'checkbox') {
+            // store value when checked, empty string when unchecked
+            setFormValues(prev => ({ ...prev, [name]: checked ? value : '' }));
+        } else {
+            setFormValues(prev => ({ ...prev, [name]: value }));
+        }
     }
 
     const formValidation = () => {
@@ -29,38 +50,43 @@ const DmartReduxCreate = () => {
         const nameRegex = /^[A-Za-z ]+$/;
         const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
         const phoneRegex = /^\d{10}$/;
+
         if(formValues.empId === '') {
-            errors.empId = "Employee Id required"
+            errors.empId = "Employee Id required";
         }
         
         if(formValues.empName === '') {
-            errors.empName = "Employee Name required"
+            errors.empName = "Employee Name required";
         } else if(!nameRegex.test(formValues.empName)) {
-            errors.empName = "only alphabet allowed"
+            errors.empName = "only alphabet allowed";
         }
 
         if(formValues.empEmail === '') {
             errors.empEmail = "Email is required"
         } else if(!emailRegex.test(formValues.empEmail)){
-            errors.empEmail = 'Please enter correct Email !!'
+            errors.empEmail = 'Please enter correct Email !!';
         }
 
         if(formValues.empPhone === '') {
-            errors.empPhone = "Phone number is required"
+            errors.empPhone = "Phone number is required";
         } else if(!phoneRegex.test(formValues.empPhone)) {
             errors.empPhone = "Please enter correct Phone number"
         }
 
         if(formValues.empGender === '') {
-            errors.empGender = "Please choose Gander"
+            errors.empGender = "Please choose Gander";
         }
 
         if(formValues.empCity === '') {
-            errors.empCity = "Current City required !"
+            errors.empCity = "Current City required !";
         }
 
         if(formValues.empAddress === '') {
-            errors.empAddress = "Employee Address is needed !"
+            errors.empAddress = "Employee Address is needed !";
+        }
+
+        if(formValues.empTC === '') {
+            errors.empTC = "Please choose terms and condition for employment !";
         }
         
         setFormError({...errors})
@@ -91,7 +117,8 @@ const DmartReduxCreate = () => {
                 empPhone: '',
                 empGender: '',
                 empCity: '',
-                empAddress: ''
+                empAddress: '',
+                empTC: ''
             });
         }
     }
@@ -170,14 +197,20 @@ const DmartReduxCreate = () => {
                                 <input
                                     type="checkbox"
                                     id="jsCheckbox"
-                                    name="termsCondition"
+                                    name="empTC"
                                     className="form-check-input"
+                                    value="agreed"
                                     onChange={handleInput}
                                 />
                                 <label className="form-check-label" htmlFor="jsCheckbox">
                                     I agree with terms and conditions
                                 </label>
                             </div>
+
+                            <div className="mb-3">
+                                {formError && ( <div className="text-danger">{formError.empTC}</div> )}
+                            </div>
+                            
 
                             <div className="mb-3">
                                 <button type="submit" className="btn btn-primary btn-sm">Submit Application</button>

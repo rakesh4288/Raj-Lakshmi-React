@@ -1,4 +1,3 @@
-import React from "react";
 import * as Icon from 'react-bootstrap-icons';
 import VirtualizedList from "../Components/VirtualizedList";
 

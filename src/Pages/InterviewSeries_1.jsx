@@ -83,7 +83,7 @@ const InterviewSeries_1 = () => {
                                 <tbody>
                                     <tr>
                                         <td>States are managing within the component</td>
-                                        <td>But Props are getting passed from the component</td>
+                                        <td>But Props are getting passed from the parent component</td>
                                     </tr>
 
                                     <tr>
@@ -98,7 +98,7 @@ const InterviewSeries_1 = () => {
 
                                     <tr>
                                         <td>States are controlled by React component</td>
-                                        <td>Where as Props are controlled by whoever renders the components</td>
+                                        <td>Where as Props are controlled by the parent component</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -241,7 +241,7 @@ const InterviewSeries_1 = () => {
 
                             <ul>
                                 <li>
-                                    This file contains metadata information about the project like project name, project description, author & license information, scripts, etc.
+                                    This file contains the metadata information about the project like project name, project description, author & license information, scripts, etc.
                                 </li>
                                 
                                 <li>
@@ -257,11 +257,11 @@ const InterviewSeries_1 = () => {
                             </p>
 
                             <p>
-                                Actually package-lock.json maintaining the exact version of each installed package in React application which allows you to re-install them. Future installs will be able to build an identical dependency tree.
+                                Actually package-lock.json is maintaining the exact version of each installed package in React application which allows you to re-install them. Future installs will be able to build an identical dependency tree.
                             </p>
 
                             <p>
-                                The package-lock.json is solely used to lock the dependencies to a specific version number.
+                                The package-lock.json is used to lock the dependencies to a specific version number.
                             </p>
                         </div>
                     </div>
@@ -276,7 +276,7 @@ const InterviewSeries_1 = () => {
                         <div className='col-xl-12 col-lg-12 col-md-12 col-sm-12'>
                             <h3>Difference between dependencies vs dev dependencies ?</h3>
                             <p>
-                                Every node js project includes a file called package.json, which serves as a central repository for an important project metadata. <br/> This file holds information such as dependencies and dev dependencies.
+                                Every node js project is including a file called package.json, which serves as a central repository for an important project metadata. <br/> This file holds information such as dependencies and dev dependencies.
                             </p>
                         </div>
                     </div>  
@@ -306,7 +306,7 @@ const InterviewSeries_1 = () => {
                         <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
                             <h6>Dev Dependencies</h6>
                             <p>
-                                Dev Dependencies are the required only during development phase, not in production.
+                                Where as Dev Dependencies are the required only during development phase, not in production.
                             </p>
                             <p>
                                 In package.json file, there is an object called as dev Dependencies and its containing the all packages that are used in the project in its development phase and not in the production or testing environment

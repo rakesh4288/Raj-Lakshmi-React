@@ -4,6 +4,7 @@ const RowSelectionOnApi = () => {
     const [userData, setUserData] = useState([]);
     const [selectedRow, setSelectedRow] = useState([]);
     const url = 'https://dummyjson.com/users';
+
     const fetchingUser = async() => {
         try{
             const response = await fetch(url);
@@ -61,48 +62,32 @@ const RowSelectionOnApi = () => {
                                     <td>Name</td>
                                     <td>Gender</td>
                                     <td>age</td>
-                                    <td>
-                                        {/* <div className="form-check">
-                                            <input
-                                                type="checkbox"
-                                                id="selectCheckAll"
-                                                className="form-check-input"
-                                                name="CheckboxAll"
-                                                checked={isAllChecked}
-                                                onChange={handleCheckAll}
-                                            />
-                                            <label className="form-check-label" htmlFor="selectCheckAll">
-                                                { selectedRow.length === userData.length ? 'Deselect All Row' : 'Select All Row' }
-                                            </label>
-                                        </div> */}
-                                    </td>
+                                    <td> &nbsp; </td>
                                 </tr>
-                                {
-                                    userData && userData.map((item, index) => {
-                                        return (
-                                            <tr key={index + 1}>
-                                                <td>{item.id}</td>
-                                                <td>{item.firstName} &nbsp; {item.lastName}</td>
-                                                <td>{item.gender}</td>
-                                                <td>{item.age}</td>
-                                                <td>
-                                                    <div className="form-check">
-                                                        <input
-                                                            type="checkbox"
-                                                            id={`row-index${index + 1}`}
-                                                            className="form-check-input"
-                                                            value={JSON.stringify(item)}
-                                                            onChange={checkboxHandler}
-                                                        />
-                                                        <label className="form-check-label" htmlFor={`row-index${index + 1}`}>
-                                                            &nbsp;
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        )
-                                    })
-                                }
+                                {userData && userData.map((item, index) => {
+                                    return (
+                                        <tr key={index + 1}>
+                                            <td>{item.id}</td>
+                                            <td>{item.firstName} &nbsp; {item.lastName}</td>
+                                            <td>{item.gender}</td>
+                                            <td>{item.age}</td>
+                                            <td>
+                                                <div className="form-check">
+                                                    <input
+                                                        type="checkbox"
+                                                        id={`row-index${index + 1}`}
+                                                        className="form-check-input"
+                                                        value={JSON.stringify(item)}
+                                                        onChange={checkboxHandler}
+                                                    />
+                                                    <label className="form-check-label" htmlFor={`row-index${index + 1}`}>
+                                                        &nbsp;
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    )
+                                })}
                             </tbody>
                         </table>
                         <button type="submit" className="btn btn-info btn-sm">Submit Selected</button>
@@ -111,9 +96,7 @@ const RowSelectionOnApi = () => {
 
                 <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
                     <pre>
-                        {
-                            JSON.stringify(selectedRow, undefined, 2)
-                        }
+                        { JSON.stringify(selectedRow, undefined, 2) }
                     </pre>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const employeesData = [
     {
@@ -34,14 +34,13 @@ const employeesData = [
 ]
 
 const SelectAllCheckbox = () => {
-    const [rowSelected, setRowSelected] = useState([])
+    const [rowSelected, setRowSelected] = useState([]);
     const selectRowHandler = (row) => {
         setRowSelected((prevSelected) => (prevSelected.some((selected) => selected.id === row.id)
         ? prevSelected.filter((selected) => selected.id !== row.id) : [...prevSelected, row]))
     }
 
     console.log('rowSelected =', rowSelected);
-    
     const isAllChecked = rowSelected.length === employeesData.length;
 
     const handleSelectAll = (e) => {
@@ -84,41 +83,37 @@ const SelectAllCheckbox = () => {
                             </div>
                         </td>
                     </tr>
-                    {
-                        employeesData && employeesData.map((emp, index) => {
-                            return (
-                                <tr key={index}>
-                                    <td>{emp.id}</td>
-                                    <td>{emp.name}</td>
-                                    <td>{emp.gender}</td>
-                                    <td>{emp.address}</td>
-                                    <td>
-                                        <div className="form-check">
-                                            <input
-                                                type="checkbox"
-                                                id={`row-index${index + 1}`}
-                                                className="form-check-input"
-                                                value={emp.id}
-                                                checked={rowSelected.some((row) => row.id === emp.id)}
-                                                onChange={() => selectRowHandler(emp)}
-                                            />
-                                            <label className="form-check-label" htmlFor={`row-index${index + 1}`}>
-                                                &nbsp;
-                                            </label>
-                                        </div>
-                                    </td>
-                                </tr>
-                            )
-                        })
-                    }
+                    {employeesData && employeesData.map((emp, index) => {
+                        return (
+                            <tr key={index}>
+                                <td>{emp.id}</td>
+                                <td>{emp.name}</td>
+                                <td>{emp.gender}</td>
+                                <td>{emp.address}</td>
+                                <td>
+                                    <div className="form-check">
+                                        <input
+                                            type="checkbox"
+                                            id={`row-index${index + 1}`}
+                                            className="form-check-input"
+                                            value={emp.id}
+                                            checked={rowSelected.some((row) => row.id === emp.id)}
+                                            onChange={() => selectRowHandler(emp)}
+                                        />
+                                        <label className="form-check-label" htmlFor={`row-index${index + 1}`}>
+                                            &nbsp;
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                        )
+                    })}
                 </tbody>
             </table>
             <button className="btn btn-success btn-sm" type="submit" onClick={handleSubmit}>Submit Selected</button>
             <br/>
             <pre>
-                {
-                    JSON.stringify(rowSelected, undefined, 2)
-                }
+                { JSON.stringify(rowSelected, undefined, 2) }
             </pre>
         </form>
     )

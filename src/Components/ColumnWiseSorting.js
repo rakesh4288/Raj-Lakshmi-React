@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import {useEffect, useState} from 'react';
 import * as Icon from 'react-bootstrap-icons';
 
 const ColumnWiseSorting = () => {
@@ -6,7 +6,6 @@ const ColumnWiseSorting = () => {
     const [isLoading, setIsLoading] = useState(false);
     const [isApiError, setIsApiError] = useState(null);
     const [order, setOrder] = useState("ASC"); // By default we are keeping ascending order
-
 
     useEffect(() => {
         const fetchingUserData = async() => {
@@ -42,7 +41,6 @@ const ColumnWiseSorting = () => {
     };
 
     const sortingByNumber = (value) => {
-
         // For Age Column
         if(value === 'age') {
             if(order === 'ASC') {
@@ -97,25 +95,21 @@ const ColumnWiseSorting = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <h4>Sorting by dynamic column:</h4>
-                            {
-                                isLoading && (
+                            {isLoading && (
                                     <div className="d-flex justify-content-center">
                                         <div className="spinner-border text-primary" role="status">
                                             <span className="visually-hidden">Loading...</span>
                                         </div>
                                     </div>
-                                )
-                            }
+                            )}
 
-                            {
-                                isApiError && (
+                            {isApiError && (
                                     <div className="d-flex justify-content-center">
                                         <div className="text-danger" role="status">
                                             Getting Error while fetching the Data... <Icon.FilterRight />
                                         </div>
                                     </div>
-                                )
-                            }
+                            )}
 
                             <table className="table table-striped">
                                 <thead>
@@ -123,73 +117,57 @@ const ColumnWiseSorting = () => {
                                         <th scope="col">#</th>
                                         <th scope="col" onClick={() => sortingByString("firstName")}>
                                             First Name
-                                            {
-                                                order === 'ASC' ? <Icon.ArrowDown /> : <Icon.ArrowUp />
-                                            }
+                                            { order === 'ASC' ? <Icon.ArrowDown /> : <Icon.ArrowUp /> }
                                         </th>
                                         <th scope="col" onClick={() => sortingByString("lastName")}>
                                             Last Name
-                                            {
-                                                order === 'ASC' ? <Icon.ArrowDown /> : <Icon.ArrowUp />
-                                            }
+                                            { order === 'ASC' ? <Icon.ArrowDown /> : <Icon.ArrowUp /> }
                                         </th>
                                         <th scope="col" onClick={() => sortingByNumber("age")}>
                                             Age
-                                            {
-                                                order === 'ASC' ? <Icon.ArrowDown /> : <Icon.ArrowUp />
-                                            }
+                                            { order === 'ASC' ? <Icon.ArrowDown /> : <Icon.ArrowUp /> }
                                         </th>
                                         <th scope="col" onClick={() => sortingByString("gender")}>
                                             Gender
-                                            {
-                                                order === 'ASC' ? <Icon.ArrowDown /> : <Icon.ArrowUp />
-                                            }
+                                            { order === 'ASC' ? <Icon.ArrowDown /> : <Icon.ArrowUp /> }
                                         </th>
                                         <th scope="col" onClick={() => sortingByString("email")}>
                                             Email
-                                            {
-                                                order === 'ASC' ? <Icon.ArrowDown /> : <Icon.ArrowUp />
-                                            }
+                                            { order === 'ASC' ? <Icon.ArrowDown /> : <Icon.ArrowUp /> }
                                         </th>
                                         <th scope="col">Phone</th>
                                         <th scope="col" onClick={() => sortingByNumber("height")}>
                                             Height
-                                            {
-                                                order === 'ASC' ? <Icon.ArrowDown /> : <Icon.ArrowUp />
-                                            }
+                                            { order === 'ASC' ? <Icon.ArrowDown /> : <Icon.ArrowUp /> }
                                         </th>
                                         <th scope="col" onClick={() => sortingByNumber("weight")}>
                                             Weight
-                                            {
-                                                order === 'ASC' ? <Icon.ArrowDown /> : <Icon.ArrowUp />
-                                            }
+                                            { order === 'ASC' ? <Icon.ArrowDown /> : <Icon.ArrowUp />}
                                         </th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {
-                                        userData.length === 0 ? (
-                                            <tr>
-                                                <td colSpan={10} className='text-center'>
-                                                    <span className='text-danger'>No Data Found !!</span>
-                                                </td>
-                                            </tr>
+                                    {userData.length === 0 ? (
+                                        <tr>
+                                            <td colSpan={10} className='text-center'>
+                                                <span className='text-danger'>No Data Found !!</span>
+                                            </td>
+                                        </tr>
                                         ) : userData.map((user, index) => {
-                                            return (
-                                                <tr key={index}>
-                                                <td>{user.id}</td>
-                                                <td>{user.firstName}</td>
-                                                <td>{user.lastName}</td>
-                                                <td>{user.age}</td>
-                                                <td>{user.gender}</td>
-                                                <td>{user.email}</td>
-                                                <td>{user.phone}</td>
-                                                <td>{user.height}</td>
-                                                <td>{user.weight}</td>
-                                            </tr>
-                                            )
-                                        })
-                                    }
+                                        return (
+                                            <tr key={index}>
+                                            <td>{ index + 1}</td>
+                                            <td>{user.firstName}</td>
+                                            <td>{user.lastName}</td>
+                                            <td>{user.age}</td>
+                                            <td>{user.gender}</td>
+                                            <td>{user.email}</td>
+                                            <td>{user.phone}</td>
+                                            <td>{user.height}</td>
+                                            <td>{user.weight}</td>
+                                        </tr>
+                                        )
+                                    })}
                                 </tbody>
                             </table>
                         </div>

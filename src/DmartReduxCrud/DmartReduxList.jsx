@@ -36,30 +36,29 @@ const DmartReduxList = () => {
                     </div>
             )}
             
-            {apiData.map((item) => (
-                    <div className='col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4' key={item.id}>
-                        <div className="card shadow-sm border-0 rounded-4 h-100 dmartCard position-relative">
-                            <div className="card-header rounded-top-4">
-                                <span className="fw-semibold">Emp Id:</span> {item.empId}
-                            </div>
-                            <div className="card-body">
-                                <h6 className="card-title text-dark">{item.empName}</h6>
-                                <p className="card-text mb-1">
-                                    <Icon.EnvelopeFill className="me-2 text-secondary" /> {item.empEmail}
-                                </p>
-                                
-                                <p className="card-text mb-3">
-                                    <Icon.GeoAltFill className="me-2 text-secondary" /> {item.empCity}
-                                </p>
-                                
-                                <Link to="#" className="btn btn-outline-primary btn-sm float-end d-flex align-items-center gap-1">
-                                    Show in Detail <Icon.ArrowBarRight/>
-                                </Link>
-                            </div>
+            {apiData && apiData.length > 0 && apiData.map((item) => (
+                <div className='col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4' key={item.id}>
+                    <div className="card shadow-sm border-0 rounded-4 h-100 dmartCard position-relative">
+                        <div className="card-header rounded-top-4">
+                            <span className="fw-semibold">Emp Id:</span> {item.empId}
+                        </div>
+                        <div className="card-body">
+                            <h6 className="card-title text-dark">{item.empName}</h6>
+                            <p className="card-text mb-1">
+                                <Icon.EnvelopeFill className="me-2 text-secondary" /> {item.empEmail}
+                            </p>
+                            
+                            <p className="card-text mb-3">
+                                <Icon.GeoAltFill className="me-2 text-secondary" /> {item.empCity}
+                            </p>
+                            
+                            <Link to="#" className="btn btn-outline-primary btn-sm float-end d-flex align-items-center gap-1">
+                                Show in Detail <Icon.ArrowBarRight/>
+                            </Link>
                         </div>
                     </div>
-                ))
-            }
+                </div>
+            ))}
         </div>
     </div>
     )
