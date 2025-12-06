@@ -42,7 +42,7 @@ const HomePage = () => {
                 <div className="row">
                     <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                         <h5>
-                            The latest stable version of React is 19.1.0, <br/> which was released on March 28, 2025. React 19 was officially released on December 5, 2024. 
+                            The latest stable version of React is 19.2.0, <Link to="/react-19-features">React 19 Features</Link> <br/> which was released on March 28, 2025. React 19 was officially released on December 5, 2024. 
                         </h5>
                     </div>
                 </div>

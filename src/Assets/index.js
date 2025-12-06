@@ -69,6 +69,14 @@ const AppImages = {
     EventDelegation_3: require('./event_delegation_3.png'),
     MapSliceLimit: require('./map_slice.png'),
     ReduxProviderSteps: require('./redux_provider_confirgure.png'),
+    React18UseMemo: require('./react_18_useMemo.png'),
+    React19UseMemo: require('./react_19_useMemo.png'),
+    React_19_UseTransition_1: require('./React_19_useTransition_1.png'),
+    React_19_UseTransition_2: require('./React_19_useTransition_2.png'),
+    React_19_UseOptimistic_1: require('./react_19_useOptimistic_1.png'),
+    React_19_UseActionState_1: require('./react_19_useActionState_1.png'),
+    React_19_Use_Api_1: require('./react_19_useApi_1.png'),
+    React_19_Use_Activity_1: require('./react_19_Activity_1.png'),
 }
 
 export default AppImages;
