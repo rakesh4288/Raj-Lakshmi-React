@@ -7,7 +7,10 @@ const ReduxConfiguration = () => {
             <h6>Steps for configuring React Redux:</h6>
             <ul>
                 <li>
-                    Step 1: Firstly we need to create the store where we configure the entry point of common store
+                    Step 1: Firstly we need to create the store where we configure the entry point of common redux store
+                    <p>
+                        <img src={AppImages.ReduxStoreImg} alt={AppImages.ReduxStoreImg} className="img-fluid" />
+                    </p>
                 </li>
 
                 <li>
@@ -27,7 +30,7 @@ const ReduxConfiguration = () => {
                 </li>
                 
                 <li>
-                    Step 3: Create the feature slice, This is the actual file where you need to create feature and logic about common States.
+                    Step 3: Create the feature slice, This is the actual file where you need to create feature and logic about common States which you wanted to spread all over the application.
                 </li>
                 
                 <li>
@@ -35,7 +38,7 @@ const ReduxConfiguration = () => {
                 </li>
                 
                 <li>
-                    Step 5: Later you can use the <b>useSelector()</b> hook and you can use this <b>useSelector()</b> hook in any component Because we already wrapped the all whole react app by usinf Provider with store. 
+                    Step 5: Later you can use the <b>useSelector()</b> hook and you can use this <b>useSelector()</b> hook in any component Because we already wrapped the all whole react app by using Provider with store. 
                     This hook is helping for getting the latest state from the store.
                 </li>
                 <li>

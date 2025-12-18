@@ -68,6 +68,7 @@ const AppImages = {
     EventDelegation_2: require('./event_delegation_2.png'),
     EventDelegation_3: require('./event_delegation_3.png'),
     MapSliceLimit: require('./map_slice.png'),
+    ReduxStoreImg: require('./redux_store.png'),
     ReduxProviderSteps: require('./redux_provider_confirgure.png'),
     React18UseMemo: require('./react_18_useMemo.png'),
     React19UseMemo: require('./react_19_useMemo.png'),

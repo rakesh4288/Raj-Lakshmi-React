@@ -109,7 +109,7 @@ const ReactReduxPage = () => {
                         <div>
                             <h5>What are the action in Redux ?</h5>
                             <p>
-                                If I would say in simple terms so Actions are the just message which is just dispatching to the reducer like what to do. Then reducer are taking the action and performing the operations and updating the state.
+                                I would say in simple terms so Actions are the just messagenger which is just dispatching to the reducer like what to do. Then reducer are taking the action and performing the operations and updating the state.
                             </p>
                             <p>
                                 Actions are the plain JavaScript objects that have a type field. As mentioned earlier,
@@ -172,7 +172,7 @@ const ReactReduxPage = () => {
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <div className="text-white">
                                 <p>
-                                    useContext and Redux are both state management tools in React. The use of these two is totally based on the requirement. React JS by default providing the useContext where is Redux you need to install separately. 
+                                    useContext and Redux both are state management tools in React. The use of these two is totally based on the requirement. React JS by default providing the useContext where is Redux you need to install separately. 
                                 </p>
 
                                 <p>
