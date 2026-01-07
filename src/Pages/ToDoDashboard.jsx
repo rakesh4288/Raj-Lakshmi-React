@@ -18,7 +18,7 @@ const ToDoDashboard = () => {
             <section>
                 <div className="container">
                     <div className="row">
-                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                             <ArrayState />
                         </div>
                     </div>

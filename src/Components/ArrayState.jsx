@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import * as Icon from 'react-bootstrap-icons';
 
 const ArrayState = () => {
     const city = ['Pune', 'Udaipur', 'Indore'];
@@ -16,20 +17,53 @@ const ArrayState = () => {
         setCityList([...cityList, newCity]);
         setNewCity('');
     }
-    return (
-        <div className='bg-warning p-2'>
-            <h5>How to update the Array State</h5>
 
-            <ul>
-                {cityList.map((item, index) => {
-                    return (
-                        <li key={index}>{item}</li>
-                    )
-                })}
-            </ul>
+    const handleDelete = (id) => {
+        console.log('handleDelete =', id);
+        let selectedId = id;
+        if (window.confirm("Are you sure you want to remove this city?")) {
+            setCityList((prevState) => prevState.filter((item, id) => id !== selectedId));
+        }
+    }
+
+    return (
+        <div>
+            <h5>How to update the Array State</h5>
             <input type='text' placeholder='Add any city' value={newCity} onChange={handleChange} /> &nbsp;
             <button className='btn btn-dark btn-sm' onClick={handleCity}>Add City</button> <br/>
             <Link to="https://www.youtube.com/shorts/kqYpp5Q1aCI" target="_blank"> Short Video</Link>
+            <br/>
+            <table className='table table-bordered table-striped'>
+                <thead> 
+                    <tr>
+                        <th>SNO</th>
+                        <th>Name</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {cityList.length === 0 && (
+                        <tr>
+                            <td colSpan={4}>No Records Found !!</td>
+                        </tr>
+                    )}
+
+                    {cityList && cityList.length > 0 && (
+                        cityList.map((item, index) => {
+                            return (
+                                <tr key={index + 1}>
+                                    <td>{index + 1}</td>
+                                    <td>{item}</td>
+                                    <td>
+                                        <Icon.Trash style={{cursor: 'pointer'}} onClick={() => handleDelete (index)} />
+                                    </td>
+                                </tr>
+                            )
+                        })
+                    )}
+                </tbody>
+            </table>
         </div>
     )
 }
