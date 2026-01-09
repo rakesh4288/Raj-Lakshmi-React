@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ToDoWithArrayOfObject = () => {
+const ContactList = () => {
     const initialUsers = [
         {
             id: 1,
@@ -87,19 +87,13 @@ const ToDoWithArrayOfObject = () => {
     //     setUserRecord(tempArray);
     // }
 
-    console.log('userForm =', userForm);
-    console.log('userRecord =', userRecord);
+    // console.log('userForm =', userForm);
+    // console.log('userRecord =', userRecord);
     return(
         <div id="to-do-operation-with-array-of-object">
-            <section className="pageHeader">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                            <h4 className="pageHeading"> To Do Operations With Array Of Object</h4>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <div className="sectionHeader">
+                <h6 className="sectionHeading"> Contact List Operation With Array Of Objects</h6>
+            </div>
 
             
             <div className="row">
@@ -177,4 +171,4 @@ const ToDoWithArrayOfObject = () => {
     )
 }
 
-export default ToDoWithArrayOfObject;
+export default ContactList;

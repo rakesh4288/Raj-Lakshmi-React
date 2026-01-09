@@ -1,9 +1,10 @@
 import React from "react";
 import ArrayState from "../Components/ArrayState";
-import ToDoWithArrayOfObject from "../Components/ToDoWithArrayOfObject";
+import ContactList from "../Components/ContactList";
+import ToDoListCrud from "../Components/ToDoListCrud";
 
 const ToDoDashboard = () => {
-    return(
+    return (
         <div id="to-do-dashboard">
             <section className="pageHeader">
                 <div className="container">
@@ -15,20 +16,28 @@ const ToDoDashboard = () => {
                 </div>
             </section>
 
-            <section>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                            <ArrayState />
-                        </div>
+            <section className="container">
+                <div className="row">
+                    <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                        <ArrayState />
                     </div>
+                </div>
 
-                    <hr/>
+                <hr />
 
-                    <div className="row">
-                        <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                            <ToDoWithArrayOfObject />
-                        </div>
+                <div className="row">
+                    <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <ContactList />
+                    </div>
+                </div>
+            </section>
+
+            <hr className="bg-danger" />
+
+            <section className="container">
+                <div className="row">
+                    <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <ToDoListCrud />
                     </div>
                 </div>
             </section>

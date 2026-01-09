@@ -13,7 +13,7 @@ const UseContextInfo = () => {
         <div id="use-context-info">
             <h3> <i>useContext</i> Hook </h3>
             <p> 
-                useContext() hook is a very useful hook for sharing the global info for all the child components. While using this we can ignore to use props because useContext helping to share the global info at very deep level component
+                useContext() hook is a very useful hook for sharing the global info for all the child components. While using this we can ignore to use props because useContext is just helping to share the global info at very deep level component
             </p>
 
             <p>
@@ -28,7 +28,7 @@ const UseContextInfo = () => {
             
             <div className="alert alert-info">
                 <h6>
-                    <i>Prop Drilling are something like when you are passing the props with parent to child component or nested child component or nth child component so this is called prop drilling.</i>
+                    <i>Prop Drilling are something like when you are passing the props with parent to child component or its nested child component or nth child component so this is called prop drilling.</i>
                 </h6>
 
                 <h6>
