@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import * as Icon from 'react-bootstrap-icons';
+import { useState, useEffect } from "react";
 import SimpleForm from "../Components/SimpleForm";
 import AddRemoveItem from "../Components/AddRemoveItem";
 import SimpleLoginForm from "../Components/SimpleLoginForm";
@@ -55,7 +54,7 @@ const CompleteFormPage = () => {
                 languages: []
             });
         }
-    }, [formErrors, isSubmit]);
+    }, [formErrors, isSubmit, formData]);
 
     const formValidation = (formValues) => {
         const errors = {}
@@ -100,7 +99,7 @@ const CompleteFormPage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                            <h5>Complete Form With Validation  <Icon.DatabaseAdd /></h5>
+                            <h5>Complete Form With Validation  <i className="bi bi-database-add"></i> </h5>
                             <form className="alert alert-primary" onSubmit={handleSubmit}>
                                 <div className="form-group">
                                     <label htmlFor="username" className="form-label">Name</label>

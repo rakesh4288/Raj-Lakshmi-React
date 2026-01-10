@@ -1,6 +1,5 @@
 import React from "react";
 import AppImages from "../Assets";
-import * as Icon from 'react-bootstrap-icons';
 import SimpleDashboard from "../Components/SimpleDashboard";
 import withAuth from "../Global/withAuth";
 
@@ -13,7 +12,7 @@ const ReactHocPage = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <h4 className="pageHeading">
-                                React Higher Order Component !! <Icon.Border />
+                                React Higher Order Component !! <i className="bi bi-border"></i>
                             </h4>
                         </div>
                     </div>

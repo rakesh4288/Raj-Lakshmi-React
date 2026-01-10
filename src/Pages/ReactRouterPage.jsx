@@ -1,5 +1,3 @@
-import React from "react";
-import * as Icon from 'react-bootstrap-icons';
 import AppImages from "../Assets";
 
 const ReactRouterPage = () => {
@@ -11,7 +9,7 @@ const ReactRouterPage = () => {
                         <div className="col-md-12">
                             <h4 className="pageHeading">
                                 React Router Dashboard !!
-                                <Icon.Router/>
+                                <i className="bi bi-router"></i>
                             </h4>
                         </div>
                     </div>

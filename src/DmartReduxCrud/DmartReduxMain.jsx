@@ -1,6 +1,4 @@
-import React from "react";
 import { Link, Outlet, useNavigate } from "react-router-dom";
-import * as Icon from 'react-bootstrap-icons';
 const DmartReduxMain = () => {
     const navigate = useNavigate();
     const handleStudentHome = () => {
@@ -36,7 +34,7 @@ const DmartReduxMain = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12">
-                            <h5> Complete Video Step By Step  <Icon.CameraVideo /></h5>
+                            <h5> Complete Video Step By Step  <i className="bi bi-camera-reels-fill"></i> </h5>
                             <iframe width="100%" height="500" src="https://www.youtube.com/embed/8vNFuUALYv4?si=pfZ4zXuUvaxLnuL0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                         </div>
 

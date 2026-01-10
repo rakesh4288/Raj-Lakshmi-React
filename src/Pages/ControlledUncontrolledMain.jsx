@@ -1,5 +1,3 @@
-import React from "react";
-import * as Icon from 'react-bootstrap-icons';
 import AppImages from "../Assets";
 import Controlled from '../Components/Controlled';
 import Uncontrolled from '../Components/Uncontrolled';
@@ -11,7 +9,7 @@ const ControlledUncontrolledMain = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <h4 className="pageHeading">
-                                What is Controlled Uncontrolled Component  <Icon.Backpack />
+                                What is Controlled Uncontrolled Component  <i className="bi bi-backpack2"></i>
                             </h4>
                         </div>
                     </div>

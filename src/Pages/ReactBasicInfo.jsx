@@ -1,8 +1,5 @@
-import React from "react";
 import MyInfo from "../Components/MyInfo";
 import AppImages from "../Assets";
-import * as Icon from 'react-bootstrap-icons';
-
 
 const ReactBasicInfo = () => {
     const myFamilyData = [
@@ -43,7 +40,7 @@ const ReactBasicInfo = () => {
                     <div className="row">
                         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                             <h4 className="pageHeading">
-                                React Basic Understanding  <Icon.Backpack />
+                                React Basic Understanding  <i className="bi bi-skip-backward"></i>
                             </h4>
                         </div>
                     </div>

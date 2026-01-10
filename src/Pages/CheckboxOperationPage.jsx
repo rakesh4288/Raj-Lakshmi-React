@@ -1,4 +1,3 @@
-import * as Icon from 'react-bootstrap-icons';
 import AppImages from "../Assets";
 import SelectAllCheckbox from "../Components/SelectAllCheckbox";
 import RowSelection from "../Components/RowSelection";
@@ -13,7 +12,7 @@ const CheckboxOperationPage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h4 className="pageHeading"> Checkbox Operation Page  <Icon.CheckCircle /> </h4>
+                            <h4 className="pageHeading"> Checkbox Operation Page  <i className="bi bi-check2-circle"></i> </h4>
                         </div>
                     </div>
                 </div>

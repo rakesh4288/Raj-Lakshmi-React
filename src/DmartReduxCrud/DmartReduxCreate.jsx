@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import * as Icon from 'react-bootstrap-icons';
+import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { createEmployee } from "../Features/DmartEmpSlice";
 import { toast } from 'react-toastify';
@@ -131,7 +130,7 @@ const DmartReduxCreate = () => {
         <div className="container" id="student-redux-create">
             <div className="row">
                 <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                    <h5> Dmart Employee Create  <Icon.Receipt /></h5>
+                    <h5> Dmart Employee Create  <i className="bi bi-receipt"></i> </h5>
                         <form className="alert alert-primary" onSubmit={handleSubmit}>
                             <div className="mb-3">
                                 <label htmlFor="empId" className="form-label">Emp Id</label>

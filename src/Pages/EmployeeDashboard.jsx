@@ -1,5 +1,3 @@
-import React from "react";
-import * as Icon from 'react-bootstrap-icons';
 import { Link, Outlet } from 'react-router-dom';
 import DynamicInput from "../Components/DynamicInput";
 import ThreeFilterOnApi from '../Components/ThreeFilterOnApi';
@@ -12,7 +10,7 @@ const EmployeeDashboard = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <h4 className="pageHeading">
-                                Employees Crud Knowledge  <Icon.Database />
+                                Employees Crud Knowledge  <i className="bi bi-database"></i>
                             </h4>
                         </div>
                     </div>

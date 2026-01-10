@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import * as Icon from 'react-bootstrap-icons';
+import { useEffect, useState, useCallback } from "react";
 import SimplePostCall from "../Components/SimplePostCall";
 import PostIdComponent from "../Components/PostIdComponent";
 import DummyPostCall from "../Components/DummyPostCall";
@@ -9,15 +8,20 @@ const ReactHttpPostPage = () => {
     const [page, setPage] = useState(1);
     const [posts, setPosts] = useState([]);
 
+    const fetchPosts = useCallback(async () => {
+        try {
+            const res = await fetch(`https://jsonplaceholder.typicode.com/photos/${page}`);
+            const response = await res.json();
+            setPosts(response);
+        }
+        catch (error) {
+            console.log('fetchPosts Error: ', error);
+        }
+    }, [page]);
+
     useEffect(() => {
         fetchPosts();
-    }, []);
-
-    const fetchPosts = async () => {
-        const res = await fetch(`https://jsonplaceholder.typicode.com/photos/${page}`);
-        const response = await res.json();
-        setPosts(response);
-    }
+    }, [fetchPosts]);
 
     const handlePageChange = (e) => {
         setPage(e.target.value);
@@ -36,7 +40,7 @@ const ReactHttpPostPage = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <h4 className="pageHeading">
-                                Let's discuss about the Post call with HTTP &nbsp; <Icon.Airplane />
+                                Let's discuss about the Post call with HTTP &nbsp; <i className="bi bi-airplane-engines-fill"></i>
                             </h4>
                         </div>
                     </div>
@@ -104,15 +108,15 @@ const ReactHttpPostPage = () => {
                     <DummyPostCall />
                 </div>
             </section>
-            
-            <hr className="bg-primary"/>
+
+            <hr className="bg-primary" />
 
             <section className='container'>
                 <div className='row'>
                     <SimpleUserForm />
                 </div>
             </section>
-            <br/>
+            <br />
         </div>
     )
 }

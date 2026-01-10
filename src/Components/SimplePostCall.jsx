@@ -70,7 +70,7 @@ const SimplePostCall = () => {
                 body: ''
             });
         }
-    }, [formError, isSubmit]);
+    }, [formError, isSubmit, formValues]);
     return (
         <div className="container">
             <div className="row">

@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import * as Icon from 'react-bootstrap-icons';
+import { useState } from 'react';
 
 const DynamicInput = () => {
     const initialFields = [{ value: '' }];
@@ -46,11 +45,8 @@ const DynamicInput = () => {
                                 </div>
 
                                 <div className="col-2">
-                                    <button
-                                        className="btn btn-primary btn-sm"
-                                        onClick={() => handleRemoveField(index)}
-                                    >
-                                        <Icon.Trash />
+                                    <button className="btn btn-primary btn-sm" onClick={() => handleRemoveField(index)}>
+                                        <i className="bi bi-trash"></i>
                                     </button>
                                 </div>
                                 <br /><br />

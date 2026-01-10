@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from "react";
-import * as Icon from 'react-bootstrap-icons';
+import { useState, useEffect } from "react";
 const BasicLiveSearchPage = () => {
     const url = "https://dummyjson.com/users";
     const [userData, setUserData] = useState([]);
@@ -10,7 +9,7 @@ const BasicLiveSearchPage = () => {
     }
 
     const onSearch = (selectedItem) => {
-        const {firstName} = selectedItem;
+        const { firstName } = selectedItem;
         setSearchValue(firstName);
         setFullInfo(selectedItem);
     }
@@ -30,7 +29,7 @@ const BasicLiveSearchPage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h4 className="pageHeading"> Basic Live Search <Icon.Search /></h4>
+                            <h4 className="pageHeading"> Basic Live Search <i className="bi bi-search"></i> </h4>
                         </div>
                     </div>
                 </div>
@@ -52,23 +51,22 @@ const BasicLiveSearchPage = () => {
                                 </div>
 
                                 <div className="searchDropdown">
-                                    {
-                                        userData.filter((item) => {
-                                            const searchTerm = searchValue.toLowerCase();
-                                            const firstName = item.firstName.toLowerCase();
-                                            return searchTerm && firstName.startsWith(searchTerm) && firstName !== searchTerm
+                                    {userData.filter((item) => {
+                                        const searchTerm = searchValue.toLowerCase();
+                                        const firstName = item.firstName.toLowerCase();
+                                        return searchTerm && firstName.startsWith(searchTerm) && firstName !== searchTerm
+                                    })
+                                        .map((item, index) => {
+                                            return (
+                                                <div
+                                                    key={index}
+                                                    className="searchaDropdownRow"
+                                                    onClick={() => onSearch(item)}
+                                                >
+                                                    {item.firstName}
+                                                </div>
+                                            )
                                         })
-                                            .map((item, index) => {
-                                                return (
-                                                    <div
-                                                        key={index}
-                                                        className="searchaDropdownRow"
-                                                        onClick={() => onSearch(item)}
-                                                    >
-                                                        {item.firstName}
-                                                    </div>
-                                                )
-                                            })
                                     }
                                 </div>
                             </div>

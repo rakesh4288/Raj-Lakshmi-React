@@ -1,4 +1,3 @@
-import * as Icon from 'react-bootstrap-icons';
 import VirtualizedList from "../Components/VirtualizedList";
 
 const DataVirtualizationPage = () => {
@@ -9,7 +8,7 @@ const DataVirtualizationPage = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <h4 className="pageHeading">
-                                How to handle Data virtualization in react  <Icon.DatabaseFillSlash />
+                                How to handle Data virtualization in react  <i className="bi bi-database-fill-check"></i>
                             </h4>
                         </div>
                     </div>

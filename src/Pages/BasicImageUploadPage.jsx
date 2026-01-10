@@ -1,5 +1,4 @@
-import React, {useState} from "react";
-import * as Icon from 'react-bootstrap-icons';
+import {useState} from "react";
 const BasicImageUploadPage = () => {
     const [image, setImage] = useState('');
     const handleInput = (e) => {
@@ -35,7 +34,7 @@ const BasicImageUploadPage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h4 className="pageHeading"> Basic File Upload Functionlity <Icon.Upload /></h4>
+                            <h4 className="pageHeading"> Basic File Upload Functionlity <i className="bi bi-upload"></i> </h4>
                         </div>
                     </div>
                 </div>

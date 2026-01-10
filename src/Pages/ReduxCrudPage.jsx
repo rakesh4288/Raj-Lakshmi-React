@@ -1,5 +1,3 @@
-import React from "react";
-import * as Icon from 'react-bootstrap-icons';
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux"; 
 import { deleteStudent } from "../Features/StudentContactSlice";
@@ -60,28 +58,26 @@ const ReduxCrudPage = () => {
                                 </thead>
                     
                                 <tbody>
-                                    {
-                                        studentData.map((student, index) => {
-                                            return (
-                                                <tr key={index}>
-                                                    <td>{student.id}</td>
-                                                    <td>{student.studentName}</td>
-                                                    <td>{student.studentEmail}</td>
-                                                    <td>{student.studentPhone}</td>
-                                                    <td>{student.city}</td>
-                                                    <td align="center">
-                                                        <button className="btn btn-info btn-sm">
-                                                            <Icon.Pencil onClick={() => handleUpdate(student.id)} />
-                                                        </button>
-                                                        &nbsp;
-                                                        <button className="btn btn-danger btn-sm">
-                                                            <Icon.Trash onClick={() => handleDelete(student.id)}/>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                            )
-                                        })
-                                    }
+                                    {studentData.map((student, index) => {
+                                        return (
+                                            <tr key={index}>
+                                                <td>{student.id}</td>
+                                                <td>{student.studentName}</td>
+                                                <td>{student.studentEmail}</td>
+                                                <td>{student.studentPhone}</td>
+                                                <td>{student.city}</td>
+                                                <td align="center">
+                                                    <button className="btn btn-info btn-sm">
+                                                        <i className="bi bi-pencil-square" onClick={() => handleUpdate(student.id)}></i>
+                                                    </button>
+                                                    &nbsp;
+                                                    <button className="btn btn-danger btn-sm">
+                                                        <i className="bi bi-trash" onClick={() => handleDelete(student.id)}></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        )
+                                    })}
                                 </tbody>
                             </table>
                         </div>

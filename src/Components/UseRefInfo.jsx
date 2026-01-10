@@ -1,11 +1,9 @@
-import React from "react";
-import * as Icon from 'react-bootstrap-icons';
 import AppImages from "../Assets";
 
 const UseRefInfo = () => {
     return (
         <div id="use-ref-info">
-            <h3> <i>useRef</i> React Hook Page <Icon.BookmarkDashFill /> </h3>
+            <h3> <i>useRef</i> React Hook Page <i className="bi bi-bookmark-dash-fill"></i> </h3>
             <p>useRef is a React Hook, ref means references</p>
             <h6>with the help of useRef we can directly access to the DOM element</h6>
             <p>

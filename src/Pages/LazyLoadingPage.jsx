@@ -1,5 +1,4 @@
 import React, {Suspense, useState} from 'react';
-import * as Icon from 'react-bootstrap-icons';
 import { Link } from 'react-router-dom';
 import AppImages from '../Assets';
 // import SimpleLazy from '../Components/SimpleLazy';
@@ -26,7 +25,9 @@ const LazyLoadingPage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                            <h1 className="pageHeading"> What is the Lazy Loading in React <Icon.Laptop /></h1>
+                            <h1 className="pageHeading"> What is the Lazy Loading in React 
+                                <i className="bi bi-laptop"></i>
+                            </h1>
                         </div>
                     </div>
                 </div>

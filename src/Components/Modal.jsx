@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import * as Icon from 'react-bootstrap-icons';
+import { useEffect } from 'react';
 
 
 const RajLakshmiModal = ({handleClose}) => {
@@ -24,7 +23,7 @@ const RajLakshmiModal = ({handleClose}) => {
             <div className="modal-dialog modal-dialog-centered">
                 <div className="modal-content">
                 <div className="modal-header">
-                    <h5 className="modal-title" id="exampleModalCenterTitle">Whats is useSelector in React Redux ? <Icon.BookHalf /></h5>
+                    <h5 className="modal-title" id="exampleModalCenterTitle">Whats is useSelector in React Redux ? <i className="bi bi-book-half"></i></h5>
                     <button type="button" className="btn-close" aria-label="Close" onClick={handleClose}></button>
                 </div>
                 <div className="modal-body">

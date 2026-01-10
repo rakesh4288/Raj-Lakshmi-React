@@ -14,7 +14,7 @@ const DerivedStates = () => {
         { id: 10, name:'Kia Sonet', color: 'black' },
     ]
     const [carProducts, setCarProducts] = useState(carData);
-    const [filterCar, setFilterCar] = useState(carProducts);
+    const [filterCar] = useState(carProducts);
 
     const handleSearch = (e) => {
         const searchValue = e.target.value;

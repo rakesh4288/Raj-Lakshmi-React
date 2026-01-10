@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import * as Icon from 'react-bootstrap-icons';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { showDmartEmp } from '../Features/DmartEmpSlice';
@@ -13,7 +12,7 @@ const DmartReduxList = () => {
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(showDmartEmp());
-    }, []);
+    }, [dispatch]);
 
     console.log("showDmartEmpAllData =", apiData);
     console.log("isLoading =", isLoading);
@@ -23,7 +22,7 @@ const DmartReduxList = () => {
         <div className='row mb-4'>
             <div className='col-12'>
                 <h4 className="fw-bold text-primary d-flex align-items-center gap-2">
-                    <Icon.ListTask /> Dmart Employee Record
+                    <i className="bi bi-card-checklist"></i> Dmart Employee Record
                 </h4>
             </div>
         </div>
@@ -45,15 +44,15 @@ const DmartReduxList = () => {
                         <div className="card-body">
                             <h6 className="card-title text-dark">{item.empName}</h6>
                             <p className="card-text mb-1">
-                                <Icon.EnvelopeFill className="me-2 text-secondary" /> {item.empEmail}
+                                <i className="bi bi-envelope-at-fill me-2"></i> {item.empEmail}
                             </p>
                             
                             <p className="card-text mb-3">
-                                <Icon.GeoAltFill className="me-2 text-secondary" /> {item.empCity}
+                                <i class="bi bi-geo-alt-fill me-2"></i> {item.empCity}
                             </p>
                             
                             <Link to="#" className="btn btn-outline-primary btn-sm float-end d-flex align-items-center gap-1">
-                                Show in Detail <Icon.ArrowBarRight/>
+                                Show in Detail <i className="bi bi-arrow-bar-right"></i>
                             </Link>
                         </div>
                     </div>

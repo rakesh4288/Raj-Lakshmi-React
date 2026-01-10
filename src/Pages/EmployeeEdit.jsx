@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import * as Icon from 'react-bootstrap-icons';
+import { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import AppImages from "../Assets";
 import { toast } from 'react-toastify';
@@ -76,7 +75,7 @@ const EmployeeEdit = () => {
                 </div>
 
                 <div className="col-xl-4 col-lg-4 col-md-3 col-sm-12">
-                    <h5>Update Employee <b> {empName}</b> <Icon.PencilSquare /> </h5>
+                    <h5>Update Employee <b> {empName}</b> <i className="bi bi-pencil-square" ></i> </h5>
                     <form className="alert alert-success" onSubmit={handleSubmit}>
                         <div className="mb-3">
                             <label htmlFor="empId" className="form-label">Employee Id</label>

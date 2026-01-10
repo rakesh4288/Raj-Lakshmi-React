@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from "react";
-import * as Icon from 'react-bootstrap-icons';
+import { useState, useEffect } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import CountdownTimerShow from "./CountdownTimerShow";
@@ -13,8 +12,8 @@ const CountdownTimer = () => {
     const [seconds, setSeconds] = useState(0);
     const [timerId, setTimerId] = useState(0);
     const handleStart = () => {
-        if((hours < 0 || minutes < 0 || seconds <=0) || (hours >= 24 || minutes >= 59 || seconds >= 59)) {
-            toast.error("Invalid Input - Please enter numeric only", {closeButton: true})
+        if ((hours < 0 || minutes < 0 || seconds <= 0) || (hours >= 24 || minutes >= 59 || seconds >= 59)) {
+            toast.error("Invalid Input - Please enter numeric only", { closeButton: true })
             return;
         } else {
             setIsStart(true);
@@ -47,7 +46,7 @@ const CountdownTimer = () => {
         const value = e.target.value
         const id = e.target.id;
         console.log('handleInput =', value);
-        if(!isNaN(value)) {
+        if (!isNaN(value)) {
             if (id === 'hours') {
                 setHours(value);
             } else if (id === 'minutes') {
@@ -61,11 +60,10 @@ const CountdownTimer = () => {
             toast.error("Incorrect input - Please enter number only !");
             return;
         }
-
     }
 
     const runTimer = (sec, min, hr, tid) => {
-        if(sec > 0) {
+        if (sec > 0) {
             setSeconds((s) => s - 1);
         } else if (sec === 0 && min > 0) {
             setMinutes((m) => m - 1);
@@ -79,15 +77,15 @@ const CountdownTimer = () => {
         if (sec === 0 && min === 0 && hr === 0) {
             //resetTimer();
             handleReset();
-            toast.success("Timer has now completed", {closeButton: true})
+            toast.success("Timer has now completed", { closeButton: true })
             clearInterval(tid);
             setIsStart(false);
         }
     }
-    
+
     useEffect(() => {
         let tid;
-        if(isStart) {
+        if (isStart) {
             tid = setInterval(() => {
                 runTimer(seconds, minutes, hours, tid)
             }, 1000);
@@ -101,21 +99,20 @@ const CountdownTimer = () => {
     return (
         <div id="countdown-timer" className="lighGreenBG">
             <div>
-                <h5 style={{textAlign: 'center', marginBottom: '15px'}}> Countdown Timer 24 format <Icon.Alarm /> </h5>
-                {
-                    !isStart && <CountdownTimerInput handleInput={handleInput} handleStart={handleStart} isStartBtn={isStartBtn} />
-                }
+                <h5 style={{ textAlign: 'center', marginBottom: '15px' }}>
+                    Countdown Timer 24 format <i className="bi bi-alarm-fill"></i>
+                </h5>
+                {!isStart && <CountdownTimerInput handleInput={handleInput} handleStart={handleStart} isStartBtn={isStartBtn} />}
 
-                {
-                    isStart && <CountdownTimerShow
-                        hours={hours}
-                        minutes={minutes}
-                        seconds={seconds}
-                        isPaused={isPaused}
-                        handlePause={handlePause}
-                        handleResume={handleResume}
-                        handleReset={handleReset}
-                    />
+                {isStart && <CountdownTimerShow
+                    hours={hours}
+                    minutes={minutes}
+                    seconds={seconds}
+                    isPaused={isPaused}
+                    handlePause={handlePause}
+                    handleResume={handleResume}
+                    handleReset={handleReset}
+                />
                 }
             </div>
             <ToastContainer position="top-right" />

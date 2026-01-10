@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import AppImages from "../Assets";
 import ChildComponent from '../Components/ChildComponent';
 import ColorChild from '../Components/ColorChild';

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { nanoid } from "@reduxjs/toolkit";
-import * as Icon from 'react-bootstrap-icons';
 const SimpleCarManager = () => {
     const initialFormValues = {
         carName: '',
@@ -19,11 +18,11 @@ const SimpleCarManager = () => {
     });
 
     const handleChange = (e) => {
-       const {name, value} = e.target;
-       setFormValues({
-        ...formValues,
-        [name]: value
-       });
+        const { name, value } = e.target;
+        setFormValues({
+            ...formValues,
+            [name]: value
+        });
     }
 
     // console.log('setFormValues =', formValues);
@@ -32,8 +31,8 @@ const SimpleCarManager = () => {
         e.preventDefault();
         const isFormValid = formValidation();
         console.log('isFormValid =', isFormValid);
-        if(isFormValid) {
-           //  console.log('Now we can submit form !!');
+        if (isFormValid) {
+            //  console.log('Now we can submit form !!');
             setCarList([
                 ...carList,
                 {
@@ -64,7 +63,7 @@ const SimpleCarManager = () => {
                     deleteCar: false
                 }
             });
-            
+
         } else {
             console.log('Not Able to Submit !!');
         }
@@ -72,18 +71,18 @@ const SimpleCarManager = () => {
 
     const formValidation = () => {
         let errros = {}
-        if(formValues.carName === ''){
+        if (formValues.carName === '') {
             errros.carName = 'Please Enter Car Name !'
         }
 
-        if(formValues.carColor === ''){
+        if (formValues.carColor === '') {
             errros.carColor = 'Please Enter Color Name !'
         }
 
-        setFormError({...errros});
-       const errorsKeys = Object.keys(errros);
-       // console.log('errorsKeys =', errorsKeys);
-        if(errorsKeys.length === 0) {
+        setFormError({ ...errros });
+        const errorsKeys = Object.keys(errros);
+        // console.log('errorsKeys =', errorsKeys);
+        if (errorsKeys.length === 0) {
             return true;
         } else {
             return false;
@@ -92,10 +91,10 @@ const SimpleCarManager = () => {
 
     const handleDelete = (id) => {
         console.log('handleDelete =', id);
-        if(window.confirm("Are you want to delete ?")){
+        if (window.confirm("Are you want to delete ?")) {
             console.log('handleDelete YES');
             let tempArray = [];
-            tempArray= copyCarList.filter((item) => item.id!== id);
+            tempArray = copyCarList.filter((item) => item.id !== id);
             console.log('tempArray =', tempArray);
             setCarList(tempArray);
             setModalShow({
@@ -111,14 +110,14 @@ const SimpleCarManager = () => {
     const handleSearch = (e) => {
         const searchValue = e.target.value;
         console.log('searchValue =', searchValue);
-        let tempArray = []; 
+        let tempArray = [];
         tempArray = copyCarList.filter((item) => item.carName?.toLowerCase().includes(searchValue.toLowerCase()));
         console.log('handleSearch =', tempArray);
         setCarList(tempArray);
     }
 
     const handleModalClose = () => {
-        setModalShow({popup: false});
+        setModalShow({ popup: false });
     }
     console.log('carList =', carList);
 
@@ -130,23 +129,23 @@ const SimpleCarManager = () => {
                     <div className='mb-3'>
                         <label htmlFor="car-name" className="form-label">Car Name:</label>
                         <input type='text' className='form-control' id='car-name' name="carName" value={formValues.carName} onChange={handleChange} />
-                        { formError && (<div className="text-danger"> {formError.carName} </div>)}
+                        {formError && (<div className="text-danger"> {formError.carName} </div>)}
                     </div>
 
                     <div className='mb-3'>
                         <label htmlFor="car-color" className="form-label">Car Color:</label>
                         <input type='text' className='form-control' id='car-color' name="carColor" value={formValues.carColor} onChange={handleChange} />
-                        { formError && (<div className="text-danger"> {formError.carColor} </div>)}
+                        {formError && (<div className="text-danger"> {formError.carColor} </div>)}
                     </div>
 
-                    <button type='submit' className='btn btn-primary btn-sm'>Add Car <Icon.CarFront/></button>
+                    <button type='submit' className='btn btn-primary btn-sm'>Add Car <i className="bi bi-car-front"></i></button>
                 </form>
             </div>
 
             <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div className="clearfix">
                     <div className="float-start">
-                        <h6>Car List Here</h6> 
+                        <h6>Car List Here</h6>
                     </div>
 
                     <div className="float-end">
@@ -171,9 +170,8 @@ const SimpleCarManager = () => {
                                                 <td>{index + 1}</td>
                                                 <td>{item.carName}</td>
                                                 <td>{item.carColor}</td>
-                                                <td style={{cursor: 'pointer', textAlign: 'center'}}
-                                                >
-                                                    <Icon.Trash onClick={() => handleDelete(item.id)}/>
+                                                <td style={{ cursor: 'pointer', textAlign: 'center' }}>
+                                                    <i className="bi bi-trash" onClick={() => handleDelete(item.id)}></i>
                                                 </td>
                                             </tr>
                                         )
@@ -184,32 +182,30 @@ const SimpleCarManager = () => {
                     )
                 }
             </div>
-            
+
             {
                 modalShow.popup && (
                     <div id="modalBackdrop" className="modalBackDrop">
                         <div className="modal-dialog modal-dialog-centered">
                             <div className="modal-content">
-                            <div className="modal-header">
-                                <h5 className="modal-title" id="exampleModalCenterTitle">Car Manager <Icon.CarFront /></h5>
-                                <button type="button" className="btn-close" aria-label="Close" onClick={handleModalClose}></button>
-                            </div>
-                            <div className="modal-body">
-                                {
-                                  modalShow?.carManager?.newCar === true ? (
-                                    <h6>New Car Added Successfully !!</h6>
-                                  ) : null
-                                }
+                                <div className="modal-header">
+                                    <h5 className="modal-title" id="exampleModalCenterTitle">Car Manager <i className="bi bi-car-front"></i></h5>
+                                    <button type="button" className="btn-close" aria-label="Close" onClick={handleModalClose}></button>
+                                </div>
+                                <div className="modal-body">
+                                    {modalShow?.carManager?.newCar === true ? (
+                                        <h6>New Car Added Successfully !!</h6>
+                                    ) : null
+                                    }
 
-                                {
-                                  modalShow?.carManager?.deleteCar && (
-                                    <h6> Car Deleted !!</h6>
-                                  )
-                                }
-                            </div>
-                            <div className="modal-footer">
-                                <button type="button" className="btn btn-primary btn-sm" onClick={handleModalClose}>OK</button>
-                            </div>
+                                    {modalShow?.carManager?.deleteCar && (
+                                        <h6> Car Deleted !!</h6>
+                                    )
+                                    }
+                                </div>
+                                <div className="modal-footer">
+                                    <button type="button" className="btn btn-primary btn-sm" onClick={handleModalClose}>OK</button>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,4 @@
-import React from 'react';
 import AppImages from '../Assets';
-import * as Icon from 'react-bootstrap-icons';
 const ReactFragment = () => {
     return (
         <div id="react-fragment">
@@ -9,7 +7,7 @@ const ReactFragment = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <h4 className="pageHeading">
-                                React Fragment !! <Icon.Front />
+                                React Fragment !! <i className="bi bi-front"></i>
                             </h4>
                         </div>
                     </div>

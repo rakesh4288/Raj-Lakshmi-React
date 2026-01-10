@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import * as Icon from 'react-bootstrap-icons';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const ComputerMaterialList = () => {
@@ -38,7 +37,7 @@ const ComputerMaterialList = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                            <h5>Computer Material List <Icon.List /></h5>
+                            <h5>Computer Material List <i className="bi bi-list-ul"></i></h5>
                             {isLoading && (
                                 <div className="d-flex justify-content-center">
                                     <div className="spinner-border text-primary" role="status">
@@ -81,8 +80,8 @@ const ComputerMaterialList = () => {
                                                         <img src={'http://localhost:8000/images/' + item.imageFileName} alt='computers images' className='img-fluid' width="100px" height="100px" />
                                                     </td>
                                                     <td align="right">
-                                                        <Link className="btn" to={'/computer-material-dashboard/products/edit/' + item.id}> <Icon.Pencil /> </Link>
-                                                        <button className="btn" onClick={() => { handleDelete(item.id) }}> <Icon.Trash /> </button>
+                                                        <Link className="btn" to={'/computer-material-dashboard/products/edit/' + item.id}> <i className="bi bi-pencil-square" ></i> </Link>
+                                                        <button className="btn" onClick={() => { handleDelete(item.id) }}> <i className="bi bi-trash" ></i> </button>
                                                     </td>
                                                 </tr>
                                             )

@@ -1,5 +1,3 @@
-import React from "react";
-import * as Icon from 'react-bootstrap-icons';
 import AppImages from "../Assets";
 import SearchByColumn from '../Components/SearchByColumn';
 import ThreeFilterOnApi from "../Components/ThreeFilterOnApi";
@@ -11,7 +9,7 @@ const ReactHttpPage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                            <h4 className="pageHeading"> Learning HTTP methods in React !! <Icon.Airplane /> </h4>
+                            <h4 className="pageHeading"> Learning HTTP methods in React !! <i className="bi bi-airplane-engines-fill"></i> </h4>
                         </div>
                     </div>
                 </div>

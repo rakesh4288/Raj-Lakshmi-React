@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const DummyPostCall = () => {
     const initialState = {
@@ -13,11 +13,11 @@ const DummyPostCall = () => {
     const [isLoading, setIsLoading] = useState(false);
     const [isServerError, setIsServerError] = useState();
     const handleChange = (e) => {
-      const {name, value}  = e.target;
-      setFormValues({
-        ...formValues,
-        [name]: value
-      });
+        const { name, value } = e.target;
+        setFormValues({
+            ...formValues,
+            [name]: value
+        });
     }
 
     const handleSubmit = (e) => {
@@ -28,11 +28,11 @@ const DummyPostCall = () => {
 
     const formValidation = (formValues) => {
         const errors = {}
-        if(formValues.title === '') {
+        if (formValues.title === '') {
             errors.title = 'Title is required !!'
         }
 
-        if(formValues.body === '') {
+        if (formValues.body === '') {
             errors.body = 'Body field is required !!'
         }
 
@@ -40,22 +40,22 @@ const DummyPostCall = () => {
     }
 
     useEffect(() => {
-        if(Object.keys(formError).length === 0 && isSubmit){
+        if (Object.keys(formError).length === 0 && isSubmit) {
             //const postUrl = 'https://dummyjson.com/posts';
             const postUrl = 'https://jsonplaceholder.typicode.com/posts';
             try {
                 setIsLoading(true);
-                const postDummyData = async() => {
+                const postDummyData = async () => {
                     const response = await fetch(
                         postUrl, {
                         method: 'POST',
-                        headers: { 'Content-Type' : 'application/json'},
+                        headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({
                             title: formValues.title,
                             body: formValues.body
                         })
                     });
-    
+
                     const res = await response.json();
                     console.log('postDummyData Success =', res);
                     let resArray = [];
@@ -67,15 +67,15 @@ const DummyPostCall = () => {
 
                 postDummyData();
             }
-            catch(error) {
+            catch (error) {
                 console.log('postDummyData Error =', error);
                 setIsLoading(true);
                 setIsServerError(error)
             }
 
-            
+
         }
-    }, [formError, isSubmit]);
+    }, [formError, isSubmit, formValues.title, formValues.body]);
 
     // console.log('handleChange =', formValues);
     return (
@@ -113,15 +113,14 @@ const DummyPostCall = () => {
                     )
                 }
 
-                {
-                    isServerError && (
-                        <div className="d-flex justify-content-center">
-                            <div className="spinner-border text-primary" role="status">
-                                <span className="visually-hidden">Getting Error while fetching the Data...</span>
-                            </div>
+                {isServerError && (
+                    <div className="d-flex justify-content-center">
+                        <div className="spinner-border text-primary" role="status">
+                            <span className="visually-hidden">Getting Error while fetching the Data...</span>
                         </div>
-                    )
-                }
+                    </div>
+                )}
+
                 <table className='table table-striped'>
                     <thead>
                         <tr>
@@ -132,8 +131,7 @@ const DummyPostCall = () => {
                     </thead>
 
                     <tbody>
-                    {
-                        showPost.map((item, index) => {
+                        {showPost.map((item, index) => {
                             return (
                                 <tr key={index + 1}>
                                     <td>{item.id}</td>
@@ -141,8 +139,7 @@ const DummyPostCall = () => {
                                     <td>{item.body}</td>
                                 </tr>
                             )
-                        })
-                    }
+                        })}
                     </tbody>
                 </table>
             </div>

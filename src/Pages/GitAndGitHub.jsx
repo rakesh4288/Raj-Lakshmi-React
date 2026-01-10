@@ -1,5 +1,4 @@
 import AppImages from "../Assets";
-import * as Icon from 'react-bootstrap-icons';
 
 const GitAndGitHub = () => {
     return(
@@ -8,7 +7,9 @@ const GitAndGitHub = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                            <h4 className="pageHeading"> What is Git & GitHub <Icon.Alexa /></h4>
+                            <h4 className="pageHeading"> What is Git & GitHub 
+                                <i className="bi bi-alexa"></i>
+                            </h4>
                         </div>
                     </div>
                 </div>

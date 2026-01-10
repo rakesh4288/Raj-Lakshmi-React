@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, useNavigate } from 'react-router-dom';
 import logo from '../Assets/logo.svg';
-import * as Icon from 'react-bootstrap-icons';
 import './PagesStyle.css';
 import AppImages from "../Assets";
 
@@ -29,7 +28,7 @@ const HomePage = () => {
 
                             <div className="float-end">
                                 <button className="btn btn-warning btn-sm" onClick={handleGit}>
-                                    Learning Git & GitHub <Icon.Alexa />
+                                    Learning Git & GitHub <i className="bi bi-alexa"></i>
                                 </button>
                             </div>
                            </div>
@@ -51,7 +50,7 @@ const HomePage = () => {
                 
                 <div className="row">
                     <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                        <h4>Advantages <Icon.Plus /></h4>
+                        <h4>Advantages <i className="bi bi-patch-plus-fill"></i></h4>
                         <ul>
                             <li>React is increasing the performance of your web application Because its uses the virtual DOM</li>
                             <li>Using React, writing a test cases is very easy</li>
@@ -63,7 +62,7 @@ const HomePage = () => {
                     </div>
 
                     <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                        <h4>Disadvantages: <Icon.List /></h4>
+                        <h4>Disadvantages: <i className="bi bi-list-ul"></i></h4>
                         <ul>
                             <li>React is a library not a full blown framework</li>
                             <li>So everything is not available while installing the react like one its major dependencies is not present i.e. <b>react router dom</b></li>
@@ -101,7 +100,7 @@ const HomePage = () => {
                 <div className="row">
                     <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <div className="alert alert-dark">
-                            <h6> React Interview Questions <Icon.Infinity /></h6>
+                            <h6> React Interview Questions <i className="bi bi-infinity"></i></h6>
                             <ul>
                                 <li>
                                     <Link className="link" to="/interview-series-part-1">Interview Series Part 1</Link>
@@ -191,56 +190,25 @@ const HomePage = () => {
                 </div>
             </section>
 
-            <hr className="bg-primary" />
-            
-            <section id='how-to-setup-bootstrap' className="container">
-                <div className="row">
-                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                        <h4>Bootstrap Icon:</h4>
-                        <h5>All steps - How to install and use:</h5>
-                        https://www.npmjs.com/package/react-bootstrap-icons <br />
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZwYLOQk-iRo?si=QrS6NLP53AlPglCB" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                    </div>
-
-                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                        <div className={toggle ? 'darkTheme' : 'whiteTheme'}>
-                            <h5>Dark Mode Challenge</h5>
-                            {toggle ? <Icon.Sun onClick={toggleHandler} className="whiteIcon"/> : <Icon.Moon onClick={toggleHandler} className="darkIcon"/>}
-
-                            <br/><br/>
-                            <p>
-                                React is an efficient, flexible, and open-source JavaScript library that allows developers to create simple, fast, and scalable web applications. Jordan Walke, a software engineer who was working for Facebook created React. It was first deployed on Facebook’s news feed in 2011 and on Instagram in 2012. Developers with a Javascript background can easily develop web applications with React.
-                            </p>
-
-                            <p>
-                                JSX is basically a syntax extension of regular JavaScript and is used to create React elements. These elements are then rendered to the React DOM. All the React components are written in JSX.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <hr className="bg-danger" />
-
-            <section id="how-to-optimize-react" className="darkBlueBgWithPinkBorder">
+            <section id="how-to-optimize-react" className="whiteBgWithVioletBorder">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <h5 className="text-white">How to optimize React App ?</h5>
+                            <h5>How to optimize React App ?</h5>
                             <p>Here are some key points By which we can improve the React application like:</p>
 
-                            <ul className="text-white">
+                            <ul>
                                 <li>Code Spliting</li>
                                 <li>
-                                    <Link className="text-white" to="/fragment-in-react">Using React Fragment</Link>
+                                    <Link to="/fragment-in-react">Using React Fragment</Link>
                                 </li>
                                 <li>Use key attribute in list: We should always use the key attributes while using .map() method Because React makes the difference between two HTML nodes</li>
                                 <li>
-                                    <Link className="text-white" to="/what-is-lazy-loading-in-react">
+                                    <Link to="/what-is-lazy-loading-in-react">
                                     Lazy Loading Component</Link>
                                 </li>
                                 <li>
-                                    <Link className="text-white" to="/react-hook-tutorial/use-memo-page">
+                                    <Link to="/react-hook-tutorial/use-memo-page">
                                         Memoization: You can use the useMemo hook for this 
                                     </Link>
                                 </li>
@@ -364,6 +332,32 @@ const HomePage = () => {
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <h6>How to Resolve Vulnerabilities when "npm audit fix" does not work</h6>
                             <iframe width="100%" height="315" src="https://www.youtube.com/embed/GKUW7f91I4w?si=18NUCi5iWqVMr7Dy" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr className="bg-danger" />
+
+            <section id='how-to-setup-bootstrap-icons' className="container">
+                <div className="row">
+                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <h5>Bootstrap Icon: Step By Step Installation</h5>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/kS2AGb_cfgE?si=h_aZXY8OGkXTu_Jz" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                        <Link to="https://icons.getbootstrap.com/" target="_blank">https://icons.getbootstrap.com/</Link>
+                    </div>
+
+                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <h5>Toggle Theme:</h5>
+                        <div className={toggle ? 'darkTheme' : 'whiteTheme'}>
+                            <h6 className="whiteIcon">Dark Mode Challenge {toggle ? <i className="bi bi-brightness-alt-high whiteIcon" onClick={toggleHandler}></i> : <i className="bi bi-moon" onClick={toggleHandler}></i>}</h6>
+                            <p>
+                                React is an efficient, flexible, and open-source JavaScript library that allows developers to create simple, fast, and scalable web applications. Jordan Walke, a software engineer who was working for Facebook created React. It was first deployed on Facebook’s news feed in 2011 and on Instagram in 2012. Developers with a Javascript background can easily develop web applications with React.
+                            </p>
+
+                            <p>
+                                JSX is basically a syntax extension of regular JavaScript and is used to create React elements. These elements are then rendered to the React DOM. All the React components are written in JSX.
+                            </p>
                         </div>
                     </div>
                 </div>

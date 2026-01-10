@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import * as Icon from 'react-bootstrap-icons';
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import AppImages from "../Assets";
 import { ToastContainer, toast } from 'react-toastify';
@@ -71,7 +70,7 @@ const EmployeeCreate = () => {
         <div className="container">
             <div className="row">
                 <div className="col-xl-4 col-lg-4 col-md-3 col-sm-12">
-                    <h5> Employees Create  <Icon.Receipt /></h5>
+                    <h5> Employees Create  <i className="bi bi-receipt"></i> </h5>
                     <form className="alert alert-primary" onSubmit={handleSubmit}>
                         <div className="mb-3">
                             <label htmlFor="empId" className="form-label">Enter Employee Id</label>

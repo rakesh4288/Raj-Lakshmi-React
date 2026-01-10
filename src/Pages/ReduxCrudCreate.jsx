@@ -1,7 +1,6 @@
 import { useState } from "react";
 import AppImages from "../Assets";
 import { Link } from "react-router-dom";
-import * as Icon from 'react-bootstrap-icons';
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux"; 
 import { addNewStudent } from "../Features/StudentContactSlice";
@@ -147,13 +146,13 @@ const ReduxCrudCreate = () => {
                                         <option value='Ujjain'>Ujjain</option>
                                     </select>
 
-                                    {
-                                        formError && (<div className="text-danger">{formError.city}</div>)
-                                    }
+                                    { formError && (<div className="text-danger">{formError.city}</div>)}
                                 </div>
 
                                 <div className="mb-3">
-                                    <button type='submit' className='btn btn-primary btn-sm'>Add New Student <Icon.Plus /></button>
+                                    <button type='submit' className='btn btn-primary btn-sm'>
+                                        Add New Student <i className="bi bi-plus-circle-fill"></i>
+                                    </button>
                                 </div>
                             </form>
                         </div>

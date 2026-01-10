@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import logo from '../Assets/logo.svg';
-import * as Icon from 'react-bootstrap-icons';
 const SiteHeader = () => {
     return(
         <div id='site-header'>
@@ -22,25 +21,25 @@ const SiteHeader = () => {
                                 <ul className="dropdown-menu">
                                     <li>
                                         <Link className="dropdown-item" to="/basic-info-of-react">
-                                            <Icon.ArrowRight /> React Basic Page
+                                            <i className="bi bi-arrow-right"></i> React Basic Page
                                         </Link>
                                     </li>
                                     
                                     <li>
                                         <Link className="dropdown-item" to="/react-controlled-uncontrolled-component">
-                                            <Icon.ArrowRight /> Controlled and Uncontrolled Component
+                                            <i className="bi bi-arrow-right"></i> Controlled and Uncontrolled Component
                                         </Link>
                                     </li>
 
                                     <li>
                                         <Link className="dropdown-item" to="/life-cycle-method-in-react">
-                                            <Icon.ArrowRight /> Life Cycle Method in React
+                                            <i className="bi bi-arrow-right"></i> Life Cycle Method in React
                                         </Link>
                                     </li>
 
                                     <li>
                                         <Link className="dropdown-item" to="/how-to-pass-data-from-child-to-parent-component">
-                                            <Icon.ArrowRight /> How to pass data from Child to Parent
+                                            <i className="bi bi-arrow-right"></i> How to pass data from Child to Parent
                                         </Link>
                                     </li>
                                 </ul>
@@ -54,25 +53,25 @@ const SiteHeader = () => {
                                 <ul className="dropdown-menu">
                                     <li>
                                         <Link className="dropdown-item" to="/react-redux-tutorial">
-                                            <Icon.ArrowRight /> Redux Home Page
+                                            <i className="bi bi-arrow-right"></i> Redux Home Page
                                         </Link>
                                     </li>
 
                                     <li>
                                         <Link className="dropdown-item" to="/simple-crud-using-redux-toolkit">
-                                            <Icon.ArrowRight /> Crud Operation with React Redux Toolkit
+                                            <i className="bi bi-arrow-right"></i> Crud Operation with React Redux Toolkit
                                         </Link>
                                     </li>
 
                                     <li>
                                         <Link className="dropdown-item" to="/http-get-api-calling-via-redux-thunk">
-                                            <Icon.ArrowRight /> Http API calling via Redux Thunk
+                                            <i className="bi bi-arrow-right"></i> Http API calling via Redux Thunk
                                         </Link>
                                     </li>
 
                                     <li>
                                         <Link className="dropdown-item" to="/dmart-crud-via-redux/create">
-                                            <Icon.ArrowRight /> Dmart Emp Crud Operatoin with Redux
+                                            <i className="bi bi-arrow-right"></i> Dmart Emp Crud Operatoin with Redux
                                         </Link>
                                     </li>
                                 </ul>
@@ -85,37 +84,37 @@ const SiteHeader = () => {
                                 <ul className="dropdown-menu">
                                     <li>
                                         <Link className="dropdown-item" to="/how-to-handle-form-in-react">
-                                            <Icon.ArrowRight /> Form Dashboard
+                                            <i className="bi bi-arrow-right"></i> Form Dashboard
                                         </Link>
                                     </li>
 
                                     <li>
                                         <Link className="dropdown-item" to="/checkbox-operation-in-react">
-                                            <Icon.ArrowRight /> Checkbox Operation 
+                                            <i className="bi bi-arrow-right"></i> Checkbox Operation 
                                         </Link>
                                     </li>
 
                                     <li>
                                         <Link className="dropdown-item" to="/how-to-upload-files">
-                                            <Icon.ArrowRight /> Basic File Upload Functionlity
+                                            <i className="bi bi-arrow-right"></i> Basic File Upload Functionlity
                                         </Link>
                                     </li>
 
                                     <li>
                                         <Link className="dropdown-item" to="/basic-live-search">
-                                            <Icon.ArrowRight /> Live Search By Textbox
+                                            <i className="bi bi-arrow-right"></i> Live Search By Textbox
                                         </Link>
                                     </li>
 
                                     <li>
                                         <Link className="dropdown-item" to="/radio-operation-in-react">
-                                            <Icon.ArrowRight /> Radio Selection Operation 
+                                            <i className="bi bi-arrow-right"></i> Radio Selection Operation 
                                         </Link>
                                     </li>
 
                                     <li>
                                         <Link className="dropdown-item" to="/todo-operation-in-react">
-                                            <Icon.ArrowRight /> To Do Operations Dashbaord
+                                            <i className="bi bi-arrow-right"></i> To Do Operations Dashbaord
                                         </Link>
                                     </li>
                                 </ul>
@@ -132,30 +131,30 @@ const SiteHeader = () => {
                                 <ul className="dropdown-menu">
                                     <li>
                                         <Link className="dropdown-item" to="/react-http-tutorial">
-                                            <Icon.ArrowRight /> React HTTP Dashboard
+                                            <i className="bi bi-arrow-right"></i>> React HTTP Dashboard
                                         </Link>
                                     </li>
                                     <li>
                                         <Link className="dropdown-item" to="/http-react-get-call">
-                                            <Icon.ArrowRight /> HTTP Get Call
+                                            <i className="bi bi-arrow-right"></i> HTTP Get Call
                                         </Link>
                                     </li>
 
                                     <li>
                                         <Link className="dropdown-item" to="/http-react-post-call">
-                                            <Icon.ArrowRight /> HTTP Post Call
+                                            <i className="bi bi-arrow-right"></i> HTTP Post Call
                                         </Link>
                                     </li>
 
                                     <li>
                                         <Link className="dropdown-item" to="/how-to-perform-ascending-descending-order">
-                                            <Icon.ArrowRight /> Ascending Descending Order
+                                            <i className="bi bi-arrow-right"></i> Ascending Descending Order
                                         </Link>
                                     </li>
 
                                     <li>
                                         <Link className="dropdown-item" to="/data-virtualization-in-react">
-                                            <Icon.ArrowRight /> Data Virtualization 
+                                            <i className="bi bi-arrow-right"></i> Data Virtualization 
                                         </Link>
                                     </li>
                                 </ul>
@@ -168,31 +167,31 @@ const SiteHeader = () => {
                                 <ul className="dropdown-menu">
                                     <li>
                                         <Link className="dropdown-item" to="/fragment-in-react">
-                                            <Icon.ArrowRight /> React Fragment
+                                            <i className="bi bi-arrow-right"></i> React Fragment
                                         </Link>
                                     </li>
                                     
                                     <li>
                                         <Link className="dropdown-item" to="/higher-order-component-in-react">
-                                            <Icon.ArrowRight /> Higher Order Component
+                                            <i className="bi bi-arrow-right"></i> Higher Order Component
                                         </Link>
                                     </li>
 
                                     <li>
                                         <Link className="dropdown-item" to="/how-to-pass-data-from-child-to-parent-component">
-                                            <Icon.ArrowRight /> How to pass data from Child to Parent
+                                            <i className="bi bi-arrow-right"></i> How to pass data from Child to Parent
                                         </Link>
                                     </li>
 
                                     <li>
                                         <Link className="dropdown-item" to="/what-is-debouncing-and-throttling">
-                                            <Icon.ArrowRight /> Debouncing and Throttling in React
+                                            <i className="bi bi-arrow-right"></i> Debouncing and Throttling in React
                                         </Link>
                                     </li>
 
                                     <li>
                                         <Link className="dropdown-item" to="/what-is-lazy-loading-in-react">
-                                            <Icon.ArrowRight /> Lazy Loading in React
+                                            <i className="bi bi-arrow-right"></i> Lazy Loading in React
                                         </Link>
                                     </li>
                                 </ul>
@@ -213,25 +212,25 @@ const SiteHeader = () => {
                                 <ul className="dropdown-menu">
                                     <li>
                                         <Link className="dropdown-item" to="/employees-dashboard/create">
-                                            <Icon.ArrowRight /> Employees Crud
+                                            <i className="bi bi-arrow-right"></i> Employees Crud
                                         </Link>
                                     </li>
 
                                     <li>
                                         <Link className="dropdown-item" to="/computer-material-dashboard">
-                                            <Icon.ArrowRight /> Computer Accessories
+                                            <i className="bi bi-arrow-right"></i> Computer Accessories
                                         </Link>
                                     </li>
 
                                     <li>
                                         <Link className="dropdown-item" to="/simple-crud-using-redux-toolkit">
-                                            <Icon.ArrowRight /> Crud using Redux Toolkit
+                                            <i className="bi bi-arrow-right"></i> Crud using Redux Toolkit
                                         </Link>
                                     </li>
 
                                     <li>
                                         <Link className="dropdown-item" to="/todo-operation-in-react">
-                                            <Icon.ArrowRight /> To Do Operations Dashbaord
+                                            <i className="bi bi-arrow-right"></i> To Do Operations Dashbaord
                                         </Link>
                                     </li>
                                 </ul>

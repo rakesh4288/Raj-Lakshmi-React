@@ -1,5 +1,4 @@
-import React, {useEffect} from "react";
-import * as Icon from 'react-bootstrap-icons';
+import {useEffect} from "react";
 import AppImages from "../Assets";
 import DummyUsers from '../Components/DummyUsers';
 // import useFetch from "../Global/useFetch";
@@ -34,7 +33,7 @@ const ReactHttpGetPage = () => {
                         <div className="col-md-12">
                             <h4 className="pageHeading">
                                 How to call HTTP Get Call
-                                <Icon.Airplane/>
+                                <i className="bi bi-airplane-engines-fill"></i>
                             </h4>
                         </div>
                     </div>

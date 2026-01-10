@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import * as Icon from 'react-bootstrap-icons';
 
 const ArrayState = () => {
     const city = ['Pune', 'Udaipur', 'Indore'];
@@ -56,7 +55,7 @@ const ArrayState = () => {
                                     <td>{index + 1}</td>
                                     <td>{item}</td>
                                     <td>
-                                        <Icon.Trash style={{cursor: 'pointer'}} onClick={() => handleDelete (index)} />
+                                        <i className="bi bi-trash" style={{cursor: 'pointer'}} onClick={() => handleDelete (index)}></i>
                                     </td>
                                 </tr>
                             )

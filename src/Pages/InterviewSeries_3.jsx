@@ -1,6 +1,5 @@
 import React from "react";
 import AppImages from "../Assets";
-import * as Icon from 'react-bootstrap-icons';
 
 const InterviewSeries_3 = () => {
     return (
@@ -9,7 +8,9 @@ const InterviewSeries_3 = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h4 className="pageHeading"> React Interview Questions Answer Part 3 <Icon.Fullscreen/></h4>
+                            <h4 className="pageHeading"> React Interview Questions Answer Part 3 
+                                <i className="bi bi-fullscreen"></i>
+                            </h4>
                         </div>
                     </div>
                 </div>

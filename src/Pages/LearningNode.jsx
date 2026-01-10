@@ -1,4 +1,3 @@
-import React from "react";
 import AppImages from "../Assets";
 import FormValidation from "../Components/FormValidation";
 import ArrayState from "../Components/ArrayState";

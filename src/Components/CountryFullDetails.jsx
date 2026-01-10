@@ -1,6 +1,5 @@
-import React, {useEffect, useState} from "react";
+import {useCallback, useEffect, useState} from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import * as Icon from 'react-bootstrap-icons';
 const CountryFullDetails = () => {
     const params = useParams();
     const navigate = useNavigate();
@@ -12,7 +11,7 @@ const CountryFullDetails = () => {
     console.log('params id=', id);
 
     // https://restcountries.com/v3.1/alpha/{code}
-    const fetchingFullDetails = async() => {
+    const fetchingFullDetails = useCallback(async() => {
         try {
             const response = await fetch(`https://restcountries.com/v3.1/alpha/${id}`);
             const res = await response.json();
@@ -23,16 +22,17 @@ const CountryFullDetails = () => {
             console.log('fetchingCountries Error =', error);
             setOneCountryLoader(false);
         }
-    }
+    }, [id]);
 
     useEffect(() => {
         fetchingFullDetails();
-    }, []);
+    }, [fetchingFullDetails]);
 
     const backToPage = () => {
         console.log('inside backToPage');
         navigate('/http-react-get-call');
     }
+    
     return (
         <div id='Country-full-details'>
             {oneCountryLoader && (
@@ -47,12 +47,12 @@ const CountryFullDetails = () => {
                     <div className="row">
                         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                             <h4 className="float-start pageHeading">
-                                {oneCountry[0]?.name.common} <Icon.Flag/>
+                                {oneCountry[0]?.name.common} <i className="bi bi-flag"></i>
                             </h4>
 
                             <h4 className="float-end pageHeading">
                                 <button className="btn btn-warning btn-sm" onClick={backToPage}>
-                                    Back to Previous Page <Icon.ArrowBarLeft/>
+                                    Back to Previous Page <i className="bi bi-arrow-left"></i>
                                 </button>
                             </h4>
                         </div>

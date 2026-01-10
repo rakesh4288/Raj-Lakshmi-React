@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from "react";
-import * as Icon from 'react-bootstrap-icons';
+import {useState, useEffect} from "react";
 
 const SimpleForm = () => {
     const initialFormValues = {
@@ -36,7 +35,7 @@ const SimpleForm = () => {
                 confirmPassword: '',
             });
         }
-    }, [formError]);
+    }, [formError, formValues, isSubmit]);
 
     const formValidation = (values) => {
         const errors = {}
@@ -70,7 +69,7 @@ const SimpleForm = () => {
     }
     return (
         <form className="alert alert-primary" onSubmit={handleSubmit}>
-            <h5>Sample Registration Form <Icon.Receipt /> </h5>
+            <h5>Sample Registration Form <i className="bi bi-ui-checks"></i> </h5>
             <div className="mb-3">
                 <label htmlFor="userName" className="form-label">Enter Your Name</label>
                 <input

@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import * as Icon from 'react-bootstrap-icons';
+import { useState } from "react";
 
 const ToDoListCrud = () => {
     const [taskInput, setTaskInput] = useState('');
@@ -160,15 +159,15 @@ const ToDoListCrud = () => {
                                             <td>{item.isCompleted ? "Completed" : "Not Done"}</td>
                                             <td>
                                                 {item.isCompleted ? (
-                                                    <Icon.CheckCircleFill style={{ cursor: 'pointer' }} onClick={() => handleStatus(item.id)} />
+                                                    <i class="bi bi-check-circle-fill" style={{ cursor: 'pointer' }} onClick={() => handleStatus(item.id)}></i>
                                                 ) : (
-                                                    <Icon.Alexa style={{ cursor: 'pointer' }} onClick={() => handleStatus(item.id)} />
+                                                    <i className="bi bi-alexa" style={{ cursor: 'pointer' }} onClick={() => handleStatus(item.id)}></i>
                                                 )}
 
                                                 &nbsp;&nbsp;
-                                                <Icon.PencilSquare style={{ cursor: 'pointer' }} onClick={() => handleTaskEdit(item.id)} />
+                                                <i className="bi bi-pencil-square" style={{ cursor: 'pointer' }} onClick={() => handleTaskEdit(item.id)}></i>
                                                 &nbsp;&nbsp;
-                                                <Icon.Trash style={{ cursor: 'pointer' }} onClick={() => handleTaskDelete(item.id)} />
+                                                <i className="bi bi-trash" style={{ cursor: 'pointer' }} onClick={() => handleTaskDelete(item.id)}></i>
                                             </td>
                                         </tr>
                                     )

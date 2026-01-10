@@ -1,5 +1,3 @@
-import React from 'react';
-import * as Icon from 'react-bootstrap-icons';
 import ColumnWiseSorting from '../Components/ColumnWiseSorting';
 
 const AscDescOrder = () => {
@@ -12,8 +10,7 @@ const AscDescOrder = () => {
                         <div className="col-md-12">
                             <h4 className="pageHeading">
                                 How to perform ascending descending order
-                                <Icon.ArrowDown />
-                                <Icon.ArrowUp />
+                                <i className="bi bi-arrow-down-up"></i>
                             </h4>
                         </div>
                     </div>

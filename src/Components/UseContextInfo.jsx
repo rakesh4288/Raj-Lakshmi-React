@@ -1,5 +1,4 @@
-import React, { createContext } from "react";
-import * as Icon from 'react-bootstrap-icons';
+import { createContext } from "react";
 import AppImages from "../Assets";
 import MyCountry from "./MyCountry";
 
@@ -50,7 +49,7 @@ const UseContextInfo = () => {
 
             <h5>So here is the Solution:</h5>
             <h6>
-            <Icon.ArrowRight /> Solution is to create the context and React Js providing the useContext hook here to solve this issue</h6>
+            <i className="bi bi-arrow-right"></i> Solution is to create the context and React Js providing the useContext hook here to solve this issue</h6>
 
             <ul>
                 <li>

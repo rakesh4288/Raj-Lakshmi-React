@@ -1,12 +1,10 @@
 import React, { useRef, useState } from 'react';
-import * as Icon from 'react-bootstrap-icons';
 
 const AddRemoveItem = () => {
     const [mainItems, setMainItems] = useState([]);
     const [itemValue, setItemValue] = useState();
     const inputRef = useRef();
     const [copyItem, setCopyItem] = useState([]);
-    const [deleteItem, setDeleteItem] = useState([]);
     const [query, setQuery] = useState('');
 
     const handleChange = (e) => {
@@ -52,7 +50,7 @@ const AddRemoveItem = () => {
 
     const handleDelete = (index) => {
         console.log('index =', index);
-        if(window.confirm("Are you sure want to delete ?")) {
+        if (window.confirm("Are you sure want to delete ?")) {
             console.log('Yes inside Deleted');
             // console.log('copyItem =', copyItem);
             // const fruits = ["mango","apple","pine","berry"]; 
@@ -63,14 +61,14 @@ const AddRemoveItem = () => {
             // const result = copyItem.splice(index, 1);
             // console.log('handleDelete result =', result);
             // console.log('handleDelete copyItem =', copyItem);
-            
+
             // setDeleteItem(copyItem);
             // setCopyItem(copyItem.splice(index, 1));
             // setMainItems(copyItem);
 
             const removeElement = (array, element) => {
                 const index = array.indexOf(element);
-                if(index !== -1) array.splice(index, 1);
+                if (index !== -1) array.splice(index, 1);
                 return array;
             }
 
@@ -109,26 +107,23 @@ const AddRemoveItem = () => {
             <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
                 <div className='alert alert-secondary'>
                     <h6> Here To Do List:</h6>
-                    {
-                        mainItems.length === 0 ? (
-                            <div className='text-danger'> No Any List Present </div>
-                        ) : (
-                            <>
-                                {
-
-                                    mainItems.map((item, index) => {
-                                        return (
-                                            <div key={index + 1} className='alert alert-info' style={{marginBottom: '10px'}}>
-                                                <div className='float-start'>{item}</div>
-                                                <div className='float-end' style={{cursor: 'pointer'}} onClick={()=> handleDelete(item)}><Icon.Trash /></div>
-                                                <div className='clearfix'></div>
-                                            </div>
-                                        )
-                                    })
-                                }
-                            </>
-                        )
-                    }
+                    {mainItems.length === 0 ? (
+                        <div className='text-danger'> No Any List Present </div>
+                    ) : (
+                        <>
+                            {mainItems.map((item, index) => {
+                                return (
+                                    <div key={index + 1} className='alert alert-info' style={{ marginBottom: '10px' }}>
+                                        <div className='float-start'>{item}</div>
+                                        <div className='float-end' style={{ cursor: 'pointer' }} onClick={() => handleDelete(item)}>
+                                            <i className="bi bi-trash"></i>
+                                        </div>
+                                        <div className='clearfix'></div>
+                                    </div>
+                                )
+                            })}
+                        </>
+                    )}
                 </div>
             </div>
         </div>

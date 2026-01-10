@@ -1,5 +1,3 @@
-import React from 'react';
-import * as Icon from 'react-bootstrap-icons';
 import { Link, Outlet } from 'react-router-dom';
 import AppImages from '../Assets';
 
@@ -12,7 +10,7 @@ const ComputerMaterialDashboard = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <h4 className="pageHeading">
-                                Computer Material Dashboard  <Icon.Projector />
+                                Computer Material Dashboard  <i className="bi bi-projector"></i>
                             </h4>
                         </div>
                     </div>

@@ -1,5 +1,4 @@
-import React, {useState} from "react";
-import * as Icon from 'react-bootstrap-icons';
+import {useState} from "react";
 import AppImages from "../Assets";
 import CountdownTimer from "../Components/CountdownTimer";
 
@@ -16,7 +15,7 @@ const RadioSelection = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h4 className="pageHeading"> Radio Selection Operation Page  <Icon.UiRadios /> </h4>
+                            <h4 className="pageHeading"> Radio Selection Operation Page  <i className="bi bi-radioactive"></i> </h4>
                         </div>
                     </div>
                 </div>

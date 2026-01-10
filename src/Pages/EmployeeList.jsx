@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import * as Icon from 'react-bootstrap-icons';
+import { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
@@ -57,7 +56,7 @@ const EmployeeList = () => {
         <div className="container">
             <div className="row">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                    <h5>Employees List <Icon.List /></h5>
+                    <h5>Employees List <i className="bi bi-list-ul"></i></h5>
                     {isLoading && (
                         <div className="d-flex justify-content-center">
                             <div className="spinner-border text-primary" role="status">
@@ -94,9 +93,9 @@ const EmployeeList = () => {
                                             <td>{item.email}</td>
                                             <td>{item.phone}</td>
                                             <td align="right">
-                                                <button className="btn" onClick={() => { handleEmpEdit(item.id) }}> <Icon.Pencil /> </button>
-                                                <button className="btn" onClick={() => { handleEmpDetails(item.id) }}> <Icon.Eye /> </button>
-                                                <button className="btn" onClick={() => { handleDelete(item.id) }}> <Icon.Trash /> </button>
+                                                <button className="btn" onClick={() => { handleEmpEdit(item.id) }}> <i className="bi bi-pencil-square" ></i> </button>
+                                                <button className="btn" onClick={() => { handleEmpDetails(item.id) }}> <i className="bi bi-eye"></i></button>
+                                                <button className="btn" onClick={() => { handleDelete(item.id) }}> <i className="bi bi-trash" ></i> </button>
                                             </td>
                                         </tr>
                                     )

@@ -1,6 +1,4 @@
-import React from "react";
 import AppImages from "../Assets";
-import * as Icon from 'react-bootstrap-icons';
 
 const InterviewSeries_2 = () => {
     const checkSyntheticEvent = (e) => {
@@ -12,7 +10,9 @@ const InterviewSeries_2 = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h4 className="pageHeading"> React Interview Questions Answer Part 2 <Icon.Fullscreen/></h4>
+                            <h4 className="pageHeading"> React Interview Questions Answer Part 2 
+                                <i className="bi bi-fullscreen"></i>
+                            </h4>
                         </div>
                     </div>
                 </div>
@@ -145,7 +145,7 @@ const InterviewSeries_2 = () => {
                             </ul>
 
                             <p className="alert alert-danger">
-                            <Icon.ArrowRight /> Best approach to use the async function is that - you can put async inside the useEffect() not as in argument.
+                            <i className="bi bi-arrow-right"></i> Best approach to use the async function is that - you can put async inside the useEffect() not as in argument.
                             </p>
                         </div>
                     </div>
@@ -233,7 +233,7 @@ const InterviewSeries_2 = () => {
             <section className="container pt-4 pb-5">
                 <div className="row">
                     <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                        <h5>What is React Strict Mode ? <Icon.Book/></h5>
+                        <h5>What is React Strict Mode ? <i className="bi bi-book"></i></h5>
                         <h6>
                             React Strict Mode is a react component which is used to identify the potential issues and finding the bug in the react code. It is helping to provides the warning and alerts while building the app.
                         </h6>

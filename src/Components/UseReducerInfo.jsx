@@ -1,5 +1,4 @@
-import React, { useReducer } from "react";
-import * as Icon from 'react-bootstrap-icons';
+import { useReducer } from "react";
 
 const UseReducerInfo = () => {
     const initialState = {
@@ -38,7 +37,7 @@ const UseReducerInfo = () => {
 
     return(
         <div id="use-reducer-info">
-            <h3> <i>useReducer</i> React Hook Page <Icon.BagPlusFill /> </h3>
+            <h3> <i>useReducer</i> React Hook Page <i className="bi bi-bag-plus-fill"></i> </h3>
             <ul>
                 <li>useReducer hook is a very powerful hook that can simplify the complex state management in your react application.</li>
                 <li>This hook is verfy helpful for handling the large amount of todo function.</li>

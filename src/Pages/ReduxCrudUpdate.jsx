@@ -1,5 +1,4 @@
 import { useState } from "react";
-import * as Icon from 'react-bootstrap-icons';
 import { Link } from "react-router-dom";
 import { useNavigate, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux"; 
@@ -17,7 +16,7 @@ const ReduxCrudUpdate = () => {
     // console.log('params =', params);
     console.log('studentId =', id);
 
-    const existingStudent = studentData.filter(item => item.id == id);
+    const existingStudent = studentData.filter(item => item.id === id);
     console.log('existingStudent[0] =', existingStudent[0]);
     
     const {studentName, studentEmail, studentPhone, city} = existingStudent[0];
@@ -158,17 +157,16 @@ const ReduxCrudUpdate = () => {
                                 </div>
 
                                 <div className="mb-3">
-                                    <button type='submit' className='btn btn-primary btn-sm'>Update Student <Icon.MenuUp /></button>
+                                    <button type='submit' className='btn btn-primary btn-sm'>Update Student <i className="bi bi-list"></i> </button>
                                     &nbsp; 
                                     <Link to="/simple-crud-using-redux-toolkit" className="btn btn-info btn-sm"> 
-                                    Back to Student List <Icon.ArrowBarLeft /> </Link>
+                                    Back to Student List <i className="bi bi-arrow-left-circle-fill"></i> </Link>
                                 </div>
                             </form>
                         </div>
 
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <iframe width="100%" height="315" src="https://www.youtube.com/embed/DOkSU3yg4vQ?si=IIlp9pUyfpKzrV0o" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-
                             <ReduxConfiguration />
                         </div>
                     </div>

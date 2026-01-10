@@ -1,4 +1,3 @@
-import React from "react";
 import AppImages from "../Assets";
 
 const UseEffectInfo = () => {

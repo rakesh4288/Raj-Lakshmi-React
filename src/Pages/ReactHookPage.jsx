@@ -1,7 +1,5 @@
-import React from "react";
 import './PagesStyle.css';
 import { Link, Outlet } from "react-router-dom";
-import * as Icon from 'react-bootstrap-icons';
 const ReactHookPage = () => {
     return(
         <div id="react-hook-page">
@@ -10,7 +8,7 @@ const ReactHookPage = () => {
                     <div className="row">
                         <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12">
                             <h3 className="pageHeading">
-                                React Hook Dashboard !! <Icon.Badge3dFill  /> 
+                                React Hook Dashboard !! <i className="bi bi-shield-slash-fill"></i>
                             </h3>
                         </div>
 
@@ -62,38 +60,38 @@ const ReactHookPage = () => {
                                 <li className="list-group-item active" aria-current="true">React Hooks List</li>
                                 <li className="list-group-item">
                                    <Link to="use-state-page" className="link">
-                                   <Icon.ArrowRight color="red"  /> useState</Link> 
+                                   <i className="bi bi-arrow-right"></i> useState</Link> 
                                 </li>
 
                                 <li className="list-group-item">
                                     <Link to="use-effect-page" className="link">
-                                    <Icon.ArrowRight color="red"  /> useEffect</Link> 
+                                    <i className="bi bi-arrow-right"></i> useEffect</Link> 
                                 </li>
 
                                 <li className="list-group-item">
                                     <Link to="use-context-page" className="link">
-                                    <Icon.ArrowRight color="red"  /> useContext</Link>
+                                    <i className="bi bi-arrow-right"></i> useContext</Link>
                                 </li>
 
                                 <li className="list-group-item">
                                     <Link to="use-memo-page" className="link">
-                                    <Icon.ArrowRight color="red"  /> useMemo</Link>
+                                    <i className="bi bi-arrow-right"></i> useMemo</Link>
                                 </li>
 
                                 <li className="list-group-item">
                                     <Link to="use-callback-page" className="link">
-                                    <Icon.ArrowRight color="red"  /> useCallback</Link>
+                                    <i className="bi bi-arrow-right"></i> useCallback</Link>
                                 </li>
 
                                 <li className="list-group-item">
                                     <Link to="use-reducer-page" className="link">
-                                        <Icon.ArrowRight color="red"  /> useReducer
+                                        <i className="bi bi-arrow-right"></i> useReducer
                                     </Link>
                                 </li>
 
                                 <li className="list-group-item">
                                     <Link to="use-ref-page" className="link">
-                                        <Icon.ArrowRight color="red"  /> useRef
+                                        <i className="bi bi-arrow-right"></i> useRef
                                     </Link>
                                 </li>
                             </ul>

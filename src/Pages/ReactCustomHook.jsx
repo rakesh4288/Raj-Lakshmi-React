@@ -1,5 +1,3 @@
-import React  from 'react';
-import * as Icon from 'react-bootstrap-icons';
 import useCount from '../Global/useCount';
 import AppImages from '../Assets';
 const ReactCustomHook = () => {
@@ -11,7 +9,7 @@ const ReactCustomHook = () => {
                     <div className="row">
                         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                             <h1 className="pageHeading">
-                                How to create Custom Hook  <Icon.HCircle />
+                                How to create Custom Hook  <i className="bi bi-circle"></i>
                             </h1>
                         </div>
                     </div>

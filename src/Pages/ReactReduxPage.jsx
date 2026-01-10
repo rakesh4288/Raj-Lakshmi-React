@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import * as Icon from 'react-bootstrap-icons';
 import RajLakshmiModal from "../Components/Modal";
 import AppImages from '../Assets';
 import CounterAppUsingRedux from "../Components/CounterAppUsingRedux";
@@ -23,7 +22,7 @@ const ReactReduxPage = () => {
                     <div className="row">
                         <div className="col-xl-9 col-lg-9 col-md-9 col-sm-12">
                             <h4 className="pageHeading">
-                                What is the React Redux  <Icon.BorderCenter />
+                                What is the React Redux  <i className="bi bi-border-right"></i>
                             </h4>
                         </div>
 
@@ -207,7 +206,7 @@ const ReactReduxPage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                            <h5>Redux Thunk vs. Redux Saga: Choosing the Right Middleware <Icon.Activity/></h5>
+                            <h5>Redux Thunk vs. Redux Saga: Choosing the Right Middleware <i className="bi bi-activity"></i></h5>
                             <h6>
                                 Redux is a predictable state container for React. This is a mainly used in React application for managing the state globally.
                             </h6>

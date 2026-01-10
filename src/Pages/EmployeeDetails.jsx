@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import * as Icon from 'react-bootstrap-icons';
+import { useState, useEffect } from "react";
 import { Link, useParams } from 'react-router-dom';
 const EmployeeDetails = () => {
     const params = useParams();
@@ -22,7 +21,7 @@ const EmployeeDetails = () => {
                 <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                     {empdata &&
                         <div>
-                            <h5>Full Details of <b>{empdata.name}</b> <Icon.Postcard /> </h5>
+                            <h5>Full Details of <b>{empdata.name}</b> <i className="bi bi-postcard"></i> </h5>
                             <table className="table table-striped table-bordered">
                                 <tbody>
                                     <tr>
@@ -53,7 +52,7 @@ const EmployeeDetails = () => {
                             </table>
 
                             <Link className="btn btn-dark btn-sm" to="/employees-dashboard/list">
-                                <Icon.ArrowBarLeft /> Back to Listing
+                                <i className="bi bi-arrow-left"></i> Back to Listing
                             </Link>
                         </div>
                     }
