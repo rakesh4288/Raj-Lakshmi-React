@@ -78,6 +78,7 @@ const AppImages = {
     React_19_UseActionState_1: require('./react_19_useActionState_1.png'),
     React_19_Use_Api_1: require('./react_19_useApi_1.png'),
     React_19_Use_Activity_1: require('./react_19_Activity_1.png'),
+    MonolithicVSMicroFrontArchitecture: require('./Monolithic_Architecture_vs_Micro_Front_End_Architecture.jpeg')
 }
 
 export default AppImages;

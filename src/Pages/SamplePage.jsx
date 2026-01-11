@@ -1,7 +1,7 @@
 import React from "react";
 
 const SamplePage = () => {
-    return(
+    return (
         <div id="sample-id">
             <section className="pageHeader">
                 <div className="container">
@@ -13,12 +13,10 @@ const SamplePage = () => {
                 </div>
             </section>
 
-            <section>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <p>Sample Coding</p>
-                        </div>
+            <section className="container">
+                <div className="row">
+                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <p>Sample Coding</p>
                     </div>
                 </div>
             </section>
