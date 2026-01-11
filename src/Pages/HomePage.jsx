@@ -7,8 +7,8 @@ import AppImages from "../Assets";
 const HomePage = () => {
     const [toggle, setToggle] = useState(false);
     const navigate = useNavigate();
-    const toggleHandler = () => { setToggle(!toggle);}
-    const handleGit = () => { navigate('/what-is-git-and-git-github')}
+    const toggleHandler = () => { setToggle(!toggle); }
+    const handleGit = () => { navigate('/what-is-git-and-git-github') }
     const handleMicroFrontEnd = () => { navigate('/what-is-micro-front-end-architecture-in-react') }
 
     return (
@@ -17,17 +17,17 @@ const HomePage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                           <div className="clearfix">
+                            <div className="clearfix">
                                 <div className="float-start">
-                                <h1 className="pageHeading"> React JS <img src={logo} className="App-logo" alt="logo" /> </h1>
-                            </div>
+                                    <h1 className="pageHeading"> React JS <img src={logo} className="App-logo" alt="logo" /> </h1>
+                                </div>
 
-                            <div className="float-end">
-                                <button className="btn btn-warning btn-sm" onClick={handleGit}>
-                                    Learning Git & GitHub <i className="bi bi-alexa"></i>
-                                </button>
+                                <div className="float-end">
+                                    <button className="btn btn-warning btn-sm" onClick={handleGit}>
+                                        Learning Git & GitHub <i className="bi bi-alexa"></i>
+                                    </button>
+                                </div>
                             </div>
-                           </div>
                         </div>
                     </div>
                 </div>
@@ -37,17 +37,23 @@ const HomePage = () => {
                 <div className="row">
                     <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                         <h5>
-                            The latest stable version of React is 19.2.0, <Link to="/react-19-features">React 19 Features Just Checkout</Link> <br/> which was released on March 28, 2025. React 19 was officially released on December 5, 2024. 
+                            The latest stable version of React is 19.2.0, <Link to="/react-19-features">React 19 Features Just Checkout</Link> <br /> which was released on March 28, 2025. React 19 was officially released on December 5, 2024.
                         </h5>
 
-                        <button className="btn btn-primary btn-sm" onClick={handleMicroFrontEnd}>
-                            What is Mirco Front End Architecture <i className="bi bi-browser-edge"></i>
-                        </button>
+                        <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                            <button className="btn btn-primary btn-sm" onClick={handleMicroFrontEnd}>
+                                What is Mirco Front End Architecture <i className="bi bi-browser-edge"></i>
+                            </button>
+
+                            <button className="btn btn-success btn-sm" onClick={handleMicroFrontEnd}>
+                                Learning Jenkins CI/CD <i className="bi bi-bluesky"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
 
-                <hr className="bg-primary"/>
-                
+                <hr className="bg-primary" />
+
                 <div className="row">
                     <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <h4>Advantages <i className="bi bi-patch-plus-fill"></i></h4>
@@ -67,7 +73,7 @@ const HomePage = () => {
                             <li>React is a library not a full blown framework</li>
                             <li>So everything is not available while installing the react like one its major dependencies is not present i.e. <b>react router dom</b></li>
                             <li>
-                                <b>react router dom</b> is helping to create the Navigation or routing across the application.  
+                                <b>react router dom</b> is helping to create the Navigation or routing across the application.
                             </li>
                             <li>This library is very very large and its difficult to understand for beginner level</li>
                             <li>Coding gets complicated because its uses inline tamplating with JSX</li>
@@ -86,10 +92,10 @@ const HomePage = () => {
 
                     <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <h6>
-                            The current version of React is 19.0.0, which was released on December 5, 2024. React 19 is designed to improve the performance and efficiency, and to streamline the web development processes. <br/><br/> It's compatible with most existing React projects, but there are some changes and deprecated features that developers should be aware of.
+                            The current version of React is 19.0.0, which was released on December 5, 2024. React 19 is designed to improve the performance and efficiency, and to streamline the web development processes. <br /><br /> It's compatible with most existing React projects, but there are some changes and deprecated features that developers should be aware of.
                         </h6>
 
-                        <h5>What is the stable version of React: <br/>React 18 is the stable version which was released on March 29, 2022.</h5>
+                        <h5>What is the stable version of React: <br />React 18 is the stable version which was released on March 29, 2022.</h5>
                     </div>
                 </div>
             </section>
@@ -139,11 +145,11 @@ const HomePage = () => {
 
                     <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <h5>What is JSX ?</h5>
-                        <img src={AppImages.WhatIsJSX} className="img-fluid" alt="what-is-jsx"/>
+                        <img src={AppImages.WhatIsJSX} className="img-fluid" alt="what-is-jsx" />
                     </div>
                 </div>
             </section>
-        
+
             <hr className="bg-primary" />
 
             <section id="npm-vs-npx" className="lighGreenBG pt-4 pb-4">
@@ -152,7 +158,7 @@ const HomePage = () => {
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <h5>What are the differences between npm and npx?</h5>
                             <p>
-                                When we are working with Node.js, you will frequently using the two important tools like npm and npx. 
+                                When we are working with Node.js, you will frequently using the two important tools like npm and npx.
                                 While both npm and npx are important part to managing the JavaScript dependencies, they serve the different purposes.
                             </p>
 
@@ -205,21 +211,21 @@ const HomePage = () => {
                                 <li>Use key attribute in list: We should always use the key attributes while using .map() method Because React makes the difference between two HTML nodes</li>
                                 <li>
                                     <Link to="/what-is-lazy-loading-in-react">
-                                    Lazy Loading Component</Link>
+                                        Lazy Loading Component</Link>
                                 </li>
                                 <li>
                                     <Link to="/react-hook-tutorial/use-memo-page">
-                                        Memoization: You can use the useMemo hook for this 
+                                        Memoization: You can use the useMemo hook for this
                                     </Link>
                                 </li>
                                 <li>Using Es Lint for better coding experience</li>
                                 <li>Don't use the Inline CSS styling and inline event</li>
                             </ul>
-                        </div> 
+                        </div>
 
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            
-                        </div> 
+
+                        </div>
                     </div>
                 </div>
             </section>
@@ -272,7 +278,7 @@ const HomePage = () => {
                                         <td>Resource exhaustion crashes the app</td>
                                         <td>Unvalidated JSON, regex backtracking</td>
                                     </tr>
-                                    
+
                                     <tr>
                                         <td>Insecure Dependencies</td>
                                         <td>A package has known security bugs</td>
@@ -286,7 +292,7 @@ const HomePage = () => {
                     <div className="row">
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <h5>Best practices to avoid Vulnerabilities</h5>
-                            
+
                             <table className="table table-striped">
                                 <thead>
                                     <tr>

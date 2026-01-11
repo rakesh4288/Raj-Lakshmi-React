@@ -31,7 +31,7 @@ const SimpleCheckboxObject = () => {
             </div>
 
             <div className="col-md-6">
-                <div class="list-group">
+                <div className="list-group">
                     {options.map(opt => (
                         <label className="list-group-item" key={opt.id}>
                             <input

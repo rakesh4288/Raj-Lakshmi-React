@@ -48,7 +48,7 @@ const DmartReduxList = () => {
                             </p>
                             
                             <p className="card-text mb-3">
-                                <i class="bi bi-geo-alt-fill me-2"></i> {item.empCity}
+                                <i className="bi bi-geo-alt-fill me-2"></i> {item.empCity}
                             </p>
                             
                             <Link to="#" className="btn btn-outline-primary btn-sm float-end d-flex align-items-center gap-1">

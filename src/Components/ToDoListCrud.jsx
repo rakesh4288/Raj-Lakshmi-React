@@ -159,7 +159,7 @@ const ToDoListCrud = () => {
                                             <td>{item.isCompleted ? "Completed" : "Not Done"}</td>
                                             <td>
                                                 {item.isCompleted ? (
-                                                    <i class="bi bi-check-circle-fill" style={{ cursor: 'pointer' }} onClick={() => handleStatus(item.id)}></i>
+                                                    <i className="bi bi-check-circle-fill" style={{ cursor: 'pointer' }} onClick={() => handleStatus(item.id)}></i>
                                                 ) : (
                                                     <i className="bi bi-alexa" style={{ cursor: 'pointer' }} onClick={() => handleStatus(item.id)}></i>
                                                 )}

@@ -17,7 +17,7 @@ const employeesData = [
         id: 3,
         name: 'SD Deepika',
         gender: 'female',
-        address: 'trivandrum, Kerla, India'
+        address: 'Trivandrum, Kerla, India'
     },
     {
         id: 4,
@@ -30,36 +30,47 @@ const employeesData = [
         name: 'Nitish Lamba',
         gender: 'male',
         address: 'Noida, UP, India'
+    },
+    {
+        id: 6,
+        name: 'Veronica Mathew',
+        gender: 'Famle',
+        address: 'California, USA'
     }
 ]
 
 const SelectAllCheckbox = () => {
     const [rowSelected, setRowSelected] = useState([]);
-    const selectRowHandler = (row) => {
-        setRowSelected((prevSelected) => (prevSelected.some((selected) => selected.id === row.id)
-        ? prevSelected.filter((selected) => selected.id !== row.id) : [...prevSelected, row]))
+    const [selectAll, setSelectAll] = useState(false);
+    
+    const handleEachRow = (e) => {
+       const {value, checked} = e.target;
+       const checkedRow = JSON.parse(value);
+       let updatedRow;
+       if(checked) {
+        updatedRow = [...rowSelected, checkedRow];
+        setRowSelected(updatedRow);
+       } else {
+           updatedRow = rowSelected.filter((item) => item.id !== checkedRow.id);
+           setRowSelected(updatedRow);
+       }
+
+       setSelectAll(updatedRow.length === employeesData.length);
+    }
+
+    const handleSelectAll = (e) => {
+       const {checked} = e.target;
+       setSelectAll(checked);
+       if(checked) {
+        setRowSelected(employeesData);
+       } else {
+        setRowSelected([]);
+       }
     }
 
     console.log('rowSelected =', rowSelected);
-    const isAllChecked = rowSelected.length === employeesData.length;
-
-    const handleSelectAll = (e) => {
-        const {checked} = e.target;
-        if(checked) {
-            setRowSelected(employeesData);
-            console.log('handleSelectAll =', employeesData);
-        } else {
-            setRowSelected([]);
-            console.log('handleSelectAll =', employeesData);
-        }
-    }
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log('Final Object =', rowSelected);
-    }
     return (
-        <form className="img-thumbnail">
+        <div className="img-thumbnail">
             <table className="table table-striped">
                 <tbody>
                     <tr>
@@ -74,18 +85,19 @@ const SelectAllCheckbox = () => {
                                     id="selectAllCheck"
                                     className="form-check-input"
                                     name="selectAllCheckbox"
-                                    checked={isAllChecked}
-                                    onChange={handleSelectAll}
+                                    checked={selectAll}  // Controlled checkbox
+                                    onChange={handleSelectAll}  // Handler added
                                 />
                                 <label className="form-check-label" htmlFor="selectAllCheck">
-                                    { rowSelected.length === employeesData.length ? 'Deselect All' : 'Select All' }
+                                    {selectAll ? 'Un Select All' : 'Select All'}
                                 </label>
                             </div>
                         </td>
                     </tr>
-                    {employeesData && employeesData.map((emp, index) => {
+
+                    {employeesData && employeesData.map((emp) => {
                         return (
-                            <tr key={index}>
+                            <tr key={emp.id}>
                                 <td>{emp.id}</td>
                                 <td>{emp.name}</td>
                                 <td>{emp.gender}</td>
@@ -94,13 +106,14 @@ const SelectAllCheckbox = () => {
                                     <div className="form-check">
                                         <input
                                             type="checkbox"
-                                            id={`row-index${index + 1}`}
+                                            id={`row-id-${emp.id}`}
                                             className="form-check-input"
-                                            value={emp.id}
-                                            checked={rowSelected.some((row) => row.id === emp.id)}
-                                            onChange={() => selectRowHandler(emp)}
+                                            value={JSON.stringify(emp)}
+                                            // checked={rowSelected.some(item => item.id === emp.id)}  // Controlled checkbox
+                                            checked={rowSelected.some((item) => item.id === emp.id)}
+                                            onChange={handleEachRow}
                                         />
-                                        <label className="form-check-label" htmlFor={`row-index${index + 1}`}>
+                                        <label className="form-check-label" htmlFor={`row-id-${emp.id}`}>
                                             &nbsp;
                                         </label>
                                     </div>
@@ -110,12 +123,7 @@ const SelectAllCheckbox = () => {
                     })}
                 </tbody>
             </table>
-            <button className="btn btn-success btn-sm" type="submit" onClick={handleSubmit}>Submit Selected</button>
-            <br/>
-            <pre>
-                { JSON.stringify(rowSelected, undefined, 2) }
-            </pre>
-        </form>
+        </div>
     )
 }
 

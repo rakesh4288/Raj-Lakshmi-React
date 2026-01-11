@@ -9,7 +9,7 @@ const RowSelectionOnApi = () => {
         try{
             const response = await fetch(url);
             const res= await response.json();
-            console.log('fetchingUser =', res.users);
+            // console.log('fetchingUser =', res.users);
             setUserData(res.users);
         }
         catch (error) {
@@ -44,11 +44,11 @@ const RowSelectionOnApi = () => {
 
     const handleCheckAllSubmit = (e) => {
         e.preventDefault();
-        console.log('setSelectedRow =', selectedRow);
+        // console.log('setSelectedRow =', selectedRow);
     }
 
-    console.log('setSelectedRow Length =', selectedRow.length);
-    console.log('setSelectedRow =', selectedRow);
+    // console.log('setSelectedRow Length =', selectedRow.length);
+    // console.log('setSelectedRow =', selectedRow);
     return (
         <div id="row-selection-on-api" className="container pt-4 pb-4">
             <div className="row">

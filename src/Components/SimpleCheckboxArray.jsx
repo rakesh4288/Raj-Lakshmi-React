@@ -20,7 +20,7 @@ const SimpleCheckboxArray = () => {
                 </div>
 
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                    <div class="list-group">
+                    <div className="list-group">
                         {hobbies.map((hobby, index) => (
                             <label className="list-group-item" key={index + 1}>
                                 <input
