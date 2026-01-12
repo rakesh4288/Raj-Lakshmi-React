@@ -11,6 +11,10 @@ const HomePage = () => {
     const handleGit = () => { navigate('/what-is-git-and-git-github') }
     const handleMicroFrontEnd = () => { navigate('/what-is-micro-front-end-architecture-in-react') }
 
+    const handleGraphQL = () => {
+        navigate('/learning-graphql-technologies');
+    }
+
     return (
         <div id="home-page" className="homePageStyle">
             <section className="pageHeader">
@@ -44,6 +48,12 @@ const HomePage = () => {
                             <button className="btn btn-primary btn-sm" onClick={handleMicroFrontEnd}>
                                 What is Mirco Front End Architecture <i className="bi bi-browser-edge"></i>
                             </button>
+
+                            <div className="float-end">
+                                <button className="btn btn-danger btn-sm" onClick={handleGraphQL}>
+                                    Learning GraphQL <i className="bi bi-balloon"></i>
+                                </button>
+                            </div>
 
                             <button className="btn btn-success btn-sm" onClick={handleMicroFrontEnd}>
                                 Learning Jenkins CI/CD <i className="bi bi-bluesky"></i>

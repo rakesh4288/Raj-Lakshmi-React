@@ -58,8 +58,9 @@ import DmartReduxCreate from './DmartReduxCrud/DmartReduxCreate';
 import ToDoDashboard from './Pages/ToDoDashboard';
 import React19Features from './Pages/React19Features';
 import MircoFrontEndPage from './Pages/MircoFrontEndPage';
+import GraphQLPage from './Pages/GraphQLPage';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <SiteHeader />
@@ -69,6 +70,7 @@ function App() {
           <Route path="/home" exact Component={HomePage} />
           <Route path="/react-19-features" exact Component={React19Features}/>
           <Route path="/what-is-micro-front-end-architecture-in-react" exact Component={MircoFrontEndPage}/>
+          <Route path="/learning-graphql-technologies" exact Component={GraphQLPage} />
           <Route path="basic-info-of-react" exact Component={ReactBasicInfo} />
           <Route path="/react-controlled-uncontrolled-component" exact Component={ControlledUncontrolledMain} />
           <Route path="/life-cycle-method-in-react" exact Component={LifeCycleMethod}/>

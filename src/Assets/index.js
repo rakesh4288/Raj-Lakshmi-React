@@ -81,6 +81,10 @@ const AppImages = {
     MonolithicVSMicroFrontArchitecture: require('./Monolithic_Architecture_vs_Micro_Front_End_Architecture.jpeg'),
     ReactUseMemo_1: require('./useMemo_1.png'),
     ReactUseMemo_2: require('./useMemo_2.png'),
+    GraphQL_1: require('./Graph_QL_1.png'),
+    GraphQL_2: require('./Graph_QL_2.png'),
+    GraphQL_3: require('./Graph_QL_3.png'),
+    GraphQL_4: require('./Graph_QL_4.png')
 }
 
 export default AppImages;
