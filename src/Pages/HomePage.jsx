@@ -10,10 +10,8 @@ const HomePage = () => {
     const toggleHandler = () => { setToggle(!toggle); }
     const handleGit = () => { navigate('/what-is-git-and-git-github') }
     const handleMicroFrontEnd = () => { navigate('/what-is-micro-front-end-architecture-in-react') }
-
-    const handleGraphQL = () => {
-        navigate('/learning-graphql-technologies');
-    }
+    const handleGraphQL = () => { navigate('/learning-graphql-technologies')}
+    const handleJenkins = () => { navigate('/learning-ci-cd-pipelines-with-jenkins')}
 
     return (
         <div id="home-page" className="homePageStyle">
@@ -55,8 +53,8 @@ const HomePage = () => {
                                 </button>
                             </div>
 
-                            <button className="btn btn-success btn-sm" onClick={handleMicroFrontEnd}>
-                                Learning Jenkins CI/CD <i className="bi bi-bluesky"></i>
+                            <button className="btn btn-success btn-sm" onClick={handleJenkins}>
+                                Learning Jenkins CI/CD Pipelines <i className="bi bi-bluesky"></i>
                             </button>
                         </div>
                     </div>

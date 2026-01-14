@@ -272,14 +272,6 @@ h6 {
   z-index: 2;
 }
 
-.fullContainer{
+.lightGrayBg{
   background-image: linear-gradient(135deg, #efefef, #efefff);
-}
-
-.animatedBox{
-  border-radius: 12px;
-  position: relative;
-  background: linear-gradient(white, #fff) padding-box, conic-gradient(from var(--gradient-angle), #8b5cf6, #a855f7, #c084fc, #e879f9, #f0abfc, #06b6d4, #0ea5e9, #3b82f6, #6366f1, #8b5cf6) border-box;
-  border: 4px solid transparent;
-  animation: borderTrail 3s linear infinite;
 }
