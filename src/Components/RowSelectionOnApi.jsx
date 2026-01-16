@@ -9,7 +9,6 @@ const RowSelectionOnApi = () => {
         try{
             const response = await fetch(url);
             const res= await response.json();
-            // console.log('fetchingUser =', res.users);
             setUserData(res.users);
         }
         catch (error) {
@@ -22,35 +21,20 @@ const RowSelectionOnApi = () => {
 
     const checkboxHandler = (e) => {
         const {value, checked} = e.target;
-        // console.log('checkboxHandler value =', JSON.parse(value));
         const checkedRow = JSON.parse(value);
-
-        // console.log('checkboxHandler checked =', checked);
         if(checked) {
             setSelectedRow([...selectedRow, checkedRow]);
         } else {
             setSelectedRow(selectedRow.filter((item) => item.id !== checkedRow.id));
         }
     }
-    // const isAllChecked = selectedRow.length === userData.length;
-    // const handleCheckAll = (e) => {
-    //    const {checked} = e.target;
-    //    if(checked){
-    //         setSelectedRow(userData);
-    //    } else {
-    //         setSelectedRow([]);
-    //    }
-    // }
 
     const handleCheckAllSubmit = (e) => {
         e.preventDefault();
         // console.log('setSelectedRow =', selectedRow);
     }
-
-    // console.log('setSelectedRow Length =', selectedRow.length);
-    // console.log('setSelectedRow =', selectedRow);
     return (
-        <div id="row-selection-on-api" className="container pt-4 pb-4">
+        <div id="row-selection-on-api" className="container p-2 mt-4 mb-4">
             <div className="row">
                 <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
                     <form className="img-thumbnail" onSubmit={handleCheckAllSubmit}>

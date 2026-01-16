@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import {useState} from "react";
 
 const SimpleCheckboxObject = () => {
     const options = [
@@ -12,15 +12,10 @@ const SimpleCheckboxObject = () => {
     const handleCheckboxChange = (e) => {
         const { value, checked } = e.target;
         const newValue = JSON.parse(value);
-        // setSelected(prev => {
-        //     if (checked) return [...prev, value];           // add when checked
-        //     return prev.filter(v => v !== value);          // remove when unchecked
-        // });
-
         if(checked) {
-            setSelected([...selected, newValue]);
+            setSelected([...selected, newValue]); // add when checked
         } else {
-            setSelected(selected.filter((item) => item.id !== newValue.id));
+            setSelected(selected.filter((item) => item.id !== newValue.id)); // remove when unchecked
         }
     };
 

@@ -18,7 +18,7 @@ const CheckboxOperationPage = () => {
                 </div>
             </section>
 
-            <section className="container">
+            <section id="simple-checkbox" className="container mb-4">
                 <div className="row">
                     <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
                         <RowSelection/>

@@ -6,7 +6,7 @@ const SiteHeader = () => {
             <nav className="navbar navbar-expand-lg navbar-dark navBg fixed-top">
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/home">
-                        राजलक्ष्मी
+                        <span>राजलक्ष्मी</span>
                         <img src={logo} className="App-logo" alt="logo" />
                     </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

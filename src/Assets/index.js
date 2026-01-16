@@ -86,6 +86,7 @@ const AppImages = {
     GraphQL_3: require('./Graph_QL_3.png'),
     GraphQL_4: require('./Graph_QL_4.png'),
     Jenkins_1: require('./Jenkins_1.png'),
+    React_18_to_19: require('./React_18_to_19.png')
 }
 
 export default AppImages;

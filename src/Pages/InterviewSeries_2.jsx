@@ -10,15 +10,14 @@ const InterviewSeries_2 = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h4 className="pageHeading"> React Interview Questions Answer Part 2 
-                                <i className="bi bi-fullscreen"></i>
+                            <h4 className="pageHeading"> React Interview Questions Answer Part 2  <i className="bi bi-fullscreen"></i>
                             </h4>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="virtual-dom">
+            <section id="what-is-react" className="mb-4 pt-3">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -42,7 +41,7 @@ const InterviewSeries_2 = () => {
                 </div>
             </section>
 
-            <section id="what-is-babel" className="blueGradientRight">
+            <section id="what-is-babel" className="blueGradientRight pt-4 pb-4">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -81,13 +80,13 @@ const InterviewSeries_2 = () => {
                 </div>
             </section>
 
-            <section id="webback-pollyfills" className="container">
+            <section id="webback-pollyfills" className="container pt-4 pb-4">
                 <div className="row">
                     <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <h5>What is the webpack in react ?</h5>
                         <h6>
                             Webpack is a just helping to create the bundle for your react js application.
-                            <br/>Its primary role is to take all the individual JavaScript files and assets also like CSS, images, fonts in a project and combine them into a single, optimized bundle that can be efficiently loaded by a web browser.
+                            <br/>The primary role is to take all the individual JavaScript files and assets also like CSS, images, fonts in a project and combine them into a single, optimized bundle that can be efficiently loaded by a web browser.
                         </h6>
 
                         <h5>Key functions of Webpack in a React context</h5>
@@ -102,10 +101,10 @@ const InterviewSeries_2 = () => {
 
                     <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <h5>What is the Pollyfill in react ?</h5>
-                        <p>
+                        <h6>
                             In React, a polyfill is a piece of code, typically written in JavaScript, that provides modern functionality to older web browsers or environments that do not natively support those features.
                             React applications often taking the advantages modern JavaScript features like ES6, ES7, or beyond and browser APIs, which might not be available in all user environments, particularly older browsers like Internet Explorer. 
-                        </p>
+                        </h6>
                     </div>
                 </div>
             </section>

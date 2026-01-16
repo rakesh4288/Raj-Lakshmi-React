@@ -30,7 +30,7 @@ const MircoFrontEndPage = () => {
                                 I would say by keeping everything is one place it can take more time to build the project why because while building activity - all code base will go through the building process.
                             </li>
                             <li>
-                                If any set of component or any internal modules failed somehow so whole application performances can be impact.
+                                If any set of component or any internal modules failed somehow so whole application performances can be impact. Because end to end code is written in single chain.
                             </li>
                         </ul>
 
@@ -40,18 +40,21 @@ const MircoFrontEndPage = () => {
 
                         <h5>Now let's focus on the Micro Front End Architecture</h5>
                         <h6>
-                            So first of all Micro Front End Architecture is not any technologies it just a concept to handle the large application. If you have a huge traffic on your application so you can use the Mirco Front End Architecture.
+                            So first of all - Micro Front End Architecture is not any technologies it is just a concept to handle the large application. If you have a huge traffic on your application or let's suppose you have many features so you what you can do you can keep expensive features in a separate code base, so finally you can use that this is the Mirco Front End Architecture.
                         </h6>
 
-                        <h6>Let's try to understand by an example: In e-commerce website where you can see multiple component modules are present like - Product Listing, Full Details about the Product, Cart module, Navigations, Sliders, carousels etc.</h6>
-                        <h6>So for handling this type of scenario you can go with Micro Front End Architecture and regaerding this what you need to do you need to establish the different different code base with git repo, where each repo will handle a single responsibilities.</h6>
+                        <h6>Let's try to understand by an example: So in any e-commerce application where you can see multiple features modules are present like - Product Listing, Full Details about the Product, Cart module, Navigations, Sliders, carousels etc.</h6>
 
-                        <h6>By using this approach your website performace will increase</h6>
+                        <h6>So for handling this type of scenario you can go with Micro Front End Architecture and regarding this what you need to do ? you need to establish the different different code base with git repo, where each repo will handle a single responsibilities.</h6>
 
-                        <h5>Benefits of Micro-Frontends:</h5>
+                        <h6>And trust me by using this approach your application performace will increase.</h6>
+
+                        <hr className="bg-warning"/>
+
+                        <h5>Finally Let's talk about the Benefits of Micro-Frontends:</h5>
                         
                         <h6>
-                            <b>1. Independent Development:</b> Teams can work on different parts of the application simultaneously without interfering with each other.
+                            <b>1. Independent Development:</b> Different teams can work on different parts of the application simultaneously without interfering with each other.
                         </h6>
 
                         <h6>

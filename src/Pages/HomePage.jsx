@@ -35,11 +35,11 @@ const HomePage = () => {
                 </div>
             </section>
 
-            <section className="container">
+            <section id="basic-react-info" className="container">
                 <div className="row">
                     <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                         <h5>
-                            The latest stable version of React is 19.2.0, <Link to="/react-19-features">React 19 Features Just Checkout</Link> <br /> which was released on March 28, 2025. React 19 was officially released on December 5, 2024.
+                            The latest stable version of React is 19.2.0, <Link to="/react-19-features"><i><b>React 19 Features Just Checkout</b></i></Link> <br /> which was released on March 28, 2025. React 19 was officially released on December 5, 2024.
                         </h5>
 
                         <div style={{display: 'flex', justifyContent: 'space-between'}}>
@@ -139,10 +139,6 @@ const HomePage = () => {
                                 <li>
                                     <Link to="https://github.com/mohitdjcet/react-interview-questions-answers" target="_blank"> React Beginner & intermediate Level Interview Questions Asnwers </Link>
                                 </li>
-
-                                <li>
-                                    <Link to="https://www.thecodingskills.com/" target="_blank">All MCQ questions are here</Link>
-                                </li>
                             </ul>
                         </div>
 
@@ -208,31 +204,46 @@ const HomePage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <h5>How to optimize React App ?</h5>
+                            <h5>How to optimize the React App ?</h5>
                             <p>Here are some key points By which we can improve the React application like:</p>
 
                             <ul>
-                                <li>Code Spliting</li>
                                 <li>
-                                    <Link to="/fragment-in-react">Using React Fragment</Link>
+                                    Code Spliting - We can divide the code in multiple parts By this wasy React bundle size can be a less and it will help to eady debug.
                                 </li>
-                                <li>Use key attribute in list: We should always use the key attributes while using .map() method Because React makes the difference between two HTML nodes</li>
+
                                 <li>
-                                    <Link to="/what-is-lazy-loading-in-react">
-                                        Lazy Loading Component</Link>
+                                    <Link to="/react-hook-tutorial/use-memo-page"> using useMemo & useCallback Hook -</Link> we can use the useMemo and useCallback hook for increasing the performance and optimization.
                                 </li>
+
+
                                 <li>
-                                    <Link to="/react-hook-tutorial/use-memo-page">
-                                        Memoization: You can use the useMemo hook for this
-                                    </Link>
+                                    <Link to="/what-is-lazy-loading-in-react"> Lazy Loading -</Link> Lazy Loading can also help to optimize the react app. If your any component which is taking a time to load on the screen so you can bind these kind of component using lazy and suspense component.
                                 </li>
-                                <li>Using Es Lint for better coding experience</li>
-                                <li>Don't use the Inline CSS styling and inline event</li>
+
+                                <li>
+                                    <Link to="/what-is-debouncing-and-throttling"> Debouncing & Throttling -</Link> We should also use Debouncing and Throttling for increasing the React Application performance. Debouncing is working with setTimeout function and Throttling is using setInterval function.
+                                </li>
+
+                                <li>
+                                    <Link to="/data-virtualization-in-react">Data Virtualization - </Link> Data Virtualization is also helping for loading thousand and thousand records without delaying. It is helping to optimize the React App.
+                                </li>
+                                
+                                <li>
+                                    <b>Use key attribute in list:</b> We should always use the key attributes while using .map() method Because React makes the difference between two HTML nodes.
+                                </li>
+
+                                <li>
+                                    <Link to="/fragment-in-react">React Fragment -</Link> We can also use the React Fragment to remvoe the unnecessary extra HTML node. We can use the blank html container to remove extra element.
+                                </li>
+                                
+                                <li>Using Es Lint for better coding experience.</li>
+                                <li>Don't use the Inline CSS styling and inline event.</li>
                             </ul>
                         </div>
 
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/CaShN6mCJB0?si=dGgjn5ixlUfyqxyK" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -247,11 +258,16 @@ const HomePage = () => {
                                 In Node.js, vulnerabilities are security weaknesses in your application
                             </p>
 
+                            <p>
+                                Vulnerabilities in Node.js projects often arise from its large, open-source ecosystem, asynchronous nature, and server-side access to system resources. Key threats include insecure third-party dependencies, injection attacks, cross-site scripting (XSS), broken authentication, and inadequate error handling that exposes system data
+                            </p>
+
                             <ul>
                                 <li>Run unauthorized code</li>
                                 <li>Steal data</li>
                                 <li>Crash the app</li>
                                 <li>Gain system access</li>
+                                <li>Cross Site Scripting Attacks</li>
                             </ul>
                         </div>
                     </div>
@@ -345,7 +361,7 @@ const HomePage = () => {
 
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <h6>How to Resolve Vulnerabilities when "npm audit fix" does not work</h6>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/GKUW7f91I4w?si=18NUCi5iWqVMr7Dy" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/VAHkHj3I6Wg?si=dEoLFRWJzvoIGbrq" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                         </div>
                     </div>
                 </div>

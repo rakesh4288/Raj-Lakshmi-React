@@ -8,8 +8,7 @@ const InterviewSeries_1 = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h4 className="pageHeading"> React Interview Questions Answer Part 1 
-                                <i className="bi bi-fullscreen"></i>
+                            <h4 className="pageHeading"> React Interview Questions Answer Part 1  <i className="bi bi-fullscreen"></i>
                             </h4>
                         </div>
                     </div>

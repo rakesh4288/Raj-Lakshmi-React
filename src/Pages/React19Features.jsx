@@ -1,6 +1,6 @@
 import AppImages from "../Assets";
 const React19Features = () => {
-    return(
+    return (
         <div id="sample-id">
             <section className="pageHeader">
                 <div className="container">
@@ -14,23 +14,68 @@ const React19Features = () => {
 
             <div className="container">
                 <div className="row">
-                    <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12">
                         <h4>React 19 : New Features and Updates</h4>
                         <p>
-                            Ref: <a href="https://www.freecodecamp.org/news/new-react-19-features-you-should-know-with-code-examples/" target="_blank"  rel="noreferrer">
-                            https://www.freecodecamp.org/news/new-react-19-features-you-should-know-with-code-examples/
+                            Refrences: <br/>
+                            <a href="https://www.freecodecamp.org/news/new-react-19-features-you-should-know-with-code-examples/" className="btn btn-success btn-sm" target="_blank" rel="noreferrer">
+                                https://www.freecodecamp.org/news/new-react-19-features-you-should-know-with-code-examples/
                             </a>
-
-                            <a href="https://react.dev/blog/2024/12/05/react-19" target="_blank"  rel="noreferrer">https://react.dev/blog/2024/12/05/react-19</a>
+                            <br/><br/>
+                            <a href="https://react.dev/blog/2024/12/05/react-19" className="btn btn-info btn-sm" target="_blank" rel="noreferrer">
+                                https://react.dev/blog/2024/12/05/react-19
+                            </a>
                         </p>
 
-                        <h5>useTransition</h5>
-                        <h5>useOptimistic</h5>
-                        <h5>useActionState</h5>
-                        <h5>New API: use</h5>
-                        <h5>React Compiler</h5>
-                        <h5>useEffectEvent</h5>
-                        <h5>Activity</h5>
+                        <h5>Core Performance & Architecture</h5>
+                        <h6>
+                            <b> React Compiler:</b>
+                            React Compiler is the replacement of useMemo() and useCallback(), This is helpful for optimizing the component and and reducing the unnecessary re-renders.
+                        </h6>
+
+                        <h6>
+                            <b>Activity:</b> In React 19 Activity is best feature I would say. Activity wrapper is used for handling the show & hide feature. This Show and Hide i mean toggling feature we were already doing earlier But Activity wrapper is providing one more thing. It prereserving the state also. So imagine while creating the tabs using Acitvity so your current state will not erase it will be same as it.
+                        </h6>
+
+                        <hr className="bg-danger" />
+
+                        <h5>New Hooks & API</h5>
+
+                        <h6>
+                            <b>useTransition:</b>
+                            useTransition() hook is helping to handle the isPending status while calling the API, In React 18 we are handling the isPending status separately But in React 19 useTransition() hook providing the inbuilt method to handle the isPending status.
+                        </h6>
+
+                        <h6>
+                            <b>useOptimistic: </b> useOptimistic() hook is heping to provide the best user experience while communicating with API. When are you handling the API using useOptimistic() hook so this hook directly updating the UI for best user experience and and the same time API calling is running the behind the screens. so once API executed so whatever response is coming now this time response showing at the screen But till time useOptimistic() hook changed the UI.
+                        </h6>
+
+                        <h6>useActionState</h6>
+                        <h6>
+                            <b>New API - use():</b>
+                            use() hook is helping to handling the promise based requirement separately. Now earlier we were creating separate custom hook for handling such scenarios now in React 19 use() is providing by itself.
+                        </h6>
+                        <h6>useEffectEvent</h6>
+                    </div>
+
+                    <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                        <div className="lightGreenBG img-thumbnail p-2">
+                            <h6>How to update React 18 to React 19 ?</h6>
+                            <p>
+                                Upgrading from React 18 to React 19 involves updating your dependencies, applying codemods to handle breaking changes, and updating your TypeScript definitions. React 19 includes several breaking changes.
+                            </p>
+
+                            <ul>
+                                <li>Firstly you need to identify about your dependencies.</li>
+                                <li>Note down separately with version as well.</li>
+                                <li>Before moving to 19, upgrade to React 18.3. This version is identical to 18.2 and it will help you to identify issues early. <br /> <i>npm install react@18.3.1 react-dom@18.3.1</i> </li>
+                                <li>Then Install React 19 <br /> <i>npm install react@latest react-dom@latest</i></li>
+                                <li>Run then Codemods for Automatic Refactoring</li>
+                                <li>Then finally you need to do some Manual Fixes whereever required </li>
+                            </ul>
+                        </div>
+                        <br />
+                        <img src={AppImages.React_18_to_19} alt={AppImages.React_18_to_19} className="img-fluid" />
                     </div>
                 </div>
             </div>
@@ -45,21 +90,21 @@ const React19Features = () => {
                             </p>
 
                             <p>For example, you could handle the pending and error state in useState:</p>
-                            
+
                         </div>
                     </div>
 
                     <div className="row">
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <h6>With using useState</h6>
-                            <p> 
+                            <p>
                                 <img src={AppImages.React_19_UseTransition_1} alt={AppImages.React_19_UseTransition_1} className="img-fluid" />
                             </p>
                         </div>
 
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <h6>With using useTransition</h6>
-                            <p> 
+                            <p>
                                 <img src={AppImages.React_19_UseTransition_2} alt={AppImages.React_19_UseTransition_2} className="img-fluid" />
                             </p>
                         </div>
@@ -98,7 +143,7 @@ const React19Features = () => {
                                     <b>Asynchronous action:</b> When an asynchronous action, like a network request, begins, you use a function provided by the hook to add the optimistic state.
                                 </li>
                             </ul>
-                            <p> 
+                            <p>
                                 <img src={AppImages.React_19_UseOptimistic_1} alt={AppImages.React_19_UseOptimistic_1} className="img-fluid" />
                             </p>
                         </div>
@@ -121,7 +166,7 @@ const React19Features = () => {
                                 <li> Manages pending states efficiently.</li>
                                 <li> Improves error handling without external state management. </li>
                             </ul>
-                            <p> 
+                            <p>
                                 <img src={AppImages.React_19_UseActionState_1} alt={AppImages.React_19_UseActionState_1} className="img-fluid" />
                             </p>
                         </div>
@@ -144,15 +189,15 @@ const React19Features = () => {
                                 <li> Primarily targets data fetching scenarios, simplifying Promise handling</li>
                                 <li>React 19 lets you use promises, contexts, and async functions directly inside components.</li>
                             </ul>
-                            <p> 
+                            <p>
                                 <img src={AppImages.React_19_Use_Api_1} alt={AppImages.React_19_Use_Api_1} className="img-fluid" />
                             </p>
                         </div>
 
-                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12"> 
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <h6>React Compiler:</h6>
                             <p>
-                                A new compiler that automatically optimizes the components, reducing the need for manual memo or useMemo hooks and improving performance. It autonomously manages component rendering for UI state changes, eliminating the need for manual state and UI updates. 
+                                A new compiler that automatically optimizes the components, reducing the need for manual memo or useMemo hooks and improving performance. It autonomously manages component rendering for UI state changes, eliminating the need for manual state and UI updates.
                             </p>
 
                             <h6>Key benefits:</h6>
@@ -186,7 +231,7 @@ const React19Features = () => {
 
                             <h6>Problem with normal useEffect: </h6>
                             <p>
-                                If you use a function or state inside an effect, you must add it to the dependency array — otherwise it becomes stale. <br/>
+                                If you use a function or state inside an effect, you must add it to the dependency array — otherwise it becomes stale. <br />
                                 But sometimes adding dependencies causes
                             </p>
 
@@ -202,7 +247,7 @@ const React19Features = () => {
                             </p>
                         </div>
 
-                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12"> 
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <h5>Activity:</h5>
                             <p>
                                 The Activity component in React 19 is a new feature that allows developers to hide and restore the UI and internal state of its children. This provides a more efficient way to manage components that are frequently toggled between visible and hidden states, such as sidebars, tabs, or modal windows.

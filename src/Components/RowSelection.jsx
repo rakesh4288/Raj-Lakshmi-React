@@ -7,12 +7,12 @@ const RowSelection = () => {
     const [selectedRow, setSelectedRow] = useState([]);
     const checkboxHandler = (e) => {
         const { value, checked } = e.target;
-        const newValue = JSON.parse(value);
-        console.log('newValue =', newValue);
+        const checkedRow = JSON.parse(value);
+        console.log('checkedRow =', checkedRow);
         if (checked) {
-            setSelectedRow([...selectedRow, newValue]);
+            setSelectedRow([...selectedRow, checkedRow]);
         } else {
-            setSelectedRow(selectedRow.filter((item) => item.id !== newValue.id));
+            setSelectedRow(selectedRow.filter((item) => item.id !== checkedRow.id));
         }
     }
 
@@ -28,7 +28,7 @@ const RowSelection = () => {
 
     return (
         <div id="row-selection">
-            <form className="img-thumbnail" onSubmit={handleSubmit}>
+            <form className="img-thumbnail p-2" onSubmit={handleSubmit}>
                 <h5>Table row selectoin with checkbox and send data to API</h5>
                 <table className="table table-striped">
                     <tbody>

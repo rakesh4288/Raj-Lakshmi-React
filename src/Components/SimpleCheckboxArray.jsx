@@ -6,7 +6,7 @@ const SimpleCheckboxArray = () => {
     const handleCheckboxChange = (e) => {
         const {value, checked} = e.target;
         if(checked) {
-            setSelectedHobby([...selectedHobby , value]);
+            setSelectedHobby([...selectedHobby, " ",  value]);
         } else {
             setSelectedHobby(selectedHobby.filter((item) => item !== value));
         }

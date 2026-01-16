@@ -1,5 +1,3 @@
-import React from "react";
-
 const SamplePage = () => {
     return (
         <div id="sample-id">

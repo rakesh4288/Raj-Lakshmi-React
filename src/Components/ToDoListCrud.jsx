@@ -18,52 +18,64 @@ const ToDoListCrud = () => {
         if (taskInput === '') {
             setTaskError("Please Enter Task Name First !");
         } else {
-            if (isEdit) {
-                // console.log('isEdit =', isEdit);
-                setTaskListData((prevState) => prevState.map((item) => {
-                    if(item.id === editIndex) {
-                        return {
-                            ...item,
-                            id: editIndex,
-                            taskName: taskInput,
-                            isCompleted: false
-                        }
-                    }
-                    return item
-                }));
-
-                setCopyTaskListData((prevState) => prevState.map((item) => {
-                    if(item.id === editIndex) {
-                        return {
-                            ...item,
-                            id: editIndex,
-                            taskName: taskInput,
-                            isCompleted: false
-                        }
-                    }
-                    return item
-                }));
+            const isDuplicate = taskListData.some(item => 
+                item.taskName.toLowerCase() === taskInput.toLowerCase() && 
+                (!isEdit || item.id !== editIndex)
+            );
+            if (isDuplicate) {
+                setTaskError("Task already exists!");
             } else {
-                // console.log('isEdit =', isEdit);
-                setTaskListData([
-                    ...taskListData,
-                    {
-                        id: taskListData.length + 1,
-                        taskName: taskInput,
-                        isCompleted: false
-                    }
-                ]);
+                if (isEdit) {
+                    // console.log('isEdit =', isEdit);
+                    setTaskListData((prevState) => prevState.map((item) => {
+                        if(item.id === editIndex) {
+                            return {
+                                ...item,
+                                id: editIndex,
+                                taskName: taskInput,
+                                isCompleted: false
+                            }
+                        }
+                        return item
+                    }));
 
-                setCopyTaskListData([
-                    ...taskListData,
-                    {
-                        id: taskListData.length + 1,
-                        taskName: taskInput,
-                        isCompleted: false
-                    }
-                ]);
-                setTaskInput('');
-                setTaskError('');
+                    setCopyTaskListData((prevState) => prevState.map((item) => {
+                        if(item.id === editIndex) {
+                            return {
+                                ...item,
+                                id: editIndex,
+                                taskName: taskInput,
+                                isCompleted: false
+                            }
+                        }
+                        return item
+                    }));
+                    setIsEdit(false);
+                    setEditIndex(null);
+                    setTaskInput('');
+                    setTaskError('');
+                } else {
+                    // console.log('isEdit =', isEdit);
+                    setTaskListData([
+                        ...taskListData,
+                        {
+                            id: taskListData.length + 1,
+                            taskName: taskInput,
+                            isCompleted: false
+                        }
+                    ]);
+
+                    setCopyTaskListData([
+                        ...copyTaskListData,
+                        {
+                            id: copyTaskListData.length + 1,
+                            taskName: taskInput,
+                            isCompleted: false
+                        }
+                    ]);
+                    setTaskInput('');
+                    setTaskError('');
+                }
             }
         }
     }
@@ -86,7 +98,7 @@ const ToDoListCrud = () => {
         // console.log('handleTaskDelete =', id);
         if (window.confirm("Are you sure want to delete")) {
             setTaskListData((prevState) => prevState.filter((item) => item.id !== id));
-            setTaskListData((prevState) => prevState.filter((item) => item.id !== id));
+            setCopyTaskListData((prevState) => prevState.filter((item) => item.id !== id));
         }
     }
 

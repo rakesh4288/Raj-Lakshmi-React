@@ -70,7 +70,7 @@ const SelectAllCheckbox = () => {
 
     console.log('rowSelected =', rowSelected);
     return (
-        <div className="img-thumbnail">
+        <div className="img-thumbnail p-2">
             <table className="table table-striped">
                 <tbody>
                     <tr>

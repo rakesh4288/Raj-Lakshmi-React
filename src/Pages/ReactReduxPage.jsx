@@ -202,13 +202,13 @@ const ReactReduxPage = () => {
                 </div>
             </section>
 
-            <section id="redux-thunk-vs-redux-saga" className="pt-4 pb-4 mt-4 mb-4">
+            <section id="redux-thunk-vs-redux-saga">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                             <h5>Redux Thunk vs. Redux Saga: Choosing the Right Middleware <i className="bi bi-activity"></i></h5>
                             <h6>
-                                Redux is a predictable state container for React. This is a mainly used in React application for managing the state globally.
+                                Redux is a predictable state management library for React. This is a mainly used in React application for managing the state globally.
                             </h6>
 
                             <h6 className="text-danger">

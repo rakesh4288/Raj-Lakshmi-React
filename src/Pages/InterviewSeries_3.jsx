@@ -8,8 +8,7 @@ const InterviewSeries_3 = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h4 className="pageHeading"> React Interview Questions Answer Part 3 
-                                <i className="bi bi-fullscreen"></i>
+                            <h4 className="pageHeading"> React Interview Questions Answer Part 3 <i className="bi bi-fullscreen"></i>
                             </h4>
                         </div>
                     </div>
@@ -44,7 +43,7 @@ const InterviewSeries_3 = () => {
                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <h4 className="text-white">What are synthetic events in ReactJS ?</h4>
                             <p className="text-white">
-                                Synthetic events are the cross-browser wrappers around all the browsers. The main purpose of creating the synthetic event is to perform cross browser issues. 
+                                Synthetic events are the cross-browser wrappers around all the browsers. The main purpose of creating the synthetic event is to perform the cross browser issues. 
                             </p>
 
                             <p className="text-white">
@@ -139,7 +138,7 @@ const InterviewSeries_3 = () => {
                             </h6>
 
                             <h6>
-                                Reconciliation in React is the process of efficiently updating the user interface (UI) to reflect the changes in a component's via state or props. It involves comparing the current virtual DOM tree with the new virtual DOM tree and then updating only the necessary parts of the actual DOM. This process ensures that React applications remain performance by minimizing the number of DOM operations.
+                                Reconciliation in React is the process of efficiently updating the user interface (UI) to reflect the changes in a component's via state or props. It involves comparing the current virtual DOM tree with the new virtual DOM tree and then updating only the necessary parts of the actual DOM.
                             </h6>
 
                             <h6 className="text-success">

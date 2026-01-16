@@ -44,7 +44,6 @@ import RadioSelection from './Pages/RadioSelection';
 import DebouncingPage from './Pages/DebouncingPage';
 import ReactCustomHook from './Pages/ReactCustomHook';
 import LazyLoadingPage from './Pages/LazyLoadingPage';
-import CountryFullDetails from './Components/CountryFullDetails';
 import ReduxCrudPage from './Pages/ReduxCrudPage';
 import ReduxCrudCreate from './Pages/ReduxCrudCreate';
 import ReduxCrudUpdate from './Pages/ReduxCrudUpdate';
@@ -104,7 +103,6 @@ const App = () => {
           
           <Route path='/react-http-tutorial' Component={ReactHttpPage} />
           <Route path='/http-react-get-call' Component={ReactHttpGetPage} />
-          <Route path='/http-react-get-call/country-full-info/:id' Component={CountryFullDetails}/>
           <Route path='/http-react-post-call' Component={ReactHttpPostPage} />
           <Route path='/how-to-perform-ascending-descending-order' Component={AscDescOrder}/>
           <Route path='/data-virtualization-in-react' Component={DataVirtualizationPage}/>

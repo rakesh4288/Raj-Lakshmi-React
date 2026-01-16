@@ -1,12 +1,8 @@
 import {useEffect} from "react";
 import AppImages from "../Assets";
 import DummyUsers from '../Components/DummyUsers';
-// import useFetch from "../Global/useFetch";
-// import CountryInfo from "../Components/CountryInfo";
 
 const ReactHttpGetPage = () => {
-    // const url = "https://dummyapi.online/api/pokemon";
-    // const { apiData, isLoading, isServerError} = useFetch(url);
     useEffect(() => {
         // ComponentDidMount()
         // this will runs on when component is loaded
@@ -32,19 +28,12 @@ const ReactHttpGetPage = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <h4 className="pageHeading">
-                                How to call HTTP Get Call
-                                <i className="bi bi-airplane-engines-fill"></i>
+                                How to call HTTP Get Call <i className="bi bi-airplane-engines-fill"></i>
                             </h4>
                         </div>
                     </div>
                 </div>
             </section>
-
-            {/* <section>
-                <CountryInfo />
-            </section> */}
-
-            <hr className="bg-primary"/>
 
             <section>
                 <div className="container">
