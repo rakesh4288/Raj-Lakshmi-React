@@ -59,6 +59,7 @@ import React19Features from './Pages/React19Features';
 import MircoFrontEndPage from './Pages/MircoFrontEndPage';
 import GraphQLPage from './Pages/GraphQLPage';
 import JenkinsPage from './Pages/JenkinsPage';
+import ProductDashboard from './Pages/ProductDashboard';
 
 const App = () => {
   return (
@@ -106,6 +107,7 @@ const App = () => {
           <Route path='/http-react-post-call' Component={ReactHttpPostPage} />
           <Route path='/how-to-perform-ascending-descending-order' Component={AscDescOrder}/>
           <Route path='/data-virtualization-in-react' Component={DataVirtualizationPage}/>
+          <Route path="/product-dashboard" Component={ProductDashboard}/>
 
           <Route path="/fragment-in-react" Component={ReactFragment} />
           <Route path="/higher-order-component-in-react" exact Component={ReactHocPage} />

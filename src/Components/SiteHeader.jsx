@@ -157,6 +157,12 @@ const SiteHeader = () => {
                                             <i className="bi bi-arrow-right"></i> Data Virtualization 
                                         </Link>
                                     </li>
+
+                                    <li>
+                                        <Link className="dropdown-item" to="/product-dashboard">
+                                            <i className="bi bi-arrow-right"></i> Product Dashboard 
+                                        </Link>
+                                    </li>
                                 </ul>
                             </li>
 

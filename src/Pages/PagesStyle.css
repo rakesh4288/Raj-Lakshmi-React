@@ -1,15 +1,18 @@
 .pageHeader {
     display: block;
-    background: #1b2557;
-    color: #09f2abfc;
+    /* background: #1b2557; */
+    background: #f7f7f9;
+    /* color: #09f2abfc; */
     padding: 15px 0;
     margin-bottom: 20px;
+    box-shadow: 1px 0px 2px #888;
 }
 
 .pageHeading {
     font-family: monospace;
     margin-bottom: 0;
-    color: #0aecec !important;
+    /* color: #0aecec !important; */
+    color: #054682 !important;
     font-size: 30px;
 }
 

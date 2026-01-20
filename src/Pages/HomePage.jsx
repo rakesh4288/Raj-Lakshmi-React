@@ -113,7 +113,7 @@ const HomePage = () => {
             <section id="interview-list" className="container">
                 <div className="row">
                     <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                        <div className="alert alert-dark">
+                        <div className="alert alert-warning">
                             <h6> React Interview Questions <i className="bi bi-infinity"></i></h6>
                             <ul>
                                 <li>

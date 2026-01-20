@@ -53,6 +53,8 @@ const ReactHookPage = () => {
                                     Note: Hooks will not work in React class components.
                                 </div>
                             </div>
+
+                            <iframe width="100%" height="415" src="https://www.youtube.com/embed/KP05I0dPwIc?si=WDFLWGLoJFHVEme7" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                         </div>
 
                         <div className="col-md-2">
