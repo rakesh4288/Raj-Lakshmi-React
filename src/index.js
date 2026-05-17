@@ -7,7 +7,7 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Store } from "./ReduxStore/Store";
+import { Store } from "./Store/Store";
 import { Provider } from "react-redux";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
